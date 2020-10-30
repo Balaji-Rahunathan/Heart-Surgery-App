@@ -1,0 +1,395 @@
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0
+}
+a:hover {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.para_text {
+    width: 50%;
+    margin: auto;
+    padding: 50px 0 50px 0;
+}
+.head-title{
+    color: #00A1FB;
+    font-size: 36px;
+    font-family:'AvenirNextLTPro-Bold', sans-serif ;
+    font-weight: 550;
+  
+}
+.btn-para {
+    color: #00A1FB;
+    font-size: 20px;
+    font-family:'AvenirNextLTPro-Bold', sans-serif ;
+    cursor: pointer;
+}
+.image-container{
+    width: 730px;
+    height: 730px;
+    margin: 5rem auto 0.5rem auto;
+    position: relative;
+}
+.heart {
+   position: absolute;
+   top: 52%;
+   left: 50%;
+   width: 70%;
+   height: 70%;
+   margin-top: -35%; /* Half the height */
+   margin-left: -35%; /* Half the width */
+    
+}
+.scene1 {
+    width: 140px;
+    height: 140px;
+    /* border: 1px solid #CCC; */
+    margin: 40px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    top: 37%;
+    left: 3%
+  }
+.card1 {
+    width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+}
+.card1.is-flipped {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+    -moz-transform: rotateY(180deg); /* Firefox */
+    -ms-transform: rotateY(180deg); /* Internet Explorer */
+    -o-transform: rotateY(180deg);
+  }
+  .card_face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    color:#FFF;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    font-weight: 300;
+    font-family: 'AvenirNextLTPro-Bold', sans-serif ;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .red-circle1 {
+      background:#D61335 !important;
+  }
+
+  .blue {
+    background: #00A1FB !important;
+    // transform: rotateY(180deg) !important;
+    // -webkit-transform:rotateY(180deg); /* Safari & Chrome */
+    // -moz-transform: rotateY(180deg); /* Firefox */
+    // -ms-transform: rotateY(180deg); /* Internet Explorer */
+    // -o-transform: rotateY(180deg);
+  }
+  .blue-circle1 {
+      background: #00A1FB !important;
+      transform: rotateY(180deg) !important;
+      -webkit-transform:rotateY(180deg); /* Safari & Chrome */
+-moz-transform: rotateY(180deg); /* Firefox */
+-ms-transform: rotateY(180deg); /* Internet Explorer */
+-o-transform: rotateY(180deg);
+  }
+  .scene2 {
+    width: 140px;
+    height: 140px;
+    /* border: 1px solid #CCC; */
+    margin: 40px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    top: 14.5%;
+    right: 6%
+  }
+.card2 {
+    width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+}
+.card2.is-flipped {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+    -moz-transform: rotateY(180deg); /* Firefox */
+    -ms-transform: rotateY(180deg); /* Internet Explorer */
+    -o-transform: rotateY(180deg);
+  }
+  .card_face2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    color:#FFF;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    font-weight: 300;
+    font-family: 'AvenirNextLTPro-Bold', sans-serif ;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .red-circle2 {
+      background:#D61335 ;
+  }
+  .blue-circle2 {
+      background: #00A1FB !important;
+      transform: rotateY(180deg) !important;
+      -webkit-transform: rotateY(180deg) !important; /* Safari & Chrome*/
+-moz-transform: rotateY(180deg); 
+-ms-transform: rotateY(180deg); 
+-o-transform: rotateY(180deg); 
+  }
+  .scene3 {
+    width: 140px;
+    height: 140px;
+    /* border: 1px solid #CCC; */
+    margin: 40px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 15.5%;
+    right: 8.5%
+  }
+.card3 {
+    width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+}
+.card3.is-flipped {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+    -moz-transform: rotateY(180deg); /* Firefox */
+    -ms-transform: rotateY(180deg); /* Internet Explorer */
+    -o-transform: rotateY(180deg);
+  }
+  .card_face3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    color:#FFF;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    font-weight: 300;
+    font-family: 'AvenirNextLTPro-Bold', sans-serif ;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .red-circle3 {
+      background:#D61335 !important;
+  }
+  .blue-circle3 {
+      background: transparent;
+    //   transform: rotateY(180deg) !important;
+      display: flex;
+      flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//       -webkit-transform: rotateY(180deg); 
+// -moz-transform: rotateY(180deg); 
+// -ms-transform: rotateY(180deg); 
+// -o-transform: rotateY(180deg);
+  }
+
+.red-circle4 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -5.5%;
+    left: 43%;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); 
+-moz-transform: rotate(180deg); 
+-ms-transform: rotate(180deg); 
+-o-transform: rotate(180deg);
+}
+
+.blockage-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    font-family:'AvenirNextLTPro-Bold', sans-serif ;
+    color: #000;
+}
+.btn-text{
+  
+    margin: 4rem auto;
+    width: 600px;
+    font-family:'AvenirNextLTPro-Bold', sans-serif ;
+    font-size: 16px;
+    text-align: justify
+}
+.rota{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); 
+-moz-transform: rotate(0deg); 
+-ms-transform: rotate(0deg); 
+-o-transform: rotate(0deg);
+    transition: transform 0.3s linear;
+    -webkit-transition: -webkit-transform 0.3s linear;
+}
+.cir {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); 
+-moz-transform: rotate(180deg); 
+-ms-transform: rotate(1800deg); 
+-o-transform: rotate(180deg);
+    transition: transform 0.3s linear;
+    -webkit-transition: -webkit-transform 0.3s linear;
+}
+.btn-para-a {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #00A1FB;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/****card animation ******/
+
+@media (max-width: 576px) {
+   
+    .image-container{
+        width: 340px;
+        height: 340px;
+        margin: 5rem auto 2rem auto;
+        position: relative;
+    }
+    .card_face {
+        font-size: 0.45rem;
+    }
+    .scene1 {
+        width: 70px;
+    height: 70px;
+    /* border: 1px solid #CCC; */
+    margin: 5px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    top: 41%;
+    left: 2%
+    }
+    .card_face2 {
+        font-size: 0.45rem;
+    }
+    .scene2 {
+        width: 70px;
+    height: 70px;
+    /* border: 1px solid #CCC; */
+    margin: 5px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    top: 17%;
+    right: 7%;
+    }
+    .card_face3 {
+        font-size: 0.45rem;
+    }
+    .scene3 {
+        width: 70px;
+    height: 70px;
+    /* border: 1px solid #CCC; */
+    margin: 5px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 16%;
+    right:7%;
+    }
+
+    .para_text {
+        width: 60%;
+        margin: auto;
+        padding: 50px 0 50px 0;
+    }
+
+    .red-circle4 {
+        width: 60px;
+        height: auto;
+        position: absolute;
+        bottom: -7%;
+        left: 42%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .blockage-container {
+        position: absolute;
+        top: 62%;
+        right: 12.5%
+    }
+    .blockage-text {
+        padding: 0.5rem;
+        font-size: 12px
+    }
+    .blockage {
+        width: 45px;
+        height: 45px;
+    }
+    .btn-para-a {
+        margin-top: 2.5rem;
+        font-size: 16px
+    }
+    .btn-text{
+        // display: none;
+        margin: 2.5rem auto 1rem auto;
+        font-family:'AvenirNextLTPro-Bold', sans-serif ;
+        font-size: 14px;
+        max-width: 300px
+    }
+    .head-title {
+        font-size: 28px
+    }
+}
