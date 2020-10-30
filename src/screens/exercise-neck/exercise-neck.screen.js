@@ -2,6 +2,7 @@ import React from 'react';
 import TimeRangeSlider from 'react-time-range-slider';
 import ReactSlider from 'react-slider';
 import Video from '../../video/frame.mp4';
+import Button from '../../images/Buuton.svg';
 import './exercise-neck.scss';
 
 
@@ -41,9 +42,13 @@ export default class ExerciseNeck extends React.Component {
                             </div>
                         </div>
                         <div className="video_container">
-                            <video id="my_video" width="100%">
+                            <video id="my_video" height="300" autoplay={true}>
                                 <source src={Video} />
                             </video>
+                        </div>
+                        <div className="exercise_footer">
+                            <img src={Button} alt="button" className="next_btn"></img>
+                            {/* <div className="see_more_btn" onClick={() =>this.next()}>See More</div> */}
                         </div>
                     </div>
                 </div>

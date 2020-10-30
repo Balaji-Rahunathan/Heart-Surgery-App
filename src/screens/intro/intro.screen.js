@@ -22,6 +22,10 @@ export default class Intro extends React.Component {
         this.setState({[key]: !this.state[key]});
     }
 
+    nextBtn = () => {
+        this.props.history.push('/exercise');
+    }
+
     render() {
         console.log("state", this.state);
         return(
@@ -67,7 +71,7 @@ export default class Intro extends React.Component {
                          {/*<div className="red-circle1">Click here to Reveal!</div>
                         <div className="red-circle2">Click here to Reveal!</div>
                          <div className="red-circle3 clot">Click here to Reveal!</div> */}
-                        <img src={Button} alt="para_btn"  className="red-circle4" onClick={() => this.onClickBtn('para')}/>
+                        <img src={Button} alt="para_btn"  className="red-circle4" onClick={() => this.nextBtn()}/>
                     </div>
                         {!this.state.para?
                             <a className="btn-para mt-3 text-center" onClick={() => this.onClickBtn('para')}><p className="btn-para-a " >Click Here to Read More</p></a>
