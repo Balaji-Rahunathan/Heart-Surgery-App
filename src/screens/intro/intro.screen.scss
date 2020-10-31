@@ -108,11 +108,41 @@ a:hover {
 
   .blue {
     background: #00A1FB !important;
-    // transform: rotateY(180deg) !important;
-    // -webkit-transform:rotateY(180deg); /* Safari & Chrome */
-    // -moz-transform: rotateY(180deg); /* Firefox */
-    // -ms-transform: rotateY(180deg); /* Internet Explorer */
-    // -o-transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #BE5869;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    &:before,
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid rgba(#403A3E, 0.7);
+        filter: blur(0);
+        transform-origin: 50%;
+        z-index: -1;
+    }
+    &:hover {
+        &:before,
+        &:after{
+            border-color: transparent;
+            filter: blur(2px);
+            transform: scale(4);
+            transition: 1000ms transform ease, 2100ms blur ease, 900ms border-color ease;
+        }
+        &:after {
+            transition-delay: 100ms;
+        }
+    }
+    
   }
   .blue-circle1 {
       background: #00A1FB !important;
@@ -248,10 +278,10 @@ a:hover {
     bottom: -5.5%;
     left: 43%;
     transform: rotate(180deg);
-    -webkit-transform: rotate(180deg); 
--moz-transform: rotate(180deg); 
--ms-transform: rotate(180deg); 
--o-transform: rotate(180deg);
+    -webkit-transform: rotate(90deg); 
+-moz-transform: rotate(90deg); 
+-ms-transform: rotate(90deg); 
+-o-transform: rotate(90deg);
 }
 
 .blockage-text {
