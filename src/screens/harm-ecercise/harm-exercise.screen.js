@@ -1,7 +1,7 @@
 import React from 'react';
-import Video from '../../video/frame.mp4';
+import Video from '../../video/hand_main.mp4';
 import Button from '../../images/Buuton.svg';
-import './exercise-neck.scss';
+import './harm-exercise.scss';
 
 
 export default class ExerciseNeck extends React.Component {
@@ -25,9 +25,7 @@ export default class ExerciseNeck extends React.Component {
         this.setState({timing: value})
     }
 
-    next  = () => {
-        this.props.history.push('/harm');
-    }
+    
     
     render() {
         return(
@@ -35,7 +33,7 @@ export default class ExerciseNeck extends React.Component {
                 <div className="exercise_one_container">
                     <div className="exercise_content">
                         <div className="exercise_head">
-                            <h1>Exercises After Cardiac Surgery</h1>
+                            <h1>Arm Raising</h1>
                             <div className="head_text">The Corono arteries of the heart are the left corona artery, right corona artery and circumflex aertery. The Corono arteries of the heart are left corona artery, right corona artery and circumflex aertery.</div>
                         </div>
                         <div className="exercise_body">
@@ -48,7 +46,7 @@ export default class ExerciseNeck extends React.Component {
                                 <source src={Video} />
                             </video>
                         </div>
-                        <div className="exercise_footer" onClick={() => this.next()} >
+                        <div className="exercise_footer">
                             <img src={Button} alt="button" className="next_btn"></img>
                             {/* <div className="see_more_btn" onClick={() =>this.next()}>See More</div> */}
                         </div>
