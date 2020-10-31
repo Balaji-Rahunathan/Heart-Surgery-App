@@ -21,7 +21,7 @@ export default class Exercise extends React.Component {
                 <div className="exercise_container">
                     <div className="exercise_content">
                         <div className="exercise_head">
-                            <h1>Exercises After Cardiac Surgery</h1>
+                            <h1 className="title">Exercises After Cardiac Surgery</h1>
                             <div className="head_text">The Corono arteries of the heart are the left corona artery, right corona artery and circumflex aertery. The Corono arteries of the heart are left corona artery, right corona artery and circumflex aertery.</div>
                         </div>
                         <div className="exercise_body">

@@ -30,9 +30,9 @@ export default class Intro extends React.Component {
         console.log("state", this.state);
         return(
             <React.Fragment>
-                <div className="container text-center mt-5">
+                <div className="about_your_heart_container text-center mt-5">
                     <h3 className="head-title">What is Coronary Artery bypass?</h3>
-                    <div className="image-container ">
+                    <div className="image-container">
                         <img src={Circle} alt="" className="bg-img img-fluid" />
                         <img src={Heart} alt="" className="heart img-fluid" />
                         <div className="scene1">
@@ -68,9 +68,6 @@ export default class Intro extends React.Component {
                                 : null}
                             </div>
                         </div>
-                         {/*<div className="red-circle1">Click here to Reveal!</div>
-                        <div className="red-circle2">Click here to Reveal!</div>
-                         <div className="red-circle3 clot">Click here to Reveal!</div> */}
                         <img src={Button} alt="para_btn"  className="red-circle4" onClick={() => this.nextBtn()}/>
                     </div>
                         {!this.state.para?
