@@ -11,13 +11,12 @@ import ExerciseHarm from './screens/harm-ecercise/harm-exercise.screen';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter >
         <Switch>
-          <Route exact path="/intro" component={intro} />
+          <Route exact path="/" component={intro} />
           <Route path="/exercise" component={Exercise} />
           <Route path="/neck" component={ExerciseNeck} />
           <Route path="/harm" component={ExerciseHarm} />
-          <Route  path="/" />
           <Redirect to='/' />
         </Switch>
       </BrowserRouter>
