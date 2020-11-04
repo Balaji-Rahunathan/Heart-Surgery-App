@@ -1,6 +1,6 @@
 import React from 'react';
 import './exercise-intro.screen.scss';
-import ExerciseImg from '../../images/work_place.svg'
+import ExerciseImg from '../../../assets/images/work_place.svg'
 import { getNodeText } from '@testing-library/react';
 
 export default class Exercise extends React.Component {

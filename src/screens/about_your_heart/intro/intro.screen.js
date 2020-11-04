@@ -1,9 +1,9 @@
 import React from "react";
 import './intro.screen.scss';
-import Circle from '../../images/Circle.svg';
-import Heart from "../../images/Heart.svg"
-import Blockage from "../../images/Blockage.svg";
-import Button from "../../images/Buuton.svg"
+import Circle from '../../../assets/images/Circle.svg';
+import Heart from "../../../assets/images/Heart.svg"
+import Blockage from "../../../assets/images/Blockage.svg";
+import Button from "../../../assets/images/Buuton.svg"
 
 
 export default class Intro extends React.Component {

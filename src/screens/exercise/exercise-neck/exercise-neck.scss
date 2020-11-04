@@ -46,7 +46,7 @@
 					width: 70px;
 					height: 70px;
 					border: 0;
-					background: url("../../images/dot_icon.svg");
+					background: url("../../../assets/images/dot_icon.svg");
 					background-size: contain;
 					cursor: pointer;
 				}
@@ -55,7 +55,7 @@
 					width: 35px;
 					height: 35px;
 					border: 0;
-					background: url("../../images/dot_icon.svg");
+					background: url("../../../assets/images/dot_icon.svg");
 					background-size: contain;
 					cursor: pointer;
 				}
@@ -137,8 +137,6 @@
 			.exercise_body {
 				padding: 0;
 				width: 60%;
-				.exercise_img {
-				}
 			}
 
 			.video_container {
