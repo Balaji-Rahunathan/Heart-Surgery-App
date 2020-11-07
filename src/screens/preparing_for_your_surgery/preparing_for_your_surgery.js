@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import Container from '../../common_component/container/container.component';
 import { useSetState } from '../../helpers/constants';
 import Timeline from '../../components/timeline/timeline.component';
+import { TheDayOfSurgery } from '../../helpers/content';
 
 
 const Preparing_for_your_surgery = (props) => {
@@ -13,7 +14,7 @@ const Preparing_for_your_surgery = (props) => {
     }
     return (
         <Container style={{backgroundColor: ""}}>
-            <Timeline />
+            <Timeline data={TheDayOfSurgery}/>
         </Container>
     )
 }

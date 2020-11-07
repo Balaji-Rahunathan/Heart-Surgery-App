@@ -1,22 +1,22 @@
 export const TheDayOfSurgery = {
     data: [
         {
-            id: 1,
+            id: 0,
             title: "Night before Surgery",
             content: [{
                 subtitle: "Night before Surgery",
                 description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
-                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+                image: "../assets/images/The_Day_of_Surgery/Group_775.svg"
             },
             {
                 subtitle: "Night before Surgery",
                 description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
-                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+                image: "../assets/images/The_Day_of_Surgery/Group_775.svg"
             },
             ]
         },
         {
-            id:2,
+            id:1,
             title: "The Day of Surgery",
             content: [{
                 subtitle: "The Day of Surgery",
@@ -31,7 +31,7 @@ export const TheDayOfSurgery = {
             ]
         },
         {
-            id: 3,
+            id: 2,
             title: "Cardiac Intensive Care",
             content: [{
                 subtitle: "Cardiac Intensive Care",
@@ -46,7 +46,7 @@ export const TheDayOfSurgery = {
             ]
         },
         {
-            id: 4,
+            id: 3,
             title: "Equipment user during the Surgery",
             content: [{
                 subtitle: "Equipment user during the Surgery",
@@ -61,7 +61,7 @@ export const TheDayOfSurgery = {
             ]
         },
         {
-            id: 5,
+            id: 4,
             title: "Possible complications during your recovery",
             content: [{
                 subtitle: "Possible complications during your recovery",

@@ -15,7 +15,7 @@
                 width: 2px;
                 margin-left: 50px;
                 height: 100%;
-                background-color: $background_light_blue;
+                background-image: linear-gradient(to top, transparent , $background_light_blue, transparent);
                 position: relative;
                 display: flex;
                 align-items: center;
@@ -23,7 +23,7 @@
                     position: absolute;
                     height: 80%;
                     width: 300px;
-                    left: -20px;
+                    left: -19px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
@@ -31,7 +31,8 @@
                     .topic {
                         cursor: pointer;
                         display: flex;
-                        width: 300px;
+                        // width: 250px;
+                        text-align: left;
                         .topic_check {
                             height: 40px;
                             width: 40px;
@@ -41,15 +42,25 @@
                         }
 
                         .active {
-                            height: 40px;
-                            width: 40px;
+                            height: 50px;
+                            width: 50px;
                             border-radius: 50%;
                             background-color: $option_checked;
                             border: 10px solid $option_border;
                         }
 
-                        .topic_text {
+                        .active_text {
                             padding: 5px 0 0 12px;
+                            font-weight: bold;
+                            font-size: 20px;
+                            color: $background_light_blue;
+                        }
+
+                        .topic_text {
+                            padding-left: 12px;
+                            display: flex;
+                            align-items: center;
+                            width: 250px;
                         }
                     }
                 }
@@ -57,13 +68,17 @@
         }
 
         .sub_content_container {
-            width: 50%;
+            width: 70%;
             .sub_content {
+                display: flex;
                 align-items: center;
 
                 .sub_head {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
                     padding: 20px;
-
+                    width: 100%;
                     .head_text {
                         font-weight: bold;
                         font-size: 35px;
@@ -72,6 +87,8 @@
 
                     .head_desciption {
                         font-weight: bold;
+                        align-self: center;
+                        width: 80%;
                         padding: 15px 0 15px 5px;
                     }
                 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './timeline.component.scss';
+import { useSetState } from '../../helpers/constants';
 import ThedayofSurgery from '../../assets/images/The_Day_of_Surgery/Group_778.svg';
 import ReactScrollWheelHandler from "../../../node_modules/react-scroll-wheel-handler";
 
@@ -13,6 +14,8 @@ const sample = [
 ]
 
 const Timeline = (props) => {
+    const [state, setState] = useSetState({currentIndex: 0})
+
 
     const nextIndex = () => {
         console.log("next");
@@ -29,10 +32,10 @@ const Timeline = (props) => {
                 <div className="sub_topic_container">
                     <div className="sub_topic_content">
                         <div className="topics">
-                            {sample.map(sub => (
-                                <div className="topic">
-                                    <div className="topic_check"></div>
-                                    <div className="topic_text">{sub.sub}</div>
+                            {props.data.data.map((sub,index) => (
+                                <div className="topic" style={state.currentIndex==index?{marginLeft: '-5px'} : null} key={index}>
+                                    <div className={state.currentIndex==index?"active": "topic_check"}></div>
+                                    <div className={state.currentIndex==index?"active_text":"topic_text"}>{sub.title}</div>
                                 </div>
                             ))}
                         </div>
@@ -46,11 +49,13 @@ const Timeline = (props) => {
                             style={{
                                 width: "100%",
                                 height: "100vh",
+                                outline: "none",
                             }}
                             >
+                            
                             <div className="sub_head">
-                                <div className="head_text">The Day of Surgery</div>
-                                <div className="head_desciption">We will ask you to use a special shower get that cleans your skin and removes germs.</div>
+                                <div className="head_text">{props.data.data[0].content[0].subtitle}</div>
+                                <div className="head_desciption">{props.data.data[0].content[0].description}</div>
                             </div>
                             <div className="img_container">
                                 <img alt="day_of_img" src={ThedayofSurgery}></img>
