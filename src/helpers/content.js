@@ -1,12 +1,80 @@
 export const TheDayOfSurgery = {
     data: [
-        {value: 1, sub: "Night before Surgery"},
-        {value: 2, sub: "The Day of Surgery"},
-        {value: 3, sub: "Cardiac Intensive Care"},
-        {value: 4, sub: "Equipment user during the Surgery"},
-        {value: 5, sub: "Possible complications during your recovery"}
+        {
+            id: 1,
+            title: "Night before Surgery",
+            content: [{
+                subtitle: "Night before Surgery",
+                description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
+                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+            },
+            {
+                subtitle: "Night before Surgery",
+                description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
+                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+            },
+            ]
+        },
+        {
+            id:2,
+            title: "The Day of Surgery",
+            content: [{
+                subtitle: "The Day of Surgery",
+                description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
+                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+            },
+            {
+                subtitle: "The Day of Surgery",
+                description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
+                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+            },
+            ]
+        },
+        {
+            id: 3,
+            title: "Cardiac Intensive Care",
+            content: [{
+                subtitle: "Cardiac Intensive Care",
+                description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
+                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+            },
+            {
+                subtitle: "Cardiac Intensive Care",
+                description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
+                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+            },
+            ]
+        },
+        {
+            id: 4,
+            title: "Equipment user during the Surgery",
+            content: [{
+                subtitle: "Equipment user during the Surgery",
+                description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
+                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+            },
+            {
+                subtitle: "Equipment user during the Surgery",
+                description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
+                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+            },
+            ]
+        },
+        {
+            id: 5,
+            title: "Possible complications during your recovery",
+            content: [{
+                subtitle: "Possible complications during your recovery",
+                description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
+                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+            },
+            {
+                subtitle: "Possible complications during your recovery",
+                description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
+                image: "../assets/images/The  Day of Surgery/Group 775.svg"
+            },
+            ]
+        },
     ],
-    head: "The Day of Surgery",
-    description: "We will ask you to use a special shower get that cleans your skin and removes germs.",
 
 }
