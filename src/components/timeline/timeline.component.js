@@ -5,55 +5,45 @@ import { useSetState } from '../../helpers/constants';
 import ThedayofSurgery from '../../assets/images/The_Day_of_Surgery/Group_778.svg';
 import ReactScrollWheelHandler from "../../../node_modules/react-scroll-wheel-handler";
 import Carousel from "react-elastic-carousel";
+import _ from 'lodash';
 
 const Timeline = (props) => {
     const [state, setState] = useSetState({currentIndex: 0, currentContentIndex: 0})
     const slider = useRef(null);
 
     const changeIndex = (direction) => {
-        console.log("sliderr", slider.current);
         if(direction) {
-            if((props.data.data.length - 1 == state.currentIndex) && (props.data.data[state.currentIndex].content.length - 1 == state.currentContentIndex)) {
-                setState({currentIndex: 0});
-                slider.current.goTo(0);
-            } else {
-                if(props.data.data[state.currentIndex].content.length - 1 == state.currentContentIndex) {
-                    setState({currentIndex: state.currentIndex + 1})
-                    slider.current.goTo(0);
-                } else {
-                    slider.current.slideNext();
-                }
-            }
+            slider.current.slideNext();
         } else {
-            if(state.currentIndex == 0 && state.currentContentIndex == 0) {
-
-            } else {
-                if(state.currentContentIndex == 0) {
-                    setState({currentIndex: state.currentIndex - 1})
-                    slider.current.goTo(props.data.data[state.currentIndex].content.length - 1);
-                } else {
-                    slider.current.slidePrev();
-                }
-            }
+            slider.current.slidePrev();
         }
     }
 
     const topicCheck = (index) => {
-        setState({contentIndex: 0, currentIndex: index});
-        slider.current.goTo(0);
+        let findIndex = _.findIndex(props.content.data, (e) => { 
+            return e.index == index; 
+        });
+        setState({currentIndex: index});
+        slider.current.goTo(findIndex);
+    }
+
+    const changeIndexIndex = (data) => {
+        let content = props.content.data[data.index];
+        setState({currentIndex: content.index});
     }
 
 
     return (
         <div className="time_line_container">
+            {console.log(props)}
             <div className="time_line_content">
                 <div className="sub_topic_container">
                     <div className="sub_topic_content">
                         <div className="topics">
-                            {props.data.data.map((sub,index) => (
+                            {props.titles.titles.map((sub,index) => (
                                 <div className="topic" style={state.currentIndex==index?{marginLeft: '-5px'} : null} key={index} onClick={() => topicCheck(index)}>
                                     <div className={state.currentIndex==index?"active": "topic_check"}></div>
-                                    <div className={state.currentIndex==index?"active_text":"topic_text"}>{sub.title}</div>
+                                    <div className={state.currentIndex==index?"active_text":"topic_text"}>{sub}</div>
                                 </div>
                             ))}
                         </div>
@@ -71,8 +61,8 @@ const Timeline = (props) => {
                             }}
                             >
                                 
-                            <Carousel pagination={false} showArrows={false} ref={slider} onChange={(data) =>{ console.log("data",data); setState({currentContentIndex: data.index})}} className="carousel">
-                                {props.data.data[state.currentIndex].content.map((data, index) => (
+                            <Carousel pagination={false} showArrows={false} ref={slider} onChange={(data) =>{ changeIndexIndex(data)}} className="carousel">
+                                {props.content.data.map((data, index) => (
                                     <div className="topic_content_left" id="topic" key={index}>
                                         <div className="sub_head">
                                             <div className="head_text">{data.subtitle}</div>
