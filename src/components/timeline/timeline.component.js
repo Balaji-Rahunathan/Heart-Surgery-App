@@ -97,7 +97,7 @@ const Timeline = (props) => {
                             downHandler={nextIndex}
                             style={{
                                 width: "100%",
-                                height: "100vh",
+                                height: "100%",
                                 outline: "none",
                             }}
                             >
@@ -108,7 +108,7 @@ const Timeline = (props) => {
                                 <div className="img_container">
                                     <img alt="day_of_img" src={props.data.data[state.currentIndex].content[state.contentIndex].image.default}></img>
                                 </div> */}
-                            <Carousel pagination={false} showArrows={true} showArrows={false} ref={slider}>
+                            <Carousel pagination={false} showArrows={true} showArrows={false} ref={slider} className="carousel">
                                 {props.data.data[state.currentIndex].content.map((data, index) => (
                                     index==state.contentIndex?
                                         <div className={slideClass} id="topic" key={index}>
