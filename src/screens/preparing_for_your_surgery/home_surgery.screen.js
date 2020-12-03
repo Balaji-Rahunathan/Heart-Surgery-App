@@ -8,17 +8,20 @@ import './home_surgery.screen.scss';
 const HomeSurgery = (props) => {
 
     const next = () => {
-        props.history.push('/preparing_for_your_surgery');
+        props.history.push('/preparing_for_surgery');
     }
 
 
     return (
-        <Container style={{backgroundImage: `url(${Background})`}}>
+        <Container style={{backgroundImage: `url(${Background})`, backgroundRepeat: "no-repeat", backgroundSize: 'cover'}}>
             <div className="home_body">
                 <div className="body">
                     <div className="border_line">
                         <div className="body_content">
-                            <div className="check_box"></div>
+                            <div className="line"></div>
+                            <div className="circle">
+                                <div className="check_box"></div>
+                            </div>
                             <div className="content">
                                 <div className="body_head">Preparing for your surgery</div>
                                 <div className="body_text">The corono arteries of the heart are left corona artery, right corona artery and circumflex aertery.</div>

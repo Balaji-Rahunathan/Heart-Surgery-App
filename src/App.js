@@ -19,8 +19,8 @@ function App() {
           <Route path="/exercise" component={Exercise} />
           <Route path="/neck" component={ExerciseNeck} />
           <Route path="/harm" component={ExerciseHarm} />
-          <Route path="/preparing_for_your_surgery_home" component={HomeSurgery} />
-          <Route path="/preparing_for_your_surgery" component={Preparing_for_your_surgery} />
+          <Route path="/preparing_for_surgery_home" component={HomeSurgery} />
+          <Route path="/preparing_for_surgery" component={Preparing_for_your_surgery} />
           <Route  path="/" />
           <Redirect to='/' />
         </Switch>

@@ -1,4 +1,7 @@
 .about_your_heart_container {
+    height: 100vh;
+    overflow:scroll;
+    -webkit-overflow-scrolling:touch;
     a {
         text-decoration: none;
     }

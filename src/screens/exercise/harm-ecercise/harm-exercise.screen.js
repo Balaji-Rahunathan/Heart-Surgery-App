@@ -1,6 +1,7 @@
 import React from 'react';
 import Video from '../../../assets/video/hand_main.mp4';
 import Button from '../../../assets/images/Buuton.svg';
+import SwipeBlack from '../../../assets/images/swipe-arrow.svg';
 import ReactPlayer from 'react-player'
 import './harm-exercise.scss';
 
@@ -11,7 +12,9 @@ export default class ExerciseNeck extends React.Component {
         this.state = {
             timing: '0.1',
             vid: "",
-            seekslider: ""
+            seekslider: "",
+            swipeClass: "swipe_icon",
+            swipePrev: "swipe_icon_hidden"
         }
     }
 
@@ -19,6 +22,15 @@ export default class ExerciseNeck extends React.Component {
     }
 
     onChange = (value) => {
+        if(value > 0.3 && value < 0.6) {
+            this.setState({swipeClass: "swipe_icon_hidden", swipePrev: "swipe_icon_hidden"})
+        }
+        if(value >= 0.6) {
+            this.setState({swipeClass: "swipe_icon_hidden", swipePrev: "swipe_icon_prev"})
+        }
+        if(value <= 0.3) {
+            this.setState({swipeClass: "swipe_icon_prev", swipePrev: "swipe_icon_hidden"})
+        }
         this.setState({ timing: value })
         this.player.seekTo(value)
     }
@@ -27,7 +39,7 @@ export default class ExerciseNeck extends React.Component {
         this.player = player
     }
     next = () => {
-        this.props.history.push('/intro');
+        this.props.history.push('/preparing_for_surgery_home');
     }
     
     render() {
@@ -51,8 +63,10 @@ export default class ExerciseNeck extends React.Component {
                         </div>
                         <div className="exercise_body">
                             <div className="video_controls_bar">
-                                <input id="seekslider" onChange={(eve) => this.onChange(eve.target.value)} className="slider" type="range" min="0.1" max="0.8" step="0.001" value={this.state.timing} />
+                                <input id="seekslider" onChange={(eve) => this.onChange(eve.target.value)} className="slider" type="range" min="0.1" max="0.8" step="0.001" value={this.state.timing}></input>
                             </div>
+                            <div className={this.state.swipeClass}><div className="swipe_text">Swipe</div><img src={SwipeBlack} alt="swipe_black" className="swipe_img"></img></div>
+                            <div className={this.state.swipePrev}><img src={SwipeBlack} className="swipe_translate swipe_img" alt="swipe_black"></img><div className="swipe_text">Swipe</div></div>
                         </div>
                         <div className="exercise_footer">
                             <img  onClick={()=>this.next()} src={Button} alt="button" className="next_btn"></img>

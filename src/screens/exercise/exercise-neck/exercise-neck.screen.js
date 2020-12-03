@@ -1,7 +1,8 @@
 import React from 'react';
 import Video from '../../../assets/video/frame.mp4';
 import Button from '../../../assets/images/Buuton.svg';
-import ReactPlayer from 'react-player'
+import SwipeBlack from '../../../assets/images/swipe-arrow.svg';
+import ReactPlayer from 'react-player';
 import './exercise-neck.scss';
 
 
@@ -11,7 +12,9 @@ export default class ExerciseNeck extends React.Component {
         this.state = {
             timing: '0.1',
             vid: "",
-            seekslider: ""
+            seekslider: "",
+            swipeClass: "swipe_icon",
+            swipePrev: "swipe_icon_hidden"
         }
     }
 
@@ -19,6 +22,16 @@ export default class ExerciseNeck extends React.Component {
     }
 
     onChange = (value) => {
+        console.log(value);
+        if(value > 0.3 && value < 0.6) {
+            this.setState({swipeClass: "swipe_icon_hidden", swipePrev: "swipe_icon_hidden"})
+        }
+        if(value >= 0.6) {
+            this.setState({swipeClass: "swipe_icon_hidden", swipePrev: "swipe_icon_prev"})
+        }
+        if(value <= 0.3) {
+            this.setState({swipeClass: "swipe_icon", swipePrev: "swipe_icon_hidden"})
+        }
         this.setState({ timing: value })
         this.player.seekTo(value)
     }
@@ -53,6 +66,8 @@ export default class ExerciseNeck extends React.Component {
                             <div className="video_controls_bar">
                                 <input id="seekslider" onChange={(eve) => this.onChange(eve.target.value)} className="slider" type="range" min="0.1" max="0.8" step="0.001" value={this.state.timing} />
                             </div>
+                            <div className={this.state.swipeClass}><div className="swipe_text">Swipe</div><img src={SwipeBlack} alt="swipe_black" className="swipe_img"></img></div>
+                            <div className={this.state.swipePrev}><img src={SwipeBlack} className="swipe_translate swipe_img" alt="swipe_black"></img><div className="swipe_text">Swipe</div></div>
                         </div>
                         <div className="exercise_footer" onClick={() => this.next()} >
                             <img src={Button} alt="button" className="next_btn"></img>
