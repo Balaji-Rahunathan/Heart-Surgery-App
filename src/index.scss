@@ -1,5 +1,8 @@
 $background_light_blue: #00A1FB;
 $background_dark_blue: #008DFB;
+$option_border: #DBEFFE;
+$option_checked: #E12349;
+$white: #ffffff;
 
 body {
   margin: 0;
@@ -20,11 +23,11 @@ code {
 
 @font-face {
   font-family: 'AvenirNextLTPro-Regular';
-  src: url('./fonts/AvenirNextLTPro-Bold.eot');
-  src: url('./fonts/AvenirNextLTPro-Bold.eot') format('embedded-opentype'),
-  url('./fonts/AvenirNextLTPro-Bold.woff') format('woff'),
-  url('./fonts/AvenirNextLTPro-Bold.ttf') format('truetype'),
-  url('./fonts/AvenirNextLTPro-Bold.svg') format('svg');
+  src: url('./assets/fonts/AvenirNextLTPro-Bold.eot');
+  src: url('./assets/fonts/AvenirNextLTPro-Bold.eot') format('embedded-opentype'),
+  url('./assets/fonts/AvenirNextLTPro-Bold.woff') format('woff'),
+  url('./assets/fonts/AvenirNextLTPro-Bold.ttf') format('truetype'),
+  url('./assets/fonts/AvenirNextLTPro-Bold.svg') format('svg');
 }
 
 * {
