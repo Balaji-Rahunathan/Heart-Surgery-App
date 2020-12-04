@@ -4,6 +4,7 @@ import Circle from '../../../assets/images/Circle.svg';
 import Heart from "../../../assets/images/Heart.svg"
 import Blockage from "../../../assets/images/Blockage.svg";
 import Button from "../../../assets/images/Buuton.svg"
+import Div100vh from 'react-div-100vh'
 
 
 export default class Intro extends React.Component {
@@ -30,6 +31,7 @@ export default class Intro extends React.Component {
         console.log("state", this.state);
         return(
             <React.Fragment>
+                <Div100vh>
                 <div className="about_your_heart_container text-center mt-5">
                     <h3 className="head-title">What is Coronary Artery bypass?</h3>
                     <div className="image-container">
@@ -79,6 +81,7 @@ export default class Intro extends React.Component {
                         </div>
                     : null}
                 </div>
+                </Div100vh>
             </React.Fragment>
         )
     }
