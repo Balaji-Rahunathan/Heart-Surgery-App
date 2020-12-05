@@ -13,16 +13,15 @@ import Preparing_for_your_surgery from './screens/preparing_for_your_surgery/pre
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter >
         <Switch>
-          <Route exact path="/intro" component={intro} />
+          <Route exact path="/" component={intro} />
           <Route path="/exercise" component={Exercise} />
           <Route path="/neck" component={ExerciseNeck} />
           <Route path="/harm" component={ExerciseHarm} />
           <Route path="/preparing_for_surgery_home" component={HomeSurgery} />
           <Route path="/preparing_for_surgery" component={Preparing_for_your_surgery} />
           <Route  path="/" />
-          <Redirect to='/' />
         </Switch>
       </BrowserRouter>
     </div>
