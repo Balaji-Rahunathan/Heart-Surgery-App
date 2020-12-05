@@ -65,12 +65,12 @@
 			}
 
 			.video_controls_bar {
-				width: 70%;
+				width: 50%;
 				margin:0 auto;
 				
 				.slider {
 					-webkit-appearance: none;
-					width: 50%;
+					width: 80%;
 					outline: none;
 				}
 				.slider:hover {
@@ -183,20 +183,6 @@
 			.exercise_body {
 				padding: 0;
 				width: 60%;
-				.video_controls_bar {
-					width: 70%;
-					.slider {
-						width: 100%;
-					}
-					.slider::-moz-range-thumb {
-						width: 35px;
-						height: 35px;
-					}
-					.slider::-webkit-slider-thumb {
-						width: 55px;
-						height: 55px;
-					}
-				}
 			}
 
 			.video_container {
