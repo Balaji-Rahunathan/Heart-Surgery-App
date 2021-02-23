@@ -20,8 +20,8 @@ const Calender = (props) => {
                                 {title}
                             </p>
                         </div>
-                        <div className="calender_body_image">
-                            <img src={image.default}></img>
+                        <div className="calender_body_image_container">
+                            <img className="calender_body_image" src={image.default}></img>
                         </div>
 
                         <div className="calender_body_content">
@@ -32,7 +32,8 @@ const Calender = (props) => {
                                     if (point === true && index === i) {
                                         return (
                                             <>
-                                                <p className="calender_body_content_text" key={i}><FiberManualRecordIcon style={{ paddingTop: "0.5em" }} />{data}</p>
+                                                <p className="calender_body_content_text" key={i}><FiberManualRecordIcon style={{ paddingTop: "0.5em", fontSize:"18px"}} />{data}</p>
+
                                                 {
                                                     points.map((list, j) => (
                                                         <p className="calender_body_content_text" key={j}>{list}</p>
@@ -45,7 +46,7 @@ const Calender = (props) => {
                                     }
                                     else {
                                         return (
-                                            <p key={i} className="calender_body_content_text"><FiberManualRecordIcon style={{ paddingTop: "0.5em" }} />{data}</p>
+                                            <p key={i} className="calender_body_content_text"><FiberManualRecordIcon style={{ paddingTop: "0.5em", fontSize:"18px"}} />{data}</p>
                                         )
                                     }
                                 })
