@@ -1,3 +1,5 @@
+
+
 export const TheDayOfSurgery = {
     data: [
         {
@@ -302,4 +304,33 @@ export const TheDayOfSurgeryContents = {
     },
     ],
 
+}
+
+
+export const ReturningHomeContent = {
+    page:"Returning Home",
+    title:"Getting back to normal",
+    subtitle:null,
+    data:[{
+        header: "Concentration and memory problems",
+        description:null,
+        content: "After your heart surgery you may find that your concentration is poor. This usually returns to normal during your recovery at home.Some people also find their memory is affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP. Some people also find their memory s affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP",
+        image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
+        button:true,
+    },
+    {
+        header: "Eating well as you recover",
+        description: null,
+        content: "Some people may have a poor appetite for a few days after surgery. If this persists for longer please ask your doctor or nurse to refer you to a dietitian.A healthy balanced diet is recommended as you recover. If you have been advised to lose weight after your surgery, you should wait until your wound has fully healed.This can take up to six weeks.Do not diet or lose weight during this period.See ‘Healthy Eating for a Healthy Heart’, page 34.",
+        image: require("../assets/images/Night_before_Surgery/Group_780.svg"),
+        button: true,
+    },
+    {
+        header: "Lifting",
+        description: null,
+        content: "Activities such as lifting, carrying, pushing and pulling will strain your heart and breastbone.Avoid them during your recovery period.Don’t lift anything over 10 – 15 lbs(4.5 – 7 kg) during your recovery.Ways to avoid this include using a trolley, using home delivery, sliding objects rather than lifting.Do not carry children or walk dogs during the first six weeks at home.Do not carry your cases, open stuck windows, unscrew jar lids or use corkscrews.",
+        image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
+        button: true,
+    }
+    ]
 }
