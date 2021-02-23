@@ -1,3 +1,5 @@
+
+
 export const TheDayOfSurgery = {
     data: [
         {
@@ -303,3 +305,102 @@ export const TheDayOfSurgeryContents = {
     ],
 
 }
+
+
+export const ReturningHomeContent = {
+    page:"Returning Home",
+    title:"Getting back to normal",
+    subtitle:null,
+    data:[{
+        header: "Concentration and memory problems",
+        description:null,
+        content: "After your heart surgery you may find that your concentration is poor. This usually returns to normal during your recovery at home.Some people also find their memory is affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP. Some people also find their memory s affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP",
+        image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
+        button:true,
+    },
+    {
+        header: "Eating well as you recover",
+        description: null,
+        content: "Some people may have a poor appetite for a few days after surgery. If this persists for longer please ask your doctor or nurse to refer you to a dietitian.A healthy balanced diet is recommended as you recover. If you have been advised to lose weight after your surgery, you should wait until your wound has fully healed.This can take up to six weeks.Do not diet or lose weight during this period.See ‘Healthy Eating for a Healthy Heart’, page 34.",
+        image: require("../assets/images/Night_before_Surgery/Group_780.svg"),
+        button: true,
+    },
+    {
+        header: "Lifting",
+        description: null,
+        content: "Activities such as lifting, carrying, pushing and pulling will strain your heart and breastbone.Avoid them during your recovery period.Don’t lift anything over 10 – 15 lbs(4.5 – 7 kg) during your recovery.Ways to avoid this include using a trolley, using home delivery, sliding objects rather than lifting.Do not carry children or walk dogs during the first six weeks at home.Do not carry your cases, open stuck windows, unscrew jar lids or use corkscrews.",
+        image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
+        button: true,
+    }
+    ]
+}
+
+export const calenderContents = [
+    {
+        title:"Week 1",
+        image:require('../assets/images/Resuming Home/Group 3.png'),
+        content:[`Get into a routine of taking your
+            medication.`,
+            `Take a morning and afternoon rest.`,
+            `Do not encourage too many visitors –
+            they can be exhausting.`,
+            `Take your time.`,
+            `Avoid lifting activities.`,
+            `Only walk as much as you did while in
+            hospital`]
+    },
+    {
+        title:"Week 2",
+        image:require('../assets/images/Resuming Home/Group 7.png'),
+        content:[`Morning or afternoon rest.`,
+        `Visit a friend nearby.`,
+        `short car trips as a passenger.`,
+        `Light housework only e.g. prepare a cup
+        of tea, wash and dry dishes.`,
+        `Begin
+        walking programme (page 22).`]
+    },
+    {
+        title:"Week 3",
+        image:require('../assets/images/Resuming Home/Group 6.png'),
+        content:[`Increase housework e.g. make the bed,
+        sit to iron, prepare a light meal.`,
+        `Go
+        shopping with someone – do not carry any
+        bags.`,
+        `If you feel well, go out for a meal – watch
+        what you eat.`,
+        `Continue walking programme.`]
+    },
+    {
+        title:"Week 4 - 6",
+        image:require('../assets/images/Resuming Home/Group 4.png'),
+        content:[`Increase housework e.g. light sweeping,
+        a little laundry – one load at a time.`,
+        `Moderate housework e.g. mop/hoover
+        floor if they move easily.`,
+        `Light gardening – seated to begin.`,
+        `Outing to cinema or restaurant.`,
+        `start most household activities except for
+        heavy lifting.`,
+        `Continue walking programme.`]
+    },
+    {
+        title:"Week 6 Onwards",
+        image:require('../assets/images/Resuming Home/Group 5.png'),
+        content:[`Outpatient appointment with your
+        surgeon is usually 6-10 weeks from
+        time of discharge from hospital.`,
+        `Ask your doctor three questions at this
+        point:`,
+        `Make sure you contact your cardiologist
+        (heart doctor) to arrange an outpatient
+        visit after your surgeon has discharged
+        you from his/her care.`,
+        `Continue walking programme`],
+    point:true,
+    index:1,
+    points:[`1. When will I be allowed drive?`,`2. When will I be allowed back to work?`,`3. When can I fly?`]
+    }
+
+]

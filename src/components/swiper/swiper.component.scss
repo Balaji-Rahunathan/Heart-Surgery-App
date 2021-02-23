@@ -1,0 +1,7 @@
+@import "../../index.scss";
+
+.swiper_container {
+  overflow: scroll;
+  position: relative;
+  scroll-snap-type: y mandatory;
+}
