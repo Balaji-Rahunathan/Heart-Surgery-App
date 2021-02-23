@@ -1,0 +1,45 @@
+@import "../../index.scss";
+
+.calender_component {
+  .calender_container {
+      margin: 1em;      
+    .calender_wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .calender_top {          
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .calender_top_image {          
+          object-fit:cover
+        }
+      }
+      .calender_body {         
+          background-color: #effafe; 
+          border: 1px solid $background_light_blue;
+          border-bottom-left-radius: 1em;
+          border-bottom-right-radius: 1em;
+        .calender_body_title {
+            background-color: $background_light_blue;            
+          .calender_body_title_text {
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+            padding-bottom: 1em;
+          }
+        }
+        .calender_body_image {
+            padding-top: 1em;
+            width: 100%;
+        }
+        .calender_body_content {
+            margin: 2em;
+            .calender_body_content_text {
+                text-align: left;
+            }
+          }
+      }
+    }
+  }
+}
