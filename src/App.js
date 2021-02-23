@@ -7,6 +7,7 @@ import ExerciseNeck from './screens/exercise/exercise-neck/exercise-neck.screen'
 import ExerciseHarm from './screens/exercise/harm-ecercise/harm-exercise.screen';
 import HomeSurgery from './screens/preparing_for_your_surgery/home_surgery.screen';
 import Preparing_for_your_surgery from './screens/preparing_for_your_surgery/preparing_for_your_surgery';
+import ResumingHome from './screens/resuming_home/resuming_home.screen';
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/harm" component={ExerciseHarm} />
           <Route path="/preparing_for_surgery_home" component={HomeSurgery} />
           <Route path="/preparing_for_surgery" component={Preparing_for_your_surgery} />
+          <Route path="/resuming_home" component={ResumingHome} />
           <Route  path="/" />
         </Switch>
       </BrowserRouter>
