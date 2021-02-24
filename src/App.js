@@ -9,6 +9,7 @@ import HomeSurgery from './screens/preparing_for_your_surgery/home_surgery.scree
 import ReturningHome from './screens/returning_home/returning_home.screen';
 import Preparing_for_your_surgery from './screens/preparing_for_your_surgery/preparing_for_your_surgery';
 import ResumingHome from './screens/resuming_home/resuming_home.screen';
+import HomExerciseAfterSurgery from './screens/home_exercise_after_surgery/home_exercise_after_surgery';
 
 
 
@@ -25,6 +26,8 @@ function App() {
           <Route path="/preparing_for_surgery" component={Preparing_for_your_surgery} />
           <Route path="/resuming_home" component={ResumingHome} />
           <Route path="/returning_home" component={ReturningHome} />
+          <Route path="/home_exercise_after_surgery" component={HomExerciseAfterSurgery} />
+
           <Route  path="/" />          
         </Switch>
       </BrowserRouter>

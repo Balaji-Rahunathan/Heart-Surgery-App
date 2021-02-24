@@ -14,7 +14,7 @@ body, #root {
 }
 
 body {
-  overflow: hidden;
+  overflow: scroll;
 }
 
 @media (prefers-reduced-motion: no-preference) {

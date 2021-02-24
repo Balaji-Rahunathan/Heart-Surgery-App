@@ -1,0 +1,45 @@
+@import '../../index.scss';
+.heas_screen{ 
+    .heas_container{
+        .heas_wrapper{
+            .heas_body_container{
+                margin-bottom: 2em;
+                .heas_head_container{
+                    margin: 2em;
+                    .heas_head_text{
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $background_light_blue;
+                    }                    
+                }
+                .heas_image_container{
+                        
+                }
+                .heas_content_container{
+                    margin: 2em;
+                    .heas_content_text{
+                        text-align: left;
+
+                    }
+                }
+            }
+            .heas_bottom_body_container{
+                .heas_bottom_body_head{
+                    margin: 2em;
+                    .heas_bottom_body_head_text{
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .heas_accordian_container{
+                margin-top: 1em;
+            }
+        }
+    }
+}
+
+.heas_text_padding{
+    padding-top: 1em;
+}

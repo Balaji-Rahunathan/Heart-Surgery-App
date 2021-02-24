@@ -28,13 +28,7 @@ const Accordian = (props) => {
   }, [])
 
   return (
-    <Container className="accordian_wrapper">
-      <div className="header_container">
-        Borg Scale
-      </div>
-      <div className="image_container">
-        <img className="image" src={nightimg} />
-      </div>
+    <Container className="accordian_wrapper">     
       <div className="content_container">
         <div className="table_container">
           <div className="table_header">Borg Scale</div>
