@@ -21,6 +21,7 @@
     "react-scroll-wheel-handler": "^2.0.1",
     "react-slideshow-image": "^3.3.2",
     "styled-components": "^5.2.1",
+    "swiper": "^6.4.15",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

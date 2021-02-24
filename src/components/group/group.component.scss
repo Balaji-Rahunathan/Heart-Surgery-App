@@ -1,0 +1,41 @@
+// @import "../../index.scss";
+
+.group_container {
+  height: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  .group_title {
+    .group_title_text {
+      padding: 2em;
+      font-size: 18px;
+    }
+  }
+  .group_image_container {
+    .group_image {
+      width: auto;
+    }
+  }
+
+  .group_content {
+    display: flex;
+    flex-direction: column;
+    .group_content_text {
+      padding: 0em 2em 0em 2em;
+      font-size: 14px;
+      font-weight: normal;
+      text-align: left;
+      font-stretch: expanded;
+    }
+  }
+}
+
+.child_content {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+
+.group_content_text {
+  text-align: left;
+}

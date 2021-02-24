@@ -143,7 +143,7 @@ export const TheDayOfSurgery = {
 
 
 export const TheDayOfSurgeryTitles = {
-    titles: ["Night before Surgery", "The Day of Surgery", "Cardiac Intensive Care", "Equipment used during the surgery and in intensive care","Possible complications during your recovery"]
+    titles: ["Night before Surgery", "The Day of Surgery", "Cardiac Intensive Care", "Equipment used during the surgery and in intensive care", "Possible complications during your recovery"]
 
 }
 
@@ -308,15 +308,15 @@ export const TheDayOfSurgeryContents = {
 
 
 export const ReturningHomeContent = {
-    page:"Returning Home",
-    title:"Getting back to normal",
-    subtitle:null,
-    data:[{
+    page: "Returning Home",
+    title: "Getting back to normal",
+    subtitle: null,
+    data: [{
         header: "Concentration and memory problems",
-        description:null,
+        description: null,
         content: "After your heart surgery you may find that your concentration is poor. This usually returns to normal during your recovery at home.Some people also find their memory is affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP. Some people also find their memory s affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP",
         image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
-        button:true,
+        button: true,
     },
     {
         header: "Eating well as you recover",
@@ -337,9 +337,9 @@ export const ReturningHomeContent = {
 
 export const calenderContents = [
     {
-        title:"Week 1",
-        image:require('../assets/images/Resuming Home/Group 3.png'),
-        content:[`Get into a routine of taking your
+        title: "Week 1",
+        image: require('../assets/images/Resuming Home/Group 3.png'),
+        content: [`Get into a routine of taking your
             medication.`,
             `Take a morning and afternoon rest.`,
             `Do not encourage too many visitors –
@@ -350,57 +350,228 @@ export const calenderContents = [
             hospital`]
     },
     {
-        title:"Week 2",
-        image:require('../assets/images/Resuming Home/Group 7.png'),
-        content:[`Morning or afternoon rest.`,
-        `Visit a friend nearby.`,
-        `short car trips as a passenger.`,
-        `Light housework only e.g. prepare a cup
+        title: "Week 2",
+        image: require('../assets/images/Resuming Home/Group 7.png'),
+        content: [`Morning or afternoon rest.`,
+            `Visit a friend nearby.`,
+            `short car trips as a passenger.`,
+            `Light housework only e.g. prepare a cup
         of tea, wash and dry dishes.`,
-        `Begin
+            `Begin
         walking programme (page 22).`]
     },
     {
-        title:"Week 3",
-        image:require('../assets/images/Resuming Home/Group 6.png'),
-        content:[`Increase housework e.g. make the bed,
+        title: "Week 3",
+        image: require('../assets/images/Resuming Home/Group 6.png'),
+        content: [`Increase housework e.g. make the bed,
         sit to iron, prepare a light meal.`,
-        `Go
+            `Go
         shopping with someone – do not carry any
         bags.`,
-        `If you feel well, go out for a meal – watch
+            `If you feel well, go out for a meal – watch
         what you eat.`,
-        `Continue walking programme.`]
+            `Continue walking programme.`]
     },
     {
-        title:"Week 4 - 6",
-        image:require('../assets/images/Resuming Home/Group 4.png'),
-        content:[`Increase housework e.g. light sweeping,
+        title: "Week 4 - 6",
+        image: require('../assets/images/Resuming Home/Group 4.png'),
+        content: [`Increase housework e.g. light sweeping,
         a little laundry – one load at a time.`,
-        `Moderate housework e.g. mop/hoover
+            `Moderate housework e.g. mop/hoover
         floor if they move easily.`,
-        `Light gardening – seated to begin.`,
-        `Outing to cinema or restaurant.`,
-        `start most household activities except for
+            `Light gardening – seated to begin.`,
+            `Outing to cinema or restaurant.`,
+            `start most household activities except for
         heavy lifting.`,
-        `Continue walking programme.`]
+            `Continue walking programme.`]
     },
     {
-        title:"Week 6 Onwards",
-        image:require('../assets/images/Resuming Home/Group 5.png'),
-        content:[`Outpatient appointment with your
+        title: "Week 6 Onwards",
+        image: require('../assets/images/Resuming Home/Group 5.png'),
+        content: [`Outpatient appointment with your
         surgeon is usually 6-10 weeks from
         time of discharge from hospital.`,
-        `Ask your doctor three questions at this
+            `Ask your doctor three questions at this
         point:`,
-        `Make sure you contact your cardiologist
+            `Make sure you contact your cardiologist
         (heart doctor) to arrange an outpatient
         visit after your surgeon has discharged
         you from his/her care.`,
-        `Continue walking programme`],
-    point:true,
-    index:1,
-    points:[`1. When will I be allowed drive?`,`2. When will I be allowed back to work?`,`3. When can I fly?`]
+            `Continue walking programme`],
+        point: true,
+        index: 1,
+        points: [`1. When will I be allowed drive?`, `2. When will I be allowed back to work?`, `3. When can I fly?`]
     }
 
+]
+
+
+export const returnHomeContent = [
+    {
+        title: 'Concentration and memory problems',
+        image: require('../assets/images/returning_home/Group 2.png'),
+        content: [`After your heart surgery you may find that
+            your concentration is poor. This usually
+            returns to normal during your recovery at
+            home. Some people also find their
+            memory is affected but this is usually
+            temporary and gradually resolves within
+            six months of your surgery. If this problem
+            persists please speak to your GP. Some
+            people also find their memory s affected
+            but this is usually temporary and
+            gradually resolves within six months of
+            your surgery. If this problem persists
+            please speak to your GP`]
+    },
+    {
+        title: 'Eating well as you recover',
+        image: require('../assets/images/returning_home/Group 4.png'),
+        content: [`Some people may have a poor appetite
+            for a few days after surgery. If this persists
+            for longer please ask your doctor or nurse
+            to refer you to a dietitian. A healthy
+            balanced diet is recommended as you
+            recover. If you have been advised to lose
+            weight after your surgery, you should wait
+            until your wound has fully healed. This can
+            take up to six weeks. Do not diet or lose
+            weight during this period. See ‘Healthy
+            Eating for a Healthy Heart’, page 34.`]
+    },
+    {
+        title: 'Lifting',
+        image: require('../assets/images/returning_home/Group 5.png'),
+        content: [`Activities such as lifting, carrying, pushing
+            and pulling will strain your heart and
+            breastbone. Avoid them during your
+            recovery period. Don’t lift anything over
+            10 – 15 lbs (4.5 – 7 kg) during your
+            recovery. Ways to avoid this include using
+            a trolley, using home delivery, sliding
+            objects rather than lifting. Do not carry
+            children or walk dogs during the first six
+            weeks at home. Do not carry your cases,
+            open stuck windows, unscrew jar lids or
+            use corkscrews.`]
+    },
+    {
+        title: 'Driving',
+        image: require('../assets/images/returning_home/Group 6.png'),
+        content: [`Activities such as lifting, carrying, pushing
+            and pulling will strain your heart and
+            breastbone. Avoid them during your
+            recovery period. Don’t lift anything over
+            10 – 15 lbs (4.5 – 7 kg) during your
+            recovery. Ways to avoid this include using
+            a trolley, using home delivery, sliding
+            objects rather than lifting. Do not carry
+            children or walk dogs during the first six
+            weeks at home. Do not carry your cases,
+            open stuck windows, unscrew jar lids or
+            use corkscrews.`]
+    },
+    {
+        title: 'Washing and Bathing',
+        image: '',
+        content: [`Don’t have a bath for the first three months (Refer After Surgery).`]
+
+    },
+    {
+        title: 'Work',
+        image: require('../assets/images/returning_home/Group 8.png'),
+        content: [
+            `Most people are permitted to drive after
+        six weeks. When you return to driving,
+        start in your local area, avoid peak hours,
+        have another person with you and
+        gradually increase the time you spend
+        driving.`,
+            `Avoid long trips at first and take
+        frequent rest breaks.`,
+            `If you drive for a living (heavy goods
+        vehicle / passenger service vehicle), you
+        will usually not be allowed to resume for a
+        much longer period of time. Your doctor
+        may want you to undergo an exercise
+        stress test before you are permitted to
+        drive.`,
+            `Y ou must tell your insurance company
+        that you have had heart surgery.`]
+    },
+    {
+        title: 'Sexual activity',
+        image: require('../assets/images/returning_home/Group 11.png'),
+        content: [`
+        Return to sexual activity when you and
+        your partner are mentally and physically
+        ready. This varies from couple to couple
+        but may start as early as two to three
+        weeks after heart surgery. Find a position
+        that is comfortable for you and your
+        partner. It is advisable to wait for an hour
+        after a meal.`]
+    },
+    {
+        title: 'Erectile dysfunction (impotence)',
+        image: require('../assets/images/returning_home/Group 12.png'),
+        content: [`
+        Erectile Dysfunction (ED) affects one in
+        ten Irish males over the age of 21 at
+        some stage in their lives. Coronary Artery
+        Disease and ED are often linked because
+        they share similar risk factors, such as
+        smoking, high cholesterol, excessive
+        alcohol consumption, diabetes, and high
+        blood pressure. Since there are other
+        causes, it is best to talk to your GP if this
+        problem affects you. Bear in mind that ED
+        is a common problem and that your GP
+        can treat the majority of cases of ED
+        simply with medication.`]
+    },
+    {
+        title: 'Rest and sleep',
+        image: require('../assets/images/returning_home/Group 13.png'),
+        content: [`You may have problems sleeping after
+            heart surgery. It can take some time to get
+            back to your normal sleeping pattern.
+            Here are some simple tips to help reduce
+            this problem:`,
+            `Sleep in whatever position you feel most
+            comfortable. Avoid lying on your back for
+            a long time as it isn’t good for your
+            breathing.`,
+            `For the first few weeks you may need to
+            take some pain medication, to relieve
+            chest discomfort, which could be
+            stopping you from sleeping.`,
+            `Gradually increase your day time
+            activity.`,]
+    },
+    {
+        title: '',
+        image: '',
+        content: [``,
+            `Try to get up at the same time each
+            morning.`,
+            `Gradually reduce the number of naps
+            you take during the day.`,
+            `Wind down during the hours before
+            bed - time, for example watch TV, listen to
+            music or practise deep breathing.`,
+            `Avoid stimulating drinks(coffee, tea or cola)
+             at least two hours before bed - time.
+            Alcohol may send you off to sleep, but
+            alcohol induced sleep is generally of
+            poorer quality.`,
+            `Check that your room is not too warm or
+            too cold.`,
+            `If you still can’t sleep, get up and try
+            listening to relaxing music, read a book or
+            watch TV.Return to bed when you feel
+            tired again.If sleep continues to be a
+            problem, talk to your doctor`
+        ]
+    },
 ]

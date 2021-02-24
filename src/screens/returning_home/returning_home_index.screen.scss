@@ -1,0 +1,27 @@
+
+.returning_home_index_container {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets//images//returning_home/returning_home_main1.png');
+    background-size:contain;
+    background-repeat:round;
+
+  .returning_home_index_head {
+      padding: 4em 2em 0 2em;
+    .returning_home_index_head_text {
+        font-size: 24px;
+        text-align: left;
+        font-weight: 600;
+        color: white;
+    }
+  }
+  .returning_home_index_content {
+      padding: 2em;
+      padding-top: 1em;
+    .returning_home_index_content_text {
+        font-size: 14px;
+        text-align: left;
+        color: white;
+    }
+  }
+}

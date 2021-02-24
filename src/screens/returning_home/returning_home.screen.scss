@@ -1,5 +1,11 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
-.returning_home_container{
-  
+.returning_home_screen {
+    overflow: scroll;  
+  .returning_home_head{
+      height: 100vh;
+      .returning_home_head_text{
+
+      }
+  }
 }
