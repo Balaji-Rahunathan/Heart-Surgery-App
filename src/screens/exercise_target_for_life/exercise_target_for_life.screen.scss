@@ -1,0 +1,64 @@
+@import "../../index.scss";
+.etfl_screen {
+  overflow: scroll;
+  .etfl_container {
+    .etfl_wrapper {
+      .etfl_body_container {
+        .etfl_head_container {
+          margin: 2em;
+          .etfl_head_text {
+            color: $background_light_blue;
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+        .etfl_image_container {
+          .etfl_image {
+          }
+        }
+        .eftl_content_container {
+          margin: 2em;
+          margin-bottom: 1em;
+          .eftl_content_text {
+            text-align: left;
+            .points_icon{
+                font-size: 14PX;
+            }
+          }
+        }
+        .etfl_content_card {
+          background-color: lightblue;
+          margin: 1em;
+          border-radius: 0.8em;
+          .eftl_content_text {
+            font-weight: 500;
+            padding: 1em;
+            text-align: left;
+          }
+        }
+        .eftl_doanddont_container {
+          margin-top: 1em;
+          .eftl_doanddont_title_text {
+            font-size: 18px;
+            font-weight: 500;
+            text-align: left;
+          }
+        }
+        .eftl_doanddont_container > p {
+          padding-left: 2em;
+          text-align: left;
+
+          .points_icon_do {
+            color: green;
+            font-size: 10px;
+          }
+
+          .points_icon_dont {
+            color: red;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
