@@ -1,0 +1,56 @@
+@import "../../index.scss";
+
+.fyandyp_screen {
+  .fyandyp_container {
+    .fyandyp_wrapper {
+      .fyandyp_head_container {
+          margin: 2em;
+        .fyandyp_head_text {
+            color: $background_light_blue;
+            font-size: 24px;
+            font-weight: 600;
+        }
+      }
+      .fyandyp_title_container {
+          margin: 2em;
+        .fyandyp_title_text {
+            font-size: 18px;
+            font-weight: 500;
+        }
+      }
+      .fyandyp_image_container {
+        .fyandyp_image {
+        }
+      }
+      .fyandyp_image_content_container {
+          margin: 2em;
+        .fyandyp_image_content_text {
+          text-align: left;
+        }
+      }
+      .fyandyp_sub_content_container {
+          margin: 2em;
+        .fyandup_sub_content_head_container {
+            margin: 1em;
+            margin-bottom: 0;
+          .fyandup_sub_content_head_text {
+              font-size: 18px;
+              font-weight: 500;
+          }
+        }
+        .fyandup_sub_content_title_container {
+          .fyandup_sub_content_title_text {
+              font-weight: 500;
+              text-align: left;
+              padding-top: 1em;
+          }
+        }
+        .fyandup_sub_content_container {
+          .fyandup_sub_content_text {
+              text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
