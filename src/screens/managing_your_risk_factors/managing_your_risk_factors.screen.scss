@@ -1,0 +1,48 @@
+@import '../../index.scss';
+
+.myrf_screen{
+    .myrf_container{
+        .myrf_wrapper{
+            .myrf_head_container{
+                margin: 2em;
+              .myrf_head_text{
+                  font-size: 24px;
+                  color: $background_light_blue;
+                  font-weight: 600;
+              }  
+            }
+            .myrf_title_container{
+                margin: 1em;
+                .myrf_title_text{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+            .myrf_image_container{
+                .myrf_image{
+
+                }
+            }
+            .myrf_content_container{
+                margin: 2em;
+                margin-top: 1em;
+                .myrf_content_text{
+                    text-align: left;
+                    font-size: 14px;
+                }
+            }
+            .myrf_sub_title_container{
+                margin: 2em;
+                margin-bottom: 1em;
+                .myrf_sub_title_text{
+                    font-size: 14px;
+                    font-weight: 600;                    
+                }
+            }
+        }
+    }
+    .myrf_points{
+        font-size: 10px;
+    }
+}
+
