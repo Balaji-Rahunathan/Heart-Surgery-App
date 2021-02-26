@@ -5,15 +5,16 @@
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  .group_title {
+  .group_title {    
+    margin: 2em;
+    margin-bottom: 0.5em;
     .group_title_text {
-      padding: 2em;
       font-size: 18px;
     }
   }
   .group_image_container {
     .group_image {
-      width: auto;
+      width: 75%;
     }
   }
 

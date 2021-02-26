@@ -4,11 +4,12 @@ $sidebar-bg-color: $background_dark_blue;
 @import "~react-pro-sidebar/dist/scss/styles.scss";
 
 .sidebar_container {
-  .sidebar_menu {      
+  .sidebar_menu {
     .menu_item {
-        padding-top: 0.5em;
+      padding-top: 0.5em;
       font-size: 14px;
       color: $option_border;
+      font-weight: 450;
     }
   }
 }

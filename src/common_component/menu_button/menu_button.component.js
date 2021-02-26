@@ -3,19 +3,24 @@ import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import './menu_button.component.scss'
 
-const MenuButton = ({background, iconColor, type, onClick}) => {
-    console.log(background, iconColor, type)
+const MenuButton = ({ background, type, onClick }) => {
+    const buttonStyle={
+        backgroundColor: background,
+        boxShadow : background === "white" ? "0px 3px 6px 0px #104157" : "0px 3px 6px 0px #80d7f9"
+    }
+    const buttonIconStyle = {
+        color: background === "white" ? "#00A1FB" : "white"
+    }
     return (
-        <div className="menu_button_container" >
-            {
-                <button className="menu_button" style={{backgroundColor:background}} onClick={()=>onClick(true)}>
-                    {
-                        type === "open" ? (<MenuIcon style={{color:iconColor}} />) : (<CloseIcon style={{color:iconColor}}  />)
-                    }                    
-                </button>
-            }
+        <button 
+            className="menu_button" 
+            style={buttonStyle} 
+            onClick={() => onClick(true)}>
 
-        </div>
+            {
+                type === "open" ? (<MenuIcon style={buttonIconStyle} />) : (<CloseIcon style={buttonIconStyle} />)
+            }
+        </button>
     )
 }
 
