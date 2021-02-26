@@ -486,7 +486,12 @@ export const returnHomeContent = [
         start in your local area, avoid peak hours,
         have another person with you and
         gradually increase the time you spend
-        driving.`,
+        driving.`]
+    },
+    {
+        title: 'Work',
+        image: require('../assets/images/returning_home/Group 8.png'),
+        content: [``,
             `Avoid long trips at first and take
         frequent rest breaks.`,
             `If you drive for a living (heavy goods
@@ -550,8 +555,8 @@ export const returnHomeContent = [
             activity.`,]
     },
     {
-        title: '',
-        image: '',
+        title: 'Rest and sleep',
+        image: require('../assets/images/returning_home/Group 13.png'),
         content: [``,
             `Try to get up at the same time each
             morning.`,
