@@ -5,7 +5,7 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 const Calender = (props) => {
 
-    const { title, content, image, index, point, points } = props
+    const { title, content, image, index, point, points, contentTop } = props
 
     return (
         <div className="calender_component">
@@ -25,6 +25,9 @@ const Calender = (props) => {
                         </div>
 
                         <div className="calender_body_content">
+                            {
+                                contentTop && (<p className="calender_body_content_text">{contentTop}</p>)
+                            }
 
                             {
                                 content.map((data, i) => {
@@ -32,7 +35,7 @@ const Calender = (props) => {
                                     if (point === true && index === i) {
                                         return (
                                             <>
-                                                <p className="calender_body_content_text" key={i}><FiberManualRecordIcon style={{ paddingTop: "0.5em", fontSize:"18px"}} />{data}</p>
+                                                <p className="calender_body_content_text" key={i}><FiberManualRecordIcon style={{ paddingTop: "0.5em", fontSize: "18px" }} />{data}</p>
 
                                                 {
                                                     points.map((list, j) => (
@@ -46,7 +49,7 @@ const Calender = (props) => {
                                     }
                                     else {
                                         return (
-                                            <p key={i} className="calender_body_content_text"><FiberManualRecordIcon style={{ paddingTop: "0.5em", fontSize:"18px"}} />{data}</p>
+                                            <p key={i} className="calender_body_content_text"><FiberManualRecordIcon style={{ paddingTop: "0.5em", fontSize: "18px" }} />{data}</p>
                                         )
                                     }
                                 })

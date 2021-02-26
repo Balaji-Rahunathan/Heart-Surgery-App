@@ -372,9 +372,10 @@ export const calenderContents = [
         what you eat.`,
             `Continue walking programme.`]
     },
+
     {
         title: "Week 4 - 6",
-        image: require('../assets/images/Resuming Home/Group 4.png'),
+        image: require('../assets/images/Resuming Home/Group 8.svg'),
         content: [`Increase housework e.g. light sweeping,
         a little laundry – one load at a time.`,
             `Moderate housework e.g. mop/hoover
@@ -401,7 +402,18 @@ export const calenderContents = [
         point: true,
         index: 1,
         points: [`1. When will I be allowed drive?`, `2. When will I be allowed back to work?`, `3. When can I fly?`]
-    }
+    },
+    {
+        title: "Week",
+        image: require('../assets/images/Resuming Home/Group 4.png'),
+        content: [`Fishing`,
+            `Golfing`,
+            `swimming`,
+            `Cycling`,
+            `Continue walking programme.`],
+        contentTop:'The following activities may be resumed if you are able:`'    
+
+    },
 
 ]
 
