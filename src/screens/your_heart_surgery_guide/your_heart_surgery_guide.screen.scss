@@ -1,0 +1,42 @@
+@import "../../index.scss";
+
+.yhsg_screen {
+  background-image: url("../../assets/images/your_heart_surgery_guide.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  .yhsg_container {
+    .yhsg_head_container {
+      .yhsg_head_text {
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 2em 4em 0.5em 4em;
+      }
+    }
+    .yhsg_content_container {
+      .yhsg_content_text {
+        font-size: 14px;
+        padding: 1em 4em 2em 4em;
+        color: white;
+      }
+    }
+    .yhsg_menu_container {
+      .yhsg_menu {
+        margin:0.5em 2em 0 2em;
+        background-color: #3ab5f9; //"#3ab5f9"
+        border-radius: 5px ;
+        .yhsg_menu_text {
+            padding: 0.5em;
+            font-size: 14px;
+            color: white;
+            text-align: left;
+            font-weight: 500;
+            padding-left: 2em;
+
+        }
+      }
+    }
+  }
+}

@@ -12,6 +12,7 @@ import HomExerciseAfterSurgery from './screens/home_exercise_after_surgery/home_
 import ExerciseTargetForLife from './screens/exercise_target_for_life/exercise_target_for_life.screen';
 import ForYouAndYourPartner from './screens/for_you_and_your_partner/for_you_and_your_partner.screen';
 import ManagingYourRiskFactors from './screens/managing_your_risk_factors/managing_your_risk_factors.screen';
+import YourHeartSurgeryGuide from './screens/your_heart_surgery_guide/your_heart_surgery_guide.screen';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/exercise_target_for_life" component={ExerciseTargetForLife} />
           <Route path="/for_you_and_your_partner" component={ForYouAndYourPartner} />
           <Route path="/managing_your_risk_factors" component={ManagingYourRiskFactors} />
+          <Route path="/your_heart_surgery_guide" component={YourHeartSurgeryGuide} />
           <Route  path="/" />          
         </Switch>
       </BrowserRouter>
