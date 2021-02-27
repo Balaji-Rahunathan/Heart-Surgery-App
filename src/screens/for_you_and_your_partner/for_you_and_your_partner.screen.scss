@@ -7,25 +7,27 @@
           margin: 2em;
         .fyandyp_head_text {
             color: $background_light_blue;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 600;
         }
       }
       .fyandyp_title_container {
-          margin: 2em;
+          margin: 1em;
         .fyandyp_title_text {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
         }
       }
       .fyandyp_image_container {
         .fyandyp_image {
+          width: 70%;
         }
       }
       .fyandyp_image_content_container {
           margin: 2em;
         .fyandyp_image_content_text {
           text-align: left;
+          font-size: 14px;
         }
       }
       .fyandyp_sub_content_container {
@@ -47,6 +49,7 @@
         }
         .fyandup_sub_content_container {
           .fyandup_sub_content_text {
+            font-size: 14px;
               text-align: left;
           }
         }
