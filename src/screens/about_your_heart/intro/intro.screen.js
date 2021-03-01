@@ -24,7 +24,7 @@ export default class Intro extends React.Component {
     }
 
     nextBtn = () => {
-        this.props.history.push('/exercise');
+        this.props.history.push('/preparing_for_surgery_home');
     }
 
     render() {

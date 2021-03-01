@@ -19,7 +19,8 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/heart-surgery/">
         <Switch>
-          <Route exact path="/" component={intro} />
+          <Route exact path="/" component={YourHeartSurgeryGuide} />
+          <Route exact path="/about_your_heart" component={intro} />
           <Route path="/exercise" component={Exercise} />
           <Route path="/neck" component={ExerciseNeck} />
           <Route path="/harm" component={ExerciseHarm} />
@@ -32,7 +33,7 @@ function App() {
           <Route path="/for_you_and_your_partner" component={ForYouAndYourPartner} />
           <Route path="/managing_your_risk_factors" component={ManagingYourRiskFactors} />
           <Route path="/your_heart_surgery_guide" component={YourHeartSurgeryGuide} />
-          <Route  path="/" />          
+          <Route path="/" />
         </Switch>
       </BrowserRouter>
     </div>

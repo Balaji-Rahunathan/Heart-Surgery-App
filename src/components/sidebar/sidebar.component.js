@@ -20,27 +20,31 @@ const Sidebar = ({ toggle, onClick, history }) => {
                     <Menu style={{ textAlign: "left", }}>
 
                         <MenuItem
-                            onClick={() => history.push('returning_home')}
-                            className="menu_item">Returning Home</MenuItem
+                            onClick={() => history.push('/about_your_heart')}
+                            className="menu_item">About your heart</MenuItem
                         >
 
                         <MenuItem
-                            onClick={() => history.push('resuming_home')}
-                            className="menu_item">Resuming Home</MenuItem
+                            onClick={() => history.push('/preparing_for_surgery_home')}
+                            className="menu_item">Preparing for your surgery</MenuItem
                         >
 
                         <MenuItem
-                            onClick={() => history.push('home_exercise_after_surgery')}
-                            className="menu_item">Home Exercise After Surgery</MenuItem
+                            onClick={() => history.push('/exercise')}
+                            className="menu_item">After Surgery - Excersises</MenuItem
                         >
 
                         <MenuItem
-                            onClick={() => history.push('exercise_target_for_life')}
-                            className="menu_item">Exercise Target for Life</MenuItem
+                            onClick={() => history.push('/returning_home')}
+                            className="menu_item">Returning home</MenuItem
                         >
                         <MenuItem
-                            onClick={() => history.push('for_you_and_your_partner')}
-                            className="menu_item">For You and Your Partner</MenuItem
+                            onClick={() => history.push('/')}
+                            className="menu_item">Looking forward healthier future</MenuItem
+                        >
+                        <MenuItem
+                            onClick={() => history.push('/')}
+                            className="menu_item">Risk factor profile</MenuItem
                         >
                         
                     </Menu>

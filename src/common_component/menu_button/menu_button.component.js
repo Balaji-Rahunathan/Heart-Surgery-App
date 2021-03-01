@@ -6,7 +6,7 @@ import './menu_button.component.scss'
 const MenuButton = ({ background, type, onClick }) => {
     const buttonStyle={
         backgroundColor: background,
-        boxShadow : background === "white" ? "0px 3px 6px 0px #104157" : "0px 3px 6px 0px #80d7f9"
+        boxShadow : background === "white" ? "0px 3px 6px 0px #104157" : "0px 3px 6px 0px #00a1fb"
     }
     const buttonIconStyle = {
         color: background === "white" ? "#00A1FB" : "white"

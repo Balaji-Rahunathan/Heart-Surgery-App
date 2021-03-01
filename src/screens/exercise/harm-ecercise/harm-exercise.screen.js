@@ -39,7 +39,7 @@ export default class ExerciseNeck extends React.Component {
         this.player = player
     }
     next = () => {
-        this.props.history.push('/preparing_for_surgery_home');
+        this.props.history.push('/returning_home');
     }
     
     render() {

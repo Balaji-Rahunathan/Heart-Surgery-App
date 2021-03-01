@@ -13,26 +13,25 @@ const YourHeartSurgeryGuide = (props) => {
                     <p className="yhsg_content_text">The Corono arteries of the heart are left corona artery, right corona artery and circumflex aertery.</p>
                 </div>
                 <div className="yhsg_menu_container">
-                    <div className="yhsg_menu" onClick={()=>props.history.push('/preparing_for_surgery')}>
+                    <div className="yhsg_menu" onClick={() => props.history.push('/about_your_heart')}>
+                        <p className="yhsg_menu_text">About your heart</p>
+                    </div>
+                    <div className="yhsg_menu" onClick={() => props.history.push('/preparing_for_surgery_home')}>
                         <p className="yhsg_menu_text">Preparing for your surgery</p>
                     </div>
-                    <div className="yhsg_menu" onClick={()=>props.history.push('/your_heart_surgery_guide')}>
-                        <p className="yhsg_menu_text">After Surgery</p>
+                    <div className="yhsg_menu" onClick={() => props.history.push('/exercise')}>
+                        <p className="yhsg_menu_text">After Surgery - Excersises</p>
                     </div>
 
-                    <div className="yhsg_menu" onClick={()=>props.history.push('/returning_home')}>
+                    <div className="yhsg_menu" onClick={() => props.history.push('/returning_home')}>
                         <p className="yhsg_menu_text">Returning home</p>
                     </div>
 
-                    <div className="yhsg_menu" onClick={()=>props.history.push('/your_heart_surgery_guide')}>
+                    <div className="yhsg_menu" onClick={() => props.history.push('/your_heart_surgery_guide')}>
                         <p className="yhsg_menu_text">Looking forward healthier future</p>
-                    </div>
+                    </div>                    
 
-                    <div className="yhsg_menu" onClick={()=>props.history.push('/exercise_target_for_life')}>
-                        <p className="yhsg_menu_text">Excersises</p>
-                    </div>
-
-                    <div className="yhsg_menu" onClick={()=>props.history.push('/your_heart_surgery_guide')}>
+                    <div className="yhsg_menu" onClick={() => props.history.push('/your_heart_surgery_guide')}>
                         <p className="yhsg_menu_text">Risk factor profile</p>
                     </div>
 
