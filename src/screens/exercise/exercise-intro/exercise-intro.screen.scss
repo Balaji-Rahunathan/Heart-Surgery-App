@@ -23,6 +23,10 @@
             display: flex;
             flex-direction: column;
             // align-self: center;
+            .title{
+                font-size: 24px;
+                padding: 2em 0em 0em 0em;
+            }
             .head_text {
                 padding: 20px 0 0 0;
             }

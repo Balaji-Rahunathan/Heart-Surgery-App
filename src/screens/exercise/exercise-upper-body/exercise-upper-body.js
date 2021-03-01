@@ -1,15 +1,14 @@
 import React from 'react';
-import Video from '../../../assets/video/frame.mp4';
+import Video from '../../../assets/video/2.mp4';
 import Button from '../../../assets/images/Buuton.svg';
 import SwipeBlack from '../../../assets/images/swipe-arrow.svg';
 import ReactPlayer from 'react-player';
-import './exercise-neck.scss';
+import '../exercise-neck/exercise-neck.scss';
 import Sidebar from '../../../components/sidebar/sidebar.component'
 import MenuButton from '../../../common_component/menu_button/menu_button.component'
 
 
-
-export default class ExerciseNeck extends React.Component {
+export default class ExerciseUpperBody extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -45,7 +44,7 @@ export default class ExerciseNeck extends React.Component {
     }
 
     next = () => {
-        this.props.history.push('/harm');
+        this.props.history.push('/leg');
     }
 
     handleMenuButtonClick = (data) => {

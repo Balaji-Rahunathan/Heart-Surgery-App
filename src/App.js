@@ -13,6 +13,9 @@ import ExerciseTargetForLife from './screens/exercise_target_for_life/exercise_t
 import ForYouAndYourPartner from './screens/for_you_and_your_partner/for_you_and_your_partner.screen';
 import ManagingYourRiskFactors from './screens/managing_your_risk_factors/managing_your_risk_factors.screen';
 import YourHeartSurgeryGuide from './screens/your_heart_surgery_guide/your_heart_surgery_guide.screen';
+import ExerciseFoot from './screens/exercise/exercise-foot/exercise-foot.screen';
+import ExerciseUpperBody from './screens/exercise/exercise-upper-body/exercise-upper-body';
+import ExerciseLeg from './screens/exercise/exercise-leg/exercise-leg';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
           <Route path="/exercise" component={Exercise} />
           <Route path="/neck" component={ExerciseNeck} />
           <Route path="/harm" component={ExerciseHarm} />
+          <Route path="/foot" component={ExerciseFoot} />
+          <Route path="/upper_body" component={ExerciseUpperBody} />
+          <Route path="/leg" component={ExerciseLeg} />
           <Route path="/preparing_for_surgery_home" component={HomeSurgery} />
           <Route path="/preparing_for_surgery" component={Preparing_for_your_surgery} />
           <Route path="/resuming_home" component={ResumingHome} />
@@ -33,6 +39,7 @@ function App() {
           <Route path="/for_you_and_your_partner" component={ForYouAndYourPartner} />
           <Route path="/managing_your_risk_factors" component={ManagingYourRiskFactors} />
           <Route path="/your_heart_surgery_guide" component={YourHeartSurgeryGuide} />
+          <Route path="/ex" component={ExerciseFoot} />
           <Route path="/" />
         </Switch>
       </BrowserRouter>
