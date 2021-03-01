@@ -1,0 +1,27 @@
+@import '../../index.scss';
+
+.red-circle4 {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 92vh;
+    left: 35vw;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.with_swiper{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 10px;
+    left: 35vw;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
