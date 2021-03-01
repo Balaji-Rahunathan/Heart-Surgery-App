@@ -4,7 +4,8 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import Container from '../../common_component/container/container.component';
 
 const Group = (props) => {
-    const { title, image, content, style } = props
+    console.log(props)
+    const { title, image, content, style, title2, content2 } = props
     return (
         <div className="group_container" style={style}>
             <div className="group_title">
@@ -36,6 +37,21 @@ const Group = (props) => {
                     })
                 }
             </div>
+            {
+                title2 && (
+                    <>
+                        <div className="group_title" style={{marginTop:"2em"}}>
+                            <h2 className="group_title_text">{title2}</h2>
+                        </div>
+                        <div className="group_content">
+                            <div className="group_content_text">
+                                {content2}
+                            </div>
+
+                        </div>
+                    </>
+                )
+            }
         </div>
     )
 }

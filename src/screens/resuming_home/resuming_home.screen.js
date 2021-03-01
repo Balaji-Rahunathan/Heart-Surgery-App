@@ -9,12 +9,13 @@ import ResumingHomeFooter from '../../assets/images/Resuming Home/Group 6.png'
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import MenuButton from '../../common_component/menu_button/menu_button.component'
 import Sidebar from '../../components/sidebar/sidebar.component'
+import NextButton from '../../common_component/next_button/next_button.component'
 
 const ResumingHome = (props) => {
     const [toggle, settoggle] = useState(false)
 
     const next = () => {
-        props.history.push('/preparing_for_surgery');
+        props.history.push('/home_exercise_after_surgery');
     }
 
     const handleMenuButtonClick = (data) => {
@@ -110,6 +111,9 @@ const ResumingHome = (props) => {
                     {
                         calenderContents.map((data, index) => (
                             <div className="slider_container" key={index} >
+                                {
+                                    index === calenderContents.length -1 && <NextButton onClick={next} />
+                                }
                                 <Calender {...data} />
                             </div>
                         ))

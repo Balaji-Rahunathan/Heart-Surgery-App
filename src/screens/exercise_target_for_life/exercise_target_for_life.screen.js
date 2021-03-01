@@ -6,11 +6,12 @@ import RememberImage from '../../assets/images/exercise_target_for_life/Group 3.
 import Container from '../../common_component/container/container.component'
 import MenuButton from '../../common_component/menu_button/menu_button.component'
 import Sidebar from '../../components/sidebar/sidebar.component'
+import NextButton from '../../common_component/next_button/next_button.component';
 
 const ExerciseTargetForLife = (props) => {
     const [toggle, settoggle] = useState(false)
     const next = () => {
-        props.history.push('/exercise_target_for_life');
+        props.history.push('/for_you_and_your_partner');
     }
     const handleMenuButtonClick = (data) => {
         settoggle(data)
@@ -52,7 +53,7 @@ const ExerciseTargetForLife = (props) => {
                                     If you become so breathless that you
                                     cannot talk, slow down or stop until you
                                     can breathe easily and then continue.
-                                exercise_target_for_life.screen </p>
+                                </p>
                             </div>
                             <div className="etfl_image_container">
                                 <img className="etfl_image" src={RememberImage}></img>
@@ -91,8 +92,10 @@ const ExerciseTargetForLife = (props) => {
                                     the car a little further away from work,
                                     taking the stairs instead of the lift or even
                                     getting a dog.
-                            </p>
+                                </p>
                             </div>
+
+                            <NextButton onClick={next} style={{top:"0", left:"35vw"}} />
                         </div>
                     </div>
                 </Container>

@@ -28,7 +28,7 @@ const Accordian = (props) => {
   }, [])
 
   return (
-    <Container className="accordian_wrapper">     
+    <div className="accordian_wrapper">     
       <div className="content_container">
         <div className="table_container">
           <div className="table_header">Borg Scale</div>
@@ -118,7 +118,7 @@ const Accordian = (props) => {
 
         </div>
       </div>
-    </Container>
+    </div>
   )
 }
 

@@ -482,13 +482,7 @@ export const returnHomeContent = [
             weeks at home. Do not carry your cases,
             open stuck windows, unscrew jar lids or
             use corkscrews.`]
-    },
-    {
-        title: 'Washing and Bathing',
-        image: '',
-        content: [`Don’t have a bath for the first three months (Refer After Surgery).`]
-
-    },
+    },    
     {
         title: 'Work',
         image: require('../assets/images/returning_home/Group 8.png'),
@@ -514,7 +508,7 @@ export const returnHomeContent = [
         stress test before you are permitted to
         drive.`,
             `Y ou must tell your insurance company
-        that you have had heart surgery.`]
+        that you have had heart surgery.`]        
     },
     {
         title: 'Sexual activity',
@@ -527,7 +521,9 @@ export const returnHomeContent = [
         weeks after heart surgery. Find a position
         that is comfortable for you and your
         partner. It is advisable to wait for an hour
-        after a meal.`]
+        after a meal.`],
+        title2: 'Washing and Bathing',
+        content2: `Don’t have a bath for the first three months (Refer After Surgery).`
     },
     {
         title: 'Erectile dysfunction (impotence)',

@@ -30,7 +30,7 @@ const ForYouAndYourPartner = (props) => {
                             <div className="fyandyp_head_container">
                                 <p className="fyandyp_head_text">For you and your partner</p>
                             </div>
-                            <div className="fyandyp_title_container">
+                            <div className="fyandyp_title_container" style={{margin:"0em 2em 2em 1em"}}>
                                 <p className="fyandyp_title_text">Stress</p>
                             </div>
                             <div className="fyandyp_image_container">

@@ -7,11 +7,12 @@ import './home_exercise_after_surgery.scss';
 import Container from '../../common_component/container/container.component'
 import MenuButton from '../../common_component/menu_button/menu_button.component'
 import Sidebar from '../../components/sidebar/sidebar.component'
+import NextButton from '../../common_component/next_button/next_button.component';
 
 const HomExerciseAfterSurgery = (props) => {
     const [toggle, settoggle] = useState(false)
     const next = () => {
-        props.history.push('/for_you_and_your_partner');
+        props.history.push('/exercise_target_for_life');
     }
     const handleMenuButtonClick = (data) => {
         settoggle(data)
@@ -89,11 +90,14 @@ const HomExerciseAfterSurgery = (props) => {
                                 <div className="heas_bottom_body_image">
                                     <img src={BorgScaleImage}></img>
                                 </div>
-                            </div>
-
+                            </div>                            
+                            <NextButton onClick={next} />
                             <div className="heas_accordian_container">
                                 <Accordian />
                             </div>
+
+                            
+                            
                         </div>
                     </div>
                 </Container>
