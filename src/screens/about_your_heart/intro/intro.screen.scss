@@ -1,6 +1,6 @@
 .about_your_heart_container {
     height: 85vh;
-    overflow:scroll;
+    overflow:hide;
     -webkit-overflow-scrolling:touch;
     a {
         text-decoration: none;
@@ -33,7 +33,7 @@
     }
     .head-title {
         color: #00a1fb;
-        margin: 1em 2em 1em 2em;
+        // margin: 1em 2em 1em 2em;
         font-size: 24px;
         font-family: "AvenirNextLTPro-Bold", sans-serif;
         font-weight: 550;
@@ -416,8 +416,9 @@
             max-width: 300px;
         }
         .head-title {
-            margin-top: 20px;
+            // margin-top: 20px;
             font-size: 24px;
+            padding-top: 0.8em;
         }
     }
 }

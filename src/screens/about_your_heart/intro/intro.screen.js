@@ -7,6 +7,7 @@ import Button from "../../../assets/images/Buuton.svg"
 import Div100vh from 'react-div-100vh'
 import Sidebar from '../../../components/sidebar/sidebar.component'
 import MenuButton from '../../../common_component/menu_button/menu_button.component'
+import NextButton from '../../../common_component/next_button/next_button.component'
 
 
 export default class Intro extends React.Component {
@@ -17,7 +18,7 @@ export default class Intro extends React.Component {
             card2: false,
             card3: false,
             para: false,
-            toggle:false
+            toggle: false
 
         }
     }
@@ -31,17 +32,17 @@ export default class Intro extends React.Component {
     }
 
     handleMenuButtonClick = (data) => {
-        this.setState({toggle:data})
-      }
+        this.setState({ toggle: data })
+    }    
 
     render() {
         console.log("state", this.state);
         return (
             <React.Fragment>
+                <Sidebar {...this.props} toggle={this.state.toggle} onClick={this.handleMenuButtonClick} />
                 <Div100vh>
+                
                     <div className="about_your_heart_container text-center mt-5">
-                        <Sidebar {...this.props} toggle={this.state.toggle} onClick={this.handleMenuButtonClick} />
-
                         <MenuButton
                             background="#008DFB"
                             type="open"
@@ -86,7 +87,7 @@ export default class Intro extends React.Component {
                                         : null}
                                 </div>
                             </div>
-                            <img src={Button} alt="para_btn" className="red-circle4" onClick={() => this.nextBtn()} />
+                            {/* <img src={Button} alt="para_btn" className="red-circle4" onClick={() => this.nextBtn()} /> */}
                         </div>
                         {!this.state.para ?
                             <a className="btn-para mt-3 text-center" onClick={() => this.onClickBtn('para')}><p className="btn-para-a " >Click Here to Read More</p></a>
@@ -96,6 +97,9 @@ export default class Intro extends React.Component {
                                 <span className="btn-text">During your Coronary Artery Bypass Surgery (CABG) the doctor takes a vein from your leg and an artery from your chext wall or arm. These are used to bypass the narrowed area in your coronary arteries (see picture opposite). This improves the oxygen supply to the heart muscle. Your body can still work without the arteries and veins that are used by the surgeon for your bypass. </span>
                             </div>
                             : null}
+                    </div>
+                    <div>
+                        <NextButton onClick={this.nextBtn} style={{position:"absolute", top:"auto", left:'auto', bottom:'10px', right:'10px'}} />
                     </div>
                 </Div100vh>
             </React.Fragment>
