@@ -11,6 +11,7 @@ import NextButton from '../../common_component/next_button/next_button.component
 const ReturningHome = (props) => {
 
   const [toggle, settoggle] = useState(false)
+  const [showNextButton, setshowNextButton] = useState(false)
 
   const next = () => {
     props.history.push('/resuming_home');
@@ -20,6 +21,37 @@ const ReturningHome = (props) => {
     settoggle(data)
   }
 
+  useEffect(() => {
+    var timerId;
+    let el = document.querySelector(".swiper_container")
+    el.addEventListener("scroll", () => {
+      var elwinScroll = el.scrollTop;
+      var elheight = el.scrollHeight - el.clientHeight;
+      var elscrolled = (elwinScroll / elheight) * 100;
+      console.log(elwinScroll, elheight, elscrolled)
+      document.getElementById("myBar").style.width = elscrolled + "%";
+      if (elscrolled > 92) {
+        if (timerId) {
+          return
+        }
+        timerId = setTimeout(function () {
+          setshowNextButton(true)
+          timerId = undefined;
+        }, 500)
+      }
+      else {
+        if (timerId) {
+          return
+        }
+        timerId = setTimeout(function () {
+          setshowNextButton(false)
+          timerId = undefined;
+        }, 500)
+      }
+    })
+
+  }, [])
+
 
 
   return (
@@ -27,7 +59,7 @@ const ReturningHome = (props) => {
 
       <div>
         <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
-        <Container className="swiper_container" style={{ height: "100vh" }}>
+        <Container className="swiper_container">
 
           <div className="slider_container">
             <MenuButton
@@ -46,17 +78,24 @@ const ReturningHome = (props) => {
             onClick={handleMenuButtonClick}
           />
 
+          <div class="header">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+          </div>
+
           {
             returnHomeContent.map((data, index) => {
               return (
-                <div className="slider_container">
-                  {
-                    index === returnHomeContent.length - 1 && (<NextButton onClick={next} />)
-                  }
+                <div className="slider_container">                 
                   <Group {...data} />
                 </div>
               )
             })
+          }
+
+          {
+            showNextButton && <NextButton onClick={next} style={{ position: 'fixed', top: 'auto', bottom: '20px', left: 'auto', right: '20px' }} />
           }
         </Container>
       </div>

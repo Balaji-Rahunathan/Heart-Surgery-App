@@ -5,7 +5,7 @@ import Container from '../../common_component/container/container.component'
 
 const ReturningHomeIndex = () => {
     return (
-        <Container>
+        // <Container>
             <div className="returning_home_index_container">
                 <div className="returning_home_index_head">
                     <p className="returning_home_index_head_text">Returning Home</p>
@@ -14,7 +14,7 @@ const ReturningHomeIndex = () => {
                     <p className="returning_home_index_content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor justo </p>
                 </div>
             </div>
-        </Container>
+        // </Container>
 
     )
 }

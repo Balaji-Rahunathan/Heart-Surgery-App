@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import HeasImage1 from '../../assets/images/Home Exercise/Group 2.svg'
 import HeasImage2 from '../../assets/images/Home Exercise/Group 3.svg'
 import Accordian from '../../components/accordian/accordian.component';
@@ -11,12 +11,45 @@ import NextButton from '../../common_component/next_button/next_button.component
 
 const HomExerciseAfterSurgery = (props) => {
     const [toggle, settoggle] = useState(false)
+    const [showNextButton, setshowNextButton] = useState(false)
     const next = () => {
         props.history.push('/exercise_target_for_life');
     }
     const handleMenuButtonClick = (data) => {
         settoggle(data)
     }
+
+    useEffect(() => {
+        var timerId;
+        let el = document.querySelector(".swiper_container")
+
+        el.addEventListener("scroll", () => {
+            var elwinScroll = el.scrollTop;
+            var elheight = el.scrollHeight - el.clientHeight;
+            var elscrolled = (elwinScroll / elheight) * 100;
+            
+            if (elscrolled > 90) {
+                if (timerId) {
+                    return
+                }
+                timerId = setTimeout(function () {
+                    setshowNextButton(true)
+                    timerId = undefined;
+                }, 500)
+            }
+            else {
+                if (timerId) {
+                    return
+                }                
+                timerId = setTimeout(function () {
+                    setshowNextButton(false)
+                    timerId = undefined;
+                }, 100)
+            }
+        })
+
+    }, [])
+
     return (
         <div className="heas_screen">
             <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
@@ -28,7 +61,7 @@ const HomExerciseAfterSurgery = (props) => {
                         onClick={handleMenuButtonClick}
                     />
                     <div className="heas_wrapper">
-                        <div className="heas_body_container">
+                        <div className="heas_body_container" id="body">
                             <div className="heas_head_container">
                                 <p className="heas_head_text">Home Exercise After Surgery</p>
                             </div>
@@ -90,14 +123,16 @@ const HomExerciseAfterSurgery = (props) => {
                                 <div className="heas_bottom_body_image">
                                     <img src={BorgScaleImage}></img>
                                 </div>
-                            </div>                            
-                            <NextButton onClick={next} />
+                            </div>
+
                             <div className="heas_accordian_container">
                                 <Accordian />
                             </div>
 
-                            
-                            
+                            {
+                                showNextButton && <NextButton onClick={next} style={{ position: 'fixed', top: 'auto', bottom: '20px', left: 'auto', right: '20px' }} />
+                            }
+
                         </div>
                     </div>
                 </Container>

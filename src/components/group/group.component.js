@@ -40,7 +40,7 @@ const Group = (props) => {
             {
                 title2 && (
                     <>
-                        <div className="group_title" style={{marginTop:"2em"}}>
+                        <div className="group_title" style={{marginTop:"1em"}}>
                             <h2 className="group_title_text">{title2}</h2>
                         </div>
                         <div className="group_content">

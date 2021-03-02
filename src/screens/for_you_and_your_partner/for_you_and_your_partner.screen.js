@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import StressImage from '../../assets/images/exercise_target_for_life/Group 5.svg'
 import RecoverImage from '../../assets/images/exercise_target_for_life/Group 6.svg'
 import DepressionImage from '../../assets/images/exercise_target_for_life/Group 7.svg'
@@ -15,10 +15,25 @@ const ForYouAndYourPartner = (props) => {
     const handleMenuButtonClick = (data) => {
         settoggle(data)
     }
+    useEffect(() => {
+        let el = document.querySelector(".swiper_container")
+        el.addEventListener("scroll", () => {
+            var elwinScroll = el.scrollTop;
+            var elheight = el.scrollHeight - el.clientHeight;
+            var elscrolled = (elwinScroll / elheight) * 100;
+            console.log(elwinScroll, elheight, elscrolled)
+            document.getElementById("myBar").style.width = elscrolled + "%";
+        })
+    }, [])
     return (
         <div className="fyandyp_screen">
             <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
             <div className="fyandyp_container">
+                <div class="header">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="myBar"></div>
+                    </div>
+                </div>
                 <div className="fyandyp_wrapper">
                     <Container className="swiper_container">
                         <MenuButton
@@ -30,7 +45,7 @@ const ForYouAndYourPartner = (props) => {
                             <div className="fyandyp_head_container">
                                 <p className="fyandyp_head_text">For you and your partner</p>
                             </div>
-                            <div className="fyandyp_title_container" style={{margin:"0em 2em 2em 1em"}}>
+                            <div className="fyandyp_title_container" style={{ margin: "0em 2em 2em 1em" }}>
                                 <p className="fyandyp_title_text">Stress</p>
                             </div>
                             <div className="fyandyp_image_container">

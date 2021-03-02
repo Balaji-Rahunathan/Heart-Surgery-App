@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState,useEffect } from 'react'
 import "./exercise_target_for_life.screen.scss";
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CyclingImage from '../../assets/images/exercise_target_for_life/Group 2.svg'
@@ -10,12 +10,45 @@ import NextButton from '../../common_component/next_button/next_button.component
 
 const ExerciseTargetForLife = (props) => {
     const [toggle, settoggle] = useState(false)
+    const [showNextButton, setshowNextButton] = useState(false)
     const next = () => {
         props.history.push('/for_you_and_your_partner');
     }
     const handleMenuButtonClick = (data) => {
         settoggle(data)
     }
+
+    useEffect(() => {
+        var timerId;
+        let el = document.querySelector(".swiper_container")
+
+        el.addEventListener("scroll", () => {
+            var elwinScroll = el.scrollTop;
+            var elheight = el.scrollHeight - el.clientHeight;
+            var elscrolled = (elwinScroll / elheight) * 100;
+            
+            if (elscrolled > 90) {
+                if (timerId) {
+                    return
+                }
+                timerId = setTimeout(function () {
+                    setshowNextButton(true)
+                    timerId = undefined;
+                }, 500)
+            }
+            else {
+                if (timerId) {
+                    return
+                }                
+                timerId = setTimeout(function () {
+                    setshowNextButton(false)
+                    timerId = undefined;
+                }, 100)
+            }
+        })
+
+    }, [])
+
     return (
         <div className="etfl_screen">
             <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
@@ -95,7 +128,9 @@ const ExerciseTargetForLife = (props) => {
                                 </p>
                             </div>
 
-                            <NextButton onClick={next} style={{top:"0", left:"35vw"}} />
+                            {
+                                showNextButton && <NextButton onClick={next} style={{ position: 'fixed', top: 'auto', bottom: '20px', left: 'auto', right: '20px' }} />
+                            }
                         </div>
                     </div>
                 </Container>

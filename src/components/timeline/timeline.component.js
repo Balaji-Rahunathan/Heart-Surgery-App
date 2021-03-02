@@ -5,10 +5,12 @@ import SwipeArrow from '../../assets/images/swipe-arrow-blue.svg'
 import ReactScrollWheelHandler from "../../../node_modules/react-scroll-wheel-handler";
 import Carousel, { consts } from "react-elastic-carousel";
 import _ from 'lodash';
+import NextButton from '../../common_component/next_button/next_button.component'
 
 const Timeline = (props) => {
     const [state, setState] = useSetState({ currentIndex: 0, currentContentIndex: 0, initialActiveIndex: 0 })
     const slider = useRef(null);
+    const [index, setindex] = useState(0)
 
     const changeIndex = (direction) => {
         if (direction) {
@@ -16,7 +18,7 @@ const Timeline = (props) => {
         } else {
             slider.current.slidePrev();
         }
-        setState({currentContentIndex: slider.current})
+        setState({ currentContentIndex: slider.current })
     }
 
     const topicCheck = (index) => {
@@ -25,15 +27,16 @@ const Timeline = (props) => {
         });
         setState({ currentIndex: index, initialActiveIndex: findIndex, currentContentIndex: slider.current });
         slider.current.goTo(findIndex);
-        
+
     }
 
     const changeIndexIndex = (data) => {
+        setindex(data.index)
         let content = props.content.data[data.index];
         // setState({ currentIndex: content.index });
-        if(state.currentIndex !== content.index) {
+        if (state.currentIndex !== content.index) {
             slider.current.goTo(data.index)
-            setState({initialActiveIndex: data.index, currentIndex: content.index, currentContentIndex: slider.current});
+            setState({ initialActiveIndex: data.index, currentIndex: content.index, currentContentIndex: slider.current });
         }
     }
 
@@ -45,85 +48,89 @@ const Timeline = (props) => {
     }
 
     const renderPage = ({ pages, activePage, onClick }) => {
-        let page = _.filter(props.content.data,{index: state.currentIndex}).map(data => data.id);
+        let page = _.filter(props.content.data, { index: state.currentIndex }).map(data => data.id);
         return (
             <div className="pagination">
                 {page.map(page => {
                     const isActivePage = activePage === page
-                    return(
-                        isActivePage?
-                        <div className="page_active"></div> :
-                        <div className="page_not_active"></div>
+                    return (
+                        isActivePage ?
+                            <div className="page_active"></div> :
+                            <div className="page_not_active"></div>
                     )
                 })}
             </div>
         )
     }
+    
+    const next = () => {
+        props.history.push('/exercise')
+    }
 
     return (
-            <div className="time_line_container">
-                <div className="time_line_content">
-                    <div className="sub_topic_container">
-                        <div className="sub_topic_content">
-                            <div className="topics">
-                                <div className="line"></div>
-                                {props.titles.titles.map((sub, index) => (
-                                    <div className="topic" style={state.currentIndex == index ? { marginLeft: '-5px' } : null} key={index} onClick={() => topicCheck(index)}>
-                                        <div className="check_box_container">
-                                            <div className={state.currentIndex == index ? "active animate-bottom" : "topic_check"}></div>
-                                        </div>
-                                        <div className="topic_container">
-                                            <div className={state.currentIndex == index ? "active_text animate-bottom" : "topic_text"}>{sub}</div>
-                                            {state.currentIndex == index && window.innerWidth <= 1050?
-                                                <div className="sub_content_container">
-                                                    <div className="sub_content">
-                                                        <ReactScrollWheelHandler
-                                                            upHandler={() => changeIndex(false)}
-                                                            downHandler={() => changeIndex(true)}
-                                                            style={{
-                                                                width: "100%",
-                                                                height: "100%",
-                                                                outline: "none",
-                                                            }}
-                                                        >
-
-                                                            <Carousel ref={slider} initialActiveIndex={state.initialActiveIndex} enableMouseSwipe={false} renderPagination={renderPage} onChange={(data) => { changeIndexIndex(data) }} className="carousel" renderArrow={myArrow}>
-                                                                {props.content.data.map((data, index) => (
-                                                                    <div className="topic_content animate-bottom" id="topic" key={index}>
-                                                                        <div className="sub_head">
-                                                                            <div className="head_text">{data.subtitle}</div>
-                                                                            <div className="head_desciption">{data.description}</div>
-                                                                        </div>
-                                                                        <div className="img_container">
-                                                                            <img alt="day_of_img" src={data.image.default}></img>
-                                                                        </div>
-                                                                    </div>
-                                                                ))}
-                                                            </Carousel>
-                                                        </ReactScrollWheelHandler>
-                                                    </div>
-                                                </div>
-                                            : null}
-                                        </div>
+        <div className="time_line_container">
+            <div className="time_line_content">
+                <div className="sub_topic_container">
+                    <div className="sub_topic_content">
+                        <div className="topics">
+                            <div className="line"></div>
+                            {props.titles.titles.map((sub, index) => (
+                                <div className="topic" style={state.currentIndex == index ? { marginLeft: '-5px' } : null} key={index} onClick={() => topicCheck(index)}>
+                                    <div className="check_box_container">
+                                        <div className={state.currentIndex == index ? "active animate-bottom" : "topic_check"}></div>
                                     </div>
-                                ))}
-                            </div>
+                                    <div className="topic_container">
+                                        <div className={state.currentIndex == index ? "active_text animate-bottom" : "topic_text"}>{sub}</div>
+                                        {state.currentIndex == index && window.innerWidth <= 1050 ?
+                                            <div className="sub_content_container">
+                                                <div className="sub_content">
+                                                    <ReactScrollWheelHandler
+                                                        upHandler={() => changeIndex(false)}
+                                                        downHandler={() => changeIndex(true)}
+                                                        style={{
+                                                            width: "100%",
+                                                            height: "100%",
+                                                            outline: "none",
+                                                        }}
+                                                    >
+
+                                                        <Carousel ref={slider} initialActiveIndex={state.initialActiveIndex} enableMouseSwipe={false} renderPagination={renderPage} onChange={(data) => { changeIndexIndex(data) }} className="carousel" renderArrow={myArrow}>
+                                                            {props.content.data.map((data, index) => (
+                                                                <div className="topic_content animate-bottom" id="topic" key={index}>
+                                                                    <div className="sub_head">
+                                                                        <div className="head_text">{data.subtitle}</div>
+                                                                        <div className="head_desciption">{data.description}</div>
+                                                                    </div>
+                                                                    <div className="img_container">
+                                                                        <img alt="day_of_img" src={data.image.default}></img>
+                                                                    </div>
+                                                                </div>
+                                                            ))}
+                                                        </Carousel>
+                                                    </ReactScrollWheelHandler>
+                                                </div>
+                                            </div>
+                                            : null}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
-                    {window.innerWidth > 1050 ?
-                    <div className="sub_content_container" style={window.innerWidth <= 1050? {display: 'none'}: {display: 'flex'}}>
+                </div>
+                {window.innerWidth > 1050 ?
+                    <div className="sub_content_container" style={window.innerWidth <= 1050 ? { display: 'none' } : { display: 'flex' }}>
                         <div className="sub_content">
                             <ReactScrollWheelHandler
-                                upHandler={()=> changeIndex(false)}
-                                downHandler={() =>changeIndex(true)}
+                                upHandler={() => changeIndex(false)}
+                                downHandler={() => changeIndex(true)}
                                 style={{
                                     width: "100%",
                                     height: "100%",
                                     outline: "none",
                                 }}
-                                >
-                                    
-                                <Carousel pagination={false} ref={slider} enableMouseSwipe={false} onChange={(data) =>{ changeIndexIndex(data)}} className="carousel" renderArrow={myArrow}>
+                            >
+
+                                <Carousel pagination={false} ref={slider} enableMouseSwipe={false} onChange={(data) => { changeIndexIndex(data) }} className="carousel" renderArrow={myArrow}>
                                     {props.content.data.map((data, index) => (
                                         <div className="topic_content" id="topic" key={index}>
                                             <div className="sub_head">
@@ -138,9 +145,12 @@ const Timeline = (props) => {
                                 </Carousel>
                             </ReactScrollWheelHandler>
                         </div>
-                    </div> : null }
-                </div>
+                    </div> : null}
             </div>
+            {
+                state.currentIndex === props.data.data.length - 1 && index === 21 && <NextButton onClick={next} style={{ position: "absolute", top: "auto", left: 'auto', bottom: '10px', right: '10px', zIndex:"20" }} />
+            }
+        </div>
     )
 }
 

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import Calender from '../../components/calender/calender.component';
 import { calenderContents } from "../../helpers/content";
 import HTMLFlipBook from "react-pageflip";
@@ -13,6 +13,7 @@ import NextButton from '../../common_component/next_button/next_button.component
 
 const ResumingHome = (props) => {
     const [toggle, settoggle] = useState(false)
+    const [showNextButton, setshowNextButton] = useState(false)
 
     const next = () => {
         props.history.push('/home_exercise_after_surgery');
@@ -22,11 +23,48 @@ const ResumingHome = (props) => {
         console.log(data)
         settoggle(data)
     }
+
+    useEffect(() => {
+        var timerId;
+        let el = document.querySelector(".swiper_container")
+
+        el.addEventListener("scroll", () => {
+            var elwinScroll = el.scrollTop;
+            var elheight = el.scrollHeight - el.clientHeight;
+            var elscrolled = (elwinScroll / elheight) * 100;
+            // console.log(elwinScroll, elheight, elscrolled)
+            document.getElementById("myBar").style.width = elscrolled + "%";
+            if (elscrolled > 92) {
+                if (timerId) {
+                    return
+                }
+                timerId = setTimeout(function () {
+                    setshowNextButton(true)
+                    timerId = undefined;
+                }, 500)
+            }
+            else {
+                if (timerId) {
+                    return
+                }
+                timerId = setTimeout(function () {
+                    setshowNextButton(false)
+                    timerId = undefined;
+                }, 500)
+            }
+        })
+    }, [])
+    console.log("button", showNextButton)
     return (
         <div className="resuming_home_screen">
             <div className="resuming_home_conatiner">
                 <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
                 <Container className="swiper_container">
+                    <div class="header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar"></div>
+                        </div>
+                    </div>
                     <MenuButton
                         background="#008DFB"
                         type="open"
@@ -48,6 +86,8 @@ const ResumingHome = (props) => {
                                 </p>
                         </div>
                     </div>
+
+
 
                     <div className="slider_container">
                         <div className="resuming_home_content_container">
@@ -111,14 +151,14 @@ const ResumingHome = (props) => {
                     {
                         calenderContents.map((data, index) => (
                             <div className="slider_container" key={index} >
-                                {
-                                    index === calenderContents.length -1 && <NextButton onClick={next} />
-                                }
                                 <Calender {...data} />
                             </div>
                         ))
                     }
 
+                    {
+                        showNextButton && <NextButton onClick={next} style={{ position: 'fixed', top: 'auto', bottom: '20px', left: 'auto', right: '20px' }} />
+                    }
                 </Container>
             </div>
         </div>

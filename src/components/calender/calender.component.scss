@@ -5,6 +5,7 @@
   .calender_container {
     margin: 1em;
     .calender_wrapper {
+      padding-top: 50px;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -21,7 +22,7 @@
         border: 1px solid $background_light_blue;
         border-bottom-left-radius: 1em;
         border-bottom-right-radius: 1em;
-        height: 75vh;
+        height: 65vh;
         .calender_body_title {
           background-color: $background_light_blue;
           .calender_body_title_text {
