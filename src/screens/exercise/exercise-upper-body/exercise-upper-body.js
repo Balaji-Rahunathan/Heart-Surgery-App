@@ -44,7 +44,7 @@ export default class ExerciseUpperBody extends React.Component {
     }
 
     next = () => {
-        this.props.history.push('/leg');
+        this.props.history.push('/squat');
     }
 
     handleMenuButtonClick = (data) => {
@@ -67,7 +67,7 @@ export default class ExerciseUpperBody extends React.Component {
                             <h1>Exercises After Cardiac Surgery</h1>
                             <div className="head_text">The Corono arteries of the heart are the left corona artery, right corona artery and circumflex artery. The Corono arteries of the heart are left corona artery, right corona artery and circumflex artery.</div>
                         </div>
-                        <div className="video_container">
+                        <div className="video_container" style={{width:'70%'}}>
                             <ReactPlayer
                                 width="100%"
                                 height="100%"

@@ -16,6 +16,7 @@ import YourHeartSurgeryGuide from './screens/your_heart_surgery_guide/your_heart
 import ExerciseFoot from './screens/exercise/exercise-foot/exercise-foot.screen';
 import ExerciseUpperBody from './screens/exercise/exercise-upper-body/exercise-upper-body';
 import ExerciseLeg from './screens/exercise/exercise-leg/exercise-leg';
+import ExerciseSquat from './screens/exercise/exercise-squat/exercise-squat.screen';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/harm" component={ExerciseHarm} />
           <Route path="/foot" component={ExerciseFoot} />
           <Route path="/upper_body" component={ExerciseUpperBody} />
+          <Route path="/squat" component={ExerciseSquat} />
           <Route path="/leg" component={ExerciseLeg} />
           <Route path="/preparing_for_surgery_home" component={HomeSurgery} />
           <Route path="/preparing_for_surgery" component={Preparing_for_your_surgery} />
