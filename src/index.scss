@@ -22,7 +22,7 @@ code {
 }
 
 .swiper_container {
-  overflow: scroll;
+  overflow-y: scroll;
   position: relative;
   scroll-snap-type: y mandatory;
   .slider_container {

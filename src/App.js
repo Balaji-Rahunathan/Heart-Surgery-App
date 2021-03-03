@@ -61,7 +61,7 @@ let App = props => {
       <div className="App">
         <BrowserRouter basename="/heart-surgery/">
           <Switch>
-            <Route exact path="/heart-surgery" component={YourHeartSurgeryGuide} />
+            <Route exact path="/" component={YourHeartSurgeryGuide} />
             <Route path="/about_your_heart" component={intro} />
             <Route path="/exercise" component={Exercise} />
             <Route path="/neck" component={ExerciseNeck} />

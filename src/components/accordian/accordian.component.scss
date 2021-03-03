@@ -3,7 +3,7 @@
 .accordian_wrapper {
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow-y: scroll;
   width: 100%;
   .header_container {
     display: flex;

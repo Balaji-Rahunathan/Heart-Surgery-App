@@ -1,18 +1,8 @@
 @import "../../index.scss";
 
-// .returning_home_screen {
-//     overflow: scroll;
-//   .returning_home_head{
-//       height: 100vh;
-//       .returning_home_head_text{
-
-//       }
-//   }
-// }
-
 .returning_home_screen {
   .swiper_container {
-    overflow: scroll;
+    overflow-y: scroll;
     position: relative;
     scroll-snap-type: y mandatory;
 
