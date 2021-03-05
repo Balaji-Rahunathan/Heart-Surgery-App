@@ -21,6 +21,7 @@ import ExerciseSquat from './screens/exercise/exercise-squat/exercise-squat.scre
 import { Screen } from './helpers/functions'
 import { useState, useEffect } from 'react';
 import { toInteger } from 'lodash';
+import ExerciseHandsUp from './screens/exercise/exercise-hands-up/exercise_hands_up';
 
 
 let App = props => {
@@ -70,6 +71,7 @@ let App = props => {
             <Route path="/upper_body" component={ExerciseUpperBody} />
             <Route path="/squat" component={ExerciseSquat} />
             <Route path="/leg" component={ExerciseLeg} />
+            <Route path="/hands_up" component={ExerciseHandsUp} />
             <Route path="/preparing_for_surgery_home" component={HomeSurgery} />
             <Route path="/preparing_for_surgery" component={Preparing_for_your_surgery} />
             <Route path="/resuming_home" component={ResumingHome} />
@@ -79,7 +81,6 @@ let App = props => {
             <Route path="/for_you_and_your_partner" component={ForYouAndYourPartner} />
             <Route path="/managing_your_risk_factors" component={ManagingYourRiskFactors} />
             <Route path="/your_heart_surgery_guide" component={YourHeartSurgeryGuide} />
-            <Route path="/ex" component={ExerciseFoot} />
             <Route path="/" />
           </Switch>
         </BrowserRouter>

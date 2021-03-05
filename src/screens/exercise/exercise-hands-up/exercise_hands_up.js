@@ -1,5 +1,5 @@
 import React from 'react';
-import Video from '../../../assets/video/3.mp4';
+import Video from '../../../assets/video/ex6.mp4';
 import Button from '../../../assets/images/Buuton.svg';
 import SwipeBlack from '../../../assets/images/swipe-arrow.svg';
 import ReactPlayer from 'react-player';
@@ -8,7 +8,7 @@ import Sidebar from '../../../components/sidebar/sidebar.component'
 import MenuButton from '../../../common_component/menu_button/menu_button.component'
 
 
-export default class ExerciseLeg extends React.Component {
+export default class ExerciseHandsUp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -44,7 +44,7 @@ export default class ExerciseLeg extends React.Component {
     }
 
     next = () => {
-        this.props.history.push('/hands_up');
+        this.props.history.push('/returning_home');
     }
 
     handleMenuButtonClick = (data) => {
