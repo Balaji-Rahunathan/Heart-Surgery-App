@@ -4,7 +4,7 @@ import intro from './screens/about_your_heart/intro/intro.screen';
 import Error from './screens/error/error.screen';
 import Exercise from './screens/exercise/exercise-intro/exercise-intro.screen';
 import ExerciseNeck from './screens/exercise/exercise-neck/exercise-neck.screen';
-import ExerciseHarm from './screens/exercise/harm-ecercise/harm-exercise.screen';
+import ExerciseHarm from './screens/exercise/harm-exercise/harm-exercise.screen';
 import HomeSurgery from './screens/preparing_for_your_surgery/home_surgery.screen';
 import ReturningHome from './screens/returning_home/returning_home.screen';
 import Preparing_for_your_surgery from './screens/preparing_for_your_surgery/preparing_for_your_surgery';
@@ -22,6 +22,7 @@ import { Screen } from './helpers/functions'
 import { useState, useEffect } from 'react';
 import { toInteger } from 'lodash';
 import ExerciseHandsUp from './screens/exercise/exercise-hands-up/exercise_hands_up';
+import shoulderMovement from './screens/exercise/shoulder_movement/shoulder_movement.screen';
 
 
 let App = props => {
@@ -72,6 +73,7 @@ let App = props => {
             <Route path="/squat" component={ExerciseSquat} />
             <Route path="/leg" component={ExerciseLeg} />
             <Route path="/hands_up" component={ExerciseHandsUp} />
+            <Route path="/shoulder_movement" component={shoulderMovement} />
             <Route path="/preparing_for_surgery_home" component={HomeSurgery} />
             <Route path="/preparing_for_surgery" component={Preparing_for_your_surgery} />
             <Route path="/resuming_home" component={ResumingHome} />
