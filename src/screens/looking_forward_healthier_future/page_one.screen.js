@@ -84,7 +84,7 @@ const PageOne = (props) => {
                         </p>
                     </div>
                     <div className="pos_sub_title_container" style={{ margin: "0em 1em 0em 1em" }}>
-                        <p className="pos_sub_title_text" style={{ padding: '0em 1em 0em 1em' }}>
+                        <p className="pos_sub_title_text" style={{ padding: '1em' }}>
                             The dangers of smoking:
                         </p>
                     </div>
@@ -94,12 +94,6 @@ const PageOne = (props) => {
                             of plaque in the body’s arteries by
                             damaging the lining, causing fats to stick
                             easily.
-                        </p>
-                        <p className="pos_pionts_text">
-                            2. Smoking leads to an increased risk of
-                            male impotence and coronary artery
-                            disease. The longer and heavier one
-                            smokes, the higher the risk for both.
                         </p>
                     </div>
 
@@ -113,6 +107,12 @@ const PageOne = (props) => {
                     </div>
 
                     <div className="pos_points_container">
+                        <p className="pos_pionts_text">
+                            2. Smoking leads to an increased risk of
+                            male impotence and coronary artery
+                            disease. The longer and heavier one
+                            smokes, the higher the risk for both.
+                        </p>
                         <p className="pos_pionts_text">
                             3. Smokers are three times more likely to
                             have a heart attack, than non-smokers.

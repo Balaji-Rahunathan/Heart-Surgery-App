@@ -1,0 +1,66 @@
+@import "../../index.scss";
+
+.pts_title_container {
+  margin: 0 2em 0em 2em;
+  .pts_title_text {
+    text-align: left;
+    padding-top: 1em;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+.pts_content_container {
+  margin: 1em 2em 1em 2em;
+  .pts_content_text {
+    text-align: left;
+  }
+}
+.pts_table_container {
+  table,
+  thead,
+  th {
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  margin: 1em;
+  .pts_table {
+    .pts_table_head {
+      background-color: $background_light_blue;
+      .pts_table_head_tr {
+      }
+      .pts_table_head_tr > th {
+        color: white;
+        text-align: left;
+        padding-left: 1em;
+      }
+    }
+    .pts_table_body {
+      .pts_table_body_tr {
+      }
+      .pts_table_body_tr > td {
+        padding: 1em;
+        border-right: 1px solid black;
+      }
+    }
+  }
+}
+
+.pts_head_container {
+  margin: 1em;
+  .pts_head_text {
+    padding-top: 1em;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.pts_image_container {
+  .pts_image {
+    width: 80%;
+    height: auto;
+  }
+}
+
+.pts_points_icon {
+  font-size: 10px;
+}
