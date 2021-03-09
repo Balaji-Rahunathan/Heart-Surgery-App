@@ -23,6 +23,7 @@ import { useState, useEffect } from 'react';
 import { toInteger } from 'lodash';
 import ExerciseHandsUp from './screens/exercise/exercise-hands-up/exercise_hands_up';
 import shoulderMovement from './screens/exercise/shoulder_movement/shoulder_movement.screen';
+import PageOne from './screens/looking_forward_healthier_future/page_one.screen';
 
 
 let App = props => {
@@ -83,6 +84,7 @@ let App = props => {
             <Route path="/for_you_and_your_partner" component={ForYouAndYourPartner} />
             <Route path="/managing_your_risk_factors" component={ManagingYourRiskFactors} />
             <Route path="/your_heart_surgery_guide" component={YourHeartSurgeryGuide} />
+            <Route path="/looking_forward_healthier_future" component={PageOne} />
             <Route path="/" />
           </Switch>
         </BrowserRouter>

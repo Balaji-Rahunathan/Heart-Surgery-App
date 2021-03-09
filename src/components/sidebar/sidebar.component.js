@@ -39,7 +39,7 @@ const Sidebar = ({ toggle, onClick, history }) => {
                             className="menu_item">Returning home</MenuItem
                         >
                         <MenuItem
-                            onClick={() => history.push('/')}
+                            onClick={() => history.push('/looking_forward_healthier_future')}
                             className="menu_item">Looking forward healthier future</MenuItem
                         >
                         <MenuItem

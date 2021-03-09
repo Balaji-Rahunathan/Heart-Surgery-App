@@ -27,7 +27,7 @@ const YourHeartSurgeryGuide = (props) => {
                         <p className="yhsg_menu_text">Returning home</p>
                     </div>
 
-                    <div className="yhsg_menu" onClick={() => props.history.push('/your_heart_surgery_guide')}>
+                    <div className="yhsg_menu" onClick={() => props.history.push('/looking_forward_healthier_future')}>
                         <p className="yhsg_menu_text">Looking forward healthier future</p>
                     </div>                    
 
