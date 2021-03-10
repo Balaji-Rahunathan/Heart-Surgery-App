@@ -25,6 +25,7 @@ import ExerciseHandsUp from './screens/exercise/exercise-hands-up/exercise_hands
 import shoulderMovement from './screens/exercise/shoulder_movement/shoulder_movement.screen';
 import PageOne from './screens/looking_forward_healthier_future/page_one.screen';
 import PageTwo from './screens/looking_forward_healthier_future/page_two.screen';
+import PageThree from './screens/looking_forward_healthier_future/page_three.screen';
 
 
 let App = props => {
@@ -87,6 +88,7 @@ let App = props => {
             <Route path="/your_heart_surgery_guide" component={YourHeartSurgeryGuide} />
             <Route path="/looking_forward_healthier_future" component={PageOne} />
             <Route path="/page_two" component={PageTwo} />
+            <Route path="/page_three" component={PageThree} />
             <Route path="/" />
           </Switch>
         </BrowserRouter>

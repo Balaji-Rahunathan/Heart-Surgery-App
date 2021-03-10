@@ -55,7 +55,7 @@ const PageTwo = (props) => {
     }, [])
 
     return (
-        <div className="page_one_screen">
+        <div className="page_two_screen">
             <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
 
             <Container className="swiper_container">

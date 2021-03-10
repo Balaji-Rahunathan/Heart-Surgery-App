@@ -6,16 +6,19 @@ import Container from '../../common_component/container/container.component'
 import MenuButton from '../../common_component/menu_button/menu_button.component'
 import Sidebar from '../../components/sidebar/sidebar.component'
 import "./for_you_and_your_partner.screen.scss";
+import NextButton from '../../common_component/next_button/next_button.component';
 
 const ForYouAndYourPartner = (props) => {
     const [toggle, settoggle] = useState(false)
+    const [showNextButton, setshowNextButton] = useState(false)
     const next = () => {
-        props.history.push('/exercise_target_for_life');
+        props.history.push('/looking_forward_healthier_future');
     }
     const handleMenuButtonClick = (data) => {
         settoggle(data)
     }
     useEffect(() => {
+        var timerId;
         let el = document.querySelector(".swiper_container")
         el.addEventListener("scroll", () => {
             var elwinScroll = el.scrollTop;
@@ -23,6 +26,24 @@ const ForYouAndYourPartner = (props) => {
             var elscrolled = (elwinScroll / elheight) * 100;
             console.log(elwinScroll, elheight, elscrolled)
             document.getElementById("myBar").style.width = elscrolled + "%";
+            if (elscrolled > 92) {
+                if (timerId) {
+                    return
+                }
+                timerId = setTimeout(function () {
+                    setshowNextButton(true)
+                    timerId = undefined;
+                }, 500)
+            }
+            else {
+                if (timerId) {
+                    return
+                }
+                timerId = setTimeout(function () {
+                    setshowNextButton(false)
+                    timerId = undefined;
+                }, 500)
+            }
         })
     }, [])
     return (
@@ -170,6 +191,10 @@ const ForYouAndYourPartner = (props) => {
                             </p>
                             </div>
                         </div>
+
+                        {
+                            showNextButton && <NextButton onClick={next} style={{ position: 'fixed', top: 'auto', bottom: '20px', left: 'auto', right: '20px' }} />
+                        }
                     </Container>
                 </div>
             </div>
