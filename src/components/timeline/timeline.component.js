@@ -100,6 +100,13 @@ const Timeline = (props) => {
                                                                     <div className="sub_head">
                                                                         <div className="head_text">{data.subtitle}</div>
                                                                         <div className="head_desciption">{data.description}</div>
+                                                                        <div className="head_description_items">
+                                                                            {
+                                                                                data.items && data.items.map((item)=>(
+                                                                                    <div className="head_description_item">{item}</div>
+                                                                                ))
+                                                                            }
+                                                                        </div>
                                                                     </div>
                                                                     <div className="img_container">
                                                                         <img alt="day_of_img" src={data.image.default}></img>

@@ -12,6 +12,7 @@ const Preparing_for_your_surgery = (props) => {
     const [state, setState] = useSetState({})
     const [toggle, settoggle] = useState(false)
 
+    console.log(TheDayOfSurgery)
     const test = () => {
     }
     const handleMenuButtonClick = (data) => {
