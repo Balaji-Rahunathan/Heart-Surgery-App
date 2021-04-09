@@ -363,7 +363,10 @@ export const ReturningHomeContent = {
     page: "Returning Home",
     title: "Getting back to normal",
     subtitle: null,
-    data: [{
+    data: [
+        
+        
+        {
         header: "Concentration and memory problems",
         description: null,
         content: "After your heart surgery you may find that your concentration is poor. This usually returns to normal during your recovery at home.Some people also find their memory is affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP. Some people also find their memory s affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP",

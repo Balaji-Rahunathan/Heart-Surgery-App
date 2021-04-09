@@ -29,7 +29,7 @@ const Group = (props) => {
                         }
                         else {
                             return (
-                                <div className="group_content_text">
+                                <div className="group_content_text">s
                                     <FiberManualRecordIcon style={{ paddingTop: "0.5em" }} /> {text}
                                 </div>
                             )
