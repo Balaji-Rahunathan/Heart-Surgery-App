@@ -351,7 +351,7 @@ export const TheDayOfSurgeryContents = {
         index: 5,
         subtitle: "Possible complications during your recovery",
         description: "Atrial Fibrillation. This is an irregular heartbeat which may make you feel weak, sweaty or have palpitations.",
-        image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-04.svg"),
+        image: require("../assets/images/update/heart-run.svg"),
         id: 24
     },
     ],
@@ -367,7 +367,7 @@ export const ReturningHomeContent = {
         
         
         {
-        header: "Concentration and memory problems",
+        header: "Getting back to normal",
         description: null,
         content: "After your heart surgery you may find that your concentration is poor. This usually returns to normal during your recovery at home.Some people also find their memory is affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP. Some people also find their memory s affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP",
         image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
@@ -475,7 +475,7 @@ export const calenderContents = [
 
 export const returnHomeContent = [
     {
-        title: 'Concentration and memory problems',
+        title: 'Getting back to normal',
         image: require('../assets/images/returning_home/Group 2.png'),
         content: [`After your heart surgery you may find that
             your concentration is poor. This usually

@@ -4,7 +4,7 @@ import Sidebar from '../../components/sidebar/sidebar.component'
 import MenuButton from '../../common_component/menu_button/menu_button.component'
 import BeingOverweight from '../../assets/images/looking_forward_healthier_future/Group 4.svg'
 import Chart from '../../assets/images/looking_forward_healthier_future/Group 403.svg'
-import BodyShape from '../../assets/images/looking_forward_healthier_future/Group 5.svg'
+import BodyShape from '../../assets/images/update/body-measure.svg'
 import LoseWeight from '../../assets/images/looking_forward_healthier_future/Group 7.svg'
 import './page_two.screen.scss'
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
