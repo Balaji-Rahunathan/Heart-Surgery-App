@@ -63,9 +63,20 @@ export default class ExerciseSquat extends React.Component {
                             onClick={this.handleMenuButtonClick}
                             style={{ position: 'absolute', left: '0', top: '0' }}
                         />
-                        <div className="exercise_head">
-                            <h1>Exercises After Cardiac Surgery</h1>
-                            <div className="head_text">The Corono arteries of the heart are the left corona artery, right corona artery and circumflex artery. The Corono arteries of the heart are left corona artery, right corona artery and circumflex artery.</div>
+                         <div className="exercise_head">
+                            <h1>knee Bends</h1>
+                            <div className="head_text">
+                                <p>Starting Position: Stand tall, legs a foot apart. Hold
+on to chair if you need support.</p>
+                                <p className="spc">a) Bend your knees to a comfortable degree,
+straighten up. Keep your back straight.</p>
+                                <p className="spc">Repeat 2 to 3 times. Gradually build up to 10 times.</p>
+                                <p className="spc">Note: If you have a wound near your knee, don’t
+bend too low as it will pull on the wound. See if
+you can gradually bend more as your leg wound
+improves.</p>
+                                {/* <p className="spc">Repeat 2 to 3 times.</p> */}
+                                </div>
                         </div>
                         <div className="video_container" style={{width:'70%'}}>
                             <ReactPlayer

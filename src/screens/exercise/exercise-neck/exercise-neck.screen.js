@@ -65,8 +65,20 @@ export default class ExerciseNeck extends React.Component {
                             style={{ position: 'absolute', left: '0', top: '0' }}
                         />
                         <div className="exercise_head">
-                            <h1>Exercises After Cardiac Surgery</h1>
-                            <div className="head_text">The Corono arteries of the heart are the left corona artery, right corona artery and circumflex artery. The Corono arteries of the heart are left corona artery, right corona artery and circumflex artery.</div>
+                            <h1>Neck mobilisation</h1>
+                            <div className="head_text">
+                                <p>Starting Position: Sit up straight and tall in an upright chair, eyes looking straight ahead.</p>
+                                <p className="spc">a) Bend your neck from side to side. Feel your neck muscles stretching.</p>
+                                <p className="spc">b) Turn your head to look over your shoulder. Repeat to the other side.</p>
+                                <p className="spc">Repeat 2 to 3 times.</p>
+
+                                {/* The Corono arteries of the heart
+                                 are the left corona artery, right
+                                  corona artery and circumflex artery. 
+                                  The Corono arteries of the heart are 
+                                  left corona artery, right corona artery
+                                   and circumflex artery. */}
+                                   </div>
                         </div>
                         <div className="video_container">
                             <ReactPlayer

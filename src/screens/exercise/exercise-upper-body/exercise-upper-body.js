@@ -64,8 +64,18 @@ export default class ExerciseUpperBody extends React.Component {
                             style={{ position: 'absolute', left: '0', top: '0' }}
                         />
                         <div className="exercise_head">
-                            <h1>Exercises After Cardiac Surgery</h1>
-                            <div className="head_text">The Corono arteries of the heart are the left corona artery, right corona artery and circumflex artery. The Corono arteries of the heart are left corona artery, right corona artery and circumflex artery.</div>
+                            <h1>Heel raises</h1>
+                            {/* <div className="head_text">The Corono arteries of the heart are the left corona artery, right corona artery and circumflex artery. The Corono arteries of the heart are left corona artery, right corona artery and circumflex artery.</div> */}
+                            <div className="head_text">
+                                <p>Starting Position: Stand straight and tall, legs about
+a foot apart. Hold on to a chair or table for support.</p>
+                                <p className="spc">Stand up on your toes, lower down again. Keep
+your back straight. Try not to push on the chair
+with your arms.</p>
+                                <p className="spc">Repeat 2 to 3 times. Gradually build up to 10 times.</p>
+                                
+                                </div>
+                     
                         </div>
                         <div className="video_container" style={{width:'70%'}}>
                             <ReactPlayer

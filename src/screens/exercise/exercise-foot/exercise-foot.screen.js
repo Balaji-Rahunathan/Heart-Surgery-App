@@ -64,9 +64,20 @@ export default class ExerciseFoot extends React.Component {
                             style={{ position: 'absolute', left: '0', top: '0' }}
                         />
                         <div className="exercise_head">
-                            <h1>Exercises After Cardiac Surgery</h1>
-                            <div className="head_text">The Corono arteries of the heart are the left corona artery, right corona artery and circumflex artery. The Corono arteries of the heart are left corona artery, right corona artery and circumflex artery.</div>
-                        </div>
+                            <h1>Side Bending</h1>
+                            <div className="head_text">
+                                <p>SStarting position: Stand up straight and tall, feet
+slightly apart, arms loose by your side.</p>
+                                <p className="spc">a) Slowly bend to the left allowing your arm to slide
+down your leg.</p>
+                                <p className="spc">b) Repeat to the right side.</p>
+                                <p className="spc">Repeat 2 to 3 times.</p>
+                                <p className="spc">Note: Try to make this a pure movement to the
+side. Imagine you are trying to slide between 2
+panes of glass so that you don’t lean forward or
+backwards.</p>
+                                </div>
+                                </div>
                         <div className="video_container" style={{width:'70%'}}>
                             <ReactPlayer
                                 width="100%"

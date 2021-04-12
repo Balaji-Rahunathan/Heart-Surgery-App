@@ -64,8 +64,16 @@ export default class ExerciseLeg extends React.Component {
                             style={{ position: 'absolute', left: '0', top: '0' }}
                         />
                         <div className="exercise_head">
-                            <h1>Exercises After Cardiac Surgery</h1>
-                            <div className="head_text">The Corono arteries of the heart are the left corona artery, right corona artery and circumflex artery. The Corono arteries of the heart are left corona artery, right corona artery and circumflex artery.</div>
+                            <h1>leg swings</h1>
+                            <div className="head_text">
+                                <p>Starting Position: Stand, holding on to the back of
+a chair with your right hand.</p>
+                                <p className="spc">a) Swing your left leg forward and back in a smooth
+relaxed motion. Keep your back straight.</p>
+                                <p className="spc">b) Keep your knee relaxed, it will bend slightly.</p>
+                                <p className="spc">c) Turn and repeat with your right leg.</p>
+                                <p className="spc">Repeat 2 to 3 times.</p>
+                                </div>
                         </div>
                         <div className="video_container" style={{width:'70%'}}>
                             <ReactPlayer

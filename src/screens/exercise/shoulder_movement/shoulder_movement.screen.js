@@ -64,8 +64,17 @@ export default class shoulderMovement extends React.Component {
                             style={{ position: 'absolute', left: '0', top: '0' }}
                         />
                         <div className="exercise_head">
-                            <h1>Exercises After Cardiac Surgery</h1>
-                            <div className="head_text">The Corono arteries of the heart are the left corona artery, right corona artery and circumflex artery. The Corono arteries of the heart are left corona artery, right corona artery and circumflex artery.</div>
+                            <h1>shoulder girdle exercises</h1>
+                            <div className="head_text">
+                                <p>Starting Position: Sit up straight and tall in an upright
+chair.</p>
+                                <p className="spc">a) Shrug shoulders up to ears and gently ease
+them back down.</p>
+                                <p className="spc">b) Make big circles by rolling the shoulders forward
+and then backwards.</p>
+                                <p className="spc">Repeat 2 to 3 times.</p>
+                                
+                                </div>
                         </div>
                         <div className="video_container" style={{width:'70%'}}>
                             <ReactPlayer

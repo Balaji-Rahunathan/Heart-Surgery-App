@@ -1,5 +1,5 @@
 import React from 'react';
-import Video from '../../../assets/video/ex6.mp4';
+import Video from '../../../assets/video/hand_main.mp4';
 import Button from '../../../assets/images/Buuton.svg';
 import SwipeBlack from '../../../assets/images/swipe-arrow.svg';
 import ReactPlayer from 'react-player';
@@ -64,8 +64,20 @@ export default class ExerciseHandsUp extends React.Component {
                             style={{ position: 'absolute', left: '0', top: '0' }}
                         />
                         <div className="exercise_head">
-                            <h1>Exercises After Cardiac Surgery</h1>
-                            <div className="head_text">The Corono arteries of the heart are the left corona artery, right corona artery and circumflex artery. The Corono arteries of the heart are left corona artery, right corona artery and circumflex artery.</div>
+                            <h1>Arm raising</h1>
+                            {/* <div className="head_text">The Corono arteries of the heart are t
+                            he left corona artery, right corona artery and circumflex artery. The 
+                            Corono arteries of the heart are left corona artery, right corona artery
+                             and circumflex artery.</div> */}
+                            <div className="head_text">
+                                <p>Starting Position: Sit up straight and tall in an
+upright chair.</p>
+                                <p className="spc">Lift both arms out to the side and up over your
+head. Try to clap your hands together. Do not use
+jerky movements.</p>
+                                
+                                <p className="spc">Repeat 2 to 3 times.</p>
+                                </div>
                         </div>
                         <div className="video_container" style={{width:'70%'}}>
                             <ReactPlayer
