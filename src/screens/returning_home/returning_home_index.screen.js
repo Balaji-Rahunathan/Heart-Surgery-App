@@ -11,7 +11,7 @@ const ReturningHomeIndex = () => {
                     <p className="returning_home_index_head_text">Returning Home</p>
                 </div>
                 <div className="returning_home_index_content">
-                    <p className="returning_home_index_content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor justo </p>
+                    {/* <p className="returning_home_index_content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor justo </p> */}
                 </div>
             </div>
         // </Container>

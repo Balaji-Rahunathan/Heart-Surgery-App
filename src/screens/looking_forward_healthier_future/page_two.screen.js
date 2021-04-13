@@ -229,11 +229,7 @@ const PageTwo = (props) => {
                 <div className="slider_container">
                     <div className="pts_content_container">
                         <p className="pts_content_text" style={{ paddingTop: "2em" }}>
-                            You have a higher
-                            risk of heart problems and diabetes than
-                            some- one whose extra weight is mostly
-                            on their hips and thighs – pear shaped
-                            (see pictures opposite).
+                            
                             Your body weight in relation to your
                             height is called your Body mass index or
                             Bmi. Look at the height and weight chart
@@ -420,6 +416,8 @@ important thing is to take action.
                             example a portion of meat is the size of a
                             pack of cards).
                         </p>
+                        <p className="blue-clrf">seek advice from a dietitian to
+help you lose weight.</p>
                     </div>
                 </div>
 
