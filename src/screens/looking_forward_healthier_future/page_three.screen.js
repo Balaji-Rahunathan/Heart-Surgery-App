@@ -275,7 +275,7 @@ const PageThree = (props) => {
 
                 <div className="slider_container">
                     <div className="pths_content_container clryloo">
-                        <p className="pths_content_text"></p>‘Binge drinking’ is having five or more
+                        <p className="pths_content_text">‘Binge drinking’ is having five or more
                         standard drinks in one sitting for men and
                         four or more standard drinks in one sitting for women.</p>
                         <p className="pths_content_text">How much is a standard drink of alcohol?</p>
