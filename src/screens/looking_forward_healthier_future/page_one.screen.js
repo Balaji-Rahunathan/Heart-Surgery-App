@@ -294,7 +294,7 @@ const PageOne = (props) => {
                             slower and less satisfying, but safer and
                             less addictive than cigarettes.
                         </p>
-                        <p className="pos_content_text" style={{ paddingTop: "2em" }}>
+                        <p className="pos_content_text blue-clro" style={{ paddingTop: "2em" }}>
                             NRT is available to medical card holders,
                             and without prescription for everyone,
                             from your pharmacist. For further
@@ -405,7 +405,7 @@ const PageOne = (props) => {
                             levels of these are also damaging to the
                             heart.
                         </p>
-                        <p className="pos_content_text">
+                        <p className="pos_content_text blue-clrr">
                             The goal is to have a low total cholesterol
                             level, a low level of LDL and a high level
                             of hDL.

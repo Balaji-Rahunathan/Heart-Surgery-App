@@ -90,7 +90,9 @@ const PageTwo = (props) => {
                         </p>
                     </div>
 
-                    <div className="pts_title_container">
+                   
+                     <div className="blue-clr">  
+                         <div className="pts_title_container">
                         <p className="pts_title_text">
                             How often should I have my
                             fasting cholesterol re-checked
@@ -104,6 +106,8 @@ const PageTwo = (props) => {
                             Talk to your GP.
                         </p>
                     </div>
+                    </div>
+                    
                 </div>
 
                 <div className="slider_container">
@@ -201,15 +205,15 @@ const PageTwo = (props) => {
                         <img src={BeingOverweight} alt="body_shape" className="pts_image"></img>
                     </div>
                     <div className="pts_content_container">
-                        <p className="pts_content_text">
+                        <p className="pts_content_text lfh">
                             To find out if you are overweight ask
                             yourself two questions.
                         </p>
-                        <p className="pts_content_text">
+                        <p className="pts_content_text lfh2">
                             where is most of the fat on my body
                             stored?
                         </p>
-                        <p className="pts_content_text">
+                        <p className="pts_content_text lfh2">
                             what is my body weight in relation to my
                             height?
                         </p>
@@ -251,14 +255,13 @@ const PageTwo = (props) => {
                     </div>
                     <div className="pts_content_container">
                         <p className="pts_content_text">
-                            The blood test to check your cholesterol,
-                            LDL cholesterol, HDL cholesterol and
-                            triglycerides is called a lipoprotein profile.
-                            The test is most accurate when taken after
-                            you have fasted for 12 hours (e.g.
-                            overnight). Speak to your cardiologist
-                            before leaving hospital to find out what
-                            YOUR cholesterol goal is.
+                        You may be shocked to learn that you are
+overweight. Almost 60% of all Irish adults
+are in this category. Even if you are only
+7 pounds (3 kg) overweight you have a
+greater chance of health problems compared
+to a person who is not overweight. The
+important thing is to take action.
                         </p>
                     </div>
 

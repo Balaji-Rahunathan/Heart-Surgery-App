@@ -99,18 +99,24 @@ const HomExerciseAfterSurgery = (props) => {
                                     are working by asking yourself four
                                     questions:
                             </p>
-                                <p className="heas_content_text heas_text_padding">
+                               <div className="blue-clri"> 
+                                   <p className="heas_content_text heas_text_padding">
                                     1. Can I feel my angina symptoms (e.g.
                                     chest pain or tightness or shortness of
                                     breath) or palpitations?
                             </p>
                                 <p className="heas_content_text">
-                                    2. how
-                                    height: 100%;sing. You can also use the scale to
-                                    judge whether other activities such as
-                                    housework, gardening or returning to
-                                    work are ok for you or not.
+                                2. how breathless am I?
                             </p>
+
+                            <p className="heas_content_text">
+                            3. how warm do I feel?
+                            </p>
+
+                            <p className="heas_content_text">
+                            4. how tired do my muscles feel?
+                            </p>
+                            </div>
 
                             </div>
 

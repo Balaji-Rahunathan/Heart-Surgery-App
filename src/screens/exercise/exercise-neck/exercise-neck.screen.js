@@ -72,12 +72,7 @@ export default class ExerciseNeck extends React.Component {
                                 <p className="spc">b) Turn your head to look over your shoulder. Repeat to the other side.</p>
                                 <p className="spc">Repeat 2 to 3 times.</p>
 
-                                {/* The Corono arteries of the heart
-                                 are the left corona artery, right
-                                  corona artery and circumflex artery. 
-                                  The Corono arteries of the heart are 
-                                  left corona artery, right corona artery
-                                   and circumflex artery. */}
+                            
                                    </div>
                         </div>
                         <div className="video_container">

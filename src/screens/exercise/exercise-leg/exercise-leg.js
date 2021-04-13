@@ -64,7 +64,7 @@ export default class ExerciseLeg extends React.Component {
                             style={{ position: 'absolute', left: '0', top: '0' }}
                         />
                         <div className="exercise_head">
-                            <h1>leg swings</h1>
+                            <h1>Leg swings</h1>
                             <div className="head_text">
                                 <p>Starting Position: Stand, holding on to the back of
 a chair with your right hand.</p>

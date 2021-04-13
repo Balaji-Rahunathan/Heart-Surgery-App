@@ -255,7 +255,8 @@ const PageThree = (props) => {
                             can increase blood triglyc- erides, (a type
                             of bad fat) and your weight.
                         </p>
-                        <p className="pths_content_text" style={{ paddingTop: '1em' }}>if you do not drink if you do drink</p>
+                       <div className="clrylo"> 
+                           <p className="pths_content_text" style={{ paddingTop: '1em' }}>if you do not drink if you do drink</p>
                         <p className="pths_content_text">Do not start.</p>
                         <p className="pths_content_text">Keep within the limits.</p>
                         <p className="pths_content_text">Spread your intake over the week.</p>
@@ -268,12 +269,13 @@ const PageThree = (props) => {
                             units of alcohol per week.
                         </p>
                         <p className="pths_content_text">avoid binge drinking</p>
+                        </div>
                     </div>
                 </div>
 
                 <div className="slider_container">
-                    <div className="pths_content_container">
-                        <p className="pths_content_text" style={{ paddingTop: '5em' }}>‘Binge drinking’ is having five or more
+                    <div className="pths_content_container clryloo">
+                        <p className="pths_content_text"></p>‘Binge drinking’ is having five or more
                         standard drinks in one sitting for men and
                         four or more standard drinks in one sitting for women.</p>
                         <p className="pths_content_text">How much is a standard drink of alcohol?</p>
@@ -282,6 +284,16 @@ const PageThree = (props) => {
                         <p className="pths_content_text"><FiberManualRecordIcon style={{ fontSize: '10px' }} /> 100ml glass of wine</p>
                         <p className="pths_content_text"><FiberManualRecordIcon style={{ fontSize: '10px' }} /> Single pub measure of spirit / sherry. A home measure may really be a double or treble measure. Use a spirit measure and sugar free mixers.</p>
                     </div>
+
+                    <div className="pths_content_container">
+                        <p className="pths_content_text txtto">It is normally safe to take a small
+                            amount of alcohol while taking your
+                            heart drugs. if you are taking warfarin
+                            however, talk to your doctor for advice
+                            on drinking alcohol.</p>
+                        
+                    </div>
+
                     <div className="pths_head_container">
                         <p className="pths_head_text">
                             Physical inactivity
@@ -306,7 +318,7 @@ const PageThree = (props) => {
                 <div className="slider_container">
                     <div className="pths_title_container">
                         <p className="pths_title_text" style={{paddingTop:'4em'}}>
-                            why exercise?
+                            Why Exercise?
                         </p>
                     </div>
                     <div className="pths_content_container">
