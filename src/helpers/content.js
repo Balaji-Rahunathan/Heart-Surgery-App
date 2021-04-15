@@ -33,7 +33,7 @@ export const TheDayOfSurgery = {
             },
             ]
         },
-        
+
         {
             id: 2,
             title: "The Day of Surgery",
@@ -160,7 +160,7 @@ export const TheDayOfSurgery = {
 
 
 export const TheDayOfSurgeryTitles = {
-    titles: ["Night before Surgery", "The Day of Admission","The Day of Surgery", "Cardiac Intensive Care", "Equipment used during the surgery and in intensive care", "Possible complications during your recovery"]
+    titles: ["Night before Surgery", "The Day of Admission", "The Day of Surgery", "Cardiac Intensive Care", "Equipment used during the surgery and in intensive care", "Possible complications during your recovery"]
 
 }
 
@@ -207,7 +207,7 @@ export const TheDayOfSurgeryContents = {
 
 
 
-    
+
 
     {
         index: 2,
@@ -220,12 +220,12 @@ export const TheDayOfSurgeryContents = {
         index: 2,
         subtitle: "The Day of Surgery",
         description: `On the morning of your surgery your nurse will give you a hospital gown to wear. We will ask you to remove the following: \n
-        • False Teeth • Jewellery • Hairclips • Contact Lenses • Hairpieces • Artificial body parts • Nail Polish • Make-up • All underwear • Hearing aids`, 
-        
+        • False Teeth • Jewellery • Hairclips • Contact Lenses • Hairpieces • Artificial body parts • Nail Polish • Make-up • All underwear • Hearing aids`,
+
         image: require("../assets/images/The_Day_of_Surgery/Group_776.svg"),
         id: 6
     },
-    
+
     {
         index: 2,
         subtitle: "The Day of Surgery",
@@ -364,29 +364,29 @@ export const ReturningHomeContent = {
     title: "Getting back to normal",
     subtitle: null,
     data: [
-        
-        
+
+
         {
-        header: "Getting back to normal",
-        description: null,
-        content: "After your heart surgery you may find that your concentration is poor. This usually returns to normal during your recovery at home.Some people also find their memory is affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP. Some people also find their memory s affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP",
-        image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
-        button: true,
-    },
-    {
-        header: "Eating well as you recover",
-        description: null,
-        content: "Some people may have a poor appetite for a few days after surgery. If this persists for longer please ask your doctor or nurse to refer you to a dietitian.A healthy balanced diet is recommended as you recover. If you have been advised to lose weight after your surgery, you should wait until your wound has fully healed.This can take up to six weeks.Do not diet or lose weight during this period.See ‘Healthy Eating for a Healthy Heart’, page 34.",
-        image: require("../assets/images/Night_before_Surgery/Group_780.svg"),
-        button: true,
-    },
-    {
-        header: "Lifting",
-        description: null,
-        content: "Activities such as lifting, carrying, pushing and pulling will strain your heart and breastbone.Avoid them during your recovery period.Don’t lift anything over 10 – 15 lbs(4.5 – 7 kg) during your recovery.Ways to avoid this include using a trolley, using home delivery, sliding objects rather than lifting.Do not carry children or walk dogs during the first six weeks at home.Do not carry your cases, open stuck windows, unscrew jar lids or use corkscrews.",
-        image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
-        button: true,
-    }
+            header: "Getting back to normal",
+            description: null,
+            content: "After your heart surgery you may find that your concentration is poor. This usually returns to normal during your recovery at home.Some people also find their memory is affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP. Some people also find their memory s affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP",
+            image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
+            button: true,
+        },
+        {
+            header: "Eating well as you recover",
+            description: null,
+            content: "Some people may have a poor appetite for a few days after surgery. If this persists for longer please ask your doctor or nurse to refer you to a dietitian.A healthy balanced diet is recommended as you recover. If you have been advised to lose weight after your surgery, you should wait until your wound has fully healed.This can take up to six weeks.Do not diet or lose weight during this period.See ‘Healthy Eating for a Healthy Heart’, page 34.",
+            image: require("../assets/images/Night_before_Surgery/Group_780.svg"),
+            button: true,
+        },
+        {
+            header: "Lifting",
+            description: null,
+            content: "Activities such as lifting, carrying, pushing and pulling will strain your heart and breastbone.Avoid them during your recovery period.Don’t lift anything over 10 – 15 lbs(4.5 – 7 kg) during your recovery.Ways to avoid this include using a trolley, using home delivery, sliding objects rather than lifting.Do not carry children or walk dogs during the first six weeks at home.Do not carry your cases, open stuck windows, unscrew jar lids or use corkscrews.",
+            image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
+            button: true,
+        }
     ]
 }
 
@@ -459,14 +459,14 @@ export const calenderContents = [
         points: [`1. When will I be allowed drive?`, `2. When will I be allowed back to work?`, `3. When can I fly?`]
     },
     {
-        title: "Week",
+        title: "Week 12 Onwards",
         image: require('../assets/images/Resuming Home/Group 4.png'),
         content: [`Fishing`,
             `Golfing`,
             `swimming`,
             `Cycling`,
             `Continue walking programme.`],
-        contentTop:'The following activities may be resumed if you are able:`'    
+        contentTop: 'The following activities may be resumed if you are able:`'
 
     },
 
@@ -474,23 +474,6 @@ export const calenderContents = [
 
 
 export const returnHomeContent = [
-    {
-        title: 'Getting back to normal',
-        image: require('../assets/images/returning_home/Group 2.png'),
-        content: [`After your heart surgery you may find that
-            your concentration is poor. This usually
-            returns to normal during your recovery at
-            home. Some people also find their
-            memory is affected but this is usually
-            temporary and gradually resolves within
-            six months of your surgery. If this problem
-            persists please speak to your GP. Some
-            people also find their memory s affected
-            but this is usually temporary and
-            gradually resolves within six months of
-            your surgery. If this problem persists
-            please speak to your GP`]
-    },
     {
         title: 'Eating well as you recover',
         image: require('../assets/images/returning_home/Group 4.png'),
@@ -537,7 +520,7 @@ export const returnHomeContent = [
             weeks at home. Do not carry your cases,
             open stuck windows, unscrew jar lids or
             use corkscrews.`]
-    },    
+    },
     {
         title: 'Work',
         image: require('../assets/images/returning_home/Group 8.png'),
@@ -563,7 +546,7 @@ export const returnHomeContent = [
         stress test before you are permitted to
         drive.`,
             `Y ou must tell your insurance company
-        that you have had heart surgery.`]        
+        that you have had heart surgery.`]
     },
     {
         title: 'Sexual activity',
