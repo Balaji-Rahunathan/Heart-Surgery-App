@@ -1,12 +1,13 @@
-import React, { Component, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Container from '../../common_component/container/container.component';
 import './returning_home.screen.scss';
-import { returnHomeContent, ReturningHomeContent } from '../../helpers/content'
-import Group from '../../components/group/group.component';
+import { calenderContents } from '../../helpers/content'
 import ReturningHomeIndex from './returning_home_index.screen';
 import MenuButton from '../../common_component/menu_button/menu_button.component'
 import Sidebar from '../../components/sidebar/sidebar.component'
 import NextButton from '../../common_component/next_button/next_button.component';
+import Calender from '../../components/calender/calender.component';
+import ResumingHomeImage from '../../assets/images/Resuming Home/Group 2.svg'
 
 const ReturningHome = (props) => {
 
@@ -56,11 +57,9 @@ const ReturningHome = (props) => {
 
   return (
     <div className="returning_home_screen">
-
-      <div>
+      <div className="resuming_home_conatiner">
         <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
         <Container className="swiper_container">
-
           <div className="slider_container">
             <MenuButton
               background="white"
@@ -68,7 +67,6 @@ const ReturningHome = (props) => {
               onClick={handleMenuButtonClick}
               style={{ position: 'absolute', left: '0', top: '0' }}
             />
-
             <ReturningHomeIndex />
           </div>
 
@@ -84,14 +82,90 @@ const ReturningHome = (props) => {
             </div>
           </div>
 
+          <div className="slider_container">
+            <div className="resuming_home_title">
+              <p className="resuming_home_title_text">Resuming home activities after surgery</p>
+            </div>
+            <div className="resuming_home_image_container">
+              <img className="resuming_home_image" src={ResumingHomeImage} alt="resuming_home"></img>
+            </div>
+            <div className="resuming_home_content">
+              <p className="resuming_home_content_text">
+                The programme opposite is a sample
+                guide to help you find a balance, as you
+                return to your normal activities at home
+                following heart surgery.
+              </p>
+            </div>
+          </div>
+
+
+
+          <div className="slider_container">
+            <div className="resuming_home_content_container">
+              <div className="resuming_home_content_title">
+                <p className="resuming_home_content_title_text">Prioritise</p>
+              </div>
+              <div className="resuming_home_content">
+                <p className="resuming_home_content_text">
+                  Think about the tasks you do. Are they
+                  important? Can someone else do them?
+                  Can they be done more easily?
+                </p>
+              </div>
+            </div>
+            <div className="resuming_home_content_container">
+              <div className="resuming_home_content_title">
+                <p className="resuming_home_content_title_text">Plan </p>
+              </div>
+              <div className="resuming_home_content">
+                <p className="resuming_home_content_text">
+                  Plan your day and week, spread out
+                  activities and allow more time for difficult
+                  tasks. Continue to approach new activities
+                  gradually.
+                </p>
+              </div>
+            </div>
+            <div className="resuming_home_content_container">
+              <div className="resuming_home_content_title">
+                <p className="resuming_home_content_title_text">
+                  Pace yourself
+                </p>
+              </div>
+              <div className="resuming_home_content">
+                <p className="resuming_home_content_text">
+                  Take a rest every day. Take extra breaks
+                  during activities to gradually increase
+                  your strength and prevent you from
+                  feeling tired or strained. Continue with
+                  your exercises.
+                </p>
+              </div>
+            </div>
+
+            <div className="resuming_home_content_container">
+              <div className="resuming_home_content_title">
+                <p className="resuming_home_content_title_text">Positioning</p>
+              </div>
+              <div className="resuming_home_content">
+                <p className="resuming_home_content_text">
+                  Organise your workspace to conserve
+                  energy. Sit where possible, limit bending
+                  and reaching and use equipment such as
+                  long handle aids or trolleys to move
+                  objects.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {
-            returnHomeContent.map((data, index) => {
-              return (
-                <div className="slider_container">                 
-                  <Group {...data} />
-                </div>
-              )
-            })
+            calenderContents.map((data, index) => (
+              <div className="slider_container" key={index} >
+                <Calender {...data} />
+              </div>
+            ))
           }
 
           {
