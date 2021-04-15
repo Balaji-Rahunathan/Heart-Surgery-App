@@ -120,29 +120,29 @@ const PageTwo = (props) => {
                     <div className="pts_table_container">
                         <table className="pts_table">
                             <thead className="pts_table_head">
-                                <tr className="pts_table_head_tr">
+                                <tr className="pts_table_head_tr pts_th">
                                     <th>If you have coronary artery disease or diabetes</th>
                                     <th>General Goal</th>
                                     <th>Goal for you</th>
                                 </tr>
                             </thead>
                             <tbody className="pts_table_body">
-                                <tr className="pts_table_body_tr">
+                                <tr className="pts_table_body_tr pts_tr">
                                     <td>Total Cholesterol</td>
                                     <td> {`<`}4.0 </td>
                                     <td></td>
                                 </tr>
-                                <tr className="pts_table_body_tr">
+                                <tr className="pts_table_body_tr pts_tr">
                                     <td>LDL Cholesterol</td>
                                     <td> {`<`}1.8 </td>
                                     <td></td>
                                 </tr>
-                                <tr className="pts_table_body_tr">
+                                <tr className="pts_table_body_tr pts_tr">
                                     <td>HDL Cholesterol</td>
                                     <td> {`>`}1 (men) {`>`}1.2 (women)</td>
                                     <td></td>
                                 </tr>
-                                <tr className="pts_table_body_tr">
+                                <tr className="pts_table_body_tr pts_tr">
                                     <td>Triglycerides</td>
                                     <td> {`<`}1.7 </td>
                                     <td></td>
@@ -308,22 +308,22 @@ important thing is to take action.
                                 </tr>
                             </thead>
                             <tbody className="pts_table_body">
-                                <tr className="pts_table_body_tr">
+                                <tr className="pts_table_body_tr" style={{backgroundColor: '#fff26e'}}>
                                     <td>18.5-25</td>
                                     <td>Normal</td>
                                     <td>None</td>
                                 </tr>
-                                <tr className="pts_table_body_tr">
+                                <tr className="pts_table_body_tr" style={{backgroundColor: '#ffb962'}}>
                                     <td>25-30</td>
                                     <td>Overweight</td>
                                     <td>Increased</td>
                                 </tr>
-                                <tr className="pts_table_body_tr">
+                                <tr className="pts_table_body_tr" style={{backgroundColor: '#fea35c'}}>
                                     <td>30-40</td>
                                     <td>Obese</td>
                                     <td>High</td>
                                 </tr>
-                                <tr className="pts_table_body_tr">
+                                <tr className="pts_table_body_tr" style={{backgroundColor: '#fc8957'}}>
                                     <td> {`>`} 40</td>
                                     <td>Morbidly Very</td>
                                     <td>High Obese</td>
