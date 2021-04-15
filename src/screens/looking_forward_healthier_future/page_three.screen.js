@@ -6,6 +6,13 @@ import HealthyEating from '../../assets/images/looking_forward_healthier_future/
 import './page_three.screen.scss'
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import NextButton from '../../common_component/next_button/next_button.component';
+import Exec from '../../assets/images/update/cardio.svg'
+import Fish from '../../assets/images/update/fish.svg'
+import Fruit from '../../assets/images/update/fruit.svg'
+import Fat from '../../assets/images/update/fat.svg'
+import Sugar from '../../assets/images/update/sugar.svg'
+import Fiber from '../../assets/images/update/fibre.svg'
+import Salt from '../../assets/images/update/salt.svg'
 
 const PageThree = (props) => {
 
@@ -104,8 +111,16 @@ const PageThree = (props) => {
                         <p className="pths_title_text">
                             Eat more fish
                         </p>
+
+                        
                     </div>
                     <div className="pths_content_container">
+
+                    <div className="pths_head_container" style={{padding:'0em 4em 1em 4em'}}>
+                        <img src={Fish} alt="healthy_eating" className="pths_image" />
+                        </div> 
+
+
                         <p className="pths_content_text">
                             Fish is a great substitute for red meat, and
                             is our main source of omega 3, which
@@ -120,21 +135,27 @@ const PageThree = (props) => {
                             are not recommended even if you don’t
                             eat fish!
                         </p>
-                        <p className="pths_content_text">
-                            If you choose to take an omega 3
-                            supplement, check that it does not
-                            contain any other ingredients. Omega 3
-                            supple- ments should not be taken with
-                            some medications e.g. warfarin.
-                        </p>
+                      
                     </div>
 
+                   
+                    
+                </div>
+
+                <div className="slider_container">
                     <div className="pths_title_container">
                         <p className="pths_title_text" style={{ paddingTop: "1em" }}>
                             Eat more fruit and vegetables
                         </p>
+                        
                     </div>
                     <div className="pths_content_container">
+
+                    <div className="pths_head_container" style={{padding:'0em 4em 1em 4em'}}>
+                        <img src={Fruit} alt="healthy_eating" className="pths_image" />
+                        </div> 
+
+
                         <p className="pths_content_text">
                             Fruit and vegetables are a good source of
                             vitamins called antioxidants. These
@@ -145,12 +166,8 @@ const PageThree = (props) => {
                             which can help control cholesterol and
                             blood pressure.
                         </p>
-                    </div>
-                </div>
 
-                <div className="slider_container">
-                    <div className="pths_content_container">
-                        <p className="pths_content_text" style={{ paddingTop: '5em' }}>
+                        <p className="pths_content_text" style={{ paddingTop: '1em' }}>
                             Have a varied diet with at
                             least five portions of fruit and vegetables
                             a day. Frozen are as good as fresh. We
@@ -158,7 +175,12 @@ const PageThree = (props) => {
                             taking nutritional supplements instead of
                             eating fruit and vegetables.
                         </p>
+
                     </div>
+                </div>
+
+                <div className="slider_container">
+                    
 
                     <div className="pths_title_container">
                         <p className="pths_title_text" style={{ paddingTop: "1em" }}>
@@ -166,6 +188,11 @@ const PageThree = (props) => {
                         </p>
                     </div>
                     <div className="pths_content_container">
+
+                    <div className="pths_head_container" style={{padding:'0em 4em 1em 4em'}}>
+                        <img src={Fat} alt="healthy_eating" className="pths_image" />
+                        </div> 
+                        
                         <p className="pths_content_text">
                             Reducing the amount of fat you eat is
                             important to lose weight. Eating less
@@ -189,6 +216,11 @@ const PageThree = (props) => {
                         </p>
                     </div>
                     <div className="pths_content_container" style={{ marginTop: '0.5em' }}>
+
+                    <div className="pths_head_container" style={{padding:'0em 4em 1em 4em'}}>
+                        <img src={Sugar} alt="healthy_eating" className="pths_image" />
+                        </div> 
+                        
                         <p className="pths_content_text">
                             Read the tables to watch out for hidden
                             sugar particularly in foods marketed as
@@ -199,12 +231,19 @@ const PageThree = (props) => {
                             but honey is as fattening as sugar!
                         </p>
                     </div>
-                    <div className="pths_title_container">
+                </div>    
+                  <div className="slider_container" style={{ paddingTop: '2em' }}>
+                  <div className="pths_title_container">
                         <p className="pths_title_text">
                             Eat more fibre
                         </p>
                     </div>
-                    <div className="pths_content_container" style={{ marginTop: '0.5em' }}>
+                    <div className="pths_content_container" style={{ marginTop: '1em' }}>
+
+                    <div className="pths_head_container" style={{padding:'0em 4em 1em 4em'}}>
+                        <img src={Fiber} alt="healthy_eating" className="pths_image" />
+                        </div> 
+
                         <p className="pths_content_text">
                             Soluble fibre found in oats, pulses and
                             some fruit and vegetables can help to
@@ -215,12 +254,20 @@ const PageThree = (props) => {
                         <p className="pths_content_text"><FiberManualRecordIcon style={{ fontSize: '10px' }} /> High fibre breakfast cereals such as porridge, oat flakes and ‘no added sugar’ muesli are an excellent source of fibre.</p>
                         <p className="pths_content_text"><FiberManualRecordIcon style={{ fontSize: '10px' }} /> Try to include more pulses, peas, beans and lentils in your diet.</p>
                     </div>
-                    <div className="pths_title_container">
+                  </div>
+                   <div className="slider_container" style={{ paddingTop: '2em' }}>
+                   <div className="pths_title_container">
                         <p className="pths_title_text">
                             Eat less salt
                         </p>
                     </div>
                     <div className="pths_content_container" style={{ marginTop: '0.5em' }}>
+
+
+                    <div className="pths_head_container" style={{padding:'0em 4em 1em 4em'}}>
+                        <img src={Salt} alt="healthy_eating" className="pths_image" />
+                        </div> 
+
                         <p className="pths_content_text">
                             Do not add salt to your food. Replace salt
                             with pepper, herbs and spices. Try to
@@ -228,7 +275,8 @@ const PageThree = (props) => {
                             packet soups and bacon.
                         </p>
                     </div>
-                </div>
+                   </div>
+                
 
                 <div className="slider_container">
                     <div className="pths_head_container">
@@ -294,6 +342,11 @@ const PageThree = (props) => {
                         
                     </div>
 
+                    
+                </div>
+                
+
+                <div className="slider_container">
                     <div className="pths_head_container">
                         <p className="pths_head_text">
                             Physical inactivity
@@ -311,6 +364,22 @@ const PageThree = (props) => {
                             making time for regular physical activity
                             now can reduce your risk of heart and
                             health problems in the future.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="slider_container">
+                <div className="pths_head_container" style={{padding:'3em 4em 0 4em'}}>
+                <img src={Exec} alt="healthy_eating" className="pths_image" ></img>
+                    </div>
+
+                    <div className="pths_content_container">
+                        <p className="pths_content_text blue-clro">
+                        A highly recommended information and exercise training programme called Cardiac Rehabilitation,
+may be available in your area. It is very popular with heart patients as it has been shown to
+reduce anxiety, and to improve confidence, physical well-being and fitness. Please talk to the
+medical team if you would like to take part as it is available to people who have had most types
+of heart surgery.
                         </p>
                     </div>
                 </div>
@@ -345,6 +414,11 @@ const PageThree = (props) => {
                             Heart disease runs in families. Please
                             encourage your family to lead an active,
                             healthy, smoke-free lifestyle.
+                        </p>
+                        <p className="pths_content_text blue-clro">
+                        Build exercise into your daily life.
+The home walking programme on page 22
+will help you get started.
                         </p>
                     </div>
                 </div>

@@ -474,6 +474,71 @@ export const calenderContents = [
 
 
 export const returnHomeContent = [
+
+    {
+        title: 'The journey home',
+        image: require('../assets/images/update/car_home.svg'),
+        content: [`You will need someone to collect you from
+        the hospital. Sit in the front passenger seat
+        of the car. Wear your seat belt. This may be
+        a little uncomfortable so use a small cushion or towel to prevent the seat belt from
+        rubbing against your breast bone. Take
+        some painkillers before you go and remember to take regular breaks if your journey
+        home is long.`]
+    },
+
+    {
+        title: 'At home',
+        // image: require('../assets/images/update/car_home.svg'),
+        content: [`You may feel frightened, anxious and tired
+        returning home. This is normal and will pass
+        in time as you gain confidence. It is important
+        not to overdo things in the early stages. You
+        and your heart have been through a lot and
+        you need time to heal. Try to be patient with
+        yourself and not to worry.`]
+    },
+
+    {
+        // title: 'At home',
+        // image: require('../assets/images/update/car_home.svg'),
+        content: [`Your chest and leg wound may be sore for
+        up to six weeks as they are still healing.
+        Continue to take your painkillers. When you
+        feel the pain is getting better, gradually
+        reduce or stop them. First stop the afternoon
+        painkillers, then the morning ones. In order to
+        help you sleep well, stop the night time
+        painkillers last.`]
+    },
+
+    {
+        // title: 'At home',
+        // image: require('../assets/images/update/car_home.svg'),
+        content: [`If you had an artery taken from your arm or
+        chest, it is normal to experience some
+        numbness or tingling in your fingers or over
+        your left breast area for several months. Tell
+        your GP if you feel it is not improving or is
+        getting worse.`]
+    },
+
+    {
+        // title: 'At home',
+        // image: require('../assets/images/update/car_home.svg'),
+        content: [`Some people retain fluid after surgery and
+        may need to be on a low salt diet or take
+        water tablets. Weigh yourself each day. Do
+        this first thing in the morning after using the
+        toilet, while you are still in your night clothes.
+        Write down your weight so you have a daily
+        record. If you gain 2 lbs (1kg) or more for
+        two days in a row, you may be retaining fluid
+        and you will need to visit your GP to adjust
+        your medication.`]
+    },
+
+
     {
         title: 'Getting back to normal',
         image: require('../assets/images/returning_home/Group 2.png'),
