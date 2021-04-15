@@ -321,7 +321,7 @@ const PageThree = (props) => {
                     </div>
                 </div>
 
-                <div className="slider_container">
+                <div className="slider_container" style={{ paddingTop: '1em' }}>
                     <div className="pths_content_container clryloo">
                         <p className="pths_content_text">‘Binge drinking’ is having five or more
                         standard drinks in one sitting for men and
