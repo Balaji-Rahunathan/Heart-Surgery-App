@@ -1,0 +1,38 @@
+@import "../../index.scss";
+
+.mfyh_screen {
+    .mfyh_conatiner {
+        .mfyh_title_head {
+            .mfyh_title_text {
+                padding: 2.5em;
+                padding-top: 1em;
+                font-size: 20px;
+                color: $background_light_blue;
+                font-weight: 600;
+            }
+        }
+        .mfyh_image_container {
+            .mfyh_image {
+            }
+        }
+        .mfyh_content {
+            .mfyh_content_text {
+                text-align: left;
+                padding: 0 2em 0 2em;
+                font-size: 14px;
+            }
+        }
+
+        .mfyh_title {
+            .mfyh_title_text {
+                padding: 2.5em;
+                padding-top: 1em;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.mfyh_content_text.blue-clrii{background-color: #f6e58d;padding: 12px 0;border-radius: 12px;margin: 30px;}
+.mfyh_content_text.blue-clriii{background-color: #B6DEFF;padding: 12px 0;border-radius: 12px;margin: 30px;}
