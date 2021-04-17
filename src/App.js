@@ -27,6 +27,7 @@ import PageOne from './screens/looking_forward_healthier_future/page_one.screen'
 import PageTwo from './screens/looking_forward_healthier_future/page_two.screen';
 import PageThree from './screens/looking_forward_healthier_future/page_three.screen';
 import MedicationsForYourHeart from './screens/medications_for_your_heart/medications_for_your_heart';
+import UsefulAddresses from './screens/useful_addresses/useful_addresses';
 
 
 let App = props => {
@@ -91,6 +92,7 @@ let App = props => {
             <Route path="/page_two" component={PageTwo} />
             <Route path="/page_three" component={PageThree} />
             <Route path="/medications_for_your_heart" component={MedicationsForYourHeart} />
+            <Route path="/useful_addressess" component={UsefulAddresses} />
             <Route path="/" />
           </Switch>
         </BrowserRouter>
