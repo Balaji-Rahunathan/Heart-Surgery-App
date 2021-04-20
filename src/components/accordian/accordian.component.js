@@ -5,7 +5,6 @@ import Container from "../../common_component/container/container.component"
 import _ from 'lodash';
 import nightimg from "../../assets/images/Night_before_Surgery/Group_779.svg"
 
-
 const Accordian = (props) => {
   const [state, setState] = useSetState({})
   const slider = useRef(null);
@@ -28,7 +27,7 @@ const Accordian = (props) => {
   }, [])
 
   return (
-    <div className="accordian_wrapper">     
+    <div className="accordian_wrapper">
       <div className="content_container">
         <div className="table_container">
           <div className="table_header">Borg Scale</div>
