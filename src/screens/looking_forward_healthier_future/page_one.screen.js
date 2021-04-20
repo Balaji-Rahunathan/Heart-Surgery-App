@@ -8,6 +8,8 @@ import CigaretteImage from '../../assets/images/looking_forward_healthier_future
 import './page_one.screen.scss'
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import NextButton from '../../common_component/next_button/next_button.component';
+import Second from "../../assets/images/update/smoke.svg"
+import Third from "../../assets/images/update/smoketwo.svg"
 
 const PageOne = (props) => {
 
@@ -209,8 +211,11 @@ const PageOne = (props) => {
                 </div>
 
                 <div className="slider_container">
+                <div className="pos_image_container" style={{ paddingTop: "4em" }}>
+                        <img src={Second} alt="cigarette_image" className="pos_image"></img>
+                    </div>
                     <div className="pos_time_period_container" >
-                        <p className="pos_time_period_text" style={{ paddingTop: "4em" }}>After 24 hours</p>
+                        <p className="pos_time_period_text" >After 24 hours</p>
                     </div>
                     <div className="pos_content_container">
                         <p className="pos_content_text">
@@ -238,6 +243,13 @@ const PageOne = (props) => {
                             bronchial tubes relax. Energy levels
                             increase. 2em 1em 0
                         </p>
+                    </div>
+                </div>
+
+                <div className="slider_container">
+
+                <div className="pos_image_container" style={{ paddingTop: "4em" }}>
+                        <img src={Third} alt="cigarette_image" className="pos_image"></img>
                     </div>
 
                     <div className="pos_time_period_container">
@@ -322,7 +334,7 @@ const PageOne = (props) => {
                 </div>
 
                 <div className="slider_container">
-                    <div className="pos_sub_title_container" style={{ marginBottom: '0' }}>
+                    <div className="pos_sub_title_container" style={{ paddingTop:'4em', marginBottom: '0' }}>
                         <div className="pos_sub_title_text">
                             Smoking Cessation Services
                         </div>
@@ -340,7 +352,11 @@ const PageOne = (props) => {
                         <p className="pos_content_text"><FiberManualRecordIcon className="pos_points_icon" /> smoking Resource Officer Cork University hospital (087) 121 9633</p>
                     </div>
 
-                    <div className="pos_sub_title_container" style={{ marginTop: "0em", marginBottom: "0em" }}>
+                    
+                </div>
+
+                <div className="slider_container">
+                <div className="pos_sub_title_container" style={{paddingTop:'4em', marginTop: "0em", marginBottom: "0em" }}>
                         <div className="pos_sub_title_text">
                             High cholesterol
                         </div>

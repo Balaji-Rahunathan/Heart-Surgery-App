@@ -42,6 +42,12 @@ const Sidebar = ({ toggle, onClick, history }) => {
                             onClick={() => history.push('/looking_forward_healthier_future')}
                             className="menu_item">Looking forward healthier future</MenuItem
                         >
+
+                        <MenuItem
+                            onClick={() => history.push('/medications_for_your_heart')}
+                            className="menu_item">Medications For Your Heart</MenuItem
+                        >
+
                         <MenuItem
                             onClick={() => history.push('/')}
                             className="menu_item">Risk factor profile</MenuItem

@@ -175,7 +175,11 @@ const PageTwo = (props) => {
                             the spreads, milks or cheeses every day.
                         </p>
                     </div>
-                    <div className="pts_content_container" style={{ margin: "0.5em 1em 0.5em 1em" }}>
+                    
+                </div>
+
+                <div className="slider_container">
+                <div className="pts_content_container" style={{ paddingTop: '4em', margin: "0.5em 1em 0.5em 1em" }}>
                         <p className="pts_content_text">
                             Plant stanols / sterols can be taken with
                             cholesterol tablets but should never be
@@ -186,7 +190,7 @@ const PageTwo = (props) => {
                             further information.
                         </p>
                     </div>
-                    <div className="pts_content_container" style={{ margin: "0.5em 1em 0.5em 1em" }}>
+                    <div className="pts_content_container blue_box" style={{ margin: "0.5em 1em 0.5em 1em" }}>
                         <p className="pts_content_text">
                             If your cholesterol is high you should see
                             a dietitian who will give you the advice
