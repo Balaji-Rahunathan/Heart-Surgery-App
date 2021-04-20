@@ -51,6 +51,7 @@ const RelaxationTechniques = (props) => {
       }
     });
   }, []);
+  
   return (
     <div className="fyandyp_screen">
       <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
@@ -71,7 +72,7 @@ const RelaxationTechniques = (props) => {
             <div className="slider_container">
               <div className="fyandyp_title_container">
                 <p
-                  className="fyandyp_title_text"
+                  className="fyandyp_title_text rt_title_text"
                   style={{
                     fontWeight: "600",
                     fontSize: "22px",
@@ -121,7 +122,7 @@ const RelaxationTechniques = (props) => {
 
             <div className="slider_container">
               <div className="fyandyp_title_container">
-                <p className="fyandyp_title_text">Deep Breathing</p>
+                <p className="fyandyp_title_text rt_title_text">Deep Breathing</p>
               </div>
 
               <div className="fyandyp_image_container">
@@ -140,7 +141,7 @@ const RelaxationTechniques = (props) => {
 
             <div className="slider_container">
               <div className="fyandyp_title_container">
-                <p className="fyandyp_title_text">Body Focus</p>
+                <p className="fyandyp_title_text rt_title_text">Body Focus</p>
               </div>
 
               <div className="fyandyp_image_container">
@@ -160,7 +161,7 @@ const RelaxationTechniques = (props) => {
 
             <div className="slider_container">
               <div className="fyandyp_title_container">
-                <p className="fyandyp_title_text">Tense/relax</p>
+                <p className="fyandyp_title_text rt_title_text">Tense/relax</p>
               </div>
 
               <div className="fyandyp_image_container">
@@ -180,7 +181,7 @@ const RelaxationTechniques = (props) => {
 
             <div className="slider_container">
               <div className="fyandyp_title_container">
-                <p className="fyandyp_title_text">Shoulder rolls</p>
+                <p className="fyandyp_title_text rt_title_text">Shoulder rolls</p>
               </div>
 
               <div className="fyandyp_image_container">
@@ -200,7 +201,7 @@ const RelaxationTechniques = (props) => {
 
             <div className="slider_container">
               <div className="fyandyp_title_container">
-                <p className="fyandyp_title_text">imagery</p>
+                <p className="fyandyp_title_text rt_title_text">imagery</p>
               </div>
 
               <div className="fyandyp_image_container">
