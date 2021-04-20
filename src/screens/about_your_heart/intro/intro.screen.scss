@@ -321,6 +321,37 @@
     font-size: 16px;
     cursor: pointer;
   }
+
+  .intro_screen_button_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .next_button_container {
+      flex: 0.5;
+      .next_button {
+        width: 60px;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+      }
+    }
+
+    .prev_button_container {
+      flex: 0.5;
+      .prev_button {
+        width: 60px;
+        height: auto;
+
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -380,21 +411,21 @@
       padding: 30px 0 10px 0;
     }
 
-    .next_button {
-      width: 60px;
-      height: auto;
-      position: absolute;
-      left: 42%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    // .next_button {
+    //   width: 60px;
+    //   height: auto;
+    //   position: absolute;
+    //   left: 42%;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
 
-      transform: rotate(180deg);
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-    }
+    //   transform: rotate(180deg);
+    //   -webkit-transform: rotate(90deg);
+    //   -moz-transform: rotate(90deg);
+    //   -ms-transform: rotate(90deg);
+    //   -o-transform: rotate(90deg);
+    // }
     .blockage-container {
       position: absolute;
       top: 70%;
@@ -425,6 +456,43 @@
       // margin-top: 20px;
       font-size: 24px;
       padding-top: 0.8em;
+    }
+  }
+
+  .intro_screen_button_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .prev_button_container {
+      flex: 0.5;
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 1em;
+      .prev_button {
+        width: 60px;
+        height: auto;
+
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+      }
+    }
+    .next_button_container {
+      flex: 0.5;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 1em;
+      .next_button {
+        width: 60px;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+      }
     }
   }
 }
