@@ -701,6 +701,7 @@ export const returnHomeContent = [
         content: [``,
             `Try to get up at the same time each
             morning.`,
+            
             `Gradually reduce the number of naps
             you take during the day.`,
             `Wind down during the hours before
