@@ -15,7 +15,9 @@ const BeingOverweight = (props) => {
   const [showNextButton, setshowNextButton] = useState(false);
 
   const next = () => {
-    props.history.push("/looking_forward_healthier_future/healthy_eating_for_a_healthy_heart");
+    props.history.push(
+      "/looking_forward_healthier_future/healthy_eating_for_a_healthy_heart"
+    );
   };
 
   const handleMenuButtonClick = (data) => {
@@ -69,7 +71,17 @@ const BeingOverweight = (props) => {
 
         <div className="slider_container">
           <div className="pts_head_container">
-            <p className="pts_head_text">Being overweight</p>
+            <p
+              className="pts_head_text"
+              style={{
+                paddingRight: '1em',
+                fontWeight: "600",
+                fontSize: "24px",
+                color: "#00a1fb",
+              }}
+            >
+              Being overweight
+            </p>
           </div>
           <div className="pts_image_container">
             <img

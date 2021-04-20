@@ -70,7 +70,16 @@ const Smoking = (props) => {
 
         <div className="slider_container">
           <div className="pos_title_container">
-            <p className="pos_title_text">Smoking</p>
+            <p
+              className="pos_title_text"
+              style={{
+                fontWeight: "600",
+                fontSize: "24px",
+                color: "#00a1fb",
+              }}
+            >
+              Smoking
+            </p>
           </div>
           <div className="pos_image_container">
             <img
@@ -346,7 +355,7 @@ const Smoking = (props) => {
             </p>
           </div>
         </div>
-                
+
         {showNextButton && (
           <NextButton
             onClick={next}

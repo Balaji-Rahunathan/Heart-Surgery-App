@@ -73,7 +73,17 @@ const Alcohol = (props) => {
 
         <div className="slider_container">
           <div className="pths_head_container">
-            <p className="pths_head_text">Alcohol</p>
+            <p
+              className="pths_head_text"
+              style={{
+                fontWeight: "600",
+                fontSize: "24px",
+                color: "#00a1fb",
+                paddingRight: '3em'
+              }}
+            >
+              Alcohol
+            </p>
           </div>
           <div className="pths_title_container">
             <p className="pths_title_text">Too much alcohol</p>

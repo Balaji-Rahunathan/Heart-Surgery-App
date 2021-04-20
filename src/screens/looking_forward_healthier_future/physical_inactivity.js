@@ -70,10 +70,20 @@ const PhysicalInactivity = (props) => {
             <div class="progress-bar" id="myBar"></div>
           </div>
         </div>
-                
+
         <div className="slider_container">
           <div className="pths_head_container">
-            <p className="pths_head_text">Physical inactivity</p>
+            <p
+              className="pths_head_text"
+              style={{
+                paddingRight: "1em",
+                fontWeight: "600",
+                fontSize: "24px",
+                color: "#00a1fb",
+              }}
+            >
+              Physical inactivity
+            </p>
           </div>
 
           <div className="pths_content_container">

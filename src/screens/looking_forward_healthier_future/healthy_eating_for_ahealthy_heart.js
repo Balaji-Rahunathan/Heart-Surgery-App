@@ -73,7 +73,15 @@ const HealthyEatingForHealthyHeart = (props) => {
 
         <div className="slider_container">
           <div className="pths_head_container">
-            <p className="pths_head_text" style={{ paddingRight: "1em" }}>
+            <p
+              className="pths_head_text"
+              style={{
+                paddingRight: "1em",
+                fontWeight: "600",
+                fontSize: "20px",
+                color: "#00a1fb",
+              }}
+            >
               Healthy eating for a healthy heart
             </p>
           </div>
@@ -129,7 +137,7 @@ const HealthyEatingForHealthyHeart = (props) => {
 
         <div className="slider_container">
           <div className="pths_title_container">
-            <p className="pths_title_text" style={{ paddingTop: "1em" }}>
+            <p className="pths_title_text" style={{ paddingTop: "3em" }}>
               Eat more fruit and vegetables
             </p>
           </div>
@@ -160,7 +168,7 @@ const HealthyEatingForHealthyHeart = (props) => {
 
         <div className="slider_container">
           <div className="pths_title_container">
-            <p className="pths_title_text" style={{ paddingTop: "1em" }}>
+            <p className="pths_title_text" style={{ paddingTop: "3em" }}>
               Eat less fat
             </p>
           </div>
@@ -290,7 +298,7 @@ const HealthyEatingForHealthyHeart = (props) => {
             </p>
           </div>
         </div>
-        
+
         {showNextButton && (
           <NextButton
             onClick={next}
