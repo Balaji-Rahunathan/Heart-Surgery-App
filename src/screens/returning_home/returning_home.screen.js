@@ -15,7 +15,7 @@ const ReturningHome = (props) => {
   const [showNextButton, setshowNextButton] = useState(false)
 
   const next = () => {
-    props.history.push('/resuming_home');
+    props.history.push('/returning_home/resuming_home');
   }
 
   const handleMenuButtonClick = (data) => {

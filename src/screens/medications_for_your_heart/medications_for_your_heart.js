@@ -15,7 +15,7 @@ const MedicationsForYourHeart = (props) => {
   const [showNextButton, setshowNextButton] = useState(false);
 
   const next = () => {
-    props.history.push("/");
+    props.history.push("/useful_addressess");
   };
 
   const handleMenuButtonClick = (data) => {

@@ -7,7 +7,9 @@
     background-repeat:round;
 
   .returning_home_index_head {
-      padding: 5em 2em 0 2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
     .returning_home_index_head_text {
         font-size: 24px;
         text-align: left;

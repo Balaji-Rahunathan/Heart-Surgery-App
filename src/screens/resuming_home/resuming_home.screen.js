@@ -13,7 +13,7 @@ const ResumingHome = (props) => {
     const [showNextButton, setshowNextButton] = useState(false)
 
     const next = () => {
-        props.history.push('/home_exercise_after_surgery');
+        props.history.push('/returning_home/home_exercise_after_surgery');
     }
 
     const handleMenuButtonClick = (data) => {
@@ -24,6 +24,9 @@ const ResumingHome = (props) => {
     useEffect(() => {
         var timerId;
         let el = document.querySelector(".swiper_container")
+        console.log(el)
+        el.scrollTo = 0
+        el.scrollTop = 0
 
         el.addEventListener("scroll", () => {
             var elwinScroll = el.scrollTop;
