@@ -155,7 +155,7 @@ const Timeline = (props) => {
                     </div> : null}
             </div>
             {
-                state.currentIndex === props.data.data.length - 1 && index === 21 && <NextButton onClick={next} style={{ position: "absolute", top: "auto", left: 'auto', bottom: '10px', right: '10px', zIndex:"20" }} />
+                state.currentIndex === props.data.data.length - 1 && index === 24 && <NextButton onClick={next} style={{ position: "absolute", top: "auto", left: 'auto', bottom: '10px', right: '10px', zIndex:"20" }} />
             }
         </div>
     )
