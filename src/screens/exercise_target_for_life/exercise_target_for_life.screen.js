@@ -12,7 +12,7 @@ const ExerciseTargetForLife = (props) => {
     const [toggle, settoggle] = useState(false)
     const [showNextButton, setshowNextButton] = useState(false)
     const next = () => {
-        props.history.push('/for_you_and_your_partner');
+        props.history.push('/returning_home/for_you_and_your_partner');
     }
     const handleMenuButtonClick = (data) => {
         settoggle(data)
