@@ -9,6 +9,7 @@ import LoseWeight from "../../assets/images/looking_forward_healthier_future/Gro
 import "./page_two.screen.scss";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import NextButton from "../../common_component/next_button/next_button.component";
+import { Link } from "react-router-dom";
 
 const BeingOverweight = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -74,7 +75,7 @@ const BeingOverweight = (props) => {
             <p
               className="pts_head_text"
               style={{
-                paddingRight: '1em',
+                paddingRight: "1em",
                 fontWeight: "600",
                 fontSize: "24px",
                 color: "#00a1fb",
@@ -306,7 +307,13 @@ const BeingOverweight = (props) => {
             </p>
             <p className="pts_content_text">
               <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Eat a
-              healthy diet, see page 34.
+              healthy diet,{" "}
+              <Link
+                to="/looking_forward_healthier_future/healthy_eating_for_a_healthy_heart"
+                style={{ textDecoration: "none" }}
+              >
+                see page 34.
+              </Link>
             </p>
           </div>
         </div>
