@@ -30,8 +30,9 @@ const Sidebar = ({ toggle, onClick, history }) => {
             iconColor="#00A1FB"
             type="close"
             onClick={() => onClick(false)}
+            style={{position:'absolute', zIndex:'10'}}
           />
-          <Menu style={{ textAlign: "left" }}>
+          <Menu style={{ textAlign: "left", marginTop: '4em' }}>
             <MenuItem
               onClick={() => history.push("/about_your_heart")}
               className="menu_item"
