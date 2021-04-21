@@ -29,11 +29,19 @@ const YourHeartSurgeryGuide = (props) => {
 
                     <div className="yhsg_menu" onClick={() => props.history.push('/looking_forward_healthier_future')}>
                         <p className="yhsg_menu_text">Looking forward healthier future</p>
-                    </div>                    
-
-                    <div className="yhsg_menu" onClick={() => props.history.push('/your_heart_surgery_guide')}>
-                        <p className="yhsg_menu_text">Risk factor profile</p>
                     </div>
+
+                    <div className="yhsg_menu" onClick={() => props.history.push('/medications_for_your_heart')}>
+                        <p className="yhsg_menu_text">Medications For Your Heart</p>
+                    </div>
+
+                    <div className="yhsg_menu" onClick={() => props.history.push('/useful_addressess')}>
+                        <p className="yhsg_menu_text">Useful Addresses</p>
+                    </div>
+
+                    {/* <div className="yhsg_menu" onClick={() => props.history.push('/your_heart_surgery_guide')}>
+                        <p className="yhsg_menu_text">Risk factor profile</p>
+                    </div> */}
 
                 </div>
             </Container>

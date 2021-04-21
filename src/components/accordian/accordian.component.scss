@@ -63,6 +63,9 @@
 
     .accordian_container {
       width: 80%;
+      .accordian_icon{
+        float: right;
+      }
     }
 
     .accordion {
@@ -119,6 +122,12 @@
     .active,
     .accordion:hover {
       background-color: transparent;
+    }
+
+    .active{
+      .accordian_icon{
+        transform: rotate(180deg);
+      }
     }
 
     .panel {

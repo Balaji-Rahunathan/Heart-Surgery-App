@@ -4,7 +4,6 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import Container from '../../common_component/container/container.component';
 
 const Group = (props) => {
-    console.log(props)
     const { title, image, content, style, title2, content2 } = props
     return (
         <div className="group_container" style={style}>

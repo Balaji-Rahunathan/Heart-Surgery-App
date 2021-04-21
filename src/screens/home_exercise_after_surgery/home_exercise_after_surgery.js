@@ -13,7 +13,7 @@ const HomExerciseAfterSurgery = (props) => {
     const [toggle, settoggle] = useState(false)
     const [showNextButton, setshowNextButton] = useState(false)
     const next = () => {
-        props.history.push('/exercise_target_for_life');
+        props.history.push('/returning_home/exercise_target_for_life');
     }
     const handleMenuButtonClick = (data) => {
         settoggle(data)
