@@ -14,7 +14,7 @@ import ExerciseTargetForLife from "./screens/exercise_target_for_life/exercise_t
 import ForYouAndYourPartner from "./screens/for_you_and_your_partner/for_you_and_your_partner.screen";
 import ManagingYourRiskFactors from "./screens/managing_your_risk_factors/managing_your_risk_factors.screen";
 import YourHeartSurgeryGuide from "./screens/your_heart_surgery_guide/your_heart_surgery_guide.screen";
-import ExerciseFoot from "./screens/exercise/exercise-foot/exercise-foot.screen";
+import ExerciseFoot from "./sscreens/exercise/exercise-foot/exercise-foot.screen";
 import ExerciseUpperBody from "./screens/exercise/exercise-upper-body/exercise-upper-body";
 import ExerciseLeg from "./screens/exercise/exercise-leg/exercise-leg";
 import ExerciseSquat from "./screens/exercise/exercise-squat/exercise-squat.screen";
