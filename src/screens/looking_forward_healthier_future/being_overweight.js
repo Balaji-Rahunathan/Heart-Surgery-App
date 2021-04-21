@@ -253,7 +253,7 @@ const BeingOverweight = (props) => {
               src={BodyShape}
               alt="body_shape"
               className="pts_image"
-              style={{ width: "50%" }}
+              style={{ width: "35%" }}
             ></img>
           </div>
           <div className="pts_table_container">

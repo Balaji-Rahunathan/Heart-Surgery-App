@@ -177,7 +177,7 @@ const HealthyEatingForHealthyHeart = (props) => {
               className="pths_head_container"
               style={{ padding: "0em 4em 1em 4em" }}
             >
-              <img src={Fat} alt="healthy_eating" className="pths_image" />
+              <img src={Fat} alt="healthy_eating" className="pths_image" style={{width: '70%'}} />
             </div>
 
             <p className="pths_content_text">
