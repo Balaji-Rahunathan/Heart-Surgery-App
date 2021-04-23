@@ -8,6 +8,9 @@ import Sitting from "../../assets/images/update/sitting.svg";
 import Exec from "../../assets/images/update/relax.svg";
 import Eat from "../../assets/images/update/eat.svg";
 import Leg from "../../assets/images/update/leg.svg";
+import Chest from "../../assets/images/update/chest.svg";
+import Dress from "../../assets/images/update/dress.svg";
+
 
 const AfterSurgery = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -171,6 +174,17 @@ const AfterSurgery = (props) => {
               >
                 Care of the healing chest wound
               </p>
+              <div
+                className="resuming_home_image_container"
+                style={{ textAlign: "center" }}
+              >
+                <img
+                  className="resuming_home_image"
+                  src={Chest}
+                  alt="resuming_home"
+                  style={{ maxWidth: "200px", paddingTop: "16px" }}
+                ></img>
+              </div>
               <p
                 className="resuming_home_content_text"
                 style={{ paddingTop: "10px" }}
@@ -187,9 +201,9 @@ const AfterSurgery = (props) => {
 
           <div
             className="slider_container"
-            style={{ display: "block", paddingTop: "4em" }}
+            style={{ display: "block", paddingTop: "4em"}}
           >
-            <div className="resuming_home_content">
+            <div className="resuming_home_content" style={{backgroundColor:'#ffe98f', padding:'20px 0', width:'80%', margin:'0 auto', borderRadius:'10px' }}>
               <p
                 className="resuming_home_content_text"
                 style={{ fontWeight: "bold", paddingTop: "10px" }}
@@ -347,6 +361,19 @@ const AfterSurgery = (props) => {
               >
                 Washing and dressing
               </p>
+
+              <div
+                className="resuming_home_image_container"
+                style={{ textAlign: "center" }}
+              >
+                <img
+                  className="resuming_home_image"
+                  src={Dress}
+                  alt="resuming_home"
+                  style={{ maxWidth: "200px", paddingTop: "16px" }}
+                ></img>
+              </div>
+
               <p
                 className="resuming_home_content_text"
                 style={{ paddingTop: "10px" }}

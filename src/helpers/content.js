@@ -200,6 +200,7 @@ export const TheDayOfSurgeryTitles = {
     "The Day of Surgery",
     "Cardiac Intensive Care",
     "Equipment used during the surgery and in intensive care",
+   "A wounded heart does heal",
     "Possible complications during your recovery",
   ],
 };
@@ -398,43 +399,73 @@ export const TheDayOfSurgeryContents = {
       image: require("../assets/images/cardiac_intensive_care_tool/An_Oxygen_Mask_or_Nasal_Prongs.svg"),
       id: 21,
     },
+
     {
       index: 5,
-      subtitle: "Possible complications during your recovery",
-      description: "Nausea (feeling sick)",
-      image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-01.svg"),
+      subtitle: "A wounded heart does heal",
+      description:
+        "In order to operate on your heart, the surgeon must make a cut into the front of your chest and divide your breast bone (sternum). If you are having coronary heart surgery, then an incision will also be made into your leg or arm to remove a blood vessel, which the surgeon will use to bypass the blockages in your coronary arteries.",
+      image: require("../assets/images/update/strech2.png"),
       id: 22,
     },
     {
       index: 5,
-      subtitle: "Possible complications during your recovery",
-      description: "Constipation",
-      image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-02.svg"),
+      subtitle: "A wounded heart does heal",
+      description:
+        "After your operation, the surgeon will use special surgical wire to set the breastbone again. This wire is very strong and will stay in your body forever. You can’t feel these wires but they will show up on a chest x-ray. The cut in your skin is stitched, stapled or glued together and covered with a dressing. You will have a scar which will fade as it heals. . your breastbone usually takes six weeks or more to heal.",
+        image: require("../assets/images/update/strech.png"),
       id: 23,
     },
     {
       index: 5,
+      subtitle: "A wounded heart does heal",
+      description:
+        "During the first few days after surgery your chest, leg or arm wounds may be sore. Please tell your nurse if you are sore. We will give you painkillers at regular intervals, to ease the soreness and make moving around easier. Some people may experience a tingling feeling over their chest and arm when the arteries from these areas are used for the bypass. Your wound may feel itchy, lumpy or numb and you may notice swelling and bruising. These symptoms are a normal part of healing and will disappear in the weeks following surgery",
+        image: require("../assets/images/update/heart medication-3.svg"),
+      id: 24,
+    },
+
+
+
+
+
+    {
+      index: 6,
+      subtitle: "Possible complications during your recovery",
+      description: "Nausea (feeling sick)",
+      image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-01.svg"),
+      id: 25,
+    },
+    {
+      index: 6,
+      subtitle: "Possible complications during your recovery",
+      description: "Constipation",
+      image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-02.svg"),
+      id: 26,
+    },
+    {
+      index: 6,
       subtitle: "Possible complications during your recovery",
       description:
         "Tiredness, forgetfulness and lack of concentration. This may persist for a couple of weeks after surgery, and usually improves with time and rest.",
       image: require("../assets/images/Possible_complications_during_your_recovery/Group_815.svg"),
-      id: 24,
+      id: 27,
     },
     {
-      index: 5,
+      index: 6,
       subtitle: "Possible complications during your recovery",
       description:
         "Occasionally, people may experience vivid dreams or become confused and disorientated after surgery. Do not worry if this happens to you as it is a side effect of the surgery and will pass.",
       image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-03.svg"),
-      id: 25,
+      id: 28,
     },
     {
-      index: 5,
+      index: 6,
       subtitle: "Possible complications during your recovery",
       description:
         "Atrial Fibrillation. This is an irregular heartbeat which may make you feel weak, sweaty or have palpitations.",
       image: require("../assets/images/update/heart-run.svg"),
-      id: 26,
+      id: 29,
     },
   ],
 };
