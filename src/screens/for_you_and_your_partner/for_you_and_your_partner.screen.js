@@ -17,6 +17,8 @@ import Fist from "../../assets/images/update/fist.svg";
 const ForYouAndYourPartner = (props) => {
   const [toggle, settoggle] = useState(false);
   const [showNextButton, setshowNextButton] = useState(false);
+  const [load, setLoad] = useState(false);
+
   const next = () => {
     props.history.push("/returning_home/relaxation_techniques");
   };
@@ -26,30 +28,33 @@ const ForYouAndYourPartner = (props) => {
   useEffect(() => {
     var timerId;
     let el = document.querySelector(".swiper_container");
-    el.addEventListener("scroll", () => {
-      var elwinScroll = el.scrollTop;
-      var elheight = el.scrollHeight - el.clientHeight;
-      var elscrolled = (elwinScroll / elheight) * 100;
-      console.log(elwinScroll, elheight, elscrolled);
-      document.getElementById("myBar").style.width = elscrolled + "%";
-      if (elscrolled > 92) {
-        if (timerId) {
-          return;
+    setTimeout(() => {
+      el.addEventListener("scroll", () => {
+        var elwinScroll = el.scrollTop;
+        var elheight = el.scrollHeight - el.clientHeight;
+        var elscrolled = (elwinScroll / elheight) * 100;
+        // console.log(elwinScroll, elheight, elscrolled)
+        document.getElementById("myBar").style.width = elscrolled + "%";
+        if (elscrolled > 92) {
+          if (timerId) {
+            return;
+          }
+          timerId = setTimeout(function () {
+            setshowNextButton(true);
+            timerId = undefined;
+          }, 500);
+        } else {
+          if (timerId) {
+            return;
+          }
+          timerId = setTimeout(function () {
+            setshowNextButton(false);
+            timerId = undefined;
+          }, 500);
         }
-        timerId = setTimeout(function () {
-          setshowNextButton(true);
-          timerId = undefined;
-        }, 500);
-      } else {
-        if (timerId) {
-          return;
-        }
-        timerId = setTimeout(function () {
-          setshowNextButton(false);
-          timerId = undefined;
-        }, 500);
-      }
-    });
+      });
+      setLoad(true)
+    }, 1000);
   }, []);
   return (
     <div className="fyandyp_screen">
@@ -95,117 +100,125 @@ const ForYouAndYourPartner = (props) => {
               </div>
             </div>
 
-            <div className="slider_container">
-              <div className="fyandyp_title_container">
-                <p className="fyandyp_title_text">
-                  Managing your feelings as you recover
+            {
+              load && (
+                <>
+
+                  <div className="slider_container">
+                    <div className="fyandyp_title_container">
+                      <p className="fyandyp_title_text">
+                        Managing your feelings as you recover
                 </p>
-              </div>
+                    </div>
 
-              <div className="fyandyp_image_container">
-                <img src={RecoverImage} className="fyandyp_image"></img>
-              </div>
+                    <div className="fyandyp_image_container">
+                      <img src={RecoverImage} className="fyandyp_image"></img>
+                    </div>
 
-              <div className="fyandyp_image_content_container">
-                <p className="fyandyp_image_content_text">
-                  Some people may have a poor appetite for a few days after
-                  surgery. If this persists for longer please ask your doctor or
-                  nurse to refer you to a dietitian. A healthy balanced diet is
-                  recommended as you recover. If you have been advised to lose
-                  weight after your surgery, you should wait until your wound
-                  has fully healed. This can take up to six weeks. Do not diet
-                  or lose weight during this period. See ‘Healthy Eating for a
-                  Healthy Heart’, page 34.
+                    <div className="fyandyp_image_content_container">
+                      <p className="fyandyp_image_content_text">
+                        Some people may have a poor appetite for a few days after
+                        surgery. If this persists for longer please ask your doctor or
+                        nurse to refer you to a dietitian. A healthy balanced diet is
+                        recommended as you recover. If you have been advised to lose
+                        weight after your surgery, you should wait until your wound
+                        has fully healed. This can take up to six weeks. Do not diet
+                        or lose weight during this period. See ‘Healthy Eating for a
+                        Healthy Heart’, page 34.
                 </p>
-              </div>
-            </div>
+                    </div>
+                  </div>
 
-            <div className="slider_container">
-              <div className="fyandyp_sub_content_container">
-                <div className="fyandup_sub_content_head_container">
-                  <p className="fyandup_sub_content_head_text">
-                    Try to balance your feelings by:
+                  <div className="slider_container">
+                    <div className="fyandyp_sub_content_container">
+                      <div className="fyandup_sub_content_head_container">
+                        <p className="fyandup_sub_content_head_text">
+                          Try to balance your feelings by:
                   </p>
-                </div>
-                <div className="fyandup_sub_content_title_container">
-                  <p className="fyandup_sub_content_title_text">
-                    1. Getting involved in your medical treatment:
+                      </div>
+                      <div className="fyandup_sub_content_title_container">
+                        <p className="fyandup_sub_content_title_text">
+                          1. Getting involved in your medical treatment:
                   </p>
-                </div>
-                <div className="fyandup_sub_content_container">
-                  <p className="fyandup_sub_content_text">
-                    Ask questions about your condition and your recovery. Decide
-                    to make your lifestyle healthier.
+                      </div>
+                      <div className="fyandup_sub_content_container">
+                        <p className="fyandup_sub_content_text">
+                          Ask questions about your condition and your recovery. Decide
+                          to make your lifestyle healthier.
                   </p>
-                </div>
+                      </div>
 
-                <div className="fyandup_sub_content_title_container">
-                  <p className="fyandup_sub_content_title_text">
-                    2. Involve your partner, family and friends:
+                      <div className="fyandup_sub_content_title_container">
+                        <p className="fyandup_sub_content_title_text">
+                          2. Involve your partner, family and friends:
                   </p>
-                </div>
-                <div className="fyandup_sub_content_container">
-                  <p className="fyandup_sub_content_text">
-                    Talk to them. If you explain your feelings, people will be
-                    in a better position to support you when you need support,
-                    give you “space” when you need space and understand what’s
-                    going on with you.
+                      </div>
+                      <div className="fyandup_sub_content_container">
+                        <p className="fyandup_sub_content_text">
+                          Talk to them. If you explain your feelings, people will be
+                          in a better position to support you when you need support,
+                          give you “space” when you need space and understand what’s
+                          going on with you.
                   </p>
-                </div>
+                      </div>
 
-                <div className="fyandup_sub_content_title_container">
-                  <p className="fyandup_sub_content_title_text">
-                    3. Regain your social life as much as possible:
+                      <div className="fyandup_sub_content_title_container">
+                        <p className="fyandup_sub_content_title_text">
+                          3. Regain your social life as much as possible:
                   </p>
-                </div>
-                <div className="fyandup_sub_content_container">
-                  <p className="fyandup_sub_content_text">
-                    Friends can be a great support. They can help you return to
-                    normal and lend a listening ear outside of the home.
+                      </div>
+                      <div className="fyandup_sub_content_container">
+                        <p className="fyandup_sub_content_text">
+                          Friends can be a great support. They can help you return to
+                          normal and lend a listening ear outside of the home.
                   </p>
-                </div>
-              </div>
-            </div>
+                      </div>
+                    </div>
+                  </div>
 
-            <div className="slider_container">
-              <div className="fyandyp_title_container">
-                <p className="fyandyp_title_text">Depression</p>
-              </div>
+                  <div className="slider_container">
+                    <div className="fyandyp_title_container">
+                      <p className="fyandyp_title_text">Depression</p>
+                    </div>
 
-              <div className="fyandyp_image_container">
-                <img src={DepressionImage} className="fyandyp_image"></img>
-              </div>
+                    <div className="fyandyp_image_container">
+                      <img src={DepressionImage} className="fyandyp_image"></img>
+                    </div>
 
-              <div className="fyandyp_image_content_container">
-                <p className="fyandyp_image_content_text">
-                  Depression is common after heart surgery, especially if you
-                  have been troubled by depression before. It is normal to
-                  experience good days and bad days as you recover. On a bad day
-                  you may have to push your- self to get out of bed and be
-                  tearful. You may avoid meeting people and may not feel like
-                  talking with friends. These feelings are common but for most
-                  people, only temporary. Push yourself a little if you feel
-                  this way. Tell your family exactly how you are feeling. If you
-                  feel this way continuously for three to four weeks, you may be
-                  depressed. Please see your GP as you may need a short course
-                  of treatment. You can also contact your local cardiac
-                  rehabilitation team for follow up advice and counselling.
+                    <div className="fyandyp_image_content_container">
+                      <p className="fyandyp_image_content_text">
+                        Depression is common after heart surgery, especially if you
+                        have been troubled by depression before. It is normal to
+                        experience good days and bad days as you recover. On a bad day
+                        you may have to push your- self to get out of bed and be
+                        tearful. You may avoid meeting people and may not feel like
+                        talking with friends. These feelings are common but for most
+                        people, only temporary. Push yourself a little if you feel
+                        this way. Tell your family exactly how you are feeling. If you
+                        feel this way continuously for three to four weeks, you may be
+                        depressed. Please see your GP as you may need a short course
+                        of treatment. You can also contact your local cardiac
+                        rehabilitation team for follow up advice and counselling.
                 </p>
-              </div>
-            </div>           
+                    </div>
+                  </div>
 
-            {showNextButton && (
-              <NextButton
-                onClick={next}
-                style={{
-                  position: "fixed",
-                  top: "auto",
-                  bottom: "20px",
-                  left: "auto",
-                  right: "20px",
-                }}
-              />
-            )}
+                  {showNextButton && (
+                    <NextButton
+                      onClick={next}
+                      style={{
+                        position: "fixed",
+                        top: "auto",
+                        bottom: "20px",
+                        left: "auto",
+                        right: "20px",
+                      }}
+                    />
+                  )}
+
+                </>
+              )
+            }
           </Container>
         </div>
       </div>

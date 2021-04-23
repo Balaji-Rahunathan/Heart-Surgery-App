@@ -17,6 +17,7 @@ import Salt from "../../assets/images/update/salt.svg";
 const Alcohol = (props) => {
   const [toggle, settoggle] = useState(false);
   const [showNextButton, setshowNextButton] = useState(false);
+  const [load, setLoad] = useState(false);
 
   const next = () => {
     props.history.push("/looking_forward_healthier_future/physical_inactivity");
@@ -29,30 +30,33 @@ const Alcohol = (props) => {
   useEffect(() => {
     var timerId;
     let el = document.querySelector(".swiper_container");
-    el.addEventListener("scroll", () => {
-      var elwinScroll = el.scrollTop;
-      var elheight = el.scrollHeight - el.clientHeight;
-      var elscrolled = (elwinScroll / elheight) * 100;
-      console.log(elwinScroll, elheight, elscrolled);
-      document.getElementById("myBar").style.width = elscrolled + "%";
-      if (elscrolled > 92) {
-        if (timerId) {
-          return;
+    setTimeout(() => {
+      el.addEventListener("scroll", () => {
+        var elwinScroll = el.scrollTop;
+        var elheight = el.scrollHeight - el.clientHeight;
+        var elscrolled = (elwinScroll / elheight) * 100;
+        // console.log(elwinScroll, elheight, elscrolled)
+        document.getElementById("myBar").style.width = elscrolled + "%";
+        if (elscrolled > 92) {
+          if (timerId) {
+            return;
+          }
+          timerId = setTimeout(function () {
+            setshowNextButton(true);
+            timerId = undefined;
+          }, 500);
+        } else {
+          if (timerId) {
+            return;
+          }
+          timerId = setTimeout(function () {
+            setshowNextButton(false);
+            timerId = undefined;
+          }, 500);
         }
-        timerId = setTimeout(function () {
-          setshowNextButton(true);
-          timerId = undefined;
-        }, 500);
-      } else {
-        if (timerId) {
-          return;
-        }
-        timerId = setTimeout(function () {
-          setshowNextButton(false);
-          timerId = undefined;
-        }, 500);
-      }
-    });
+      });
+      setLoad(true);
+    }, 1000);
   }, []);
 
   return (
@@ -79,7 +83,7 @@ const Alcohol = (props) => {
                 fontWeight: "600",
                 fontSize: "24px",
                 color: "#00a1fb",
-                paddingRight: '3em'
+                paddingRight: "3em",
               }}
             >
               Alcohol
@@ -119,54 +123,59 @@ const Alcohol = (props) => {
           </div>
         </div>
 
-        <div className="slider_container" style={{ paddingTop: "1em" }}>
-          <div className="pths_content_container clryloo">
-            <p className="pths_content_text">
-              ‘Binge drinking’ is having five or more standard drinks in one
-              sitting for men and four or more standard drinks in one sitting
-              for women.
-            </p>
-            <p className="pths_content_text">
-              How much is a standard drink of alcohol?
-            </p>
-            <p className="pths_content_text">
-              One standard drink / unit is equal to:
-            </p>
-            <p className="pths_content_text">
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Half a pint
-              of beer (Please note; a pint of beer is two units)
-            </p>
-            <p className="pths_content_text">
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} /> 100ml glass
-              of wine
-            </p>
-            <p className="pths_content_text">
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Single pub
-              measure of spirit / sherry. A home measure may really be a double
-              or treble measure. Use a spirit measure and sugar free mixers.
-            </p>
-          </div>
+        {load && (
+          <>
+            <div className="slider_container" style={{ paddingTop: "1em" }}>
+              <div className="pths_content_container clryloo">
+                <p className="pths_content_text">
+                  ‘Binge drinking’ is having five or more standard drinks in one
+                  sitting for men and four or more standard drinks in one
+                  sitting for women.
+                </p>
+                <p className="pths_content_text">
+                  How much is a standard drink of alcohol?
+                </p>
+                <p className="pths_content_text">
+                  One standard drink / unit is equal to:
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Half a
+                  pint of beer (Please note; a pint of beer is two units)
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> 100ml
+                  glass of wine
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Single
+                  pub measure of spirit / sherry. A home measure may really be a
+                  double or treble measure. Use a spirit measure and sugar free
+                  mixers.
+                </p>
+              </div>
 
-          <div className="pths_content_container">
-            <p className="pths_content_text txtto">
-              It is normally safe to take a small amount of alcohol while taking
-              your heart drugs. if you are taking warfarin however, talk to your
-              doctor for advice on drinking alcohol.
-            </p>
-          </div>
-        </div>
+              <div className="pths_content_container">
+                <p className="pths_content_text txtto">
+                  It is normally safe to take a small amount of alcohol while
+                  taking your heart drugs. if you are taking warfarin however,
+                  talk to your doctor for advice on drinking alcohol.
+                </p>
+              </div>
+            </div>
 
-        {showNextButton && (
-          <NextButton
-            onClick={next}
-            style={{
-              position: "fixed",
-              top: "auto",
-              bottom: "20px",
-              left: "auto",
-              right: "20px",
-            }}
-          />
+            {showNextButton && (
+              <NextButton
+                onClick={next}
+                style={{
+                  position: "fixed",
+                  top: "auto",
+                  bottom: "20px",
+                  left: "auto",
+                  right: "20px",
+                }}
+              />
+            )}
+          </>
         )}
       </Container>
     </div>
