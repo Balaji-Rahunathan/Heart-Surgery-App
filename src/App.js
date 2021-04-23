@@ -33,6 +33,7 @@ import BeingOverweight from "./screens/looking_forward_healthier_future/being_ov
 import HealthyEatingForHealthyHeart from "./screens/looking_forward_healthier_future/healthy_eating_for_ahealthy_heart";
 import PhysicalInactivity from "./screens/looking_forward_healthier_future/physical_inactivity";
 import AfterSurgery from "./screens/after_surgery/after_surgery.screen";
+import WoundedHeartDoesHeal from "./screens/preparing_for_your_surgery/wounded_heart_does_heal";
 
 let App = (props) => {
   function getWindowDimensions() {
@@ -62,7 +63,7 @@ let App = (props) => {
 
   if (
     toInteger(useWindowDimensions().width) /
-      toInteger(useWindowDimensions().height) >
+    toInteger(useWindowDimensions().height) >
     1
   ) {
     return (
@@ -80,6 +81,7 @@ let App = (props) => {
             <Route exact path="/" component={YourHeartSurgeryGuide} />
             <Route exact path="/about_your_heart" component={intro} />
             <Route exact path="/after_surgery" component={AfterSurgery} />
+            <Route exact path="/wounded_heart_does_heal" component={WoundedHeartDoesHeal} />
             <Route exact path="/exercise" component={Exercise} />
             <Route exact path="/neck" component={ExerciseNeck} />
             <Route exact path="/harm" component={ExerciseHarm} />
