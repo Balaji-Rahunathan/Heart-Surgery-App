@@ -145,6 +145,11 @@ let App = (props) => {
             <Route
               exact
               path="/looking_forward_healthier_future"
+              component={ManagingYourRiskFactors}
+            />
+            <Route
+              exact
+              path="/looking_forward_healthier_future/smoking"
               component={Smoking}
             />
             <Route
