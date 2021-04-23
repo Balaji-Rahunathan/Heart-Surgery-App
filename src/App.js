@@ -32,6 +32,7 @@ import Alcohol from "./screens/looking_forward_healthier_future/alcohol";
 import BeingOverweight from "./screens/looking_forward_healthier_future/being_overweight";
 import HealthyEatingForHealthyHeart from "./screens/looking_forward_healthier_future/healthy_eating_for_ahealthy_heart";
 import PhysicalInactivity from "./screens/looking_forward_healthier_future/physical_inactivity";
+import AfterSurgery from "./screens/after_surgery/after_surgery.screen";
 
 let App = (props) => {
   function getWindowDimensions() {
@@ -78,6 +79,7 @@ let App = (props) => {
           <Switch>
             <Route exact path="/" component={YourHeartSurgeryGuide} />
             <Route exact path="/about_your_heart" component={intro} />
+            <Route exact path="/after_surgery" component={AfterSurgery} />
             <Route exact path="/exercise" component={Exercise} />
             <Route exact path="/neck" component={ExerciseNeck} />
             <Route exact path="/harm" component={ExerciseHarm} />

@@ -95,18 +95,19 @@ const PhysicalInactivity = (props) => {
               for regular physical activity now can reduce your risk of heart
               and health problems in the future.
             </p>
+            <div
+            className="pths_head_container"
+            style={{ padding: "2em 2em 0 2em" }}
+          >
+            <img src={Exec} alt="healthy_eating" className="pths_image"></img>
+          </div>
           </div>
         </div>
 
         <div className="slider_container">
-          <div
-            className="pths_head_container"
-            style={{ padding: "3em 4em 0 4em" }}
-          >
-            <img src={Exec} alt="healthy_eating" className="pths_image"></img>
-          </div>
+          
 
-          <div className="pths_content_container">
+          <div className="pths_content_container" style={{paddingTop:'2em'}}>
             <p className="pths_content_text blue-clro">
               A highly recommended information and exercise training programme
               called Cardiac Rehabilitation, may be available in your area. It
@@ -117,11 +118,8 @@ const PhysicalInactivity = (props) => {
               surgery.
             </p>
           </div>
-        </div>
-
-        <div className="slider_container">
           <div className="pths_title_container">
-            <p className="pths_title_text" style={{ paddingTop: "4em" }}>
+            <p className="pths_title_text" style={{ paddingTop: "2em" }}>
               Why Exercise?
             </p>
           </div>
@@ -158,6 +156,10 @@ const PhysicalInactivity = (props) => {
               the way you feel about yourself.
             </p>
           </div>
+        </div>
+
+        <div className="slider_container">
+         
 
           <div className="pths_title_container">
             <p className="pths_title_text" style={{ paddingTop: "1em" }}>
