@@ -5,6 +5,9 @@ import MenuButton from "../../common_component/menu_button/menu_button.component
 import Sidebar from "../../components/sidebar/sidebar.component";
 import NextButton from "../../common_component/next_button/next_button.component";
 import Sitting from "../../assets/images/update/sitting.svg";
+import Exec from "../../assets/images/update/relax.svg";
+import Eat from "../../assets/images/update/eat.svg";
+import Leg from "../../assets/images/update/leg.svg";
 
 const AfterSurgery = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -261,6 +264,19 @@ const AfterSurgery = (props) => {
               >
                 Care of the healing leg wound
               </p>
+
+              <div
+                className="resuming_home_image_container"
+                style={{ textAlign: "center" }}
+              >
+                <img
+                  className="resuming_home_image"
+                  src={Leg}
+                  alt="resuming_home"
+                  style={{ maxWidth: "200px", paddingTop: "16px" }}
+                ></img>
+              </div>
+
               <p
                 className="resuming_home_content_text"
                 style={{ paddingTop: "10px" }}
@@ -290,6 +306,19 @@ const AfterSurgery = (props) => {
               >
                 Eating and drinking
               </p>
+
+              <div
+                className="resuming_home_image_container"
+                style={{ textAlign: "center" }}
+              >
+                <img
+                  className="resuming_home_image"
+                  src={Eat}
+                  alt="resuming_home"
+                  style={{ maxWidth: "200px", paddingTop: "16px" }}
+                ></img>
+              </div>
+
               <p
                 className="resuming_home_content_text"
                 style={{ paddingTop: "10px" }}
@@ -380,6 +409,19 @@ const AfterSurgery = (props) => {
               >
                 Exercise in Hospital
               </p>
+
+              <div
+                className="resuming_home_image_container"
+                style={{ textAlign: "center" }}
+              >
+                <img
+                  className="resuming_home_image"
+                  src={Exec}
+                  alt="resuming_home"
+                  style={{ maxWidth: "200px", paddingTop: "16px" }}
+                ></img>
+              </div>
+
               <p
                 className="resuming_home_content_text"
                 style={{ paddingTop: "10px" }}
@@ -405,14 +447,14 @@ const AfterSurgery = (props) => {
 
               <p
                 className="resuming_home_content_text"
-                style={{ paddingTop: "10px" }}
+                style={{ paddingTop: "10px",fontWeight:'bolder' }}
               >
                 The average progression is as follows:
               </p>
 
               <p
                 className="resuming_home_content_text"
-                style={{ paddingTop: "10px" }}
+                style={{ paddingTop: "10px" ,fontWeight:'bold'}}
               >
                 Day 1
               </p>
@@ -424,7 +466,7 @@ const AfterSurgery = (props) => {
               </p>
               <p
                 className="resuming_home_content_text"
-                style={{ paddingTop: "10px" }}
+                style={{ paddingTop: "10px" ,fontWeight:'bold'}}
               >
                 Day 2
               </p>
@@ -436,7 +478,7 @@ const AfterSurgery = (props) => {
               </p>
               <p
                 className="resuming_home_content_text"
-                style={{ paddingTop: "10px" }}
+                style={{ paddingTop: "10px" ,fontWeight:'bold'}}
               >
                 Day 3 – 5
               </p>
@@ -450,7 +492,7 @@ const AfterSurgery = (props) => {
               </p>
               <p
                 className="resuming_home_content_text"
-                style={{ paddingTop: "10px" }}
+                style={{ paddingTop: "10px" ,fontWeight:'bold'}}
               >
                 Day 5 – 7
               </p>
