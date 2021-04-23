@@ -30,7 +30,7 @@ const Sidebar = ({ toggle, onClick, history }) => {
             iconColor="#00A1FB"
             type="close"
             onClick={() => onClick(false)}
-            style={{position:'absolute', zIndex:'10'}}
+            style={{ position: 'absolute', zIndex: '10' }}
           />
           <Menu style={{ textAlign: "left", marginTop: '4em' }}>
             <MenuItem
@@ -57,9 +57,8 @@ const Sidebar = ({ toggle, onClick, history }) => {
             {/* Returning Home */}
             <SubMenu
               title="Returning Home"
-              className={`submenu_item ${
-                path.includes("returning_home") && "active"
-              }`}
+              className={`submenu_item ${path.includes("returning_home") && "active"
+                }`}
               defaultOpen={path.includes("returning_home")}
             >
               <MenuItem
@@ -111,14 +110,22 @@ const Sidebar = ({ toggle, onClick, history }) => {
             {/* Looking forward to a healthier future */}
             <SubMenu
               title="Looking forward to a healthier future"
-              className={`submenu_item ${
-                path.includes("looking_forward_healthier_future") && "active"
-              }`}
+              className={`submenu_item ${path.includes("looking_forward_healthier_future") && "active"
+                }`}
               defaultOpen={path.includes("looking_forward_healthier_future")}
             >
               <MenuItem
                 onClick={() =>
                   history.push("/looking_forward_healthier_future")
+                }
+                className="menu_item"
+              >
+                Managing your Risk Factors
+              </MenuItem>
+
+              <MenuItem
+                onClick={() =>
+                  history.push("/looking_forward_healthier_future/smoking")
                 }
                 className="menu_item"
               >
