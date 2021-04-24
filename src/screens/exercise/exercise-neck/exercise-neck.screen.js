@@ -75,7 +75,7 @@ export default class ExerciseNeck extends React.Component {
                             
                                    </div>
                         </div>
-                        <div className="video_container">
+                        <div className="video_container" style={{maxWidth:'200px'}}>
                             <ReactPlayer
                                 width="100%"
                                 height="100%"

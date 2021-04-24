@@ -66,7 +66,7 @@ export default class ExerciseFoot extends React.Component {
                         <div className="exercise_head">
                             <h1>Side Bending</h1>
                             <div className="head_text">
-                                <p>SStarting position: Stand up straight and tall, feet
+                                <p>Starting position: Stand up straight and tall, feet
 slightly apart, arms loose by your side.</p>
                                 <p className="spc">a) Slowly bend to the left allowing your arm to slide
 down your leg.</p>
@@ -78,7 +78,7 @@ panes of glass so that you don’t lean forward or
 backwards.</p>
                                 </div>
                                 </div>
-                        <div className="video_container" style={{width:'70%'}}>
+                        <div className="video_container" style={{maxWidth:'300px'}}>
                             <ReactPlayer
                                 width="100%"
                                 height="100%"

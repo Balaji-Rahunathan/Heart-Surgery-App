@@ -13,6 +13,7 @@ import Fat from "../../assets/images/update/fat.svg";
 import Sugar from "../../assets/images/update/sugar.svg";
 import Fiber from "../../assets/images/update/fibre.svg";
 import Salt from "../../assets/images/update/salt.svg";
+import Family from "../../assets/images/update/family.svg";
 
 const PhysicalInactivity = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -166,6 +167,15 @@ const PhysicalInactivity = (props) => {
               Family History of Coronary Artery Disease
             </p>
           </div>
+
+          <div
+            className="pths_head_container"
+            style={{ padding: "2em 2em 0 2em" }}
+          >
+            <img src={Family} alt="healthy_eating" className="pths_image"></img>
+          </div>
+
+
           <div className="pths_content_container">
             <p className="pths_content_text">
               Heart disease runs in families. Please encourage your family to

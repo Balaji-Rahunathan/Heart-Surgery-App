@@ -10,6 +10,9 @@ import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import NextButton from "../../common_component/next_button/next_button.component";
 import Second from "../../assets/images/update/smoke.svg";
 import Third from "../../assets/images/update/smoketwo.svg";
+import Fat from "../../assets/images/update/cholestrol.svg";
+import Obis from "../../assets/images/update/obis.svg";
+
 
 const HighCholesterol = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -83,9 +86,21 @@ const HighCholesterol = (props) => {
             className="pos_bold_text_container"
             style={{ textAlign: "left" }}
           >
+
+<div
+            className="pths_head_container"
+            style={{ padding: "2em 2em 0 2em" }}
+          >
+            <img src={Obis} alt="healthy_eating" className="pths_image"></img>
+          </div>
+
+
             <p className="pos_bold_text">What is Cholesterol?</p>
           </div>
-          <div className="pos_content_container">
+
+         
+          
+          <div className="pos_content_container" style={{paddingTop:'1em'}}>
             <p className="pos_content_text">
               Cholesterol is a fatty substance found in the blood. A certain
               amount of cholesterol is important for a healthy body, however too
@@ -110,6 +125,9 @@ const HighCholesterol = (props) => {
               There are two types of lipoproteins in the blood:
             </p>
           </div>
+
+
+          
           <div className="pos_content_container">
             <p className="pos_content_text">
               Low density lipoproteins (LDL – or bad cholesterol). LDL helps to
@@ -146,6 +164,14 @@ const HighCholesterol = (props) => {
             <p className="pts_title_text" style={{ paddingTop: "4em" }}>
               How to check your cholesterol and triglyceride levels?
             </p>
+
+            <div
+            className="pths_head_container"
+            style={{ padding: "2em 2em 0 2em" }}
+          >
+            <img src={Fat} alt="healthy_eating" className="pths_image"></img>
+          </div>
+
           </div>
           <div className="pts_content_container">
             <p className="pts_content_text">
@@ -157,7 +183,12 @@ const HighCholesterol = (props) => {
             </p>
           </div>
 
-          <div className="blue-clr">
+          
+        </div>
+
+        <div className="slider_container" style={{paddingTop:'3em'}}>
+
+        <div className="blue-clr">
             <div className="pts_title_container">
               <p className="pts_title_text">
                 How often should I have my fasting cholesterol re-checked after
@@ -171,11 +202,9 @@ const HighCholesterol = (props) => {
               </p>
             </div>
           </div>
-        </div>
 
-        <div className="slider_container">
           <div className="pts_title_container">
-            <p className="pts_title_text" style={{ paddingTop: "4em" }}>
+            <p className="pts_title_text" style={{ paddingTop: "2em" }}>
               Understanding your lipoprotein Profile
             </p>
           </div>
@@ -245,9 +274,31 @@ const HighCholesterol = (props) => {
               cheeses every day.
             </p>
           </div>
+
+          <div
+            className="pts_content_container"
+            style={{ paddingTop: "1em", margin: "0.5em 1em 0.5em 1em" }}
+          >
+            <p className="pts_content_text">
+              Plant stanols / sterols can be taken with cholesterol tablets but
+              should never be taken instead of them. This is because cholesterol
+              tablets bring benefits other than just reducing cholesterol.
+              Please speak to your dietitian or doctor for further information.
+            </p>
+          </div>
+          <div
+            className="pts_content_container blue_box"
+            style={{ margin: "0.5em 1em 0.5em 1em" }}
+          >
+            <p className="pts_content_text">
+              If your cholesterol is high you should see a dietitian who will
+              give you the advice that is right for you.
+            </p>
+          </div>
+
         </div>
 
-        <div className="slider_container">
+        {/* <div className="slider_container">
           <div
             className="pts_content_container"
             style={{ paddingTop: "4em", margin: "0.5em 1em 0.5em 1em" }}
@@ -268,7 +319,7 @@ const HighCholesterol = (props) => {
               give you the advice that is right for you.
             </p>
           </div>
-        </div>
+        </div> */}
 
         {showNextButton && (
           <NextButton

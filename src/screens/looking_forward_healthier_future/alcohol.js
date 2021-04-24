@@ -13,6 +13,7 @@ import Fat from "../../assets/images/update/fat.svg";
 import Sugar from "../../assets/images/update/sugar.svg";
 import Fiber from "../../assets/images/update/fibre.svg";
 import Salt from "../../assets/images/update/salt.svg";
+import Alcoholl from "../../assets/images/update/drink.svg";
 
 const Alcohol = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -88,6 +89,15 @@ const Alcohol = (props) => {
           <div className="pths_title_container">
             <p className="pths_title_text">Too much alcohol</p>
           </div>
+
+          <div className="mfyh_image_container">
+              <img
+                className="mfyh_image" style={{width:'70%'}}
+                src={Alcoholl}
+                alt="mfyh"
+              ></img>
+            </div>
+
           <div className="pths_content_container">
             <p className="pths_content_text">
               There is some evidence that drinking a small amount of alcohol
@@ -98,7 +108,13 @@ const Alcohol = (props) => {
               is also very high in calories and can increase blood triglyc-
               erides, (a type of bad fat) and your weight.
             </p>
-            <div className="clrylo">
+           
+          </div>
+        </div>
+
+        <div className="slider_container" style={{ paddingTop: "1em" }}>
+
+        <div className="pths_content_container clryloo">
               <p className="pths_content_text" style={{ paddingTop: "1em" }}>
                 if you do not drink if you do drink
               </p>
@@ -116,10 +132,7 @@ const Alcohol = (props) => {
               </p>
               <p className="pths_content_text">avoid binge drinking</p>
             </div>
-          </div>
-        </div>
 
-        <div className="slider_container" style={{ paddingTop: "1em" }}>
           <div className="pths_content_container clryloo">
             <p className="pths_content_text">
               ‘Binge drinking’ is having five or more standard drinks in one

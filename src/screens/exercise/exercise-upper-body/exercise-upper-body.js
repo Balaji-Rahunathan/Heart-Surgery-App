@@ -77,7 +77,7 @@ with your arms.</p>
                                 </div>
                      
                         </div>
-                        <div className="video_container" style={{width:'70%'}}>
+                        <div className="video_container" style={{maxWidth:'300px'}}>
                             <ReactPlayer
                                 width="100%"
                                 height="100%"

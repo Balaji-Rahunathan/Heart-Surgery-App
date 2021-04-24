@@ -75,7 +75,7 @@ relaxed motion. Keep your back straight.</p>
                                 <p className="spc">Repeat 2 to 3 times.</p>
                                 </div>
                         </div>
-                        <div className="video_container" style={{width:'70%'}}>
+                        <div className="video_container" style={{maxWidth:'300px'}}>
                             <ReactPlayer
                                 width="100%"
                                 height="100%"

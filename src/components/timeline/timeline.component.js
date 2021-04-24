@@ -64,6 +64,12 @@ const Timeline = (props) => {
         {pointer}
       </div>
     );
+    // const pointer = type === consts.PREV ? '👈' : '👉'
+    //   return (
+    //     <button onClick={onClick} disabled={isEdge}>
+    //       {pointer}
+    //     </button>
+    //   )
   };
 
   const renderPage = ({ pages, activePage, onClick }) => {
@@ -139,7 +145,7 @@ const Timeline = (props) => {
                             <Carousel
                               ref={slider}
                               initialActiveIndex={state.initialActiveIndex}
-                              enableMouseSwipe={false}
+                              // enableMouseSwipe={false}
                               renderPagination={renderPage}
                               onChange={(data) => {
                                 changeIndexIndex(data);

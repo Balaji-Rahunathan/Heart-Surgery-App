@@ -76,7 +76,7 @@ jerky movements.</p>
                                 </div>
                                 </div>
 
-                        <div className="video_container">
+                        <div className="video_container" style={{maxWidth:'300px'}}>
                             <ReactPlayer
                                 width="100%"
                                 height="100%"
