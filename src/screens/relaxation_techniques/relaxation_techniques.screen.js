@@ -80,9 +80,10 @@ const RelaxationTechniques = (props) => {
                     fontWeight: "600",
                     fontSize: "22px",
                     color: "#00a1fb",
+                    paddingTop: '0.8em'
                   }}
                 >
-                  Relaxation techniques
+                  Relaxation Techniques
                 </p>
               </div>
 
@@ -171,7 +172,7 @@ const RelaxationTechniques = (props) => {
                 <div className="slider_container">
                   <div className="fyandyp_title_container">
                     <p className="fyandyp_title_text rt_title_text">
-                      Tense/relax
+                      Tense/Relax
                     </p>
                   </div>
 
@@ -193,7 +194,7 @@ const RelaxationTechniques = (props) => {
                 <div className="slider_container">
                   <div className="fyandyp_title_container">
                     <p className="fyandyp_title_text rt_title_text">
-                      Shoulder rolls
+                      Shoulder Rolls
                     </p>
                   </div>
 
@@ -214,7 +215,7 @@ const RelaxationTechniques = (props) => {
 
                 <div className="slider_container">
                   <div className="fyandyp_title_container">
-                    <p className="fyandyp_title_text rt_title_text">imagery</p>
+                    <p className="fyandyp_title_text rt_title_text">Imagery</p>
                   </div>
 
                   <div className="fyandyp_image_container">

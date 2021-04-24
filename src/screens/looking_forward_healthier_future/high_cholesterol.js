@@ -75,13 +75,13 @@ const HighCholesterol = (props) => {
         <div className="slider_container">
           <div
             className="pos_sub_title_container"
-            style={{
+          >
+            <div className="pos_sub_title_text" style={{
               fontWeight: "600",
               fontSize: "24px",
               color: "#00a1fb",
-            }}
-          >
-            <div className="pos_sub_title_text">High cholesterol</div>
+              padding: '0.8em 50px'
+            }}>High cholesterol</div>
           </div>
           <div
             className="pos_bold_text_container"

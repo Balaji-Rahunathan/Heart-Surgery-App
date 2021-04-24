@@ -80,7 +80,7 @@ const PhysicalInactivity = (props) => {
             <p
               className="pths_head_text"
               style={{
-                paddingRight: "1em",
+                padding: "0.8em 60px",
                 fontWeight: "600",
                 fontSize: "24px",
                 color: "#00a1fb",

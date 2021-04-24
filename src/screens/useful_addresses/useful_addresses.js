@@ -69,8 +69,8 @@ const UsefulAddresses = (props) => {
             onClick={handleMenuButtonClick}
           />
           <div className="">
-            <div className="mfyh_title_head ">
-              <p className="mfyh_title_text" style={{ paddingBottom: "30px" }}>
+            <div className="mfyh_title_head " style={{marginBottom: '0.5em'}}>
+              <p className="mfyh_title_text" style={{ padding: "0.8em 60px" }}>
                 Useful Addresses
               </p>
             </div>

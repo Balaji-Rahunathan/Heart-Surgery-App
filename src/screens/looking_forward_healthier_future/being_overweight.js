@@ -10,6 +10,7 @@ import "./page_two.screen.scss";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import NextButton from "../../common_component/next_button/next_button.component";
 import { Link } from "react-router-dom";
+import BmiCalculator from "../../components/bmi_calculator/bmi_calculator.component";
 
 const BeingOverweight = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -79,13 +80,13 @@ const BeingOverweight = (props) => {
             <p
               className="pts_head_text"
               style={{
-                paddingRight: "1em",
+                padding: "0.8em 50px",
                 fontWeight: "600",
                 fontSize: "24px",
                 color: "#00a1fb",
               }}
             >
-              Being overweight
+              Being Overweight
             </p>
           </div>
           <div className="pts_image_container">
@@ -183,11 +184,7 @@ const BeingOverweight = (props) => {
                   Please ask a member of your cardiac rehabilitation team to
                   work out your BMI.
                 </p>
-                <p className="pts_content_text" style={{ paddingTop: "1em" }}>
-                  My Height:
-                </p>
-                <p className="pts_content_text">My Weight:</p>
-                <p className="pts_content_text">My BMI:</p>
+                <BmiCalculator />
               </div>
               <div className="pts_table_container">
                 <table className="pts_table">
