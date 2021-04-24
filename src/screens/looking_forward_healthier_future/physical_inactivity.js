@@ -13,6 +13,7 @@ import Fat from "../../assets/images/update/fat.svg";
 import Sugar from "../../assets/images/update/sugar.svg";
 import Fiber from "../../assets/images/update/fibre.svg";
 import Salt from "../../assets/images/update/salt.svg";
+import Family from "../../assets/images/update/family.svg";
 
 const PhysicalInactivity = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -166,22 +167,32 @@ const PhysicalInactivity = (props) => {
               </div>
             </div>
 
-            <div className="slider_container">
-              <div className="pths_title_container">
-                <p className="pths_title_text" style={{ paddingTop: "1em" }}>
-                  Family History of Coronary Artery Disease
-                </p>
-              </div>
-              <div className="pths_content_container">
-                <p className="pths_content_text">
-                  Heart disease runs in families. Please encourage your family
-                  to lead an active, healthy, smoke-free lifestyle.
-                </p>
-                <p className="pths_content_text blue-clro">
-                  Build exercise into your daily life. The home walking
-                  programme on page 22 will help you get started.
-                </p>
-              </div>
+            <div className="pths_title_container">
+              <p className="pths_title_text" style={{ paddingTop: "1em" }}>
+                Family History of Coronary Artery Disease
+              </p>
+            </div>
+
+            <div
+              className="pths_head_container"
+              style={{ padding: "2em 2em 0 2em" }}
+            >
+              <img
+                src={Family}
+                alt="healthy_eating"
+                className="pths_image"
+              ></img>
+            </div>
+
+            <div className="pths_content_container">
+              <p className="pths_content_text">
+                Heart disease runs in families. Please encourage your family to
+                lead an active, healthy, smoke-free lifestyle.
+              </p>
+              <p className="pths_content_text blue-clro">
+                Build exercise into your daily life. The home walking programme
+                on page 22 will help you get started.
+              </p>
             </div>
 
             {showNextButton && (

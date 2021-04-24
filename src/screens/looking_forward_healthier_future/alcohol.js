@@ -13,6 +13,7 @@ import Fat from "../../assets/images/update/fat.svg";
 import Sugar from "../../assets/images/update/sugar.svg";
 import Fiber from "../../assets/images/update/fibre.svg";
 import Salt from "../../assets/images/update/salt.svg";
+import Alcoholl from "../../assets/images/update/drink.svg";
 
 const Alcohol = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -62,7 +63,6 @@ const Alcohol = (props) => {
   return (
     <div className="page_three_screen">
       <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
-
       <Container className="swiper_container">
         <MenuButton
           background="#008DFB"
@@ -92,6 +92,16 @@ const Alcohol = (props) => {
           <div className="pths_title_container">
             <p className="pths_title_text">Too much alcohol</p>
           </div>
+
+          <div className="mfyh_image_container">
+            <img
+              className="mfyh_image"
+              style={{ width: "70%" }}
+              src={Alcoholl}
+              alt="mfyh"
+            ></img>
+          </div>
+
           <div className="pths_content_container">
             <p className="pths_content_text">
               There is some evidence that drinking a small amount of alcohol
@@ -102,30 +112,60 @@ const Alcohol = (props) => {
               is also very high in calories and can increase blood triglyc-
               erides, (a type of bad fat) and your weight.
             </p>
-            <div className="clrylo">
-              <p className="pths_content_text" style={{ paddingTop: "1em" }}>
-                if you do not drink if you do drink
-              </p>
-              <p className="pths_content_text">Do not start.</p>
-              <p className="pths_content_text">Keep within the limits.</p>
-              <p className="pths_content_text">
-                Spread your intake over the week.
-              </p>
-              <p className="pths_content_text">Have some alcohol free days.</p>
-              <p className="pths_content_text">How much is too much?</p>
-              <p className="pths_content_text">
-                Men should not exceed 17 standard drinks / units of alcohol per
-                week. Women should not exceed 11 standard drinks / units of
-                alcohol per week.
-              </p>
-              <p className="pths_content_text">avoid binge drinking</p>
-            </div>
+          </div>
+        </div>
+
+        <div className="slider_container" style={{ paddingTop: "1em" }}>
+          <div className="pths_content_container clryloo">
+            <p className="pths_content_text" style={{ paddingTop: "1em" }}>
+              if you do not drink if you do drink
+            </p>
+            <p className="pths_content_text">Do not start.</p>
+            <p className="pths_content_text">Keep within the limits.</p>
+            <p className="pths_content_text">
+              Spread your intake over the week.
+            </p>
+            <p className="pths_content_text">Have some alcohol free days.</p>
+            <p className="pths_content_text">How much is too much?</p>
+            <p className="pths_content_text">
+              Men should not exceed 17 standard drinks / units of alcohol per
+              week. Women should not exceed 11 standard drinks / units of
+              alcohol per week.
+            </p>
+            <p className="pths_content_text">avoid binge drinking</p>
           </div>
         </div>
 
         {load && (
           <>
             <div className="slider_container" style={{ paddingTop: "1em" }}>
+              <div className="pths_content_container clryloo">
+                <p className="pths_content_text">
+                  ‘Binge drinking’ is having five or more standard drinks in one
+                  sitting for men and four or more standard drinks in one
+                  sitting for women.
+                </p>
+                <p className="pths_content_text">
+                  How much is a standard drink of alcohol?
+                </p>
+                <p className="pths_content_text">
+                  One standard drink / unit is equal to:
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Half a
+                  pint of beer (Please note; a pint of beer is two units)
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> 100ml
+                  glass of wine
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Single
+                  pub measure of spirit / sherry. A home measure may really be a
+                  double or treble measure. Use a spirit measure and sugar free
+                  mixers.
+                </p>
+              </div>
               <div className="pths_content_container clryloo">
                 <p className="pths_content_text">
                   ‘Binge drinking’ is having five or more standard drinks in one
