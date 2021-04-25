@@ -1,10 +1,8 @@
 import "./App.scss";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import intro from "./screens/about_your_heart/intro/intro.screen";
 import Error from "./screens/error/error.screen";
 import Exercise from "./screens/exercise/exercise-intro/exercise-intro.screen";
-import ExerciseNeck from "./screens/exercise/exercise-neck/exercise-neck.screen";
-import ExerciseHarm from "./screens/exercise/harm-exercise/harm-exercise.screen";
 import HomeSurgery from "./screens/preparing_for_your_surgery/home_surgery.screen";
 import ReturningHome from "./screens/returning_home/returning_home.screen";
 import Preparing_for_your_surgery from "./screens/preparing_for_your_surgery/preparing_for_your_surgery";
@@ -14,14 +12,8 @@ import ExerciseTargetForLife from "./screens/exercise_target_for_life/exercise_t
 import ForYouAndYourPartner from "./screens/for_you_and_your_partner/for_you_and_your_partner.screen";
 import ManagingYourRiskFactors from "./screens/managing_your_risk_factors/managing_your_risk_factors.screen";
 import YourHeartSurgeryGuide from "./screens/your_heart_surgery_guide/your_heart_surgery_guide.screen";
-import ExerciseFoot from "./screens/exercise/exercise-foot/exercise-foot.screen";
-import ExerciseUpperBody from "./screens/exercise/exercise-upper-body/exercise-upper-body";
-import ExerciseLeg from "./screens/exercise/exercise-leg/exercise-leg";
-import ExerciseSquat from "./screens/exercise/exercise-squat/exercise-squat.screen";
-import { Screen } from "./helpers/functions";
 import { useState, useEffect } from "react";
 import { toInteger } from "lodash";
-import ExerciseHandsUp from "./screens/exercise/exercise-hands-up/exercise_hands_up";
 import shoulderMovement from "./screens/exercise/shoulder_movement/shoulder_movement.screen";
 import MedicationsForYourHeart from "./screens/medications_for_your_heart/medications_for_your_heart";
 import UsefulAddresses from "./screens/useful_addresses/useful_addresses";
@@ -34,6 +26,8 @@ import HealthyEatingForHealthyHeart from "./screens/looking_forward_healthier_fu
 import PhysicalInactivity from "./screens/looking_forward_healthier_future/physical_inactivity";
 import AfterSurgery from "./screens/after_surgery/after_surgery.screen";
 import WoundedHeartDoesHeal from "./screens/preparing_for_your_surgery/wounded_heart_does_heal";
+import Excercise from "./components/excercise/excersise.component";
+import { excerciseContent } from "./helpers/content";
 
 let App = (props) => {
   function getWindowDimensions() {
@@ -63,7 +57,7 @@ let App = (props) => {
 
   if (
     toInteger(useWindowDimensions().width) /
-    toInteger(useWindowDimensions().height) >
+      toInteger(useWindowDimensions().height) >
     1
   ) {
     return (
@@ -81,15 +75,36 @@ let App = (props) => {
             <Route exact path="/" component={YourHeartSurgeryGuide} />
             <Route exact path="/about_your_heart" component={intro} />
             <Route exact path="/after_surgery" component={AfterSurgery} />
-            <Route exact path="/wounded_heart_does_heal" component={WoundedHeartDoesHeal} />
+            <Route
+              exact
+              path="/wounded_heart_does_heal"
+              component={WoundedHeartDoesHeal}
+            />
             <Route exact path="/exercise" component={Exercise} />
-            <Route exact path="/neck" component={ExerciseNeck} />
-            <Route exact path="/harm" component={ExerciseHarm} />
-            <Route exact path="/foot" component={ExerciseFoot} />
-            <Route exact path="/upper_body" component={ExerciseUpperBody} />
-            <Route exact path="/squat" component={ExerciseSquat} />
-            <Route exact path="/leg" component={ExerciseLeg} />
-            <Route exact path="/hands_up" component={ExerciseHandsUp} />
+            <Route exact path="/neck_mobilisation">
+              {(props) => <Excercise {...excerciseContent[0]} {...props} />}
+            </Route>
+            <Route exact path="/arm_raising">
+              {(props) => <Excercise {...excerciseContent[1]} {...props} />}
+            </Route>
+            <Route exact path="/side_bending">
+              {(props) => <Excercise {...excerciseContent[2]} {...props} />}
+            </Route>
+            <Route exact path="/heel_raises">
+              {(props) => <Excercise {...excerciseContent[3]} {...props} />}
+            </Route>
+            <Route exact path="/knee_bends">
+              {(props) => <Excercise {...excerciseContent[4]} {...props} />}
+            </Route>
+            <Route exact path="/leg_swings">
+              {(props) => <Excercise {...excerciseContent[5]} {...props} />}
+            </Route>
+            <Route exact path="/arm_raise">
+              {(props) => <Excercise {...excerciseContent[6]} {...props} />}
+            </Route>
+            <Route exact path="/shoulder_girdle">
+              {(props) => <Excercise {...excerciseContent[7]} {...props} />}
+            </Route>
             <Route
               exact
               path="/shoulder_movement"
