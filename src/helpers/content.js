@@ -200,7 +200,7 @@ export const TheDayOfSurgeryTitles = {
     "The Day of Surgery",
     "Cardiac Intensive Care",
     "Equipment used during the surgery and in intensive care",
-   "A wounded heart does heal",
+    "A wounded heart does heal",
     "Possible complications during your recovery",
   ],
 };
@@ -413,7 +413,7 @@ export const TheDayOfSurgeryContents = {
       subtitle: "A wounded heart does heal",
       description:
         "After your operation, the surgeon will use special surgical wire to set the breastbone again. This wire is very strong and will stay in your body forever. You can’t feel these wires but they will show up on a chest x-ray. The cut in your skin is stitched, stapled or glued together and covered with a dressing. You will have a scar which will fade as it heals. . your breastbone usually takes six weeks or more to heal.",
-        image: require("../assets/images/update/strech.png"),
+      image: require("../assets/images/update/strech.png"),
       id: 23,
     },
     {
@@ -421,13 +421,9 @@ export const TheDayOfSurgeryContents = {
       subtitle: "A wounded heart does heal",
       description:
         "During the first few days after surgery your chest, leg or arm wounds may be sore. Please tell your nurse if you are sore. We will give you painkillers at regular intervals, to ease the soreness and make moving around easier. Some people may experience a tingling feeling over their chest and arm when the arteries from these areas are used for the bypass. Your wound may feel itchy, lumpy or numb and you may notice swelling and bruising. These symptoms are a normal part of healing and will disappear in the weeks following surgery",
-        image: require("../assets/images/update/heart medication-3.svg"),
+      image: require("../assets/images/update/heart medication-3.svg"),
       id: 24,
     },
-
-
-
-
 
     {
       index: 6,
@@ -817,6 +813,115 @@ export const returnHomeContent = [
             watch TV.Return to bed when you feel
             tired again.If sleep continues to be a
             problem, talk to your doctor`,
+    ],
+  },
+];
+
+//excercise
+
+export const excerciseContent = [
+  {
+    nextPageLink: "/arm_raising",
+    excerciseName: "Neck Mobilisation",
+    videoUrl: require("../assets/video/frame.mp4"),
+    content: [
+      "Starting Position: Sit up straight and tall in an upright chair, eyes looking straight ahead.",
+      "a) Bend your neck from side to side. Feel your neck muscles stretching.",
+      "b) Turn your head to look over your shoulder. Repeat to the other side.",
+      "Repeat 2 to 3 times.",
+    ],
+  },
+  {
+    nextPageLink: "/side_bending",
+    excerciseName: "Arm Raising",
+    videoUrl: require("../assets/video/ex6.mp4"),
+    content: [
+      `Starting Position: Sit up straight and tall in an upright chair.`,
+      `Lift both arms out to the side and up over your head. Try to
+      clap your hands together. Do not use jerky movements.`,
+      `Repeat 2 to 3 times.`,
+    ],
+  },
+  {
+    nextPageLink: "/heel_raises",
+    excerciseName: "Side Bending",
+    videoUrl: require("../assets/video/1.mp4"),
+    content: [
+      `Starting position: Stand up straight and tall, feet slightly
+      apart, arms loose by your side.`,
+      `a) Slowly bend to the left allowing your arm to slide down
+      your leg.`,
+      `b) Repeat to the right side.`,
+      `Repeat 2 to 3 times.`,
+      `Note: Try to make this a pure movement to the side. Imagine
+      you are trying to slide between 2 panes of glass so that you
+      don’t lean forward or backwards.`,
+    ],
+  },
+  {
+    nextPageLink: "/knee_bends",
+    excerciseName: "Heel Raises",
+    videoUrl: require("../assets/video/2.mp4"),
+    content: [
+      `Starting Position: Stand straight and tall, legs about a foot
+      apart. Hold on to a chair or table for support.`,
+      `Stand up on your toes, lower down again. Keep your back
+      straight. Try not to push on the chair with your arms.`,
+      `Repeat 2 to 3 times. Gradually build up to 10 times.`,
+    ],
+  },
+  {
+    nextPageLink: "/leg_swings",
+    excerciseName: "Knee Bends",
+    videoUrl: require("../assets/video/ex5.mp4"),
+    content: [
+      `Starting Position: Stand tall, legs a foot apart. Hold on to
+      chair if you need support.`,
+      `a) Bend your knees to a comfortable degree, straighten up.
+      Keep your back straight.`,
+      `Repeat 2 to 3 times. Gradually build up to 10 times.`,
+      `Note: If you have a wound near your knee, don’t bend too low
+      as it will pull on the wound. See if you can gradually bend
+      more as your leg wound improves.`,
+    ],
+  },
+  {
+    nextPageLink: "/arm_raise",
+    excerciseName: "Leg Swings",
+    videoUrl: require("../assets/video/3.mp4"),
+    content: [
+      `Starting Position: Stand, holding on to the back of a chair
+      with your right hand.`,
+      `a) Swing your left leg forward and back in a smooth relaxed
+      motion. Keep your back straight.`,
+      `b) Keep your knee relaxed, it will bend slightly.`,
+      `c) Turn and repeat with your right leg.`,
+      `Repeat 2 to 3 times.`
+    ],
+  },
+  {
+    nextPageLink: "/shoulder_girdle",
+    excerciseName: "Arm Raising",
+    videoUrl: require("../assets/video/hand_main.mp4"),
+    content: [
+      `Starting Position: Sit up straight and tall in an upright
+      chair.`,
+      ` Lift both arms out to the side and up over your head. Try to
+      clap your hands together. Do not use jerky movements.`,
+      `Repeat 2 to 3 times.`,
+    ],
+  },
+  {
+    nextPageLink: "/returning_home",
+    excerciseName: "Shoulder Girdle Exercises",
+    videoUrl: require("../assets/video/ex7.mp4"),
+    content: [
+      `Starting Position: Sit up straight and tall in an upright
+      chair.`,
+      `a) Shrug shoulders up to ears and gently ease them back down.`,
+      `b) Make big circles by rolling the shoulders forward and then
+      backwards.`,
+      `Repeat 2 to 3 times.`
     ],
   },
 ];
