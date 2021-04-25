@@ -167,32 +167,34 @@ const PhysicalInactivity = (props) => {
               </div>
             </div>
 
-            <div className="pths_title_container">
-              <p className="pths_title_text" style={{ paddingTop: "1em" }}>
-                Family History of Coronary Artery Disease
-              </p>
-            </div>
+            <div className="slider_container">
+              <div className="pths_title_container">
+                <p className="pths_title_text" style={{ paddingTop: "1em" }}>
+                  Family History of Coronary Artery Disease
+                </p>
+              </div>
 
-            <div
-              className="pths_head_container"
-              style={{ padding: "2em 2em 0 2em" }}
-            >
-              <img
-                src={Family}
-                alt="healthy_eating"
-                className="pths_image"
-              ></img>
-            </div>
+              <div
+                className="pths_head_container"
+                style={{ padding: "2em 2em 0 2em" }}
+              >
+                <img
+                  src={Family}
+                  alt="healthy_eating"
+                  className="pths_image"
+                ></img>
+              </div>
 
-            <div className="pths_content_container">
-              <p className="pths_content_text">
-                Heart disease runs in families. Please encourage your family to
-                lead an active, healthy, smoke-free lifestyle.
-              </p>
-              <p className="pths_content_text blue-clro">
-                Build exercise into your daily life. The home walking programme
-                on page 22 will help you get started.
-              </p>
+              <div className="pths_content_container">
+                <p className="pths_content_text">
+                  Heart disease runs in families. Please encourage your family
+                  to lead an active, healthy, smoke-free lifestyle.
+                </p>
+                <p className="pths_content_text blue-clro">
+                  Build exercise into your daily life. The home walking
+                  programme on page 22 will help you get started.
+                </p>
+              </div>
             </div>
 
             {showNextButton && (
