@@ -32,7 +32,7 @@ const BmiCalculator = () => {
             value={weight}
             onChange={handleWeightInputChange}
             type="number"
-          />
+          />  kg
         </div>
       </div>
       <div className="bmi_height_container">
@@ -44,12 +44,14 @@ const BmiCalculator = () => {
             value={height}
             onChange={handleHeightInputChange}
             type="number"
-          />
+          />  cm
         </div>
       </div>
       <div className="bmi_result_container">
         <div className="bmi_result_label">My BMI:</div>
-        <div className="bmi_result">{result.toFixed(1)}</div>
+        <div className="bmi_result">
+          { result > 0  && result < 'Infinity' ? result.toFixed(2) : 0}
+        </div>
       </div>
     </div>
   );
