@@ -75,7 +75,7 @@ const BeingOverweight = (props) => {
           </div>
         </div>
 
-        <div className="slider_container">
+        <div className="slider_container" style={{ position: "relative" }}>
           <div className="pts_head_container">
             <p
               className="pts_head_text"
@@ -112,6 +112,22 @@ const BeingOverweight = (props) => {
               opposite).
             </p>
           </div>
+
+          <NextButton
+            prev
+            onClick={() =>
+              props.history.push(
+                "/looking_forward_healthier_future/high_cholesterol"
+              )
+            }
+            style={{
+              position: "absolute",
+              top: "auto",
+              bottom: "20px",
+              left: "20px",
+              right: "auto",
+            }}
+          />
         </div>
 
         {load && (
@@ -327,7 +343,7 @@ const BeingOverweight = (props) => {
               </div>
             </div>
 
-            <div className="slider_container">
+            <div className="slider_container" style={{ position: "relative" }}>
               <div className="pts_content_container">
                 <p className="pts_content_text" style={{ paddingTop: "5em" }}>
                   <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Follow
@@ -349,20 +365,18 @@ const BeingOverweight = (props) => {
                   seek advice from a dietitian to help you lose weight.
                 </p>
               </div>
-            </div>
 
-            {showNextButton && (
               <NextButton
                 onClick={next}
                 style={{
-                  position: "fixed",
+                  position: "absolute",
                   top: "auto",
                   bottom: "20px",
                   left: "auto",
                   right: "20px",
                 }}
               />
-            )}
+            </div>
           </>
         )}
       </Container>

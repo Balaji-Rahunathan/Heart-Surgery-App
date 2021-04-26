@@ -80,7 +80,7 @@ const RelaxationTechniques = (props) => {
                     fontWeight: "600",
                     fontSize: "22px",
                     color: "#00a1fb",
-                    paddingTop: '0.8em'
+                    paddingTop: "0.8em",
                   }}
                 >
                   Relaxation Techniques
@@ -122,6 +122,20 @@ const RelaxationTechniques = (props) => {
                   Uncross your arms and legs.
                 </p>
               </div>
+
+              <NextButton
+                prev
+                onClick={() =>
+                  props.history.push("/returning_home/for_you_and_your_partner")
+                }
+                style={{
+                  position: "absolute",
+                  top: "auto",
+                  bottom: "20px",
+                  left: "20px",
+                  right: "auto",
+                }}
+              />
             </div>
 
             {load && (
@@ -213,7 +227,10 @@ const RelaxationTechniques = (props) => {
                   </div>
                 </div>
 
-                <div className="slider_container">
+                <div
+                  className="slider_container"
+                  style={{ position: "relative" }}
+                >
                   <div className="fyandyp_title_container">
                     <p className="fyandyp_title_text rt_title_text">Imagery</p>
                   </div>
@@ -230,20 +247,18 @@ const RelaxationTechniques = (props) => {
                       as described
                     </p>
                   </div>
-                </div>
 
-                {showNextButton && (
                   <NextButton
                     onClick={next}
                     style={{
-                      position: "fixed",
+                      position: "absolute",
                       top: "auto",
                       bottom: "20px",
                       left: "auto",
                       right: "20px",
                     }}
                   />
-                )}
+                </div>
               </>
             )}
           </Container>

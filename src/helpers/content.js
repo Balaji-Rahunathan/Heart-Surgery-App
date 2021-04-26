@@ -822,6 +822,7 @@ export const returnHomeContent = [
 export const excerciseContent = [
   {
     nextPageLink: "/arm_raising",
+    prevPageLink: '/after_surgery',
     excerciseName: "Neck Mobilisation",
     videoUrl: require("../assets/video/frame.mp4"),
     content: [
@@ -833,6 +834,7 @@ export const excerciseContent = [
   },
   {
     nextPageLink: "/side_bending",
+    prevPageLink: '/neck_mobilisation',
     excerciseName: "Arm Raising",
     videoUrl: require("../assets/video/ex6.mp4"),
     content: [
@@ -844,6 +846,7 @@ export const excerciseContent = [
   },
   {
     nextPageLink: "/heel_raises",
+    prevPageLink: '/arm_raising',
     excerciseName: "Side Bending",
     videoUrl: require("../assets/video/1.mp4"),
     content: [
@@ -860,6 +863,7 @@ export const excerciseContent = [
   },
   {
     nextPageLink: "/knee_bends",
+    prevPageLink: '/side_bending',
     excerciseName: "Heel Raises",
     videoUrl: require("../assets/video/2.mp4"),
     content: [
@@ -872,6 +876,7 @@ export const excerciseContent = [
   },
   {
     nextPageLink: "/leg_swings",
+    prevPageLink: '/heel_raises',
     excerciseName: "Knee Bends",
     videoUrl: require("../assets/video/ex5.mp4"),
     content: [
@@ -887,6 +892,7 @@ export const excerciseContent = [
   },
   {
     nextPageLink: "/arm_raise",
+    prevPageLink: '/knee_bends',
     excerciseName: "Leg Swings",
     videoUrl: require("../assets/video/3.mp4"),
     content: [
@@ -901,6 +907,7 @@ export const excerciseContent = [
   },
   {
     nextPageLink: "/shoulder_girdle",
+    prevPageLink: '/leg_swings',
     excerciseName: "Arm Raising",
     videoUrl: require("../assets/video/hand_main.mp4"),
     content: [
@@ -913,6 +920,7 @@ export const excerciseContent = [
   },
   {
     nextPageLink: "/returning_home",
+    prevPageLink: '/arm_raise',
     excerciseName: "Shoulder Girdle Exercises",
     videoUrl: require("../assets/video/ex7.mp4"),
     content: [

@@ -73,7 +73,7 @@ const ReturningHome = (props) => {
               onClick={handleMenuButtonClick}
               style={{ position: 'absolute', left: '0', top: '0' }}
             />
-            <ReturningHomeIndex />
+            <ReturningHomeIndex {...props} />
           </div>
 
           <MenuButton
