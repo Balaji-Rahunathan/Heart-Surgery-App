@@ -89,7 +89,7 @@ const ReturningHome = (props) => {
           </div>
           {load && (
             <>
-              <div className="slider_container">
+              <div className="slider_container" style={{display:'block'}}>
                 <div className="resuming_home_title">
                   <p className="resuming_home_title_text">Resuming home activities after surgery</p>
                 </div>

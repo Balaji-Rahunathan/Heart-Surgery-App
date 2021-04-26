@@ -54,10 +54,12 @@ export default class Excercise extends React.Component {
   };
 
   next = () => {
+    this.setState({timing: 0})
     this.props.history.push(this.props.nextPageLink);
   };
 
   prev = () => {
+    this.setState({timing: 0})
     this.props.history.push(this.props.prevPageLink);
   };
 

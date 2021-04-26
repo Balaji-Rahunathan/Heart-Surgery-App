@@ -83,7 +83,7 @@ const AfterSurgery = (props) => {
             <div className="resuming_home_title">
               <p
                 className="resuming_home_title_text"
-                style={{ fontSize: "24px", padding: "20px", color: "#38A2FE" }}
+                style={{ fontSize: "24px", padding: "0.8em 60px", color: "#38A2FE" }}
               >
                 After surgery
               </p>
@@ -102,7 +102,7 @@ const AfterSurgery = (props) => {
             <div className="resuming_home_content">
               <p
                 className="resuming_home_content_text"
-                style={{ fontWeight: "bold" }}
+                style={{ fontWeight: "bold", textAlign:'center' }}
               >
                 Deep breathing and coughing
               </p>
@@ -195,7 +195,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold",textAlign:'center' }}
                   >
                     Care of the healing chest wound
                   </p>
@@ -308,7 +308,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder" }}
+                    style={{ fontWeight: "bolder", textAlign:'center' }}
                   >
                     Care of the healing leg wound
                   </p>
@@ -351,7 +351,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder" }}
+                    style={{ fontWeight: "bolder",textAlign:'center'  }}
                   >
                     Eating and drinking
                   </p>
@@ -392,7 +392,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder" }}
+                    style={{ fontWeight: "bolder", textAlign:'center' }}
                   >
                     Washing and dressing
                   </p>
@@ -463,7 +463,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder" }}
+                    style={{ fontWeight: "bolder", textAlign:'center' }}
                   >
                     Exercise in Hospital
                   </p>
