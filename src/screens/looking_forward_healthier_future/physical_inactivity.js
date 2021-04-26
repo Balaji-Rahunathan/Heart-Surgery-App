@@ -76,7 +76,7 @@ const PhysicalInactivity = (props) => {
           </div>
         </div>
 
-        <div className="slider_container">
+        <div className="slider_container" style={{ position: "relative" }}>
           <div className="pths_head_container">
             <p
               className="pths_head_text"
@@ -107,6 +107,20 @@ const PhysicalInactivity = (props) => {
               <img src={Exec} alt="healthy_eating" className="pths_image"></img>
             </div>
           </div>
+
+          <NextButton
+            prev
+            onClick={() =>
+              props.history.push("/looking_forward_healthier_future/alcohol")
+            }
+            style={{
+              position: "absolute",
+              top: "auto",
+              bottom: "20px",
+              left: "20px",
+              right: "auto",
+            }}
+          />
         </div>
 
         {load && (
@@ -167,7 +181,7 @@ const PhysicalInactivity = (props) => {
               </div>
             </div>
 
-            <div className="slider_container">
+            <div className="slider_container" style={{position: 'relative'}}>
               <div className="pths_title_container">
                 <p className="pths_title_text" style={{ paddingTop: "1em" }}>
                   Family History of Coronary Artery Disease
@@ -195,20 +209,17 @@ const PhysicalInactivity = (props) => {
                   programme on page 22 will help you get started.
                 </p>
               </div>
-            </div>
-
-            {showNextButton && (
               <NextButton
                 onClick={next}
                 style={{
-                  position: "fixed",
+                  position: "absolute",
                   top: "auto",
                   bottom: "20px",
                   left: "auto",
                   right: "20px",
                 }}
               />
-            )}
+            </div>
           </>
         )}
       </Container>

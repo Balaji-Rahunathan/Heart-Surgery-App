@@ -71,7 +71,7 @@ const MedicationsForYourHeart = (props) => {
             type="open"
             onClick={handleMenuButtonClick}
           />
-          <div className="slider_container">
+          <div className="slider_container" style={{position: 'relative'}}>
             <div className="mfyh_title_head ">
               <p className="mfyh_title_text">Medications for your heart</p>
             </div>
@@ -94,6 +94,20 @@ const MedicationsForYourHeart = (props) => {
                 your heart from getting worse.
               </p>
             </div>
+
+            <NextButton
+            prev
+            onClick={() =>
+              props.history.push("/looking_forward_healthier_future/physical_inactivity")
+            }
+            style={{
+              position: "absolute",
+              top: "auto",
+              bottom: "20px",
+              left: "20px",
+              right: "auto",
+            }}
+          />
           </div>
 
           {load && (
@@ -194,7 +208,7 @@ const MedicationsForYourHeart = (props) => {
                 </div>
               </div>
 
-              <div className="slider_container" style={{ paddingTop: "60px" }}>
+              <div className="slider_container" style={{ paddingTop: "60px", position:'relative' }}>
                 <div className="mfyh_title ">
                   {/* <p className="mfyh_title_text">Resuming home activities after surgery</p> */}
                 </div>
@@ -233,20 +247,17 @@ const MedicationsForYourHeart = (props) => {
                     a member of the medical team
                   </p>
                 </div>
-              </div>
-
-              {showNextButton && (
                 <NextButton
                   onClick={next}
                   style={{
-                    position: "fixed",
+                    position: "absolute",
                     top: "auto",
                     bottom: "20px",
                     left: "auto",
                     right: "20px",
                   }}
                 />
-              )}
+              </div>
             </>
           )}
         </Container>

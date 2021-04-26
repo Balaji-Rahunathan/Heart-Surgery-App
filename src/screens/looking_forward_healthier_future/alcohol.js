@@ -74,7 +74,7 @@ const Alcohol = (props) => {
           </div>
         </div>
 
-        <div className="slider_container">
+        <div className="slider_container" style={{ position: "relative" }}>
           <div className="pths_head_container">
             <p
               className="pths_head_text"
@@ -112,6 +112,22 @@ const Alcohol = (props) => {
               erides, (a type of bad fat) and your weight.
             </p>
           </div>
+
+          <NextButton
+            prev
+            onClick={() =>
+              props.history.push(
+                "/looking_forward_healthier_future/healthy_eating_for_a_healthy_heart"
+              )
+            }
+            style={{
+              position: "absolute",
+              top: "auto",
+              bottom: "20px",
+              left: "20px",
+              right: "auto",
+            }}
+          />
         </div>
 
         {load && (
@@ -139,7 +155,7 @@ const Alcohol = (props) => {
               </div>
             </div>
 
-            <div className="slider_container" style={{ paddingTop: "1em" }}>
+            <div className="slider_container" style={{ paddingTop: "1em", position: 'relative' }}>
               <div className="pths_content_container clryloo">
                 <p className="pths_content_text">
                   ‘Binge drinking’ is having five or more standard drinks in one
@@ -196,26 +212,24 @@ const Alcohol = (props) => {
               </div>
 
               <div className="pths_content_container">
-                <p className="pths_content_text txtto">
+                <p className="pths_content_text txtto" style={{paddingRight: '2.5em'}}>
                   It is normally safe to take a small amount of alcohol while
                   taking your heart drugs. if you are taking warfarin however,
                   talk to your doctor for advice on drinking alcohol.
                 </p>
               </div>
-            </div>
 
-            {showNextButton && (
               <NextButton
                 onClick={next}
                 style={{
-                  position: "fixed",
+                  position: "absolute",
                   top: "auto",
                   bottom: "20px",
                   left: "auto",
-                  right: "20px",
+                  right: "20px",                  
                 }}
               />
-            )}
+            </div>
           </>
         )}
       </Container>

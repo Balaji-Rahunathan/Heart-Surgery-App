@@ -112,6 +112,20 @@ const Smoking = (props) => {
               arteries by damaging the lining, causing fats to stick easily.
             </p>
           </div>
+
+          <NextButton
+            prev
+            onClick={() =>
+              props.history.push("/looking_forward_healthier_future")
+            }
+            style={{
+              position: "absolute",
+              top: "auto",
+              bottom: "20px",
+              left: "20px",
+              right: "auto",
+            }}
+          />
         </div>
 
         {load && (
@@ -349,7 +363,7 @@ const Smoking = (props) => {
               </div>
             </div>
 
-            <div className="slider_container">
+            <div className="slider_container" style={{position: 'relative'}}>
               <div
                 className="pos_sub_title_container"
                 style={{ paddingTop: "4em", marginBottom: "0" }}
@@ -382,20 +396,17 @@ const Smoking = (props) => {
                   Resource Officer Cork University hospital (087) 121 9633
                 </p>
               </div>
-            </div>
-
-            {showNextButton && (
               <NextButton
                 onClick={next}
                 style={{
-                  position: "fixed",
+                  position: "absolute",
                   top: "auto",
                   bottom: "20px",
                   left: "auto",
                   right: "20px",
                 }}
               />
-            )}
+            </div>
           </>
         )}
       </Container>

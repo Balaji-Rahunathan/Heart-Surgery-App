@@ -103,11 +103,15 @@
 
     .exercise_footer {
       display: flex;
-      flex-direction: column;
       .next_btn {
         width: 60px;
         margin: 20px;
         transform: rotateZ(90deg);
+      }
+      .prev_btn {
+        width: 60px;
+        margin: 20px;
+        transform: rotateZ(270deg);
       }
     }
   }
@@ -161,7 +165,6 @@
       }
       .exercise_footer {
         display: flex;
-        flex-direction: column;
       }
     }
   }

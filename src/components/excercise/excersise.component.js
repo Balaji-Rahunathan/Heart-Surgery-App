@@ -9,7 +9,7 @@ import MenuButton from "../../common_component/menu_button/menu_button.component
 
 export default class Excercise extends React.Component {
   constructor(props) {
-      console.log(props)
+    console.log(props);
     super(props);
     this.state = {
       timing: "0.1",
@@ -20,8 +20,14 @@ export default class Excercise extends React.Component {
       toggle: false,
     };
   }
+  ref = (player) => {
+    this.player = player;
+  };
 
-  componentDidMount() {}
+  componentDidMount() {
+    console.log(this.state);
+    this.setState({ timing: 0 });
+  }
 
   onChange = (value) => {
     console.log(value);
@@ -47,12 +53,14 @@ export default class Excercise extends React.Component {
     this.player.seekTo(value);
   };
 
-  ref = (player) => {
-    this.player = player;
+  next = () => {
+    this.setState({timing: 0})
+    this.props.history.push(this.props.nextPageLink);
   };
 
-  next = () => {
-    this.props.history.push(this.props.nextPageLink);
+  prev = () => {
+    this.setState({timing: 0})
+    this.props.history.push(this.props.prevPageLink);
   };
 
   handleMenuButtonClick = (data) => {
@@ -83,7 +91,10 @@ export default class Excercise extends React.Component {
                 ))}
               </div>
             </div>
-            <div className="video_container" style={{width: '60vw', height:'60vw'}}>
+            <div
+              className="video_container"
+              style={{ width: "60vw", height: "60vw" }}
+            >
               <ReactPlayer
                 width="100%"
                 height="100%"
@@ -122,8 +133,9 @@ export default class Excercise extends React.Component {
                 <div className="swipe_text">Swipe</div>
               </div>
             </div>
-            <div className="exercise_footer" onClick={() => this.next()}>
-              <img src={Button} alt="button" className="next_btn"></img>
+            <div className="exercise_footer">
+              <img src={Button} alt="button" onClick={() => this.prev()} className="prev_btn" />
+              <img src={Button} alt="button" onClick={() => this.next()} className="next_btn" />
             </div>
           </div>
         </div>

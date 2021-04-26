@@ -75,7 +75,7 @@ const HealthyEatingForHealthyHeart = (props) => {
           </div>
         </div>
 
-        <div className="slider_container">
+        <div className="slider_container" style={{position: 'relative'}}>
           <div className="pths_head_container">
             <p
               className="pths_head_text"
@@ -107,6 +107,22 @@ const HealthyEatingForHealthyHeart = (props) => {
               essential for your overall mental and physical well-being.
             </p>
           </div>
+
+          <NextButton
+            prev
+            onClick={() =>
+              props.history.push(
+                "/looking_forward_healthier_future/being_overweight"
+              )
+            }
+            style={{
+              position: "absolute",
+              top: "auto",
+              bottom: "20px",
+              left: "20px",
+              right: "auto",
+            }}
+          />
         </div>
 
         {load && (
@@ -303,7 +319,7 @@ const HealthyEatingForHealthyHeart = (props) => {
                 </p>
               </div>
             </div>
-            <div className="slider_container" style={{ paddingTop: "2em" }}>
+            <div className="slider_container" style={{ paddingTop: "2em", position: 'relative' }}>
               <div className="pths_title_container">
                 <p className="pths_title_text">Eat less salt</p>
               </div>
@@ -324,20 +340,17 @@ const HealthyEatingForHealthyHeart = (props) => {
                   packet soups and bacon.
                 </p>
               </div>
-            </div>
-
-            {showNextButton && (
               <NextButton
                 onClick={next}
                 style={{
-                  position: "fixed",
+                  position: "absolute",
                   top: "auto",
                   bottom: "20px",
                   left: "auto",
                   right: "20px",
                 }}
               />
-            )}
+            </div>
           </>
         )}
       </Container>

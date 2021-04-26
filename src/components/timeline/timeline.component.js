@@ -91,7 +91,7 @@ const Timeline = (props) => {
   };
 
   const next = () => {
-    props.history.push("/wounded_heart_does_heal");
+    props.history.push("/exercise");
   };
 
   return (
