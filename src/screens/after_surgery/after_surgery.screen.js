@@ -15,9 +15,10 @@ import Dress from "../../assets/images/update/dress.svg";
 const AfterSurgery = (props) => {
   const [toggle, settoggle] = useState(false);
   const [showNextButton, setshowNextButton] = useState(false);
+  const [load, setLoad] = useState(false);
 
   const next = () => {
-    props.history.push("/exercise");
+    props.history.push("/neck_mobilisation");
   };
 
   const handleMenuButtonClick = (data) => {
@@ -27,30 +28,32 @@ const AfterSurgery = (props) => {
   useEffect(() => {
     var timerId;
     let el = document.querySelector(".swiper_container");
-    el.addEventListener("scroll", () => {
-      var elwinScroll = el.scrollTop;
-      var elheight = el.scrollHeight - el.clientHeight;
-      var elscrolled = (elwinScroll / elheight) * 100;
-      console.log(elwinScroll, elheight, elscrolled);
-      document.getElementById("myBar").style.width = elscrolled + "%";
-      if (elscrolled > 92) {
-        if (timerId) {
-          return;
+    setTimeout(() => {
+      el.addEventListener("scroll", () => {
+        var elwinScroll = el.scrollTop;
+        var elheight = el.scrollHeight - el.clientHeight;
+        var elscrolled = (elwinScroll / elheight) * 100;
+        document.getElementById("myBar").style.width = elscrolled + "%";
+        if (elscrolled > 92) {
+          if (timerId) {
+            return;
+          }
+          timerId = setTimeout(function () {
+            setshowNextButton(true);
+            timerId = undefined;
+          }, 500);
+        } else {
+          if (timerId) {
+            return;
+          }
+          timerId = setTimeout(function () {
+            setshowNextButton(false);
+            timerId = undefined;
+          }, 500);
         }
-        timerId = setTimeout(function () {
-          setshowNextButton(true);
-          timerId = undefined;
-        }, 500);
-      } else {
-        if (timerId) {
-          return;
-        }
-        timerId = setTimeout(function () {
-          setshowNextButton(false);
-          timerId = undefined;
-        }, 500);
-      }
-    });
+      });
+      setLoad(true);
+    }, 1000);
   }, []);
 
   return (
@@ -70,7 +73,7 @@ const AfterSurgery = (props) => {
             </div>
           </div>
 
-          <div className="slider_container" style={{}}>
+          <div className="slider_container" style={{display: 'block'}}>
             <div className="resuming_home_title">
               <p
                 className="resuming_home_title_text"
@@ -120,6 +123,9 @@ const AfterSurgery = (props) => {
               </div>
             </div>
           </div>
+
+          {load && (
+            <>
 
           <div
             className="slider_container"
@@ -545,6 +551,8 @@ const AfterSurgery = (props) => {
               }}
             />
           )}
+          </>
+        )}
         </Container>
       </div>
     </div>
