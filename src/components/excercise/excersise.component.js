@@ -25,7 +25,6 @@ export default class Excercise extends React.Component {
   };
 
   componentDidMount() {
-    console.log(this.state);
     this.setState({ timing: 0 });
   }
 

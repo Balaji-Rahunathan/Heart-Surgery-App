@@ -60,7 +60,7 @@ const Timeline = (props) => {
         <img className="next_icon" src={SwipeArrow}></img>
       );
     return (
-      <div onClick={onClick} disabled={isEdge} style={{ alignSelf: "center" }}>
+      <div onClick={onClick} disabled={isEdge} style={{ alignSelf: "center", display:'none' }}>
         {pointer}
       </div>
     );
@@ -101,103 +101,119 @@ const Timeline = (props) => {
           <div className="sub_topic_content">
             <div className="topics">
               <div className="line"></div>
-              {props.titles.titles.map((sub, index) => (
-                <div
-                  className="topic"
-                  style={
-                    state.currentIndex == index ? { marginLeft: "-5px" } : null
-                  }
-                  key={index}
-                  onClick={() => topicCheck(index)}
-                >
-                  <div className="check_box_container">
+              {props.titles.titles.map((sub, index) => {
+                console.log(state.currentIndex, index);
+                if (
+                  index === state.currentIndex ||
+                  index === state.currentIndex - 1
+                ) {
+                  return (
                     <div
-                      className={
+                      className="topic"
+                      style={
                         state.currentIndex == index
-                          ? "active animate-bottom"
-                          : "topic_check"
+                          ? { marginLeft: "-5px" }
+                          : null
                       }
-                    ></div>
-                  </div>
-                  <div className="topic_container">
-                    <div
-                      className={
-                        state.currentIndex == index
-                          ? "active_text animate-bottom"
-                          : "topic_text"
-                      }
+                      key={index}
+                      onClick={() => topicCheck(index)}
                     >
-                      {sub}
-                    </div>
-                    {state.currentIndex == index &&
-                    window.innerWidth <= 1050 ? (
-                      <div className="sub_content_container">
-                        <div className="sub_content">
-                          <ReactScrollWheelHandler
-                            upHandler={() => changeIndex(false)}
-                            downHandler={() => changeIndex(true)}
-                            style={{
-                              width: "100%",
-                              height: "100%",
-                              outline: "none",
-                            }}
-                          >
-                            <Carousel
-                              ref={slider}
-                              initialActiveIndex={state.initialActiveIndex}
-                              // enableMouseSwipe={false}
-                              renderPagination={renderPage}
-                              onChange={(data) => {
-                                changeIndexIndex(data);
-                              }}
-                              className="carousel"
-                              renderArrow={myArrow}
-                            >
-                              {props.content.data.map((data, index) => (
-                                <div
-                                  className="topic_content animate-bottom"
-                                  id="topic"
-                                  key={index}
-                                >
-                                  <div className="sub_head">
-                                    <div className="head_text">
-                                      {data.subtitle}
-                                    </div>
-                                    <div className="head_desciption">
-                                      {data.description}
-                                      {data.arrDesc &&
-                                        data.arrDesc.map((arrItem) => (
-                                          <p style={{ paddingLeft: "1em" }}> 
-                                            <FiberManualRecordIcon style={{fontSize: '12px', paddingRight: '0.5em' }}/>
-                                            {arrItem}
-                                          </p>
-                                        ))}
-                                    </div>
-                                    <div className="head_description_items">
-                                      {data.items &&
-                                        data.items.map((item) => (
-                                          <div className="head_description_item">
-                                            {item}
-                                          </div>
-                                        ))}
-                                    </div>
-                                  </div>
-                                  <div className="img_container">
-                                    <img
-                                      alt="day_of_img"
-                                      src={data.image.default}
-                                    ></img>
-                                  </div>
-                                </div>
-                              ))}
-                            </Carousel>
-                          </ReactScrollWheelHandler>
-                        </div>
+                      {console.log(state)}
+                      <div className="check_box_container">
+                        <div
+                          className={
+                            state.currentIndex == index
+                              ? "active animate-bottom"
+                              : "topic_check"
+                          }
+                        ></div>
                       </div>
-                    ) : null}
-                  </div>
-                </div>
-              ))}
+                      <div className="topic_container">
+                        <div
+                          className={
+                            state.currentIndex == index
+                              ? "active_text animate-bottom"
+                              : "topic_text"
+                          }
+                        >
+                          {sub}
+                        </div>
+                        {state.currentIndex == index &&
+                        window.innerWidth <= 1050 ? (
+                          <div className="sub_content_container">
+                            <div className="sub_content">
+                              <ReactScrollWheelHandler
+                                upHandler={() => changeIndex(false)}
+                                downHandler={() => changeIndex(true)}
+                                style={{
+                                  width: "100%",
+                                  height: "100%",
+                                  outline: "none",
+                                }}
+                              >
+                                <Carousel
+                                  ref={slider}
+                                  initialActiveIndex={state.initialActiveIndex}
+                                  // enableMouseSwipe={false}
+                                  renderPagination={renderPage}
+                                  onChange={(data) => {
+                                    changeIndexIndex(data);
+                                  }}
+                                  className="carousel"
+                                  renderArrow={myArrow}
+                                >
+                                  {props.content.data.map((data, index) => (
+                                    <div
+                                      className="topic_content animate-bottom"
+                                      id="topic"
+                                      key={index}
+                                    >
+                                      <div className="sub_head">
+                                        <div className="head_text">
+                                          {data.subtitle}
+                                        </div>
+                                        <div className="head_desciption">
+                                          {data.description}
+                                          {data.arrDesc &&
+                                            data.arrDesc.map((arrItem) => (
+                                              <p style={{ paddingLeft: "1em" }}>
+                                                <FiberManualRecordIcon
+                                                  style={{
+                                                    fontSize: "12px",
+                                                    paddingRight: "0.5em",
+                                                  }}
+                                                />
+                                                {arrItem}
+                                              </p>
+                                            ))}
+                                        </div>
+                                        <div className="head_description_items">
+                                          {data.items &&
+                                            data.items.map((item) => (
+                                              <div className="head_description_item">
+                                                {item}
+                                              </div>
+                                            ))}
+                                        </div>
+                                      </div>
+                                      <div className="img_container">
+                                        <img
+                                          alt="day_of_img"
+                                          src={data.image.default}
+                                        ></img>
+                                      </div>
+                                    </div>
+                                  ))}
+                                </Carousel>
+                              </ReactScrollWheelHandler>
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
+                    </div>
+                  );
+                }
+              })}
             </div>
           </div>
         </div>
@@ -228,7 +244,7 @@ const Timeline = (props) => {
                     changeIndexIndex(data);
                   }}
                   className="carousel"
-                  renderArrow={myArrow}
+                  // renderArrow={myArrow}
                 >
                   {props.content.data.map((data, index) => (
                     <div className="topic_content" id="topic" key={index}>
@@ -257,7 +273,7 @@ const Timeline = (props) => {
             top: "auto",
             left: "auto",
             bottom: "10px",
-            right: "10px",
+            right: "20px",
             zIndex: "20",
           }}
         />
