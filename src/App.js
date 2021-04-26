@@ -75,11 +75,11 @@ let App = (props) => {
             <Route exact path="/" component={YourHeartSurgeryGuide} />
             <Route exact path="/about_your_heart" component={intro} />
             <Route exact path="/after_surgery" component={AfterSurgery} />
-            <Route
+            {/* <Route
               exact
               path="/wounded_heart_does_heal"
               component={WoundedHeartDoesHeal}
-            />
+            /> */}
             <Route exact path="/exercise" component={Exercise} />
             <Route exact path="/neck_mobilisation">
               {(props) => <Excercise {...excerciseContent[0]} {...props} />}
