@@ -36,7 +36,6 @@ const Alcohol = (props) => {
         var elwinScroll = el.scrollTop;
         var elheight = el.scrollHeight - el.clientHeight;
         var elscrolled = (elwinScroll / elheight) * 100;
-        // console.log(elwinScroll, elheight, elscrolled)
         document.getElementById("myBar").style.width = elscrolled + "%";
         if (elscrolled > 92) {
           if (timerId) {
@@ -115,29 +114,31 @@ const Alcohol = (props) => {
           </div>
         </div>
 
-        <div className="slider_container" style={{ paddingTop: "1em" }}>
-          <div className="pths_content_container clryloo">
-            <p className="pths_content_text" style={{ paddingTop: "1em" }}>
-              if you do not drink if you do drink
-            </p>
-            <p className="pths_content_text">Do not start.</p>
-            <p className="pths_content_text">Keep within the limits.</p>
-            <p className="pths_content_text">
-              Spread your intake over the week.
-            </p>
-            <p className="pths_content_text">Have some alcohol free days.</p>
-            <p className="pths_content_text">How much is too much?</p>
-            <p className="pths_content_text">
-              Men should not exceed 17 standard drinks / units of alcohol per
-              week. Women should not exceed 11 standard drinks / units of
-              alcohol per week.
-            </p>
-            <p className="pths_content_text">avoid binge drinking</p>
-          </div>
-        </div>
-
         {load && (
           <>
+            <div className="slider_container" style={{ paddingTop: "1em" }}>
+              <div className="pths_content_container clryloo">
+                <p className="pths_content_text" style={{ paddingTop: "1em" }}>
+                  if you do not drink if you do drink
+                </p>
+                <p className="pths_content_text">Do not start.</p>
+                <p className="pths_content_text">Keep within the limits.</p>
+                <p className="pths_content_text">
+                  Spread your intake over the week.
+                </p>
+                <p className="pths_content_text">
+                  Have some alcohol free days.
+                </p>
+                <p className="pths_content_text">How much is too much?</p>
+                <p className="pths_content_text">
+                  Men should not exceed 17 standard drinks / units of alcohol
+                  per week. Women should not exceed 11 standard drinks / units
+                  of alcohol per week.
+                </p>
+                <p className="pths_content_text">avoid binge drinking</p>
+              </div>
+            </div>
+
             <div className="slider_container" style={{ paddingTop: "1em" }}>
               <div className="pths_content_container clryloo">
                 <p className="pths_content_text">
