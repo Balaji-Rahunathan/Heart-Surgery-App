@@ -1,14 +1,15 @@
+import "./excercise.comonent.scss";
 import React from "react";
-import Video from "../../../assets/video/ex6.mp4";
-import Button from "../../../assets/images/Buuton.svg";
-import SwipeBlack from "../../../assets/images/swipe-arrow.svg";
+import Video from "../../assets/video/3.mp4";
+import Button from "../../assets/images/Buuton.svg";
+import SwipeBlack from "../../assets/images/swipe-arrow.svg";
 import ReactPlayer from "react-player";
-import "./harm-exercise.scss";
-import Sidebar from "../../../components/sidebar/sidebar.component";
-import MenuButton from "../../../common_component/menu_button/menu_button.component";
+import Sidebar from "../../components/sidebar/sidebar.component";
+import MenuButton from "../../common_component/menu_button/menu_button.component";
 
-export default class ExerciseNeck extends React.Component {
+export default class Excercise extends React.Component {
   constructor(props) {
+      console.log(props)
     super(props);
     this.state = {
       timing: "0.1",
@@ -23,6 +24,7 @@ export default class ExerciseNeck extends React.Component {
   componentDidMount() {}
 
   onChange = (value) => {
+    console.log(value);
     if (value > 0.3 && value < 0.6) {
       this.setState({
         swipeClass: "swipe_icon_hidden",
@@ -37,7 +39,7 @@ export default class ExerciseNeck extends React.Component {
     }
     if (value <= 0.3) {
       this.setState({
-        swipeClass: "swipe_icon_prev",
+        swipeClass: "swipe_icon",
         swipePrev: "swipe_icon_hidden",
       });
     }
@@ -48,8 +50,9 @@ export default class ExerciseNeck extends React.Component {
   ref = (player) => {
     this.player = player;
   };
+
   next = () => {
-    this.props.history.push("/foot");
+    this.props.history.push(this.props.nextPageLink);
   };
 
   handleMenuButtonClick = (data) => {
@@ -59,7 +62,7 @@ export default class ExerciseNeck extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="exercise_two_container">
+        <div className="exercise_one_container">
           <Sidebar
             {...this.props}
             toggle={this.state.toggle}
@@ -73,27 +76,18 @@ export default class ExerciseNeck extends React.Component {
               style={{ position: "absolute", left: "0", top: "0" }}
             />
             <div className="exercise_head">
-              <h1>Arm Raising</h1>
-
+              <h1>{this.props.excerciseName}</h1>
               <div className="head_text">
-                <p>
-                  Starting Position: Sit up straight and tall in an upright
-                  chair.
-                </p>
-                <p className="spc">
-                  Lift both arms out to the side and up over your head. Try to
-                  clap your hands together. Do not use jerky movements.
-                </p>
-
-                <p className="spc">Repeat 2 to 3 times.</p>
+                {this.props.content.map((content) => (
+                  <p className="content_text">{content}</p>
+                ))}
               </div>
             </div>
-
-            <div className="video_container">
+            <div className="video_container" style={{width: '60vw', height:'60vw'}}>
               <ReactPlayer
                 width="100%"
                 height="100%"
-                url={Video}
+                url={this.props.videoUrl.default}
                 ref={this.ref}
                 playbackRate={0.5}
               />
@@ -109,7 +103,7 @@ export default class ExerciseNeck extends React.Component {
                   max="0.8"
                   step="0.001"
                   value={this.state.timing}
-                ></input>
+                />
               </div>
               <div className={this.state.swipeClass}>
                 <div className="swipe_text">Swipe</div>
@@ -128,13 +122,8 @@ export default class ExerciseNeck extends React.Component {
                 <div className="swipe_text">Swipe</div>
               </div>
             </div>
-            <div className="exercise_footer">
-              <img
-                onClick={() => this.next()}
-                src={Button}
-                alt="button"
-                className="next_btn"
-              ></img>
+            <div className="exercise_footer" onClick={() => this.next()}>
+              <img src={Button} alt="button" className="next_btn"></img>
             </div>
           </div>
         </div>

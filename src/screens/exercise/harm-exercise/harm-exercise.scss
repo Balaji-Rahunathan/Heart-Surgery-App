@@ -1,3 +1,4 @@
+@import '../../../index.scss';
 .exercise_two_container {
   overflow: hidden;
   display: flex;
@@ -22,7 +23,11 @@
         padding: 10px 0 0 0;
       }
     }
-    
+    .video_container {
+      // padding: 20px 0 0 0;
+      // width: 50%;
+      // height: 50%;
+    }
     .exercise_body {
       width: 100%;
       padding: 10px 0 0 0;

@@ -11,6 +11,7 @@ import HeadImage from '../../assets/images/returning_home/Group 2.png';
 const ResumingHome = (props) => {
     const [toggle, settoggle] = useState(false)
     const [showNextButton, setshowNextButton] = useState(false)
+    const [load, setLoad] = useState(false);
 
     const next = () => {
         props.history.push('/returning_home/home_exercise_after_surgery');
@@ -23,36 +24,35 @@ const ResumingHome = (props) => {
 
     useEffect(() => {
         var timerId;
-        let el = document.querySelector(".swiper_container")
-        console.log(el)
-        el.scrollTo = 0
-        el.scrollTop = 0
-
-        el.addEventListener("scroll", () => {
-            var elwinScroll = el.scrollTop;
-            var elheight = el.scrollHeight - el.clientHeight;
-            var elscrolled = (elwinScroll / elheight) * 100;
-            document.getElementById("myBar").style.width = elscrolled + "%";
-            if (elscrolled > 92) {
-                if (timerId) {
-                    return
+        let el = document.querySelector(".swiper_container");
+        setTimeout(() => {
+            el.addEventListener("scroll", () => {
+                var elwinScroll = el.scrollTop;
+                var elheight = el.scrollHeight - el.clientHeight;
+                var elscrolled = (elwinScroll / elheight) * 100;
+                // console.log(elwinScroll, elheight, elscrolled)
+                document.getElementById("myBar").style.width = elscrolled + "%";
+                if (elscrolled > 92) {
+                    if (timerId) {
+                        return;
+                    }
+                    timerId = setTimeout(function () {
+                        setshowNextButton(true);
+                        timerId = undefined;
+                    }, 500);
+                } else {
+                    if (timerId) {
+                        return;
+                    }
+                    timerId = setTimeout(function () {
+                        setshowNextButton(false);
+                        timerId = undefined;
+                    }, 500);
                 }
-                timerId = setTimeout(function () {
-                    setshowNextButton(true)
-                    timerId = undefined;
-                }, 500)
-            }
-            else {
-                if (timerId) {
-                    return
-                }
-                timerId = setTimeout(function () {
-                    setshowNextButton(false)
-                    timerId = undefined;
-                }, 500)
-            }
-        })
-    }, [])
+            });
+            setLoad(true)
+        }, 1000);
+    }, []);
     return (
         <div className="resuming_home_screen">
             <div className="resuming_home_conatiner">
@@ -98,18 +98,22 @@ const ResumingHome = (props) => {
                             </div>
                         </div>
                     </div>
-                    {
-                        returnHomeContent.map((data, index) => {
-                            return (
-                                <div className="slider_container">
-                                    <Group {...data} />
-                                </div>
-                            )
-                        })
-                    }
+                    {load && (
+                        <>
+                            {
+                                returnHomeContent.map((data, index) => {
+                                    return (
+                                        <div className="slider_container">
+                                            <Group {...data} />
+                                        </div>
+                                    )
+                                })
+                            }
 
-                    {
-                        showNextButton && <NextButton onClick={next} style={{ position: 'fixed', top: 'auto', bottom: '20px', left: 'auto', right: '20px' }} />
+                            {
+                                showNextButton && <NextButton onClick={next} style={{ position: 'fixed', top: 'auto', bottom: '20px', left: 'auto', right: '20px' }} />
+                            }
+                        </>)
                     }
                 </Container>
             </div>

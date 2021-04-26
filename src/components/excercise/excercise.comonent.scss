@@ -1,4 +1,4 @@
-@import '../../../index.scss';
+@import "../../index.scss";
 .exercise_one_container {
   overflow: hidden;
   display: flex;
@@ -85,7 +85,7 @@
           width: 70px;
           height: 70px;
           border: 0;
-          background: url("../../../assets/images/dot_icon.svg");
+          background: url("../../assets/images/dot_icon.svg");
           background-size: contain;
           cursor: pointer;
         }
@@ -94,7 +94,7 @@
           width: 35px;
           height: 35px;
           border: 0;
-          background: url("../../../assets/images/dot_icon.svg");
+          background: url("../../assets/images/dot_icon.svg");
           background-size: contain;
           cursor: pointer;
         }
@@ -128,6 +128,9 @@
         .head_text {
           font-size: 14px !important;
           padding: 10px 20px 0 20px;
+          .content_text{
+            padding: 0.5em 1em;
+          }
         }
       }
 
@@ -179,14 +182,10 @@
         }
       }
 
-     
-
       .exercise_body {
         padding: 0;
         width: 60%;
       }
-
-      
     }
   }
 }

@@ -55,7 +55,7 @@ export default class Intro extends React.Component {
               style={{ position: "relative", left: "0", top: "0" }}
             />
 
-            <h3 className="head-title">What is Coronary Artery bypass?</h3>
+            <h3 className="head-title" style={{padding: '10px 60px'}} >What is Coronary Artery bypass?</h3>
             <div className="image-container">
               <img src={Circle} alt="" className="bg-img img-fluid" />
               <img src={Heart} alt="" className="heart img-fluid" />
@@ -137,7 +137,7 @@ export default class Intro extends React.Component {
                             <NextButton onClick={this.nextBtn} style={{top:"0"}} />
                         </div> */}
 
-            <div style={{ paddingTop: "2em" }}>
+            <div style={{ paddingTop: "1em" }}>
               {!this.state.para ? (
                 <a
                   className="btn-para mt-3 text-center"

@@ -14,7 +14,7 @@ export default class Exercise extends React.Component {
     }
 
     next = () => {
-        this.props.history.push('/neck');
+        this.props.history.push('/neck_mobilisation');
     }
 
     handleMenuButtonClick = (data) => {

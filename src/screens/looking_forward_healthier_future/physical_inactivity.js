@@ -18,6 +18,7 @@ import Family from "../../assets/images/update/family.svg";
 const PhysicalInactivity = (props) => {
   const [toggle, settoggle] = useState(false);
   const [showNextButton, setshowNextButton] = useState(false);
+  const [load, setLoad] = useState(false);
 
   const next = () => {
     props.history.push("/medications_for_your_heart");
@@ -30,30 +31,33 @@ const PhysicalInactivity = (props) => {
   useEffect(() => {
     var timerId;
     let el = document.querySelector(".swiper_container");
-    el.addEventListener("scroll", () => {
-      var elwinScroll = el.scrollTop;
-      var elheight = el.scrollHeight - el.clientHeight;
-      var elscrolled = (elwinScroll / elheight) * 100;
-      console.log(elwinScroll, elheight, elscrolled);
-      document.getElementById("myBar").style.width = elscrolled + "%";
-      if (elscrolled > 92) {
-        if (timerId) {
-          return;
+    setTimeout(() => {
+      el.addEventListener("scroll", () => {
+        var elwinScroll = el.scrollTop;
+        var elheight = el.scrollHeight - el.clientHeight;
+        var elscrolled = (elwinScroll / elheight) * 100;
+        // console.log(elwinScroll, elheight, elscrolled)
+        document.getElementById("myBar").style.width = elscrolled + "%";
+        if (elscrolled > 92) {
+          if (timerId) {
+            return;
+          }
+          timerId = setTimeout(function () {
+            setshowNextButton(true);
+            timerId = undefined;
+          }, 500);
+        } else {
+          if (timerId) {
+            return;
+          }
+          timerId = setTimeout(function () {
+            setshowNextButton(false);
+            timerId = undefined;
+          }, 500);
         }
-        timerId = setTimeout(function () {
-          setshowNextButton(true);
-          timerId = undefined;
-        }, 500);
-      } else {
-        if (timerId) {
-          return;
-        }
-        timerId = setTimeout(function () {
-          setshowNextButton(false);
-          timerId = undefined;
-        }, 500);
-      }
-    });
+      });
+      setLoad(true);
+    }, 1000);
   }, []);
 
   return (
@@ -77,7 +81,7 @@ const PhysicalInactivity = (props) => {
             <p
               className="pths_head_text"
               style={{
-                paddingRight: "1em",
+                padding: "0.8em 60px",
                 fontWeight: "600",
                 fontSize: "24px",
                 color: "#00a1fb",
@@ -97,108 +101,115 @@ const PhysicalInactivity = (props) => {
               and health problems in the future.
             </p>
             <div
-            className="pths_head_container"
-            style={{ padding: "2em 2em 0 2em" }}
-          >
-            <img src={Exec} alt="healthy_eating" className="pths_image"></img>
-          </div>
-          </div>
-        </div>
-
-        <div className="slider_container">
-          
-
-          <div className="pths_content_container" style={{paddingTop:'2em'}}>
-            <p className="pths_content_text blue-clro">
-              A highly recommended information and exercise training programme
-              called Cardiac Rehabilitation, may be available in your area. It
-              is very popular with heart patients as it has been shown to reduce
-              anxiety, and to improve confidence, physical well-being and
-              fitness. Please talk to the medical team if you would like to take
-              part as it is available to people who have had most types of heart
-              surgery.
-            </p>
-          </div>
-          <div className="pths_title_container">
-            <p className="pths_title_text" style={{ paddingTop: "2em" }}>
-              Why Exercise?
-            </p>
-          </div>
-          <div className="pths_content_container">
-            <p className="pths_content_text">
-              Exercise and physical activity protects you by:
-            </p>
-            <p className="pths_content_text">
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Keeping
-              your body weight healthy.
-            </p>
-            <p className="pths_content_text">
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Keeping
-              your body weight healthy.
-            </p>
-            <p className="pths_content_text">
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Lowering
-              your blood pressure.
-            </p>
-            <p className="pths_content_text">
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Making your
-              blood less likely to clot.
-            </p>
-            <p className="pths_content_text">
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Lowering
-              your stress, depression and anxiety.
-            </p>
-            <p className="pths_content_text">
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Improving
-              your circulation, muscle tone,strength and flexibility.
-            </p>
-            <p className="pths_content_text">
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Improving
-              the way you feel about yourself.
-            </p>
+              className="pths_head_container"
+              style={{ padding: "2em 2em 0 2em" }}
+            >
+              <img src={Exec} alt="healthy_eating" className="pths_image"></img>
+            </div>
           </div>
         </div>
 
-        <div className="slider_container">
-         
+        {load && (
+          <>
+            <div className="slider_container">
+              <div
+                className="pths_content_container"
+                style={{ paddingTop: "2em" }}
+              >
+                <p className="pths_content_text blue-clro">
+                  A highly recommended information and exercise training
+                  programme called Cardiac Rehabilitation, may be available in
+                  your area. It is very popular with heart patients as it has
+                  been shown to reduce anxiety, and to improve confidence,
+                  physical well-being and fitness. Please talk to the medical
+                  team if you would like to take part as it is available to
+                  people who have had most types of heart surgery.
+                </p>
+              </div>
+              <div className="pths_title_container">
+                <p className="pths_title_text" style={{ paddingTop: "2em" }}>
+                  Why Exercise?
+                </p>
+              </div>
+              <div className="pths_content_container">
+                <p className="pths_content_text">
+                  Exercise and physical activity protects you by:
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Keeping
+                  your body weight healthy.
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Keeping
+                  your body weight healthy.
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} />{" "}
+                  Lowering your blood pressure.
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Making
+                  your blood less likely to clot.
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} />{" "}
+                  Lowering your stress, depression and anxiety.
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} />{" "}
+                  Improving your circulation, muscle tone,strength and
+                  flexibility.
+                </p>
+                <p className="pths_content_text">
+                  <FiberManualRecordIcon style={{ fontSize: "10px" }} />{" "}
+                  Improving the way you feel about yourself.
+                </p>
+              </div>
+            </div>
 
-          <div className="pths_title_container">
-            <p className="pths_title_text" style={{ paddingTop: "1em" }}>
-              Family History of Coronary Artery Disease
-            </p>
-          </div>
+            <div className="slider_container">
+              <div className="pths_title_container">
+                <p className="pths_title_text" style={{ paddingTop: "1em" }}>
+                  Family History of Coronary Artery Disease
+                </p>
+              </div>
 
-          <div
-            className="pths_head_container"
-            style={{ padding: "2em 2em 0 2em" }}
-          >
-            <img src={Family} alt="healthy_eating" className="pths_image"></img>
-          </div>
+              <div
+                className="pths_head_container"
+                style={{ padding: "2em 2em 0 2em" }}
+              >
+                <img
+                  src={Family}
+                  alt="healthy_eating"
+                  className="pths_image"
+                ></img>
+              </div>
 
+              <div className="pths_content_container">
+                <p className="pths_content_text">
+                  Heart disease runs in families. Please encourage your family
+                  to lead an active, healthy, smoke-free lifestyle.
+                </p>
+                <p className="pths_content_text blue-clro">
+                  Build exercise into your daily life. The home walking
+                  programme on page 22 will help you get started.
+                </p>
+              </div>
+            </div>
 
-          <div className="pths_content_container">
-            <p className="pths_content_text">
-              Heart disease runs in families. Please encourage your family to
-              lead an active, healthy, smoke-free lifestyle.
-            </p>
-            <p className="pths_content_text blue-clro">
-              Build exercise into your daily life. The home walking programme on
-              page 22 will help you get started.
-            </p>
-          </div>
-        </div>
-
-        {showNextButton && (
-          <NextButton
-            onClick={next}
-            style={{
-              position: "fixed",
-              top: "auto",
-              bottom: "20px",
-              left: "auto",
-              right: "20px",
-            }}
-          />
+            {showNextButton && (
+              <NextButton
+                onClick={next}
+                style={{
+                  position: "fixed",
+                  top: "auto",
+                  bottom: "20px",
+                  left: "auto",
+                  right: "20px",
+                }}
+              />
+            )}
+          </>
         )}
       </Container>
     </div>

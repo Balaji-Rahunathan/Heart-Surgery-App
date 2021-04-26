@@ -249,7 +249,7 @@ const Timeline = (props) => {
           </div>
         ) : null}
       </div>
-      {state.currentIndex === props.data.data.length - 1 && index === 26 && (
+      {index === 29 && (
         <NextButton
           onClick={next}
           style={{

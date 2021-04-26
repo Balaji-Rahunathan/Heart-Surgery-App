@@ -314,7 +314,7 @@
     -webkit-transition: -webkit-transform 0.3s linear;
   }
   .btn-para-a {
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     font-weight: 600;
     color: #00a1fb;
@@ -324,7 +324,7 @@
 
   .intro_screen_button_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     .next_button_container {
       flex: 0.5;
@@ -463,12 +463,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     .prev_button_container {
       flex: 0.5;
       display: flex;
-      justify-content: flex-start;
-      margin-left: 1em;
+      justify-content: flex-end;
+      margin-right: 1em;
       .prev_button {
         width: 60px;
         height: auto;
@@ -483,8 +482,8 @@
     .next_button_container {
       flex: 0.5;
       display: flex;
-      justify-content: flex-end;
-      margin-right: 1em;
+      justify-content: flex-start;
+      margin-left: 1em;
       .next_button {
         width: 60px;
         transform: rotate(180deg);
