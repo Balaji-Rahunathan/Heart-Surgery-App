@@ -60,7 +60,11 @@ const Timeline = (props) => {
         <img className="next_icon" src={SwipeArrow}></img>
       );
     return (
-      <div onClick={onClick} disabled={isEdge} style={{ alignSelf: "center", display:'none' }}>
+      <div
+        onClick={onClick}
+        disabled={isEdge}
+        style={{ alignSelf: "center", display: "none" }}
+      >
         {pointer}
       </div>
     );
@@ -105,7 +109,8 @@ const Timeline = (props) => {
                 console.log(state.currentIndex, index);
                 if (
                   index === state.currentIndex ||
-                  index === state.currentIndex - 1
+                  index === state.currentIndex - 1 ||
+                  index === state.currentIndex + 1
                 ) {
                   return (
                     <div
