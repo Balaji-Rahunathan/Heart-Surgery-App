@@ -6,7 +6,7 @@ import Sidebar from "../../components/sidebar/sidebar.component";
 import NextButton from "../../common_component/next_button/next_button.component";
 import Sitting from "../../assets/images/update/sitting.svg";
 import Exec from "../../assets/images/update/relax.svg";
-import Eat from "../../assets/images/update/eat.svg";
+import Eat from "../../assets/images/update/eatdrink.svg";
 import Leg from "../../assets/images/update/leg.svg";
 import Chest from "../../assets/images/update/chest.svg";
 import Dress from "../../assets/images/update/dress.svg";
@@ -83,7 +83,11 @@ const AfterSurgery = (props) => {
             <div className="resuming_home_title">
               <p
                 className="resuming_home_title_text"
-                style={{ fontSize: "24px", padding: "0.8em 60px", color: "#38A2FE" }}
+                style={{
+                  fontSize: "24px",
+                  padding: "0.8em 60px",
+                  color: "#38A2FE",
+                }}
               >
                 After surgery
               </p>
@@ -102,7 +106,7 @@ const AfterSurgery = (props) => {
             <div className="resuming_home_content">
               <p
                 className="resuming_home_content_text"
-                style={{ fontWeight: "bold", textAlign:'center' }}
+                style={{ fontWeight: "bold", textAlign: "center" }}
               >
                 Deep breathing and coughing
               </p>
@@ -130,9 +134,7 @@ const AfterSurgery = (props) => {
             </div>
             <NextButton
               prev
-              onClick={() =>
-                props.history.push("/exercise")
-              }
+              onClick={() => props.history.push("/exercise")}
               style={{
                 position: "absolute",
                 top: "auto",
@@ -151,25 +153,25 @@ const AfterSurgery = (props) => {
               >
                 <div className="resuming_home_content">
                   <p className="resuming_home_content_text">
-                    To do this, place your hands on your stomach. Keep your
+                    <span style={{fontWeight:'bolder'}}>1.</span> To do this, place your hands on your stomach. Keep your
                     shoulders relaxed (see picture above).
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
-                    Take a deep breath in through your nose. You should feel
+                    <span style={{fontWeight:'bolder'}}>2.</span> Take a deep breath in through your nose. You should feel
                     your stomach rising and falling as you breathe in and out.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
-                    Hold each breath for three seconds and then breathe out.
+                    <span style={{fontWeight:'bolder'}}>3.</span> Hold each breath for three seconds and then breathe out.
                   </p>
                   <p
                     className="resuming_home_content_text"
-                    style={{ paddingTop: "10px" }}
+                    style={{ paddingTop: "10px" , fontWeight:'bold'}}
                   >
                     Repeat three times.
                   </p>
@@ -195,7 +197,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bold",textAlign:'center' }}
+                    style={{ fontWeight: "bold", textAlign: "center" }}
                   >
                     Care of the healing chest wound
                   </p>
@@ -308,7 +310,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder", textAlign:'center' }}
+                    style={{ fontWeight: "bolder", textAlign: "center" }}
                   >
                     Care of the healing leg wound
                   </p>
@@ -332,14 +334,25 @@ const AfterSurgery = (props) => {
                     Your leg wound may be sore and swollen for a few days after
                     the surgery. This will improve as you become more active.
                     Wearing support stockings will help improve the blood flow
-                    in your leg. Raising your leg while you are resting will
-                    also help reduce swelling. You may be surprised to find that
-                    your leg wound can hurt more than your chest. This is
-                    because you have to put weight on your legs when you walk
-                    and there is often swelling at the knee and ankle joints
-                    that makes your leg feel tight. Some people may need their
-                    leg wound dressed and these dressings may need to continue
-                    at home.
+                    in your leg.
+                  </p>
+                  <p
+                    className="resuming_home_content_text"
+                    style={{ paddingTop: "10px" }}
+                  >
+                    Raising your leg while you are resting will also help reduce
+                    swelling. You may be surprised to find that your leg wound
+                    can hurt more than your chest.
+                  </p>
+                  <p
+                    className="resuming_home_content_text"
+                    style={{ paddingTop: "10px" }}
+                  >
+                    This is because you have to put weight on your legs when you
+                    walk and there is often swelling at the knee and ankle
+                    joints that makes your leg feel tight. Some people may need
+                    their leg wound dressed and these dressings may need to
+                    continue at home.
                   </p>
                 </div>
               </div>
@@ -351,7 +364,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder",textAlign:'center'  }}
+                    style={{ fontWeight: "bolder", textAlign: "center" }}
                   >
                     Eating and drinking
                   </p>
@@ -392,7 +405,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder", textAlign:'center' }}
+                    style={{ fontWeight: "bolder", textAlign: "center" }}
                   >
                     Washing and dressing
                   </p>
@@ -463,7 +476,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder", textAlign:'center' }}
+                    style={{ fontWeight: "bolder", textAlign: "center" }}
                   >
                     Exercise in Hospital
                   </p>
@@ -496,7 +509,11 @@ const AfterSurgery = (props) => {
 
               <div
                 className="slider_container"
-                style={{ display: "block", paddingTop: "4em", position:'relative' }}
+                style={{
+                  display: "block",
+                  paddingTop: "4em",
+                  position: "relative",
+                }}
               >
                 <div className="resuming_home_content">
                   <p

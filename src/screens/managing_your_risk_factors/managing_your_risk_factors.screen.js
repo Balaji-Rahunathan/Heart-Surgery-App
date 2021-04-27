@@ -231,21 +231,24 @@ const ManagingYourRiskFactors = (props) => {
                         </div>
                         <div className="myrf_content_container">
                             <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Lose weight if you are overweight.</p>
-                            <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Be physically active and eat healthily (see pages 21, 34 and 36).</p>
+                            <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Be physically active and eat healthily.</p>
                             <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Do not add salt at the table or in cooking.</p>
                             <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Take it easy on alcohol, avoid binge drinking completely.</p>
                             <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Take your medications regularly as advised. These are usually prescribed for life.</p>
                             <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Stop smoking.</p>
                         </div>
 
-                        <div className="myrf_sub_title_container">
+                        <div style={{backgroundColor:'#abd9ff', padding:'1px 0', width:'84%', margin:'0 auto 50px auto', borderRadius:'10px'}}> 
+                        <div className="myrf_sub_title_container" style={{marginBottom:'0px', textAlign:'left'}}>
                             <p className="myrf_sub_title_text">What is the normal blood pressure reading?</p>
                         </div>
-                        <div className="myrf_content_container">
+                        <div className="myrf_content_container" style={{marginTop:'10px'}}>
                             <p className="myrf_content_text">Top number: 140 or less</p>
                             <p className="myrf_content_text">Bottom number: 90 or less</p>
                             <p className="myrf_content_text">85 or less (if diabetic)</p>
                         </div>
+                        </div>
+
                     </div>
 
                     {showNextButton && (

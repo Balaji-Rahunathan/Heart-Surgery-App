@@ -134,16 +134,19 @@ const BeingOverweight = (props) => {
           <>
             <div className="slider_container">
               <div className="pts_content_container">
-                <p className="pts_content_text" style={{ paddingTop: "2em" }}>
+                <p className="pts_content_text" style={{ paddingTop: "5em" }}>
                   Your body weight in relation to your height is called your
-                  Body mass index or Bmi. Look at the height and weight chart
+                  Body mass index or Bmi. 
+                </p>
+                <p className="pts_content_text" style={{ paddingTop: "1em" }}>
+                Look at the height and weight chart
                   below to work out if you are a healthy weight for your height
                   (your BMI).
                 </p>
               </div>
 
-              <div className="pts_image_container">
-                <img src={Chart} alt="body_shape" className="pts_image"></img>
+              <div className="pts_image_container" style={{ paddingTop: "2em" }}>
+                <img src={Chart} alt="body_shape" className="pts_image" style={{width:'90%'}}></img>
               </div>
             </div>
 
@@ -337,7 +340,7 @@ const BeingOverweight = (props) => {
                     to="/looking_forward_healthier_future/healthy_eating_for_a_healthy_heart"
                     style={{ textDecoration: "none" }}
                   >
-                    see page 34.
+                    Click here.
                   </Link>
                 </p>
               </div>
@@ -362,7 +365,7 @@ const BeingOverweight = (props) => {
                   size of a pack of cards).
                 </p>
                 <p className="blue-clrf">
-                  seek advice from a dietitian to help you lose weight.
+                  Seek advice from a dietitian to help you lose weight.
                 </p>
               </div>
 

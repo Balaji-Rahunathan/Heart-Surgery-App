@@ -304,47 +304,7 @@ const HighCholesterol = (props) => {
                 </p>
               </div>
             </div>
-            <div className="slider_container">
-              <div
-                className="pos_bold_text_container"
-                style={{ textAlign: "left", marginTop: "1em" }}
-              >
-                <p className="pos_bold_text" style={{ paddingTop: "5em" }}>
-                  There are two types of lipoproteins in the blood:
-                </p>
-              </div>
-
-              <div className="pos_content_container">
-                <p className="pos_content_text">
-                  Low density lipoproteins (LDL – or bad cholesterol). LDL helps
-                  to build up plaque in the body’s arteries. High levels can
-                  increase your risk of heart disease.
-                </p>
-                <p className="pos_content_text">
-                  High density lipoproteins (HDL – or good cholesterol). HDL
-                  helps to remove cholesterol, and slows down the build up of
-                  plaque in the body’s arteries. Higher levels protect against
-                  heart disease.
-                </p>
-              </div>
-              <div
-                className="pos_bold_text_container"
-                style={{ textAlign: "left" }}
-              >
-                <p className="pos_bold_text">What are Triglycerides?</p>
-              </div>
-              <div className="pos_content_container">
-                <p className="pos_content_text">
-                  There is also a group of fatty substances in the blood called
-                  triglycerides. High levels of these are also damaging to the
-                  heart.
-                </p>
-                <p className="pos_content_text blue-clrr">
-                  The goal is to have a low total cholesterol level, a low level
-                  of LDL and a high level of hDL.
-                </p>
-              </div>
-            </div>
+          
 
             <div className="slider_container">
               <div className="pts_title_container">

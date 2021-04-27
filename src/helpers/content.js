@@ -611,7 +611,7 @@ export const returnHomeContent = [
 
   {
     title: "At home",
-    // image: require('../assets/images/update/car_home.svg'),
+    image: require('../assets/images/update/car_home.svg'),
     content: [
       `You may feel frightened, anxious and tired
         returning home. This is normal and will pass
@@ -628,6 +628,15 @@ export const returnHomeContent = [
         painkillers, then the morning ones. In order to
         help you sleep well, stop the night time
         painkillers last.`,
+     
+    ],
+  },
+
+  {
+    title: "",
+    image: require('../assets/images/update/car_home.svg'),
+    content: [
+      
       `If you had an artery taken from your arm or
         chest, it is normal to experience some
         numbness or tingling in your fingers or over
@@ -646,6 +655,7 @@ export const returnHomeContent = [
         your medication.`,
     ],
   },
+
 
   {
     title: "Eating well as you recover",
