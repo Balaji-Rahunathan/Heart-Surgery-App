@@ -106,7 +106,7 @@ const ForYouAndYourPartner = (props) => {
                 style={{
                   position: "absolute",
                   top: "auto",
-                  bottom: "20px",
+                  bottom: "10px",
                   left: "20px",
                   right: "auto",
                 }}
@@ -135,7 +135,7 @@ const ForYouAndYourPartner = (props) => {
                       been advised to lose weight after your surgery, you should
                       wait until your wound has fully healed. This can take up
                       to six weeks. Do not diet or lose weight during this
-                      period. See ‘Healthy Eating for a Healthy Heart’, page 34.
+                      period. See ‘Healthy Eating for a Healthy Heart’.
                     </p>
                   </div>
                 </div>

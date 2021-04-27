@@ -265,8 +265,12 @@ const BeingOverweight = (props) => {
               >
                 <p className="pts_content_text">
                   Measure yourself around the waist (see diagram) My waist
-                  measurement is _______ cms Check your risk of further health
-                  problems using the table below.
+                  measurement is{" "}
+                  <span>
+                    <input name="waist" className="waist_input" />
+                  </span>{" "}
+                  cms Check your risk of further health problems using the table
+                  below.
                 </p>
               </div>
               <div className="pts_image_container">
@@ -274,7 +278,7 @@ const BeingOverweight = (props) => {
                   src={BodyShape}
                   alt="body_shape"
                   className="pts_image"
-                  style={{ width: "35%" }}
+                  style={{ width: "25%" }}
                 ></img>
               </div>
               <div className="pts_table_container">
@@ -301,6 +305,11 @@ const BeingOverweight = (props) => {
                     </tr>
                   </tbody>
                 </table>
+              </div>
+              <div className="pts_content_text" style={{textAlign:'left', padding:'0.5em'}}>
+                Note: south Asian adults are at high risk if their waist
+                measurement is greater than 90cms (35 inches) for men or 80cms
+                (31 inches) for women.
               </div>
             </div>
 
@@ -337,7 +346,7 @@ const BeingOverweight = (props) => {
                     to="/looking_forward_healthier_future/healthy_eating_for_a_healthy_heart"
                     style={{ textDecoration: "none" }}
                   >
-                    see page 34.
+                    Click Here
                   </Link>
                 </p>
               </div>
@@ -347,7 +356,7 @@ const BeingOverweight = (props) => {
               <div className="pts_content_container">
                 <p className="pts_content_text" style={{ paddingTop: "5em" }}>
                   <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Follow
-                  the walking programme on page 22. It is healthier to lose
+                  the walking programme. It is healthier to lose
                   weight by diet and exercise rather than by diet alone.
                 </p>
                 <p className="pts_content_text">
