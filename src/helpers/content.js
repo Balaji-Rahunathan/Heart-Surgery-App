@@ -771,7 +771,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/shoulder_girdle",
     prevPageLink: "/range_of_movement_exercises",
-    postion: "Sitting Exercise 1",
+    position: "Sitting Exercise 1",
     excerciseName: "Neck Mobilisation",
     videoUrl: require("../assets/video/frame.mp4"),
     content: [
@@ -784,7 +784,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/arm_raising",
     prevPageLink: "/neck_mobilisation",
-    postion: "Sitting Exercise 1",
+    position: "Sitting Exercise 1",
     excerciseName: "Shoulder Girdle Exercises",
     videoUrl: require("../assets/video/ex7.mp4"),
     content: [
@@ -799,7 +799,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/side_bending",
     prevPageLink: "/shoulder_girdle",
-    postion: "Sitting Exercise 1",
+    position: "Sitting Exercise 1",
     excerciseName: "Arm Raising",
     videoUrl: require("../assets/video/ex6.mp4"),
     content: [
@@ -812,7 +812,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/leg_swings",
     prevPageLink: "/arm_raising",
-    postion: "Standing Exercise 1:",
+    position: "Standing Exercise 1",
     excerciseName: "Side Bending",
     videoUrl: require("../assets/video/1.mp4"),
     content: [
@@ -830,7 +830,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/knee_bends",
     prevPageLink: "/side_bending",
-    postion: "Standing Exercise 1:",
+    position: "Standing Exercise 1",
     excerciseName: "Leg Swings",
     videoUrl: require("../assets/video/3.mp4"),
     content: [
@@ -846,7 +846,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/heel_raises",
     prevPageLink: "/leg_swings",
-    postion: "Standing Exercise 1:",
+    position: "Standing Exercise 1",
     excerciseName: "Knee Bends",
     videoUrl: require("../assets/video/ex5.mp4"),
     content: [
@@ -863,7 +863,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/returning_home",
     prevPageLink: "/knee_bends",
-    postion: "Standing Exercise 1:",
+    position: "Standing Exercise 1",
     excerciseName: "Heel Raises",
     videoUrl: require("../assets/video/2.mp4"),
     content: [
@@ -878,7 +878,7 @@ export const excerciseContent = [
   // {
   //   nextPageLink: "/returning_home",
   //   prevPageLink: "/leg_swings",
-  //   postion: 'Standing Exercise 1:',
+  //   position: 'Standing Exercise 1:',
   //   excerciseName: "Arm Raising",
   //   videoUrl: require("../assets/video/hand_main.mp4"),
   //   content: [

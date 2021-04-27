@@ -1,0 +1,68 @@
+@import "../../index.scss";
+
+.hwp_screen {
+  .hwp_container {
+    .hwp_wrapper {
+      .hwp_head_container {
+          margin: 2em;
+          margin-bottom: 0em;
+        .hwp_head_text {
+            color: $background_light_blue;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 0.8em 50px;
+        }
+      }
+      .hwp_title_container {
+        margin: 1em 2em 1em 2em;
+        .hwp_title_text {
+          padding-top: 1em;
+          padding-left: 2em;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .rt_title_text{
+          font-size: 24px !important;
+          padding-left: 0em !important;
+        }
+      }
+      .hwp_image_container {
+        .hwp_image {
+          width: 70%;
+        }
+      }
+      .hwp_image_content_container {
+          margin: 2em;
+        .hwp_image_content_text {
+          text-align: left;
+          font-size: 14px;
+        }
+      }
+      .hwp_sub_content_container {
+          margin: 2em;
+        .fyandup_sub_content_head_container {
+            margin: 1em;
+            margin-bottom: 0;
+          .fyandup_sub_content_head_text {
+              font-size: 18px;
+              font-weight: 500;
+              padding-top: 3em;
+          }
+        }
+        .fyandup_sub_content_title_container {
+          .fyandup_sub_content_title_text {
+              font-weight: 500;
+              text-align: left;
+              padding-top: 1em;
+          }
+        }
+        .fyandup_sub_content_container {
+          .fyandup_sub_content_text {
+            font-size: 14px;
+              text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

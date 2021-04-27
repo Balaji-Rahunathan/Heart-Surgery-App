@@ -125,13 +125,22 @@
       justify-content: start;
       .exercise_head {
         width: 90%;
+        .postion_container{
+          font-size: 22px;
+          font-weight: 500;
+          color: $background_light_blue;
+        }
+        .exercise_name_container{
+          font-size: 18px;
+          font-weight: 500;
+        }
         h1 {
           font-size: 18px !important;
           padding: 0 3em 0 3em;
         }
         .head_text {
           font-size: 14px !important;
-          padding: 10px 20px 0 20px;
+          padding: 5px 20px 0 20px;
           .content_text{
             padding: 0.5em 1em;
           }
