@@ -19,7 +19,7 @@ const AfterSurgery = (props) => {
   const [load, setLoad] = useState(false);
 
   const next = () => {
-    props.history.push("/neck_mobilisation");
+    props.history.push("/range_of_movement_exercises");
   };
 
   const handleMenuButtonClick = (data) => {

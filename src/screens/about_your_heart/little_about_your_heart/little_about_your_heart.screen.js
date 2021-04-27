@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { returnHomeContent } from "../../../helpers/content";
 import Container from "../../../common_component/container/container.component";
 import MenuButton from "../../../common_component/menu_button/menu_button.component";
 import Sidebar from "../../../components/sidebar/sidebar.component";
 import NextButton from "../../../common_component/next_button/next_button.component";
-import Group from "../../../components/group/group.component";
 import HeadImage from "../../../assets/images/returning_home/Group 2.png";
 
 const LittleAboutYourHeart = (props) => {

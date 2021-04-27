@@ -65,10 +65,16 @@ const Sidebar = ({ toggle, onClick, history }) => {
                 onClick={() => history.push("/returning_home")}
                 className="menu_item"
               >
-                Resuming home activities after surgery
+                The Journey Home
               </MenuItem>
               <MenuItem
                 onClick={() => history.push("/returning_home/resuming_home")}
+                className="menu_item"
+              >
+                Resuming home activities after surgery
+              </MenuItem>
+              <MenuItem
+                onClick={() => history.push("/returning_home/getting_back_to_normal")}
                 className="menu_item"
               >
                 Getting back to normal
