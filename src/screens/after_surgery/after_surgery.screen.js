@@ -10,7 +10,8 @@ import Eat from "../../assets/images/update/eatdrink.svg";
 import Leg from "../../assets/images/update/leg.svg";
 import Chest from "../../assets/images/update/stand.svg";
 import Dress from "../../assets/images/update/dress.svg";
-import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord"
+import Sittingg from "../../assets/images/update/sittingg.svg";
 
 const AfterSurgery = (props) => {
   const [toggle, settoggle] = useState(false);

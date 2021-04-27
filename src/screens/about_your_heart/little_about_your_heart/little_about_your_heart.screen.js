@@ -3,7 +3,7 @@ import Container from "../../../common_component/container/container.component";
 import MenuButton from "../../../common_component/menu_button/menu_button.component";
 import Sidebar from "../../../components/sidebar/sidebar.component";
 import NextButton from "../../../common_component/next_button/next_button.component";
-import HeadImage from "../../../assets/images/returning_home/Group 2.png";
+import HeadImage from "../../../assets/images/update/bloodflow.svg";
 
 const LittleAboutYourHeart = (props) => {
   const [toggle, settoggle] = useState(false);
