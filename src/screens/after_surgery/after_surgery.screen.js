@@ -10,6 +10,7 @@ import Eat from "../../assets/images/update/eat.svg";
 import Leg from "../../assets/images/update/leg.svg";
 import Chest from "../../assets/images/update/chest.svg";
 import Dress from "../../assets/images/update/dress.svg";
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 
 const AfterSurgery = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -83,7 +84,11 @@ const AfterSurgery = (props) => {
             <div className="resuming_home_title">
               <p
                 className="resuming_home_title_text"
-                style={{ fontSize: "24px", padding: "0.8em 60px", color: "#38A2FE" }}
+                style={{
+                  fontSize: "24px",
+                  padding: "0.8em 60px",
+                  color: "#38A2FE",
+                }}
               >
                 After surgery
               </p>
@@ -102,7 +107,7 @@ const AfterSurgery = (props) => {
             <div className="resuming_home_content">
               <p
                 className="resuming_home_content_text"
-                style={{ fontWeight: "bold", textAlign:'center' }}
+                style={{ fontWeight: "bold", textAlign: "center" }}
               >
                 Deep breathing and coughing
               </p>
@@ -130,9 +135,7 @@ const AfterSurgery = (props) => {
             </div>
             <NextButton
               prev
-              onClick={() =>
-                props.history.push("/exercise")
-              }
+              onClick={() => props.history.push("/exercise")}
               style={{
                 position: "absolute",
                 top: "auto",
@@ -195,7 +198,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bold",textAlign:'center' }}
+                    style={{ fontWeight: "bold", textAlign: "center" }}
                   >
                     Care of the healing chest wound
                   </p>
@@ -248,54 +251,103 @@ const AfterSurgery = (props) => {
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px", fontWeight: "bold" }}
                   >
-                    do
+                    Do
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "green",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Move slowly.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "green",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Avoid overstretching with your arms.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "green",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Hug a pillow when coughing.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px", fontWeight: "bold" }}
                   >
-                    don’t
+                    Don’t
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "red",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Move your arms or twist your upper body quickly.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "red",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Put too much body weight through your arms.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "red",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Open heavy doors (use two hands if you must).
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "red",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Lift bags, children etc.
                   </p>
                 </div>
@@ -308,7 +360,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder", textAlign:'center' }}
+                    style={{ fontWeight: "bolder", textAlign: "center" }}
                   >
                     Care of the healing leg wound
                   </p>
@@ -351,7 +403,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder",textAlign:'center'  }}
+                    style={{ fontWeight: "bolder", textAlign: "center" }}
                   >
                     Eating and drinking
                   </p>
@@ -392,7 +444,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder", textAlign:'center' }}
+                    style={{ fontWeight: "bolder", textAlign: "center" }}
                   >
                     Washing and dressing
                   </p>
@@ -463,7 +515,7 @@ const AfterSurgery = (props) => {
                 <div className="resuming_home_content">
                   <p
                     className="resuming_home_content_text"
-                    style={{ fontWeight: "bolder", textAlign:'center' }}
+                    style={{ fontWeight: "bolder", textAlign: "center" }}
                   >
                     Exercise in Hospital
                   </p>
@@ -496,7 +548,11 @@ const AfterSurgery = (props) => {
 
               <div
                 className="slider_container"
-                style={{ display: "block", paddingTop: "4em", position:'relative' }}
+                style={{
+                  display: "block",
+                  paddingTop: "4em",
+                  position: "relative",
+                }}
               >
                 <div className="resuming_home_content">
                   <p
@@ -541,7 +597,7 @@ const AfterSurgery = (props) => {
                     style={{ paddingTop: "10px" }}
                   >
                     Gradually increase your walking in the corridor (as
-                    advised). Start the range of motion exercises on page 14.
+                    advised). Start the range of motion exercises.
                     These will help relieve any stiffness you may experience
                     after your surgery.
                   </p>
