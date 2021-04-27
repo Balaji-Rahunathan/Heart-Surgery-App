@@ -53,12 +53,20 @@ export default class Excercise extends React.Component {
   };
 
   next = () => {
-    this.setState({timing: 0})
+    this.setState({
+      timing: 0,
+      swipeClass: "swipe_icon",
+      swipePrev: "swipe_icon_hidden",
+    });
     this.props.history.push(this.props.nextPageLink);
   };
 
   prev = () => {
-    this.setState({timing: 0})
+    this.setState({
+      timing: 0,
+      swipeClass: "swipe_icon",
+      swipePrev: "swipe_icon_hidden",
+    });
     this.props.history.push(this.props.prevPageLink);
   };
 
@@ -133,8 +141,18 @@ export default class Excercise extends React.Component {
               </div>
             </div>
             <div className="exercise_footer">
-              <img src={Button} alt="button" onClick={() => this.prev()} className="prev_btn" />
-              <img src={Button} alt="button" onClick={() => this.next()} className="next_btn" />
+              <img
+                src={Button}
+                alt="button"
+                onClick={() => this.prev()}
+                className="prev_btn"
+              />
+              <img
+                src={Button}
+                alt="button"
+                onClick={() => this.next()}
+                className="next_btn"
+              />
             </div>
           </div>
         </div>
