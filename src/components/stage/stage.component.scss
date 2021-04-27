@@ -1,0 +1,42 @@
+@import "../../index.scss";
+.stage_container {
+  .stage_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0.5 2em;
+  }
+  .stage_image_conatiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .stage_image {
+      margin: 2em;
+      width: 80%;
+    }
+  }
+  .stage_description {
+    font-weight: 500;
+    padding: 2em;
+  }
+  .stage_feel_container {
+    display: flex;
+    justify-content: center;
+    .stage_feel_wrapper {
+      border-radius: 10px;
+      padding: 0.5em 2em;
+      background: $background_light_blue;
+      width: fit-content;
+      .stage_feel_description {
+        color: white;
+        align-items: center;
+      }
+      .stage_feel {
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        align-items: center;
+      }
+    }
+  }
+}
