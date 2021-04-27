@@ -123,7 +123,7 @@ const ManagingYourRiskFactors = (props) => {
                         <div className="myrf_content_container">
                             <p className="myrf_content_text">
                                 Drinking more than the recommended
-                                amounts of alcohol (see page 35) when
+                                amounts of alcohol when
                                 you are on insulin can cause your blood
                                 sugars to go to low (hypo). This can
                                 happen even 10 to 16 hours after you

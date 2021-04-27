@@ -21,7 +21,7 @@ export const calenderData = [
         `Light housework only e.g. prepare a cup
         of tea, wash and dry dishes.`,
         `Begin
-        walking programme (page 22).`]
+        walking programme`]
     },
     {
         title:"Week 3",

@@ -33,6 +33,18 @@ code {
   }
 }
 
+.swiper_container_vertical {
+  overflow-x: scroll;
+  position: relative;
+  scroll-snap-type: x mandatory;
+  .slider_container {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .header {
   position: sticky;
   top: 0;

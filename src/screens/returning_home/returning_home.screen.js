@@ -1,65 +1,24 @@
-import React, { useState, useEffect } from 'react'
-import Container from '../../common_component/container/container.component';
-import './returning_home.screen.scss';
-import { calenderContents } from '../../helpers/content'
-import ReturningHomeIndex from './returning_home_index.screen';
-import MenuButton from '../../common_component/menu_button/menu_button.component'
-import Sidebar from '../../components/sidebar/sidebar.component'
-import NextButton from '../../common_component/next_button/next_button.component';
-import Calender from '../../components/calender/calender.component';
-import ResumingHomeImage from '../../assets/images/Resuming Home/Group 2.svg'
-import Plan from '../../assets/images/update/plan.svg'
-import Rest from '../../assets/images/update/rest.svg'
+import React, { useState, useEffect } from "react";
+import Container from "../../common_component/container/container.component";
+import "./returning_home.screen.scss";
+import ReturningHomeIndex from "./returning_home_index.screen";
+import MenuButton from "../../common_component/menu_button/menu_button.component";
+import Sidebar from "../../components/sidebar/sidebar.component";
+import ResumingHome from "../resuming_home/resuming_home.screen";
+import TheJourneyHomeImage from "../../assets/images/update/car_home.svg";
+import NextButton from "../../common_component/next_button/next_button.component";
 
 const ReturningHome = (props) => {
-
-  const [toggle, settoggle] = useState(false)
-  const [showNextButton, setshowNextButton] = useState(false)
+  const [toggle, settoggle] = useState(false);
   const [load, setLoad] = useState(false);
-
-  const next = () => {
-    props.history.push('/returning_home/resuming_home');
-  }
-
   const handleMenuButtonClick = (data) => {
-    settoggle(data)
-  }
-
+    settoggle(data);
+  };
   useEffect(() => {
-    window.scrollTo(0, 0)
     setTimeout(() => {
-      var timerId;
-      let el = document.querySelector(".swiper_container")
-      el.addEventListener("scroll", () => {
-        var elwinScroll = el.scrollTop;
-        var elheight = el.scrollHeight - el.clientHeight;
-        var elscrolled = (elwinScroll / elheight) * 100;
-        console.log(elwinScroll, elheight, elscrolled)
-        document.getElementById("myBar").style.width = elscrolled + "%";
-        if (elscrolled > 92) {
-          if (timerId) {
-            return
-          }
-          timerId = setTimeout(function () {
-            setshowNextButton(true)
-            timerId = undefined;
-          }, 500)
-        }
-        else {
-          if (timerId) {
-            return
-          }
-          timerId = setTimeout(function () {
-            setshowNextButton(false)
-            timerId = undefined;
-          }, 500)
-        }
-      })
-      setLoad(true)
-    }, 1000)
-  }, [])
-
-
+      setLoad(true);
+    }, 1000);
+  }, []);
 
   return (
     <div className="returning_home_screen">
@@ -71,7 +30,7 @@ const ReturningHome = (props) => {
               background="white"
               type="open"
               onClick={handleMenuButtonClick}
-              style={{ position: 'absolute', left: '0', top: '0' }}
+              style={{ position: "absolute", left: "0", top: "0" }}
             />
             <ReturningHomeIndex {...props} />
           </div>
@@ -89,124 +48,109 @@ const ReturningHome = (props) => {
           </div>
           {load && (
             <>
-              <div className="slider_container" style={{display:'block'}}>
+              <div className="slider_container" style={{ display: "block" }}>
                 <div className="resuming_home_title">
-                  <p className="resuming_home_title_text">Resuming home activities after surgery</p>
+                  <p className="resuming_home_title_text">The journey home</p>
                 </div>
                 <div className="resuming_home_image_container">
-                  <img className="resuming_home_image" src={ResumingHomeImage} alt="resuming_home"></img>
+                  <img
+                    className="resuming_home_image"
+                    src={TheJourneyHomeImage}
+                    alt="resuming_home"
+                  ></img>
                 </div>
                 <div className="resuming_home_content">
                   <p className="resuming_home_content_text">
-                    The programme opposite is a sample
-                    guide to help you find a balance, as you
-                    return to your normal activities at home
-                    following heart surgery.
-              </p>
+                    You will need someone to collect you from the hospital. Sit
+                    in the front passenger seat of the car. Wear your seat belt.
+                    This may be a little uncomfortable so use a small cushion or
+                    towel to prevent the seat belt from rubbing against your
+                    breast bone. Take some painkillers before you go and
+                    remember to take regular breaks if your journey home is
+                    long.
+                  </p>
                 </div>
               </div>
+              <div className="slider_container" style={{ display: "block" }}>
+                <div className="resuming_home_title">
+                  <p className="resuming_home_title_text">At home</p>
+                </div>
+                <div className="resuming_home_image_container">
+                  <img
+                    className="resuming_home_image"
+                    src={TheJourneyHomeImage}
+                    alt="resuming_home"
+                  ></img>
+                </div>
+                <div className="resuming_home_content">
+                  <p className="resuming_home_content_text">
+                    You may feel frightened, anxious and tired returning home.
+                    This is normal and will pass in time as you gain confidence.
+                    It is important not to overdo things in the early stages.
+                    You and your heart have been through a lot and you need time
+                    to heal. Try to be patient with yourself and not to worry.
+                  </p>
+                  <p className="resuming_home_content_text">
+                    Your chest and leg wound may be sore for up to six weeks as
+                    they are still healing. Continue to take your painkillers.
+                    When you feel the pain is getting better, gradually reduce
+                    or stop them. First stop the afternoon painkillers, then the
+                    morning ones. In order to help you sleep well, stop the
+                    night time painkillers last.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="slider_container"
+                style={{ display: "block", position: "relative" }}
+              >
+                <div className="resuming_home_title">
+                  <p className="resuming_home_title_text">At home</p>
+                </div>
+                <div className="resuming_home_image_container">
+                  <img
+                    className="resuming_home_image"
+                    src={TheJourneyHomeImage}
+                    alt="resuming_home"
+                  ></img>
+                </div>
+                <div className="resuming_home_content">
+                  <p className="resuming_home_content_text">
+                    You may feel frightened, anxious and tired returning home.
+                    This is normal and will pass in time as you gain confidence.
+                    It is important not to overdo things in the early stages.
+                    You and your heart have been through a lot and you need time
+                    to heal. Try to be patient with yourself and not to worry.
+                  </p>
+                  <p className="resuming_home_content_text">
+                    Your chest and leg wound may be sore for up to six weeks as
+                    they are still healing. Continue to take your painkillers.
+                    When you feel the pain is getting better, gradually reduce
+                    or stop them. First stop the afternoon painkillers, then the
+                    morning ones. In order to help you sleep well, stop the
+                    night time painkillers last.
+                  </p>
+                </div>
 
-
-
-          <div className="slider_container" style={{display:'block', paddingTop:'2em'}}>
-
-          <div className="resuming_home_head_image_container" style={{maxWidth:'300px', margin:'0 auto'}}>
-                <img
-                  src={Plan}
-                  alt="head_image"
-                  className="resuming_home_head_image"
+                <NextButton
+                  onClick={() =>
+                    props.history.push("/returning_home/resuming_home")
+                  }
+                  style={{
+                    position: "absolute",
+                    top: "auto",
+                    bottom: "20px",
+                    left: "auto",
+                    right: "20px",
+                  }}
                 />
               </div>
-
-            <div className="resuming_home_content_container">
-              <div className="resuming_home_content_title">
-                <p className="resuming_home_content_title_text">Prioritise</p>
-              </div>
-              <div className="resuming_home_content">
-                <p className="resuming_home_content_text">
-                  Think about the tasks you do. Are they
-                  important? Can someone else do them?
-                  Can they be done more easily?
-                </p>
-                  </div>
-                </div>
-                <div className="resuming_home_content_container">
-                  <div className="resuming_home_content_title">
-                    <p className="resuming_home_content_title_text">Plan </p>
-                  </div>
-                  <div className="resuming_home_content">
-                    <p className="resuming_home_content_text">
-                      Plan your day and week, spread out
-                      activities and allow more time for difficult
-                      tasks. Continue to approach new activities
-                      gradually.
-                </p>
-              </div>
-            </div>
-           
-          </div>
-
-
-          <div className="slider_container" style={{display:'block', paddingTop:'2em'}}>
-
-          <div className="resuming_home_head_image_container" style={{maxWidth:'300px', margin:'0 auto'}}>
-                <img
-                  src={Rest}
-                  alt="head_image"
-                  className="resuming_home_head_image"
-                />
-              </div>
-          <div className="resuming_home_content_container">
-              <div className="resuming_home_content_title">
-                <p className="resuming_home_content_title_text">
-                  Pace yourself
-                </p>
-                  </div>
-                  <div className="resuming_home_content">
-                    <p className="resuming_home_content_text">
-                      Take a rest every day. Take extra breaks
-                      during activities to gradually increase
-                      your strength and prevent you from
-                      feeling tired or strained. Continue with
-                      your exercises.
-                </p>
-                  </div>
-                </div>
-
-                <div className="resuming_home_content_container">
-                  <div className="resuming_home_content_title">
-                    <p className="resuming_home_content_title_text">Positioning</p>
-                  </div>
-                  <div className="resuming_home_content">
-                    <p className="resuming_home_content_text">
-                      Organise your workspace to conserve
-                      energy. Sit where possible, limit bending
-                      and reaching and use equipment such as
-                      long handle aids or trolleys to move
-                      objects.
-                </p>
-                  </div>
-                </div>
-              </div>
-
-              {
-                calenderContents.map((data, index) => (
-                  <div className="slider_container" key={index} >
-                    <Calender {...data} />
-                  </div>
-                ))
-              }
-
-              {
-                showNextButton && <NextButton onClick={next} style={{ position: 'fixed', top: 'auto', bottom: '20px', left: 'auto', right: '20px' }} />
-              }
-
-            </>)}
+            </>
+          )}
         </Container>
       </div>
     </div>
-
-  )
-}
+  );
+};
 
 export default ReturningHome;

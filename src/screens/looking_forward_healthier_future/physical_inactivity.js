@@ -206,7 +206,7 @@ const PhysicalInactivity = (props) => {
                 </p>
                 <p className="pths_content_text blue-clro">
                   Build exercise into your daily life. The home walking
-                  programme on page 22 will help you get started.
+                  programme will help you get started.
                 </p>
               </div>
               <NextButton

@@ -28,6 +28,10 @@ import AfterSurgery from "./screens/after_surgery/after_surgery.screen";
 import WoundedHeartDoesHeal from "./screens/preparing_for_your_surgery/wounded_heart_does_heal";
 import Excercise from "./components/excercise/excersise.component";
 import { excerciseContent } from "./helpers/content";
+import HomeWalking from "./screens/home_walking/home_walking.screen";
+import LittleAboutYourHeart from "./screens/about_your_heart/little_about_your_heart/little_about_your_heart.screen";
+import RangeofMovementExercises from "./screens/range_of_movement_exercises/range_of_movement_exercises.screen";
+import GettingBacktoNormal from "./screens/getting_back_to_normal/getting_back_to_normal.screen";
 
 let App = (props) => {
   function getWindowDimensions() {
@@ -72,9 +76,12 @@ let App = (props) => {
       <div className="App">
         <BrowserRouter basename="/heart-surgery/">
           <Switch>
+            <Route exact path="/test" component={HomeWalking} />
             <Route exact path="/" component={YourHeartSurgeryGuide} />
             <Route exact path="/about_your_heart" component={intro} />
+            <Route exact path="/little_about_your_heart" component={LittleAboutYourHeart} />
             <Route exact path="/after_surgery" component={AfterSurgery} />
+            <Route exact path="/range_of_movement_exercises" component={RangeofMovementExercises} />            
             {/* <Route
               exact
               path="/wounded_heart_does_heal"
@@ -84,27 +91,29 @@ let App = (props) => {
             <Route exact path="/neck_mobilisation">
               {(props) => <Excercise {...excerciseContent[0]} {...props} />}
             </Route>
-            <Route exact path="/arm_raising">
+            <Route exact path="/shoulder_girdle">
               {(props) => <Excercise {...excerciseContent[1]} {...props} />}
             </Route>
-            <Route exact path="/side_bending">
+            <Route exact path="/arm_raising">
               {(props) => <Excercise {...excerciseContent[2]} {...props} />}
             </Route>
-            <Route exact path="/heel_raises">
+            <Route exact path="/side_bending">
               {(props) => <Excercise {...excerciseContent[3]} {...props} />}
             </Route>
-            <Route exact path="/knee_bends">
+            <Route exact path="/leg_swings">
               {(props) => <Excercise {...excerciseContent[4]} {...props} />}
             </Route>
-            <Route exact path="/leg_swings">
+            <Route exact path="/knee_bends">
               {(props) => <Excercise {...excerciseContent[5]} {...props} />}
             </Route>
+            <Route exact path="/heel_raises">
+              {(props) => <Excercise {...excerciseContent[6]} {...props} />}
+            </Route>
+
             <Route exact path="/arm_raise">
               {(props) => <Excercise {...excerciseContent[6]} {...props} />}
             </Route>
-            <Route exact path="/shoulder_girdle">
-              {(props) => <Excercise {...excerciseContent[7]} {...props} />}
-            </Route>
+
             <Route
               exact
               path="/shoulder_movement"
@@ -127,6 +136,11 @@ let App = (props) => {
               exact
               path="/returning_home/resuming_home"
               component={ResumingHome}
+            />
+            <Route
+              exact
+              path="/returning_home/getting_back_to_normal"
+              component={GettingBacktoNormal}
             />
             <Route
               exact

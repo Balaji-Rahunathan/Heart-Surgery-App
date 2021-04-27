@@ -16,7 +16,7 @@ const HomExerciseAfterSurgery = (props) => {
     props.history.push("/returning_home/exercise_target_for_life");
   };
   const prev = () => {
-    props.history.push("/returning_home/resuming_home");
+    props.history.push("/returning_home/getting_back_to_normal");
   };
   const handleMenuButtonClick = (data) => {
     settoggle(data);

@@ -483,7 +483,7 @@ export const ReturningHomeContent = {
       header: "Eating well as you recover",
       description: null,
       content:
-        "Some people may have a poor appetite for a few days after surgery. If this persists for longer please ask your doctor or nurse to refer you to a dietitian.A healthy balanced diet is recommended as you recover. If you have been advised to lose weight after your surgery, you should wait until your wound has fully healed.This can take up to six weeks.Do not diet or lose weight during this period.See ‘Healthy Eating for a Healthy Heart’, page 34.",
+        "Some people may have a poor appetite for a few days after surgery. If this persists for longer please ask your doctor or nurse to refer you to a dietitian.A healthy balanced diet is recommended as you recover. If you have been advised to lose weight after your surgery, you should wait until your wound has fully healed.This can take up to six weeks.Do not diet or lose weight during this period.See ‘Healthy Eating for a Healthy Heart’.",
       image: require("../assets/images/Night_before_Surgery/Group_780.svg"),
       button: true,
     },
@@ -524,7 +524,7 @@ export const calenderContents = [
       `Light housework only e.g. prepare a cup
         of tea, wash and dry dishes.`,
       `Begin
-        walking programme (page 22).`,
+        walking programme.`,
     ],
   },
   {
@@ -594,69 +594,7 @@ export const calenderContents = [
   },
 ];
 
-export const returnHomeContent = [
-  {
-    title: "The journey home",
-    image: require("../assets/images/update/car_home.svg"),
-    content: [
-      `You will need someone to collect you from
-        the hospital. Sit in the front passenger seat
-        of the car. Wear your seat belt. This may be
-        a little uncomfortable so use a small cushion or towel to prevent the seat belt from
-        rubbing against your breast bone. Take
-        some painkillers before you go and remember to take regular breaks if your journey
-        home is long.`,
-    ],
-  },
-
-  {
-    title: "At home",
-    image: require('../assets/images/update/car_home.svg'),
-    content: [
-      `You may feel frightened, anxious and tired
-        returning home. This is normal and will pass
-        in time as you gain confidence. It is important
-        not to overdo things in the early stages. You
-        and your heart have been through a lot and
-        you need time to heal. Try to be patient with
-        yourself and not to worry.`,
-      `Your chest and leg wound may be sore for
-        up to six weeks as they are still healing.
-        Continue to take your painkillers. When you
-        feel the pain is getting better, gradually
-        reduce or stop them. First stop the afternoon
-        painkillers, then the morning ones. In order to
-        help you sleep well, stop the night time
-        painkillers last.`,
-     
-    ],
-  },
-
-  {
-    title: "",
-    image: require('../assets/images/update/car_home.svg'),
-    content: [
-      
-      `If you had an artery taken from your arm or
-        chest, it is normal to experience some
-        numbness or tingling in your fingers or over
-        your left breast area for several months. Tell
-        your GP if you feel it is not improving or is
-        getting worse.`,
-      `Some people retain fluid after surgery and
-        may need to be on a low salt diet or take
-        water tablets. Weigh yourself each day. Do
-        this first thing in the morning after using the
-        toilet, while you are still in your night clothes.
-        Write down your weight so you have a daily
-        record. If you gain 2 lbs (1kg) or more for
-        two days in a row, you may be retaining fluid
-        and you will need to visit your GP to adjust
-        your medication.`,
-    ],
-  },
-
-
+export const returnHomeContent = [  
   {
     title: "Eating well as you recover",
     image: require("../assets/images/returning_home/Group 4.png"),
@@ -671,7 +609,7 @@ export const returnHomeContent = [
             until your wound has fully healed. This can
             take up to six weeks. Do not diet or lose
             weight during this period. See ‘Healthy
-            Eating for a Healthy Heart’, page 34.`,
+            Eating for a Healthy Heart’.`,
     ],
   },
   {
@@ -831,8 +769,9 @@ export const returnHomeContent = [
 
 export const excerciseContent = [
   {
-    nextPageLink: "/arm_raising",
-    prevPageLink: '/after_surgery',
+    nextPageLink: "/shoulder_girdle",
+    prevPageLink: "/range_of_movement_exercises",
+    postion: "Sitting Exercise 1",
     excerciseName: "Neck Mobilisation",
     videoUrl: require("../assets/video/frame.mp4"),
     content: [
@@ -843,8 +782,24 @@ export const excerciseContent = [
     ],
   },
   {
+    nextPageLink: "/arm_raising",
+    prevPageLink: "/neck_mobilisation",
+    postion: "Sitting Exercise 1",
+    excerciseName: "Shoulder Girdle Exercises",
+    videoUrl: require("../assets/video/ex7.mp4"),
+    content: [
+      `Starting Position: Sit up straight and tall in an upright
+      chair.`,
+      `a) Shrug shoulders up to ears and gently ease them back down.`,
+      `b) Make big circles by rolling the shoulders forward and then
+      backwards.`,
+      `Repeat 2 to 3 times.`,
+    ],
+  },
+  {
     nextPageLink: "/side_bending",
-    prevPageLink: '/neck_mobilisation',
+    prevPageLink: "/shoulder_girdle",
+    postion: "Sitting Exercise 1",
     excerciseName: "Arm Raising",
     videoUrl: require("../assets/video/ex6.mp4"),
     content: [
@@ -855,8 +810,9 @@ export const excerciseContent = [
     ],
   },
   {
-    nextPageLink: "/heel_raises",
-    prevPageLink: '/arm_raising',
+    nextPageLink: "/leg_swings",
+    prevPageLink: "/arm_raising",
+    postion: "Standing Exercise 1:",
     excerciseName: "Side Bending",
     videoUrl: require("../assets/video/1.mp4"),
     content: [
@@ -873,20 +829,24 @@ export const excerciseContent = [
   },
   {
     nextPageLink: "/knee_bends",
-    prevPageLink: '/side_bending',
-    excerciseName: "Heel Raises",
-    videoUrl: require("../assets/video/2.mp4"),
+    prevPageLink: "/side_bending",
+    postion: "Standing Exercise 1:",
+    excerciseName: "Leg Swings",
+    videoUrl: require("../assets/video/3.mp4"),
     content: [
-      `Starting Position: Stand straight and tall, legs about a foot
-      apart. Hold on to a chair or table for support.`,
-      `Stand up on your toes, lower down again. Keep your back
-      straight. Try not to push on the chair with your arms.`,
-      `Repeat 2 to 3 times. Gradually build up to 10 times.`,
+      `Starting Position: Stand, holding on to the back of a chair
+      with your right hand.`,
+      `a) Swing your left leg forward and back in a smooth relaxed
+      motion. Keep your back straight.`,
+      `b) Keep your knee relaxed, it will bend slightly.`,
+      `c) Turn and repeat with your right leg.`,
+      `Repeat 2 to 3 times.`,
     ],
   },
   {
-    nextPageLink: "/leg_swings",
-    prevPageLink: '/heel_raises',
+    nextPageLink: "/heel_raises",
+    prevPageLink: "/leg_swings",
+    postion: "Standing Exercise 1:",
     excerciseName: "Knee Bends",
     videoUrl: require("../assets/video/ex5.mp4"),
     content: [
@@ -901,45 +861,145 @@ export const excerciseContent = [
     ],
   },
   {
-    nextPageLink: "/arm_raise",
-    prevPageLink: '/knee_bends',
-    excerciseName: "Leg Swings",
-    videoUrl: require("../assets/video/3.mp4"),
-    content: [
-      `Starting Position: Stand, holding on to the back of a chair
-      with your right hand.`,
-      `a) Swing your left leg forward and back in a smooth relaxed
-      motion. Keep your back straight.`,
-      `b) Keep your knee relaxed, it will bend slightly.`,
-      `c) Turn and repeat with your right leg.`,
-      `Repeat 2 to 3 times.`
-    ],
-  },
-  {
-    nextPageLink: "/shoulder_girdle",
-    prevPageLink: '/leg_swings',
-    excerciseName: "Arm Raising",
-    videoUrl: require("../assets/video/hand_main.mp4"),
-    content: [
-      `Starting Position: Sit up straight and tall in an upright
-      chair.`,
-      ` Lift both arms out to the side and up over your head. Try to
-      clap your hands together. Do not use jerky movements.`,
-      `Repeat 2 to 3 times.`,
-    ],
-  },
-  {
     nextPageLink: "/returning_home",
-    prevPageLink: '/arm_raise',
-    excerciseName: "Shoulder Girdle Exercises",
-    videoUrl: require("../assets/video/ex7.mp4"),
+    prevPageLink: "/knee_bends",
+    postion: "Standing Exercise 1:",
+    excerciseName: "Heel Raises",
+    videoUrl: require("../assets/video/2.mp4"),
     content: [
-      `Starting Position: Sit up straight and tall in an upright
-      chair.`,
-      `a) Shrug shoulders up to ears and gently ease them back down.`,
-      `b) Make big circles by rolling the shoulders forward and then
-      backwards.`,
-      `Repeat 2 to 3 times.`
+      `Starting Position: Stand straight and tall, legs about a foot
+      apart. Hold on to a chair or table for support.`,
+      `Stand up on your toes, lower down again. Keep your back
+      straight. Try not to push on the chair with your arms.`,
+      `Repeat 2 to 3 times. Gradually build up to 10 times.`,
     ],
+  },
+
+  // {
+  //   nextPageLink: "/returning_home",
+  //   prevPageLink: "/leg_swings",
+  //   postion: 'Standing Exercise 1:',
+  //   excerciseName: "Arm Raising",
+  //   videoUrl: require("../assets/video/hand_main.mp4"),
+  //   content: [
+  //     `Starting Position: Sit up straight and tall in an upright
+  //     chair.`,
+  //     ` Lift both arms out to the side and up over your head. Try to
+  //     clap your hands together. Do not use jerky movements.`,
+  //     `Repeat 2 to 3 times.`,
+  //   ],
+  // },
+];
+
+export const homeWalking = [
+  {
+    stage: "Stage 1",
+    description: "Walk slowly for 5 minutes - at least twice daily",
+    src: require("../assets/images/home walking/10.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 2",
+    description: "Walk slowly for 7 minutes - at least twice daily",
+    src: require("../assets/images/home walking/14.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 3",
+    description: "Walk slowly for 10 minutes - at least twice daily",
+    src: require("../assets/images/home walking/20.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 4",
+    description: "Walk slowly for 12 minutes - at least twice daily",
+    src: require("../assets/images/home walking/24.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 5",
+    description: "Walk slowly for 15 minutes - at least twice daily",
+    src: require("../assets/images/home walking/30.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 6",
+    description: "Walk slowly for 17 minutes - at least twice daily",
+    src: require("../assets/images/home walking/34.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 7",
+    description: "Walk slowly for 20 minutes - at least twice daily",
+    src: require("../assets/images/home walking/40.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 8",
+    description: `Walk slowly for 25 minutes - at least once daily
+    (If you want to do another walk that’s ok,
+    it does not need to be as long)`,
+    src: require("../assets/images/home walking/25plus.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 9",
+    description: "Walk slowly for 30 minutes - at least once daily",
+    src: require("../assets/images/home walking/30plus.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 10",
+    description: `10 minutes strolling (warm up)`,
+    src: require("../assets/images/home walking/30.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 10",
+    description: `Try to walk faster for the next 10 minutes middle bit)`,
+    src: require("../assets/images/home walking/30.png"),
+    feel: "Somewhat Hard",
+  },
+  {
+    stage: "Stage 10",
+    description: `stroll for 10 minutes more (cool down) `,
+    src: require("../assets/images/home walking/30.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 11",
+    description: `stroll for 12 minutes (warm up)`,
+    src: require("../assets/images/home walking/34.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 11",
+    description: `Faster walk for 10 minutes (middle bit)`,
+    src: require("../assets/images/home walking/34.png"),
+    feel: "Somewhat Hard",
+  },
+  {
+    stage: "Stage 11",
+    description: `stroll for 12 minutes (cool down)`,
+    src: require("../assets/images/home walking/34.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 12",
+    description: `stroll for 15 minutes (warm up)`,
+    src: require("../assets/images/home walking/40.png"),
+    feel: "Light",
+  },
+  {
+    stage: "Stage 12",
+    description: `Faster walk for 10 minutes (middle bit)`,
+    src: require("../assets/images/home walking/40.png"),
+    feel: "Somewhat Hard",
+  },
+  {
+    stage: "Stage 12",
+    description: `stroll for 15 minutes (cool down)`,
+    src: require("../assets/images/home walking/40.png"),
+    feel: "Light",
   },
 ];

@@ -10,7 +10,7 @@ import Eat from "../../assets/images/update/eatdrink.svg";
 import Leg from "../../assets/images/update/leg.svg";
 import Chest from "../../assets/images/update/stand.svg";
 import Dress from "../../assets/images/update/dress.svg";
-import Sittingg from "../../assets/images/update/sittingg.svg";
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 
 const AfterSurgery = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -19,7 +19,7 @@ const AfterSurgery = (props) => {
   const [load, setLoad] = useState(false);
 
   const next = () => {
-    props.history.push("/neck_mobilisation");
+    props.history.push("/range_of_movement_exercises");
   };
 
   const handleMenuButtonClick = (data) => {
@@ -266,54 +266,103 @@ const AfterSurgery = (props) => {
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px", fontWeight: "bold" }}
                   >
-                    do
+                    Do
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "green",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Move slowly.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "green",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Avoid overstretching with your arms.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "green",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Hug a pillow when coughing.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px", fontWeight: "bold" }}
                   >
-                    don’t
+                    Don’t
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "red",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Move your arms or twist your upper body quickly.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "red",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Put too much body weight through your arms.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "red",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Open heavy doors (use two hands if you must).
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
+                    <FiberManualRecordIcon
+                      style={{
+                        color: "red",
+                        fontSize: "10px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Lift bags, children etc.
                   </p>
                 </div>
@@ -574,7 +623,7 @@ const AfterSurgery = (props) => {
                     style={{ paddingTop: "10px" }}
                   >
                     Gradually increase your walking in the corridor (as
-                    advised). Start the range of motion exercises on page 14.
+                    advised). Start the range of motion exercises.
                     These will help relieve any stiffness you may experience
                     after your surgery.
                   </p>

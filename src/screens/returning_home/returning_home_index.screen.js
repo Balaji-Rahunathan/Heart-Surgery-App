@@ -17,7 +17,7 @@ const ReturningHomeIndex = (props) => {
       <div className="returning_home_index_content"></div>
       <NextButton
         prev
-        onClick={() => props.history.push("/shoulder_girdle")}
+        onClick={() => props.history.push("/heel_raises")}
         style={{
           position: "absolute",
           top: "auto",
