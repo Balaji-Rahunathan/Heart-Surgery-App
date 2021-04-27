@@ -8,8 +8,9 @@ import Sitting from "../../assets/images/update/sitting.svg";
 import Exec from "../../assets/images/update/relax.svg";
 import Eat from "../../assets/images/update/eatdrink.svg";
 import Leg from "../../assets/images/update/leg.svg";
-import Chest from "../../assets/images/update/chest.svg";
+import Chest from "../../assets/images/update/stand.svg";
 import Dress from "../../assets/images/update/dress.svg";
+import Sittingg from "../../assets/images/update/sittingg.svg";
 
 const AfterSurgery = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -151,27 +152,42 @@ const AfterSurgery = (props) => {
                 className="slider_container"
                 style={{ display: "block", paddingTop: "4em" }}
               >
+                <div
+                  className="resuming_home_image_container"
+                  style={{ textAlign: "center" }}
+                >
+                  <img
+                    className="resuming_home_image"
+                    src={Sittingg}
+                    alt="resuming_home"
+                    style={{ maxWidth: "200px", paddingTop: "16px" }}
+                  ></img>
+                </div>
+
                 <div className="resuming_home_content">
                   <p className="resuming_home_content_text">
-                    <span style={{fontWeight:'bolder'}}>1.</span> To do this, place your hands on your stomach. Keep your
-                    shoulders relaxed (see picture above).
+                    <span style={{ fontWeight: "bolder" }}>1.</span> To do this,
+                    place your hands on your stomach. Keep your shoulders
+                    relaxed (see picture above).
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
-                    <span style={{fontWeight:'bolder'}}>2.</span> Take a deep breath in through your nose. You should feel
-                    your stomach rising and falling as you breathe in and out.
+                    <span style={{ fontWeight: "bolder" }}>2.</span> Take a deep
+                    breath in through your nose. You should feel your stomach
+                    rising and falling as you breathe in and out.
                   </p>
                   <p
                     className="resuming_home_content_text"
                     style={{ paddingTop: "10px" }}
                   >
-                    <span style={{fontWeight:'bolder'}}>3.</span> Hold each breath for three seconds and then breathe out.
+                    <span style={{ fontWeight: "bolder" }}>3.</span> Hold each
+                    breath for three seconds and then breathe out.
                   </p>
                   <p
                     className="resuming_home_content_text"
-                    style={{ paddingTop: "10px" , fontWeight:'bold'}}
+                    style={{ paddingTop: "10px", fontWeight: "bold" }}
                   >
                     Repeat three times.
                   </p>
