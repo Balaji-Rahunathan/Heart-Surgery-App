@@ -26,7 +26,7 @@ export default class Intro extends React.Component {
   };
 
   nextBtn = () => {
-    this.props.history.push("/preparing_for_surgery_home");
+    this.props.history.push("/little_about_your_heart");
   };
 
   prevBtn = () => {
@@ -147,8 +147,8 @@ export default class Intro extends React.Component {
                 </a>
               ) : null}
               {this.state.para ? (
-                <div className="para_text">
-                  <span className="btn-text">
+                <div className="para_text" style={{textAlign: 'left'}}>
+                  <span className="btn-text" >
                     During your Coronary Artery Bypass Surgery (CABG) the doctor
                     takes a vein from your leg and an artery from your chext
                     wall or arm. These are used to bypass the narrowed area in
