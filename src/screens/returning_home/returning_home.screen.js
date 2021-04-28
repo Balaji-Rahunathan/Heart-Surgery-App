@@ -7,6 +7,8 @@ import Sidebar from "../../components/sidebar/sidebar.component";
 import ResumingHome from "../resuming_home/resuming_home.screen";
 import TheJourneyHomeImage from "../../assets/images/update/car_home.svg";
 import NextButton from "../../common_component/next_button/next_button.component";
+import AtHome from "../../assets/images/update/athome.svg";
+
 
 const ReturningHome = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -78,7 +80,7 @@ const ReturningHome = (props) => {
                 <div className="resuming_home_image_container">
                   <img
                     className="resuming_home_image"
-                    src={TheJourneyHomeImage}
+                    src={AtHome}
                     alt="resuming_home"
                   ></img>
                 </div>
@@ -110,7 +112,7 @@ const ReturningHome = (props) => {
                 <div className="resuming_home_image_container">
                   <img
                     className="resuming_home_image"
-                    src={TheJourneyHomeImage}
+                    src={AtHome}
                     alt="resuming_home"
                   ></img>
                 </div>
