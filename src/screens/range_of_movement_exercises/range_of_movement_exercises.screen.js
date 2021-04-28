@@ -91,7 +91,7 @@ const RangeofMovementExercises = (props) => {
                   </p>
                   <p>
                     It’s also a good idea to continue your deep breathing
-                    exercises (page 12) often during the day. Do all movements
+                    exercises soften during the day. Do all movements
                     slowly and smoothly so that they do not cause pain.
                   </p>
                   <p>
