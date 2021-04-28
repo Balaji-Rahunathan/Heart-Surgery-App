@@ -26,6 +26,9 @@ export default class Excercise extends React.Component {
 
   componentDidMount() {
     this.setState({ timing: 0 });
+    setTimeout(()=>{
+      this.setState({timing: 0.1})
+    }, 500)
   }
 
   onChange = (value) => {
@@ -58,6 +61,9 @@ export default class Excercise extends React.Component {
       swipeClass: "swipe_icon",
       swipePrev: "swipe_icon_hidden",
     });
+    setTimeout(()=>{
+      this.setState({timing: 0.1})
+    }, 500)
     this.props.history.push(this.props.nextPageLink);
   };
 
@@ -67,6 +73,9 @@ export default class Excercise extends React.Component {
       swipeClass: "swipe_icon",
       swipePrev: "swipe_icon_hidden",
     });
+    setTimeout(()=>{
+      this.setState({timing: 0.1})
+    }, 500)
     this.props.history.push(this.props.prevPageLink);
   };
 
