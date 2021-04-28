@@ -10,7 +10,7 @@ const NextButton = (props) => {
         <img
           src={Button}
           alt="next_button"
-          className="red-circle4-prev"
+          className="red-circle4-prev prev_button"
           onClick={onClick}
           style={style}
         />
@@ -18,7 +18,7 @@ const NextButton = (props) => {
         <img
           src={Button}
           alt="next_button"
-          className="red-circle4"
+          className="red-circle4 next_button"
           onClick={onClick}
           style={style}
         />
