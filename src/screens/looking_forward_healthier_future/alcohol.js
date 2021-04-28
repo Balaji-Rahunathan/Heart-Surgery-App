@@ -133,20 +133,10 @@ const Alcohol = (props) => {
 
         {load && (
           <>
-<<<<<<< HEAD
-            <div className="slider_container" style={{ paddingTop: "1em" }}>
-              <div className="pths_content_container clryloo">
-                <p
-                  className="pths_content_text"
-                  style={{ paddingTop: "1em", fontWeight: "bold" }}
-                >
-                  If you do not drink
-=======
             <div className="slider_container">
               <div className="pths_content_container clryloo" style={{ marginTop: "0.5em", paddingTop:'2em' }}>
                 <p className="pths_content_text" style={{ paddingTop: "0.5em" }}>
                   if you do not drink if you do drink
->>>>>>> 2eb72c2fd4abc694fda6f70fe934033d8a7b99d7
                 </p>
                 <p className="pths_content_text">Do not start.</p>
                 <p
