@@ -83,6 +83,7 @@ const Alcohol = (props) => {
                 fontSize: "24px",
                 color: "#00a1fb",
                 paddingRight: "3em",
+                paddingBottom: "0em",
               }}
             >
               Alcohol
@@ -132,9 +133,9 @@ const Alcohol = (props) => {
 
         {load && (
           <>
-            <div className="slider_container" style={{ paddingTop: "1em" }}>
-              <div className="pths_content_container clryloo">
-                <p className="pths_content_text" style={{ paddingTop: "1em" }}>
+            <div className="slider_container">
+              <div className="pths_content_container clryloo" style={{ marginTop: "0.5em", paddingTop:'2em' }}>
+                <p className="pths_content_text" style={{ paddingTop: "0.5em" }}>
                   if you do not drink if you do drink
                 </p>
                 <p className="pths_content_text">Do not start.</p>
@@ -153,9 +154,6 @@ const Alcohol = (props) => {
                 </p>
                 <p className="pths_content_text">avoid binge drinking</p>
               </div>
-            </div>
-
-            <div className="slider_container" style={{ paddingTop: "1em", position: 'relative' }}>
               <div className="pths_content_container clryloo">
                 <p className="pths_content_text">
                   ‘Binge drinking’ is having five or more standard drinks in one
@@ -183,6 +181,12 @@ const Alcohol = (props) => {
                   mixers.
                 </p>
               </div>
+            </div>
+
+            <div
+              className="slider_container"
+              style={{ paddingTop: "1em", position: "relative" }}
+            >
               <div className="pths_content_container clryloo">
                 <p className="pths_content_text">
                   ‘Binge drinking’ is having five or more standard drinks in one
@@ -212,7 +216,10 @@ const Alcohol = (props) => {
               </div>
 
               <div className="pths_content_container">
-                <p className="pths_content_text txtto" style={{paddingRight: '2.5em'}}>
+                <p
+                  className="pths_content_text txtto"
+                  style={{ paddingRight: "2.5em" }}
+                >
                   It is normally safe to take a small amount of alcohol while
                   taking your heart drugs. if you are taking warfarin however,
                   talk to your doctor for advice on drinking alcohol.
@@ -226,7 +233,7 @@ const Alcohol = (props) => {
                   top: "auto",
                   bottom: "20px",
                   left: "auto",
-                  right: "20px",                  
+                  right: "20px",
                 }}
               />
             </div>
