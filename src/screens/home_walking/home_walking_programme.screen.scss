@@ -1,21 +1,21 @@
 @import "../../index.scss";
 
-.fyandyp_screen {
-  .fyandyp_container {
-    .fyandyp_wrapper {
-      .fyandyp_head_container {
+.hwp_screen {
+  .hwp_container {
+    .hwp_wrapper {
+      .hwp_head_container {
           margin: 2em;
           margin-bottom: 0em;
-        .fyandyp_head_text {
+        .hwp_head_text {
             color: $background_light_blue;
             font-size: 20px;
             font-weight: 600;
             padding: 0.8em 50px;
         }
       }
-      .fyandyp_title_container {
+      .hwp_title_container {
         margin: 1em 2em 1em 2em;
-        .fyandyp_title_text {
+        .hwp_title_text {
           padding-top: 1em;
           padding-left: 2em;
             font-size: 16px;
@@ -26,19 +26,19 @@
           padding-left: 0em !important;
         }
       }
-      .fyandyp_image_container {
-        .fyandyp_image {
-          width: 60%;
+      .hwp_image_container {
+        .hwp_image {
+          width: 70%;
         }
       }
-      .fyandyp_image_content_container {
+      .hwp_image_content_container {
           margin: 2em;
-        .fyandyp_image_content_text {
+        .hwp_image_content_text {
           text-align: left;
           font-size: 14px;
         }
       }
-      .fyandyp_sub_content_container {
+      .hwp_sub_content_container {
           margin: 2em;
         .fyandup_sub_content_head_container {
             margin: 1em;

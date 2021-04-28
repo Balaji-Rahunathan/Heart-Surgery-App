@@ -89,6 +89,14 @@ const Sidebar = ({ toggle, onClick, history }) => {
               </MenuItem>
               <MenuItem
                 onClick={() =>
+                  history.push("/returning_home/home_walking_programme")
+                }
+                className="menu_item"
+              >
+                Home Walking Programme
+              </MenuItem>
+              <MenuItem
+                onClick={() =>
                   history.push("/returning_home/exercise_target_for_life")
                 }
                 className="menu_item"

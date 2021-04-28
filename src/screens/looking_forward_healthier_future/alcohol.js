@@ -83,6 +83,7 @@ const Alcohol = (props) => {
                 fontSize: "24px",
                 color: "#00a1fb",
                 paddingRight: "3em",
+                paddingBottom: "0em",
               }}
             >
               Alcohol
@@ -132,6 +133,7 @@ const Alcohol = (props) => {
 
         {load && (
           <>
+<<<<<<< HEAD
             <div className="slider_container" style={{ paddingTop: "1em" }}>
               <div className="pths_content_container clryloo">
                 <p
@@ -139,6 +141,12 @@ const Alcohol = (props) => {
                   style={{ paddingTop: "1em", fontWeight: "bold" }}
                 >
                   If you do not drink
+=======
+            <div className="slider_container">
+              <div className="pths_content_container clryloo" style={{ marginTop: "0.5em", paddingTop:'2em' }}>
+                <p className="pths_content_text" style={{ paddingTop: "0.5em" }}>
+                  if you do not drink if you do drink
+>>>>>>> 2eb72c2fd4abc694fda6f70fe934033d8a7b99d7
                 </p>
                 <p className="pths_content_text">Do not start.</p>
                 <p
@@ -201,12 +209,6 @@ const Alcohol = (props) => {
                   spirit measure and sugar free mixers.
                 </p>
               </div>
-            </div>
-
-            <div
-              className="slider_container"
-              style={{ paddingTop: "1em", position: "relative" }}
-            >
               <div className="pths_content_container clryloo">
                 <p className="pths_content_text">
                   ‘Binge drinking’ is having five or more standard drinks in one
@@ -234,6 +236,12 @@ const Alcohol = (props) => {
                   mixers.
                 </p>
               </div>
+            </div>
+
+            <div
+              className="slider_container"
+              style={{ paddingTop: "1em", position: "relative" }}
+            >
               <div className="pths_content_container clryloo">
                 <p className="pths_content_text">
                   ‘Binge drinking’ is having five or more standard drinks in one

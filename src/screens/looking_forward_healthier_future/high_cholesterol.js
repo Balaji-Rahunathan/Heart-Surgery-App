@@ -334,7 +334,7 @@ const HighCholesterol = (props) => {
               </div>
             </div>
 
-            <div className="slider_container" style={{ paddingTop: "3em" }}>
+            <div className="slider_container" style={{ paddingTop: "1em" }}>
               <div className="blue-clr">
                 <div className="pts_title_container">
                   <p className="pts_title_text">
@@ -351,7 +351,7 @@ const HighCholesterol = (props) => {
               </div>
 
               <div className="pts_title_container">
-                <p className="pts_title_text" style={{ paddingTop: "2em" }}>
+                <p className="pts_title_text" style={{ paddingTop: "1em" }}>
                   Understanding your lipoprotein Profile
                 </p>
               </div>

@@ -62,7 +62,7 @@ export default class Exercise extends React.Component {
 
             <NextButton
               prev
-              onClick={()=>this.props.history.push("/s")}
+              onClick={()=>this.props.history.push("/preparing_for_surgery")}
               style={{
                 position: "fixed",
                 top: "auto",

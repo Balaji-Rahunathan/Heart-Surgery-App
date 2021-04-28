@@ -91,7 +91,10 @@ export default class Excercise extends React.Component {
               style={{ position: "absolute", left: "0", top: "0" }}
             />
             <div className="exercise_head">
-              <h1>{this.props.excerciseName}</h1>
+              <div className="postion_container">{this.props.position}</div>
+              <div className="exercise_name_container">
+                {this.props.excerciseName}
+              </div>
               <div className="head_text">
                 {this.props.content.map((content) => (
                   <p className="content_text">{content}</p>
