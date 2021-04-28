@@ -594,7 +594,7 @@ export const calenderContents = [
   },
 ];
 
-export const returnHomeContent = [  
+export const returnHomeContent = [
   {
     title: "Eating well as you recover",
     image: require("../assets/images/returning_home/Group 4.png"),
@@ -949,6 +949,10 @@ export const homeWalking = [
     feel: "Light",
   },
   {
+    description: `If you feel comfortable you can now start increasing your walking pace to a brisk pace during the middle
+    section of the walk. Remember to always walk at a slower pace at the beginning and end.`,
+  },
+  {
     stage: "Stage 10",
     description: `10 minutes strolling (warm up)`,
     src: require("../assets/images/home walking/30.png"),
@@ -1001,5 +1005,11 @@ export const homeWalking = [
     description: `stroll for 15 minutes (cool down)`,
     src: require("../assets/images/home walking/40.png"),
     feel: "Light",
+  },
+  {
+    description: `From then on gradually build up the length of the middle (faster) part of the walk until
+    you reach the exercise target for life. Remember to always walk at a slower pace at the
+    beginning and end.`,
+    src: require("../assets/images/home walking/60plus.png"),
   },
 ];
