@@ -11,7 +11,7 @@ const Stage = (props) => {
       </div>
       <div className="stage_description">{description}</div>
       <div className="stage_feel_container">
-        <div className="stage_feel_wrapper">
+        <div className={`stage_feel_wrapper ${feel !== 'Light' && 'bg_red'}`} >
           <div className="stage_feel_description">The excercise should feel</div>
           <div className="stage_feel">{feel}</div>
         </div>
