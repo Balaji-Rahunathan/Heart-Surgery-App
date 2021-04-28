@@ -231,7 +231,7 @@ const ManagingYourRiskFactors = (props) => {
                         </div>
                         <div className="myrf_content_container">
                             <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Lose weight if you are overweight.</p>
-                            <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Be physically active and eat healthily (see pages 21, 34 and 36).</p>
+                            <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Be physically active and eat healthily.</p>
                             <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Do not add salt at the table or in cooking.</p>
                             <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Take it easy on alcohol, avoid binge drinking completely.</p>
                             <p className="myrf_content_text"><FiberManualRecordIcon className="myrf_points" /> Take your medications regularly as advised. These are usually prescribed for life.</p>
