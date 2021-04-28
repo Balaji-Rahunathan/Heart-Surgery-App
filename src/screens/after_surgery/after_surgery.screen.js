@@ -10,8 +10,9 @@ import Eat from "../../assets/images/update/eatdrink.svg";
 import Leg from "../../assets/images/update/leg.svg";
 import Chest from "../../assets/images/update/stand.svg";
 import Dress from "../../assets/images/update/dress.svg";
-import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord"
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import Sittingg from "../../assets/images/update/sittingg.svg";
+import SwipeArrow from "../../assets/images/swipe-arrow-blue.svg";
 
 const AfterSurgery = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -132,6 +133,15 @@ const AfterSurgery = (props) => {
                   alt="resuming_home"
                   style={{ maxWidth: "200px", paddingTop: "16px" }}
                 ></img>
+              </div>
+
+              <div>
+                <div>Swipe Down</div>
+                <img
+                  src={SwipeArrow}
+                  alt="SwipeArrow"
+                  style={{ transform: "rotate(90deg)", paddingLeft: "1em" }}
+                />
               </div>
             </div>
             <NextButton
@@ -624,9 +634,9 @@ const AfterSurgery = (props) => {
                     style={{ paddingTop: "10px" }}
                   >
                     Gradually increase your walking in the corridor (as
-                    advised). Start the range of motion exercises.
-                    These will help relieve any stiffness you may experience
-                    after your surgery.
+                    advised). Start the range of motion exercises. These will
+                    help relieve any stiffness you may experience after your
+                    surgery.
                   </p>
                   <p
                     className="resuming_home_content_text"
