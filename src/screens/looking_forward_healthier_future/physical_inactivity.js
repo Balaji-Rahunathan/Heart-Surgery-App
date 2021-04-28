@@ -181,13 +181,12 @@ const PhysicalInactivity = (props) => {
               </div>
             </div>
 
-            <div className="slider_container" style={{position: 'relative'}}>
+            <div className="slider_container" style={{ position: "relative" }}>
               <div className="pths_title_container">
                 <p className="pths_title_text" style={{ paddingTop: "1em" }}>
                   Family History of Coronary Artery Disease
                 </p>
               </div>
-
               <div
                 className="pths_head_container"
                 style={{ padding: "2em 2em 0 2em" }}
@@ -198,7 +197,6 @@ const PhysicalInactivity = (props) => {
                   className="pths_image"
                 ></img>
               </div>
-
               <div className="pths_content_container">
                 <p className="pths_content_text">
                   Heart disease runs in families. Please encourage your family
@@ -209,16 +207,18 @@ const PhysicalInactivity = (props) => {
                   programme will help you get started.
                 </p>
               </div>
-              <NextButton
-                onClick={next}
-                style={{
-                  position: "absolute",
-                  top: "auto",
-                  bottom: "20px",
-                  left: "auto",
-                  right: "20px",
-                }}
-              />
+              {showNextButton && (
+                <NextButton
+                  onClick={next}
+                  style={{
+                    position: "absolute",
+                    top: "auto",
+                    bottom: "20px",
+                    left: "auto",
+                    right: "20px",
+                  }}
+                />
+              )}
             </div>
           </>
         )}

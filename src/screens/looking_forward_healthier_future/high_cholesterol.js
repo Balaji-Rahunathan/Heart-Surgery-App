@@ -74,7 +74,7 @@ const HighCholesterol = (props) => {
           </div>
         </div>
 
-        <div className="slider_container" style={{position: 'relative'}}>
+        <div className="slider_container" style={{ position: "relative" }}>
           <div className="pos_sub_title_container">
             <div
               className="pos_sub_title_text"
@@ -94,15 +94,15 @@ const HighCholesterol = (props) => {
           >
             <div
               className="pths_head_container"
-              style={{ padding: "2em 2em 0 2em" }}
+              style={{ padding: "0em 2em 0 2em" }}
             >
-              <img src={Obis} alt="healthy_eating" className="pths_image"></img>
+              <img src={Obis} alt="healthy_eating" className="pths_image" style={{width: '80%'}}></img>
             </div>
 
             <p className="pos_bold_text">What is Cholesterol?</p>
           </div>
 
-          <div className="pos_content_container" style={{ paddingTop: "1em" }}>
+          <div className="pos_content_container" style={{ paddingTop: "0.5em" }}>
             <p className="pos_content_text">
               Cholesterol is a fatty substance found in the blood. A certain
               amount of cholesterol is important for a healthy body, however too
@@ -124,9 +124,9 @@ const HighCholesterol = (props) => {
             }
             style={{
               position: "absolute",
-              top: "auto",
-              bottom: "20px",
-              left: "20px",
+              top: "80px",
+              bottom: "auto",
+              left: "10px",
               right: "auto",
             }}
           />
@@ -304,7 +304,6 @@ const HighCholesterol = (props) => {
                 </p>
               </div>
             </div>
-          
 
             <div className="slider_container">
               <div className="pts_title_container">
@@ -393,7 +392,7 @@ const HighCholesterol = (props) => {
               </div>
             </div>
 
-            <div className="slider_container" style={{position:'relative'}}>
+            <div className="slider_container" style={{ position: "relative" }}>
               <div
                 className="pts_title_container"
                 style={{ margin: "1em 1em 0em 1em" }}
@@ -444,16 +443,18 @@ const HighCholesterol = (props) => {
                 </p>
               </div>
 
-              <NextButton
-                onClick={next}
-                style={{
-                  position: "absolute",
-                  top: "auto",
-                  bottom: "20px",
-                  left: "auto",
-                  right: "20px",
-                }}
-              />
+              {showNextButton && (
+                <NextButton
+                  onClick={next}
+                  style={{
+                    position: "absolute",
+                    top: "auto",
+                    bottom: "20px",
+                    left: "auto",
+                    right: "20px",
+                  }}
+                />
+              )}
             </div>
 
             {/* <div className="slider_container">

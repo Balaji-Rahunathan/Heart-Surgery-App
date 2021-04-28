@@ -120,9 +120,9 @@ const Smoking = (props) => {
             }
             style={{
               position: "absolute",
-              top: "auto",
-              bottom: "20px",
-              left: "20px",
+              top: "80px",
+              bottom: "auto",
+              left: "10px",
               right: "auto",
             }}
           />

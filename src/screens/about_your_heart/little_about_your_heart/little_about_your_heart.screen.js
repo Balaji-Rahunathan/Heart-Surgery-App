@@ -96,8 +96,8 @@ const LittleAboutYourHeart = (props) => {
               onClick={() => props.history.push("/about_your_heart")}
               style={{
                 position: "absolute",
-                top: "auto",
-                bottom: "20px",
+                top: "90px",
+                bottom: "auto",
                 left: "10px",
                 right: "auto",
               }}

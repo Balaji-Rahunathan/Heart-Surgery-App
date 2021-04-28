@@ -105,9 +105,9 @@ const ForYouAndYourPartner = (props) => {
                 }
                 style={{
                   position: "absolute",
-                  top: "auto",
-                  bottom: "10px",
-                  left: "20px",
+                  top: "100px",
+                  bottom: "auto",
+                  left: "10px",
                   right: "auto",
                 }}
               />
@@ -216,16 +216,18 @@ const ForYouAndYourPartner = (props) => {
                       follow up advice and counselling.
                     </p>
                   </div>
-                  <NextButton
-                    onClick={next}
-                    style={{
-                      position: "absolute",
-                      top: "auto",
-                      bottom: "20px",
-                      left: "auto",
-                      right: "20px",
-                    }}
-                  />
+                  {showNextButton && (
+                    <NextButton
+                      onClick={next}
+                      style={{
+                        position: "absolute",
+                        top: "auto",
+                        bottom: "20px",
+                        left: "auto",
+                        right: "20px",
+                      }}
+                    />
+                  )}
                 </div>
               </>
             )}

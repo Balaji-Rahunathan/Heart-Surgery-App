@@ -63,24 +63,37 @@ const HomExerciseAfterSurgery = (props) => {
           />
           <div className="heas_wrapper">
             <div className="heas_body_container" id="body">
-              <div className="heas_head_container">
-                <p className="heas_head_text">Home Exercise After Surgery</p>
-              </div>
-              <div className="heas_image_container">
-                <img src={HeasImage1}></img>
-              </div>
-              <div className="heas_content_container">
-                <p className="heas_content_text">
-                  Remember that surgery alone is not enough to solve the problem
-                  of heart disease. You must continue a lifelong habit of daily
-                  exer- cise to help minimise the risk of developing further
-                  problems in the future.
-                </p>
-                <p className="heas_content_text">
-                  Walking is the only exercise you should do until your check up
-                  with the surgeon. You will not be allowed to resume any other
-                  sports until three months after surgery.
-                </p>
+              <div>
+                <div className="heas_head_container">
+                  <p className="heas_head_text">Home Exercise After Surgery</p>
+                </div>
+                <div className="heas_image_container">
+                  <img src={HeasImage1}></img>
+                </div>
+                <div className="heas_content_container">
+                  <p className="heas_content_text">
+                    Remember that surgery alone is not enough to solve the
+                    problem of heart disease. You must continue a lifelong habit
+                    of daily exer- cise to help minimise the risk of developing
+                    further problems in the future.
+                  </p>
+                  <p className="heas_content_text">
+                    Walking is the only exercise you should do until your check
+                    up with the surgeon. You will not be allowed to resume any
+                    other sports until three months after surgery.
+                  </p>
+                </div>
+                <NextButton
+                  prev
+                  onClick={() => props.history.push("/returning_home")}
+                  style={{
+                    position: "absolute",
+                    top: "80px",
+                    bottom: "auto",
+                    left: "10px",
+                    right: "auto",
+                  }}
+                />
               </div>
 
               <div className="heas_image_container">
@@ -124,19 +137,6 @@ const HomExerciseAfterSurgery = (props) => {
 
               {showNextButton && (
                 <>
-                  <div>
-                    <NextButton
-                      prev
-                      onClick={prev}
-                      style={{
-                        position: "fixed",
-                        top: "auto",
-                        bottom: "20px",
-                        left: "20px",
-                        right: "auto",
-                      }}
-                    />
-                  </div>
                   <div>
                     <NextButton
                       onClick={next}

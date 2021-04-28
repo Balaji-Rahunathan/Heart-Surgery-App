@@ -122,9 +122,9 @@ const BeingOverweight = (props) => {
             }
             style={{
               position: "absolute",
-              top: "auto",
+              top: "80px",
               bottom: "20px",
-              left: "20px",
+              left: "10px",
               right: "auto",
             }}
           />

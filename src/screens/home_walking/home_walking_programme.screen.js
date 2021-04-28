@@ -89,14 +89,16 @@ const HomeWalkingProgramme = (props) => {
                 <p className="hwp_image_content_text">
                   The following walking table will guide you on how soon to
                   start walking, how many minutes to start with, and how you
-                  should feel as you walk. <b>walk on the flat for the first three
-                  weeks.</b>
+                  should feel as you walk.{" "}
+                  <b>walk on the flat for the first three weeks.</b>
                 </p>
               </div>
               <NextButton
                 prev
                 onClick={() =>
-                  props.history.push("/returning_home/home_exercise_after_surgery")
+                  props.history.push(
+                    "/returning_home/home_exercise_after_surgery"
+                  )
                 }
                 style={{
                   position: "absolute",
@@ -115,7 +117,9 @@ const HomeWalkingProgramme = (props) => {
                   style={{ position: "relative" }}
                 >
                   <div className="hwp_title_container">
-                    <p className="hwp_title_text" style={{paddingTop:'3em'}}>Week 1</p>
+                    <p className="hwp_title_text" style={{ paddingTop: "3em" }}>
+                      Week 1
+                    </p>
                   </div>
 
                   <div className="hwp_image_container">

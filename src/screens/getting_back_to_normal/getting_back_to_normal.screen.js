@@ -102,8 +102,8 @@ const GettingBacktoNormal = (props) => {
               onClick={() => props.history.push("/returning_home/resuming_home")}
               style={{
                 position: "absolute",
-                top: "auto",
-                bottom: "20px",
+                top: "90px",
+                bottom: "auto",
                 left: "10px",
                 right: "auto",
               }}

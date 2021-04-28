@@ -123,9 +123,9 @@ const Alcohol = (props) => {
             }
             style={{
               position: "absolute",
-              top: "auto",
+              top: "80px",
               bottom: "20px",
-              left: "20px",
+              left: "10px",
               right: "auto",
             }}
           />
@@ -134,9 +134,15 @@ const Alcohol = (props) => {
         {load && (
           <>
             <div className="slider_container">
-              <div className="pths_content_container clryloo" style={{ marginTop: "0.5em", paddingTop:'2em' }}>
-                <p className="pths_content_text" style={{ paddingTop: "0.5em" }}>
-                  if you do not drink if you do drink
+              <div
+                className="pths_content_container clryloo"
+                style={{ marginTop: "0.5em", paddingTop: "2em" }}
+              >
+                <p
+                  className="pths_content_text"
+                  style={{ paddingTop: "0.5em" }}
+                >
+                  <b>if you do not drink</b>
                 </p>
                 <p className="pths_content_text">Do not start.</p>
                 <p
@@ -199,67 +205,12 @@ const Alcohol = (props) => {
                   spirit measure and sugar free mixers.
                 </p>
               </div>
-              <div className="pths_content_container clryloo">
-                <p className="pths_content_text">
-                  ‘Binge drinking’ is having five or more standard drinks in one
-                  sitting for men and four or more standard drinks in one
-                  sitting for women.
-                </p>
-                <p className="pths_content_text">
-                  How much is a standard drink of alcohol?
-                </p>
-                <p className="pths_content_text">
-                  One standard drink / unit is equal to:
-                </p>
-                <p className="pths_content_text">
-                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Half a
-                  pint of beer (Please note; a pint of beer is two units)
-                </p>
-                <p className="pths_content_text">
-                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> 100ml
-                  glass of wine
-                </p>
-                <p className="pths_content_text">
-                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Single
-                  pub measure of spirit / sherry. A home measure may really be a
-                  double or treble measure. Use a spirit measure and sugar free
-                  mixers.
-                </p>
-              </div>
             </div>
 
             <div
               className="slider_container"
-              style={{ paddingTop: "1em", position: "relative" }}
+              style={{ paddingTop: "4em", position: "relative" }}
             >
-              <div className="pths_content_container clryloo">
-                <p className="pths_content_text">
-                  ‘Binge drinking’ is having five or more standard drinks in one
-                  sitting for men and four or more standard drinks in one
-                  sitting for women.
-                </p>
-                <p className="pths_content_text">
-                  How much is a standard drink of alcohol?
-                </p>
-                <p className="pths_content_text">
-                  One standard drink / unit is equal to:
-                </p>
-                <p className="pths_content_text">
-                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Half a
-                  pint of beer (Please note; a pint of beer is two units)
-                </p>
-                <p className="pths_content_text">
-                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> 100ml
-                  glass of wine
-                </p>
-                <p className="pths_content_text">
-                  <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Single
-                  pub measure of spirit / sherry. A home measure may really be a
-                  double or treble measure. Use a spirit measure and sugar free
-                  mixers.
-                </p>
-              </div>
-
               <div className="pths_content_container">
                 <p
                   className="pths_content_text txtto"

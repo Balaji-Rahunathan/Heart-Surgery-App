@@ -90,7 +90,7 @@ const ReturningHome = (props) => {
                     You and your heart have been through a lot and you need time
                     to heal. Try to be patient with yourself and not to worry.
                   </p>
-                  <p className="resuming_home_content_text">
+                  <p className="resuming_home_content_text" style={{paddingTop:'1em'}}>
                     Your chest and leg wound may be sore for up to six weeks as
                     they are still healing. Continue to take your painkillers.
                     When you feel the pain is getting better, gradually reduce
@@ -116,22 +116,24 @@ const ReturningHome = (props) => {
                 </div>
                 <div className="resuming_home_content">
                   <p className="resuming_home_content_text">
-                    You may feel frightened, anxious and tired returning home.
-                    This is normal and will pass in time as you gain confidence.
-                    It is important not to overdo things in the early stages.
-                    You and your heart have been through a lot and you need time
-                    to heal. Try to be patient with yourself and not to worry.
+                    If you had an artery taken from your arm or chest, it is
+                    normal to experience some numbness or tingling in your
+                    fingers or over your left breast area for several months.
+                    Tell your GP if you feel it is not improving or is getting
+                    worse.
                   </p>
-                  <p className="resuming_home_content_text">
-                    Your chest and leg wound may be sore for up to six weeks as
-                    they are still healing. Continue to take your painkillers.
-                    When you feel the pain is getting better, gradually reduce
-                    or stop them. First stop the afternoon painkillers, then the
-                    morning ones. In order to help you sleep well, stop the
-                    night time painkillers last.
+                  <p className="resuming_home_content_text" style={{paddingTop:'1em'}}>
+                    Some people retain fluid after surgery and may need to be on
+                    a low salt diet or take water tablets. Weigh yourself each
+                    day. Do this first thing in the morning after using the
+                    toilet, while you are still in your night clothes. Write
+                    down your weight so you have a daily record. If you gain 2
+                    lbs (1kg) or more for two days in a row, you may be
+                    retaining fluid and you will need to visit your GP to adjust
+                    your medication.
                   </p>
                 </div>
-
+                
                 <NextButton
                   onClick={() =>
                     props.history.push("/returning_home/resuming_home")
@@ -139,9 +141,9 @@ const ReturningHome = (props) => {
                   style={{
                     position: "absolute",
                     top: "auto",
-                    bottom: "20px",
+                    bottom: "0px",
                     left: "auto",
-                    right: "20px",
+                    right: "0px",
                   }}
                 />
               </div>

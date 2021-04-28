@@ -89,7 +89,7 @@ const HomeWalking = (props) => {
               position: "fixed",
               top: "auto",
               bottom: "20px",
-              left: "20px",
+              left: "10px",
               right: "auto",
             }}
           />
@@ -103,7 +103,7 @@ const HomeWalking = (props) => {
               top: "auto",
               bottom: "20px",
               left: "auto",
-              right: "20px",
+              right: "10px",
             }}
           />
         )}

@@ -88,6 +88,18 @@ const ResumingHome = (props) => {
                 following heart surgery.
               </p>
             </div>
+
+            <NextButton
+              prev
+              onClick={() => props.history.push("/returning_home")}
+              style={{
+                position: "absolute",
+                top: "80px",
+                bottom: "auto",
+                left: "10px",
+                right: "auto",
+              }}
+            />
           </div>
 
           {load && (
