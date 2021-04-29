@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from "react";
-import StressImage from "../../assets/images/exercise_target_for_life/Group 5.svg";
-import RecoverImage from "../../assets/images/exercise_target_for_life/Group 6.svg";
-import DepressionImage from "../../assets/images/exercise_target_for_life/Group 7.svg";
+import HomeWalkingImage from "../../assets/images/home walking/home-walk.svg";
 import Container from "../../common_component/container/container.component";
 import MenuButton from "../../common_component/menu_button/menu_button.component";
 import Sidebar from "../../components/sidebar/sidebar.component";
 import "./home_walking_programme.screen.scss";
 import NextButton from "../../common_component/next_button/next_button.component";
-import Relax from "../../assets/images/update/relax.svg";
-import Breath from "../../assets/images/update/breath.svg";
-import Sence from "../../assets/images/update/sence.svg";
-import Imagin from "../../assets/images/update/imagin.svg";
-import Lap from "../../assets/images/update/lap.svg";
-import Fist from "../../assets/images/update/fist.svg";
 
 const HomeWalkingProgramme = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -76,14 +68,8 @@ const HomeWalkingProgramme = (props) => {
               <div className="hwp_head_container">
                 <p className="hwp_head_text">Home Walking Programme</p>
               </div>
-              {/* <div
-                className="hwp_title_container"
-                style={{ margin: "0em 2em 2em 1em" }}
-              >
-                <p className="hwp_title_text">Stress</p>
-              </div> */}
               <div className="hwp_image_container">
-                <img src={StressImage} className="hwp_image"></img>
+                <img src={HomeWalkingImage} className="hwp_image"></img>
               </div>
               <div className="hwp_image_content_container">
                 <p className="hwp_image_content_text">
@@ -93,6 +79,41 @@ const HomeWalkingProgramme = (props) => {
                   <b>walk on the flat for the first three weeks.</b>
                 </p>
               </div>
+              <div className="hwp_title_container">
+                <p className="hwp_title_text">
+                  Week 1
+                </p>
+              </div>
+              <div className="hwp_image_content_container">
+                <p className="hwp_image_content_text">
+                  Do only as much walking as you did while in hospital.
+                    </p>
+              </div>
+
+              <div className="hwp_title_container">
+                <p className="hwp_title_text">Week 2 onwards</p>
+              </div>
+
+              <div className="hwp_image_container">
+                {/* <img src={RecoverImage} className="hwp_image"></img> */}
+              </div>
+
+              <div className="hwp_image_content_container">
+                <p className="hwp_image_content_text">
+                  Follow the stages below – when you feel one stage is easy
+                  for 2 days in a row, move on to the next stage.
+                    </p>
+              </div>
+              <NextButton
+                onClick={next}
+                style={{
+                  position: "absolute",
+                  top: "auto",
+                  bottom: "5px",
+                  left: "auto",
+                  right: "20px",
+                }}
+              />
               <NextButton
                 prev
                 onClick={() =>
@@ -102,63 +123,13 @@ const HomeWalkingProgramme = (props) => {
                 }
                 style={{
                   position: "absolute",
-                  top: "auto",
-                  bottom: "10px",
-                  left: "20px",
+                  top: "80px",
+                  bottom: "auto",
+                  left: "10px",
                   right: "auto",
                 }}
               />
             </div>
-
-            {load && (
-              <>
-                <div
-                  className="slider_container"
-                  style={{ position: "relative" }}
-                >
-                  <div className="hwp_title_container">
-                    <p className="hwp_title_text" style={{ paddingTop: "3em" }}>
-                      Week 1
-                    </p>
-                  </div>
-
-                  <div className="hwp_image_container">
-                    {/* <img src={RecoverImage} className="hwp_image"></img> */}
-                  </div>
-
-                  <div className="hwp_image_content_container">
-                    <p className="hwp_image_content_text">
-                      Do only as much walking as you did while in hospital.
-                    </p>
-                  </div>
-
-                  <div className="hwp_title_container">
-                    <p className="hwp_title_text">Week 2 onwards</p>
-                  </div>
-
-                  <div className="hwp_image_container">
-                    {/* <img src={RecoverImage} className="hwp_image"></img> */}
-                  </div>
-
-                  <div className="hwp_image_content_container">
-                    <p className="hwp_image_content_text">
-                      Follow the stages below – when you feel one stage is easy
-                      for 2 days in a row, move on to the next stage.
-                    </p>
-                  </div>
-                  <NextButton
-                    onClick={next}
-                    style={{
-                      position: "absolute",
-                      top: "auto",
-                      bottom: "20px",
-                      left: "auto",
-                      right: "20px",
-                    }}
-                  />
-                </div>
-              </>
-            )}
           </Container>
         </div>
       </div>
