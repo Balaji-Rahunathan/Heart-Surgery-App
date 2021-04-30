@@ -384,6 +384,8 @@
                             .img_container {
                                 width: 100%;
                                 padding: 10px 0 0 0;
+                                display: flex;
+                                justify-content: center;
                                 img {
                                     height: 55vw;
                                 }
@@ -398,4 +400,7 @@
 
 .previous_icon {
     transform: rotateZ(180deg);
+}
+.equipment_name{
+    padding-top: 0.5em;
 }

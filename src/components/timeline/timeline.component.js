@@ -144,7 +144,7 @@ const Timeline = (props) => {
                           {sub}
                         </div>
                         {state.currentIndex == index &&
-                        window.innerWidth <= 1050 ? (
+                          window.innerWidth <= 1050 ? (
                           <div className="sub_content_container">
                             <div className="sub_content">
                               <ReactScrollWheelHandler
@@ -207,6 +207,14 @@ const Timeline = (props) => {
                                           src={data.image.default}
                                         ></img>
                                       </div>
+                                      <div>
+                                        <div className="equipment_name">
+                                          {
+                                            data.equipmentName && data.equipmentName
+                                          }
+                                        </div>
+                                      </div>
+
                                     </div>
                                   ))}
                                 </Carousel>
@@ -249,7 +257,7 @@ const Timeline = (props) => {
                     changeIndexIndex(data);
                   }}
                   className="carousel"
-                  // renderArrow={myArrow}
+                // renderArrow={myArrow}
                 >
                   {props.content.data.map((data, index) => (
                     <div className="topic_content" id="topic" key={index}>
@@ -270,7 +278,7 @@ const Timeline = (props) => {
           </div>
         ) : null}
       </div>
-      {index === 29 && (
+      {index === 30 && (
         <NextButton
           onClick={next}
           style={{
