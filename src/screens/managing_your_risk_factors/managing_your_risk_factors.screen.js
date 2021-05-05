@@ -16,7 +16,7 @@ const ManagingYourRiskFactors = (props) => {
   const [showNextButton, setshowNextButton] = useState(false);
 
   const next = () => {
-    props.history.push("/looking_forward_healthier_future/smoking");
+    props.history.push("/looking_forward_healthier_future/high_blood_pressure");
   };
 
   const handleMenuButtonClick = (data) => {
@@ -147,137 +147,7 @@ const ManagingYourRiskFactors = (props) => {
                 You will need to have a glucose tolerance test repeated yearly
                 by your GP.
               </p>
-            </div>
-
-            <div className="myrf_title_container">
-              <p className="myrf_title_text">High Blood Pressure</p>
-            </div>
-            <div className="myrf_image_container">
-              <img src={BloodPressureImage} className="myrf_image"></img>
-            </div>
-            <div className="myrf_sub_title_container">
-              <p className="myrf_sub_title_text">
-                High blood pressure explained
-              </p>
-            </div>
-            <div className="myrf_content_container">
-              <p className="myrf_content_text">
-                Blood pressure is the pressure against which your heart must
-                pump to get blood out of your heart. If your blood pressure is
-                too high, it makes your heart work harder and causes it to
-                enlarge and weaken over time. The high pressure also damages the
-                smooth lining of your arteries, allowing plaque to build up
-                easily. If you have high blood pressure, you have an increased
-                risk of heart attacks, strokes, kidney failure and heart
-                failure.
-              </p>
-            </div>
-
-            <div className="myrf_sub_title_container">
-              <p className="myrf_sub_title_text">
-                How do i know if i have high blood pressure?
-              </p>
-            </div>
-            <div className="myrf_content_container">
-              <p className="myrf_content_text">
-                You don’t unless you get it checked, as people with high blood
-                pressure feel and look normal.
-              </p>
-            </div>
-
-            <div className="myrf_sub_title_container">
-              <p className="myrf_sub_title_text">
-                what should my blood pressure reading be?
-              </p>
-            </div>
-            <div className="myrf_content_container">
-              <p className="myrf_content_text">
-                Talk to your doctor about what is a normal blood pressure for
-                you. As a rule people with heart disease or diabetes should aim
-                for the targets in the box opposite.
-              </p>
-            </div>
-
-            <div className="myrf_sub_title_container">
-              <p className="myrf_sub_title_text">
-                How often should I have my blood pressure checked?
-              </p>
-            </div>
-            <div className="myrf_image_container">
-              <img src={PressureCheckImage} className="myrf_image"></img>
-            </div>
-            <div className="myrf_content_container">
-              <p className="myrf_content_text">
-                If your blood pressure is high, you will need medication and you
-                should have your blood presure checked by your doctor until it
-                reaches the target in the box opposite. Then it should be
-                checked every three months or whenever you are renewing your
-                prescription. even if you do not have high blood pressure, it is
-                wise to have it checked at least once a year.
-              </p>
-            </div>
-
-            <div className="myrf_sub_title_container">
-              <p className="myrf_sub_title_text">
-                How to reduce high blood pressure
-              </p>
-            </div>
-            <div className="myrf_image_container">
-              <img src={HowToImage} className="myrf_image"></img>
-            </div>
-            <div className="myrf_content_container">
-              <p className="myrf_content_text">
-                <FiberManualRecordIcon className="myrf_points" /> Lose weight if
-                you are overweight.
-              </p>
-              <p className="myrf_content_text">
-                <FiberManualRecordIcon className="myrf_points" /> Be physically
-                active and eat healthily.
-              </p>
-              <p className="myrf_content_text">
-                <FiberManualRecordIcon className="myrf_points" /> Do not add
-                salt at the table or in cooking.
-              </p>
-              <p className="myrf_content_text">
-                <FiberManualRecordIcon className="myrf_points" /> Take it easy
-                on alcohol, avoid binge drinking completely.
-              </p>
-              <p className="myrf_content_text">
-                <FiberManualRecordIcon className="myrf_points" /> Take your
-                medications regularly as advised. These are usually prescribed
-                for life.
-              </p>
-              <p className="myrf_content_text">
-                <FiberManualRecordIcon className="myrf_points" /> Stop smoking.
-              </p>
-            </div>
-
-            <div
-              style={{
-                backgroundColor: "#abd9ff",
-                padding: "1px 0",
-                width: "84%",
-                margin: "0 auto 50px auto",
-                borderRadius: "10px",
-              }}
-            >
-              <div
-                className="myrf_sub_title_container"
-                style={{ marginBottom: "0px", textAlign: "left" }}
-              >
-                <p className="myrf_sub_title_text">
-                  What is the normal blood pressure reading?
-                </p>
-              </div>
-              <div
-                className="myrf_content_container"
-                style={{ marginTop: "10px" }}
-              >
-                <p className="myrf_content_text">Top number: 140 or less</p>
-                <p className="myrf_content_text">Bottom number: 90 or less</p>
-                <p className="myrf_content_text">85 or less (if diabetic)</p>
-              </div>
-            </div>
+            </div>            
           </div>
 
           {showNextButton && (
