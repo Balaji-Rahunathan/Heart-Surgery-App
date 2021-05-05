@@ -26,11 +26,11 @@ export default class Intro extends React.Component {
   };
 
   nextBtn = () => {
-    this.props.history.push("/little_about_your_heart");
+    this.props.history.push("/preparing_for_surgery_home");
   };
 
   prevBtn = () => {
-    this.props.history.push("/");
+    this.props.history.push("/little_about_your_heart");
   };
 
   handleMenuButtonClick = (data) => {

@@ -4,6 +4,7 @@ import MenuButton from "../../../common_component/menu_button/menu_button.compon
 import Sidebar from "../../../components/sidebar/sidebar.component";
 import NextButton from "../../../common_component/next_button/next_button.component";
 import HeadImage from "../../../assets/images/update/bloodflow.svg";
+import HeartImage from '../../../assets/images/heart.png';
 
 const LittleAboutYourHeart = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -11,7 +12,7 @@ const LittleAboutYourHeart = (props) => {
   const [load, setLoad] = useState(false);
 
   const next = () => {
-    props.history.push("/preparing_for_surgery_home");
+    props.history.push("/about_your_heart");
   };
 
   const handleMenuButtonClick = (data) => {
@@ -93,7 +94,7 @@ const LittleAboutYourHeart = (props) => {
             </div>
             <NextButton
               prev
-              onClick={() => props.history.push("/about_your_heart")}
+              onClick={() => props.history.push("/")}
               style={{
                 position: "absolute",
                 top: "90px",
@@ -113,13 +114,14 @@ const LittleAboutYourHeart = (props) => {
                   <div className="resuming_home_head_title_container">
                     <div className="resuming_home_head_title"></div>
                   </div>
-                  {/* <div className="resuming_home_head_image_container">
+                  <div className="resuming_home_head_image_container">
                     <img
-                      src={HeadImage}
+                      src={HeartImage}
                       alt="head_image"
                       className="resuming_home_head_image"
+                      style={{ width: '80%' }}
                     />
-                  </div> */}
+                  </div>
                   <div className="resuming_home_head_content_container">
                     <div className="resuming_home_head_content">
                       <p style={{ padding: "1em" }}>
@@ -130,6 +132,20 @@ const LittleAboutYourHeart = (props) => {
                         of them divides into smaller branches so all areas of
                         the heart muscle get a good supply of oxygen.
                       </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="slider_container"
+                style={{ position: "relative" }}
+              >
+                <div className="resuming_home_head_container">
+                  <div className="resuming_home_head_title_container">
+                    <div className="resuming_home_head_title"></div>
+                  </div>
+                  <div className="resuming_home_head_content_container">
+                    <div className="resuming_home_head_content">
                       <p style={{ padding: "1em" }}>
                         Over time these arteries can get narrowed by a fatty
                         substance called plaque. This is called Coronary Artery
