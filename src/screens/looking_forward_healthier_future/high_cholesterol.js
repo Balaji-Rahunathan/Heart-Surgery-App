@@ -219,19 +219,16 @@ const HighCholesterol = (props) => {
                     <tr className="pts_table_head_tr pts_th">
                       <th>If you have coronary artery disease or diabetes</th>
                       <th>General Goal</th>
-                      <th>Goal for you</th>
                     </tr>
                   </thead>
                   <tbody className="pts_table_body">
                     <tr className="pts_table_body_tr pts_tr">
                       <td>Total Cholesterol</td>
                       <td> {`<`}4.0 </td>
-                      <td></td>
                     </tr>
                     <tr className="pts_table_body_tr pts_tr">
                       <td>LDL Cholesterol</td>
                       <td> {`<`}1.8 </td>
-                      <td></td>
                     </tr>
                     <tr className="pts_table_body_tr pts_tr">
                       <td>HDL Cholesterol</td>
@@ -239,12 +236,10 @@ const HighCholesterol = (props) => {
                         {" "}
                         {`>`}1 (men) {`>`}1.2 (women)
                       </td>
-                      <td></td>
                     </tr>
                     <tr className="pts_table_body_tr pts_tr">
                       <td>Triglycerides</td>
                       <td> {`<`}1.7 </td>
-                      <td></td>
                     </tr>
                   </tbody>
                 </table>
@@ -360,19 +355,16 @@ const HighCholesterol = (props) => {
                     <tr className="pts_table_head_tr pts_th">
                       <th>If you have coronary artery disease or diabetes</th>
                       <th>General Goal</th>
-                      <th>Goal for you</th>
                     </tr>
                   </thead>
                   <tbody className="pts_table_body">
                     <tr className="pts_table_body_tr pts_tr">
                       <td>Total Cholesterol</td>
                       <td> {`<`}4.0 </td>
-                      <td></td>
                     </tr>
                     <tr className="pts_table_body_tr pts_tr">
                       <td>LDL Cholesterol</td>
                       <td> {`<`}1.8 </td>
-                      <td></td>
                     </tr>
                     <tr className="pts_table_body_tr pts_tr">
                       <td>HDL Cholesterol</td>
@@ -380,12 +372,10 @@ const HighCholesterol = (props) => {
                         {" "}
                         {`>`}1 (men) {`>`}1.2 (women)
                       </td>
-                      <td></td>
                     </tr>
                     <tr className="pts_table_body_tr pts_tr">
                       <td>Triglycerides</td>
                       <td> {`<`}1.7 </td>
-                      <td></td>
                     </tr>
                   </tbody>
                 </table>
