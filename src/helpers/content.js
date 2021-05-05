@@ -1,8 +1,8 @@
 
 export const TheDayOfSurgeryTitles = {
   titles: [
-    "Night before Surgery",
     "The Day of Admission",
+    "Night before Surgery",
     "The Day of Surgery",
     "Cardiac Intensive Care",
     "Equipment used during the surgery and in intensive care",
@@ -15,62 +15,61 @@ export const TheDayOfSurgeryContents = {
   data: [
     {
       index: 0,
-      subtitle: "Night before Surgery",
+      subtitle: "The Day of Admission",
       description:
-        "We will tell you whether you are first,second or third on the theatre list and ask you not to eat or drink from 12 midnight.This ensures that your stomach is empty during the operation. Even though you are fasting it is okay to take your tablets with a small sip of water.",
-      image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
+        "Before leaving home on the morning of admission, it is essential that you ring 4D ward to ensure that a bed is available and your surgery is going ahead.",
+      image: require("../assets/images/day-of-admission/1.svg"),
       id: 0,
     },
 
     {
       index: 0,
-      subtitle: "Night before Surgery",
-      description:
-        "It is normal to be anxious the night before your operation and you may have difficulty sleeping. If you like, we can give you a sleeping tablet to help you get a good night’s rest.",
-      image: require("../assets/images/Night_before_Surgery/Group_780.svg"),
-      id: 1,
-    },
-
-    {
-      index: 1,
-      subtitle: "The Day of Admission",
-      description:
-        "Before leaving home on the morning of admission, it is essential that you ring 4D ward to ensure that a bed is available and your surgery is going ahead.",
-      image: require("../assets/images/day-of-admission/1.svg"),
-      id: 2,
-    },
-
-    {
-      index: 1,
       subtitle: "The Day of Admission",
       description:
         "When you come in to hospital you will be shown around the ward and you will meet the doctor and the nursing staff.",
       image: require("../assets/images/day-of-admission/2.svg"),
-      id: 3,
+      id: 1,
     },
 
     {
-      index: 1,
+      index: 0,
       subtitle: "The Day of Admission",
       description:
         "Please tell the doctor the following informations about you",
       image: require("../assets/images/day-of-admission/3.svg"),
-      id: 4,
+      id: 2,
     },
     {
-      index: 1,
+      index: 0,
       subtitle: "The Day of Admission",
       description:
         "Please tell the doctor the following informations about you",
       image: require("../assets/images/day-of-admission/3-2.svg"),
-      id: 5,
+      id: 3,
     },
     {
-      index: 1,
+      index: 0,
       subtitle: "The Day of Admission",
       description:
         "Please tell the doctor the following informations about you",
       image: require("../assets/images/day-of-admission/3-3.svg"),
+      id: 4,
+    },
+    {
+      index: 1,
+      subtitle: "Night before Surgery",
+      description:
+        "We will tell you whether you are first,second or third on the theatre list and ask you not to eat or drink from 12 midnight.This ensures that your stomach is empty during the operation. Even though you are fasting it is okay to take your tablets with a small sip of water.",
+      image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
+      id: 5,
+    },
+
+    {
+      index: 1,
+      subtitle: "Night before Surgery",
+      description:
+        "It is normal to be anxious the night before your operation and you may have difficulty sleeping. If you like, we can give you a sleeping tablet to help you get a good night’s rest.",
+      image: require("../assets/images/Night_before_Surgery/Group_780.svg"),
       id: 6,
     },
 
@@ -467,18 +466,31 @@ export const returnHomeContent = [
     title: "Driving",
     image: require("../assets/images/returning_home/Group 6.png"),
     content: [
-      `Activities such as lifting, carrying, pushing
-            and pulling will strain your heart and
-            breastbone. Avoid them during your
-            recovery period. Don’t lift anything over
-            10 – 15 lbs (4.5 – 7 kg) during your
-            recovery. Ways to avoid this include using
-            a trolley, using home delivery, sliding
-            objects rather than lifting. Do not carry
-            children or walk dogs during the first six
-            weeks at home. Do not carry your cases,
-            open stuck windows, unscrew jar lids or
-            use corkscrews.`,
+      `Most people are permitted to drive after
+      six weeks. When you return to driving,
+      start in your local area, avoid peak hours,
+      have another person with you and
+      gradually increase the time you spend
+      driving.`,
+    ],
+  },
+
+  {
+    title: "Driving",
+    image: require("../assets/images/returning_home/Group 6.png"),
+    content: [
+      ``,
+      `Avoid long trips at first and take frequent
+      rest breaks.`,
+      `If you drive for a living (heavy goods
+        vehicle / passenger service vehicle), you
+        will usually not be allowed to resume for
+        a much longer period of time. Your doctor
+        may want you to undergo an exercise
+        stress test before you are permitted to
+        drive.`,
+      `You must tell your insurance company
+        that you have had heart surgery.`
     ],
   },
   {
