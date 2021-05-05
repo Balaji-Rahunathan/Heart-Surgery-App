@@ -13,7 +13,7 @@ const YourHeartSurgeryGuide = (props) => {
                     <p className="yhsg_content_text">The Corono arteries of the heart are left corona artery, right corona artery and circumflex aertery.</p>
                 </div>
                 <div className="yhsg_menu_container">
-                    <div className="yhsg_menu" onClick={() => props.history.push('/about_your_heart')}>
+                    <div className="yhsg_menu" onClick={() => props.history.push('/little_about_your_heart')}>
                         <p className="yhsg_menu_text">About your heart</p>
                     </div>
                     <div className="yhsg_menu" onClick={() => props.history.push('/preparing_for_surgery_home')}>

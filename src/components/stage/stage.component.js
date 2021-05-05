@@ -1,20 +1,23 @@
 import React from "react";
 import "./stage.component.scss";
+import ArrowImage from '../../assets/images/swipe-arrow-blue.svg'
 
 const Stage = (props) => {
   const { stage, description, src, feel } = props;
   return (
     <div className="stage_container">
       <div className="stage_title">{stage}</div>
-      <div className="stage_image_conatiner">
-        {src && (
+      {src && (
+        <div className="stage_image_conatiner">
+          <img src={ArrowImage} atl="swiper_arrow_left" className="swiper_arrow_left" />
           <img
             src={src.default}
             alt="stage_image"
             className="stage_image"
           />
-        )}
-      </div>
+          <img src={ArrowImage} atl="swiper_arrow_right" />
+        </div>
+      )}
       <div className="stage_description">{description}</div>
 
       {feel && (

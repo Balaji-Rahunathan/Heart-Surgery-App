@@ -116,7 +116,7 @@ const Smoking = (props) => {
           <NextButton
             prev
             onClick={() =>
-              props.history.push("/looking_forward_healthier_future")
+              props.history.push("/looking_forward_healthier_future/high_blood_pressure")
             }
             style={{
               position: "absolute",

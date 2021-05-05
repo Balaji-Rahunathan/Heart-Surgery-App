@@ -1,6 +1,6 @@
 @import "../../index.scss";
 .exercise_one_container {
-  overflow: hidden;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,7 +119,7 @@
 
 @media only screen and (max-width: 600px) {
   .exercise_one_container {
-    height: unset !important;
+    // height: unset !important;
     .exercise_content {
       width: 100%;
       justify-content: start;
