@@ -34,7 +34,7 @@ const Sidebar = ({ toggle, onClick, history }) => {
           />
           <Menu style={{ textAlign: "left", marginTop: '4em' }}>
             <MenuItem
-              onClick={() => history.push("/about_your_heart")}
+              onClick={() => history.push("/little_about_your_heart")}
               className="menu_item"
             >
               About your heart
@@ -135,6 +135,15 @@ const Sidebar = ({ toggle, onClick, history }) => {
                 className="menu_item"
               >
                 Managing your Risk Factors
+              </MenuItem>
+
+              <MenuItem
+                onClick={() =>
+                  history.push("/looking_forward_healthier_future/high_blood_pressure")
+                }
+                className="menu_item"
+              >
+                High Blood Pressure
               </MenuItem>
 
               <MenuItem

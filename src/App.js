@@ -33,6 +33,7 @@ import LittleAboutYourHeart from "./screens/about_your_heart/little_about_your_h
 import RangeofMovementExercises from "./screens/range_of_movement_exercises/range_of_movement_exercises.screen";
 import GettingBacktoNormal from "./screens/getting_back_to_normal/getting_back_to_normal.screen";
 import HomeWalkingProgramme from "./screens/home_walking/home_walking_programme.screen";
+import HighBloodPressure from "./screens/looking_forward_healthier_future/high_blood_pressure";
 
 let App = (props) => {
   function getWindowDimensions() {
@@ -198,6 +199,11 @@ let App = (props) => {
               exact
               path="/looking_forward_healthier_future"
               component={ManagingYourRiskFactors}
+            />
+             <Route
+              exact
+              path="/looking_forward_healthier_future/high_blood_pressure"
+              component={HighBloodPressure}
             />
             <Route
               exact
