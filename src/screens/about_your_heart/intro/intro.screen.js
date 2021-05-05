@@ -46,7 +46,7 @@ export default class Intro extends React.Component {
           toggle={this.state.toggle}
           onClick={this.handleMenuButtonClick}
         />
-        <Div100vh>
+        {/* <Div100vh> */}
           <div className="about_your_heart_container text-center mt-5">
             <MenuButton
               background="#008DFB"
@@ -164,7 +164,7 @@ export default class Intro extends React.Component {
           {/* <div>
                         <NextButton onClick={this.nextBtn} style={{position:"absolute", top:"auto", left:'auto', bottom:'10px', right:'10px'}} />
                     </div> */}
-        </Div100vh>
+        {/* </Div100vh> */}
       </React.Fragment>
     );
   }

@@ -41,12 +41,9 @@ export default class Exercise extends React.Component {
             <div className="exercise_head">
               <h1 className="title">Exercises After Cardiac Surgery</h1>
               <div className="head_text">
-                The Corono arteries of the heart are the left corona artery,
-                right corona artery and circumflex aertery. The Corono arteries
-                of the heart are left corona artery, right corona artery and
-                circumflex aertery.
               </div>
             </div>
+            There are two sets of exercises - four sitting exercises and four standing exercises. Try to do each group at least once per day. You could do the sitting exercises in the morning and the standing exercises later in the day. Choose a comfortable routine.
             <div className="exercise_body">
               <img
                 src={ExerciseImg}

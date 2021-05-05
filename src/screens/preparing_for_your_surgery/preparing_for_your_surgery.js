@@ -29,7 +29,7 @@ const Preparing_for_your_surgery = (props) => {
                 style={{ position: 'absolute', left: '0px', top: '0',zIndex:'20' }}
             />
             <div className="pfys_head">
-                After Surgery Excercise
+                Preparing for You surgery
             </div>
 
             <Timeline titles={TheDayOfSurgeryTitles} content={TheDayOfSurgeryContents} data={TheDayOfSurgery} {...props} />
