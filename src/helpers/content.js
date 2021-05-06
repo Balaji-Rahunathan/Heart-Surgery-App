@@ -616,7 +616,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/shoulder_girdle",
     prevPageLink: "/range_of_movement_exercises",
-    position: "Sitting Exercise",
+    position: "Sitting Exercise 1",
     excerciseName: "Neck Mobilisation",
     videoUrl: require("../assets/video/frame.mp4"),
     content: [
@@ -629,7 +629,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/arm_raising",
     prevPageLink: "/neck_mobilisation",
-    position: "Sitting Exercise",
+    position: "Sitting Exercise 2",
     excerciseName: "Shoulder Girdle Exercises",
     videoUrl: require("../assets/video/ex7.mp4"),
     content: [
@@ -642,9 +642,9 @@ export const excerciseContent = [
     ],
   },
   {
-    nextPageLink: "/side_bending",
+    nextPageLink: "/trunk_twists",
     prevPageLink: "/shoulder_girdle",
-    position: "Sitting Exercise",
+    position: "Sitting Exercise 3",
     excerciseName: "Arm Raising",
     videoUrl: require("../assets/video/ex6.mp4"),
     content: [
@@ -655,9 +655,25 @@ export const excerciseContent = [
     ],
   },
   {
-    nextPageLink: "/leg_swings",
+    nextPageLink: "/side_bending",
     prevPageLink: "/arm_raising",
-    position: "Standing Exercise",
+    position: "Sitting Exercise 4",
+    excerciseName: "Trunk Twists",
+    videoUrl: require("../assets/video/ex8.mp4"),
+    content: [
+      `Sit up straight and tall in an upright chair with your
+      arms crossed over your chest.`,
+      `Twist the top half (only) of your body as if looking
+      behind you, to the right and then to the left. Try
+      not to move your bottom half, keep your hips
+      facing forward.`,
+      `Repeat 2 to 3 times.`,
+    ],
+  },
+  {
+    nextPageLink: "/leg_swings",
+    prevPageLink: "/trunk_twists",
+    position: "Standing Exercise 1",
     excerciseName: "Side Bending",
     videoUrl: require("../assets/video/1.mp4"),
     content: [
@@ -675,7 +691,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/knee_bends",
     prevPageLink: "/side_bending",
-    position: "Standing Exercise",
+    position: "Standing Exercise 2",
     excerciseName: "Leg Swings",
     videoUrl: require("../assets/video/3.mp4"),
     content: [
@@ -691,7 +707,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/heel_raises",
     prevPageLink: "/leg_swings",
-    position: "Standing Exercise",
+    position: "Standing Exercise 3",
     excerciseName: "Knee Bends",
     videoUrl: require("../assets/video/ex5.mp4"),
     content: [
@@ -708,7 +724,7 @@ export const excerciseContent = [
   {
     nextPageLink: "/returning_home",
     prevPageLink: "/knee_bends",
-    position: "Standing Exercise",
+    position: "Standing Exercise 4",
     excerciseName: "Heel Raises",
     videoUrl: require("../assets/video/2.mp4"),
     content: [
@@ -718,7 +734,7 @@ export const excerciseContent = [
       straight. Try not to push on the chair with your arms.`,
       `Repeat 2 to 3 times. Gradually build up to 10 times.`,
     ],
-  },
+  },  
 
   // {
   //   nextPageLink: "/returning_home",
