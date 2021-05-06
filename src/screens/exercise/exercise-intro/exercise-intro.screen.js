@@ -43,7 +43,8 @@ export default class Exercise extends React.Component {
               <div className="head_text">
               </div>
             </div>
-            There are two sets of exercises - four sitting exercises and four standing exercises. Try to do each group at least once per day. You could do the sitting exercises in the morning and the standing exercises later in the day. Choose a comfortable routine.
+            <div style={{height:'90px'}}></div>
+            {/* There are two sets of exercises - four sitting exercises and four standing exercises. Try to do each group at least once per day. You could do the sitting exercises in the morning and the standing exercises later in the day. Choose a comfortable routine. */}
             <div className="exercise_body">
               <img
                 src={ExerciseImg}
