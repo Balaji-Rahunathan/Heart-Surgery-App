@@ -106,22 +106,25 @@ let App = (props) => {
             </Route>
             <Route exact path="/arm_raising">
               {(props) => <Excercise {...excerciseContent[2]} {...props} />}
-            </Route>
-            <Route exact path="/side_bending">
+            </Route>            
+            <Route exact path="/trunk_twists">
               {(props) => <Excercise {...excerciseContent[3]} {...props} />}
             </Route>
-            <Route exact path="/leg_swings">
+            <Route exact path="/side_bending">
               {(props) => <Excercise {...excerciseContent[4]} {...props} />}
             </Route>
-            <Route exact path="/knee_bends">
+            <Route exact path="/leg_swings">
               {(props) => <Excercise {...excerciseContent[5]} {...props} />}
             </Route>
-            <Route exact path="/heel_raises">
+            <Route exact path="/knee_bends">
               {(props) => <Excercise {...excerciseContent[6]} {...props} />}
+            </Route>
+            <Route exact path="/heel_raises">
+              {(props) => <Excercise {...excerciseContent[7]} {...props} />}
             </Route>
 
             <Route exact path="/arm_raise">
-              {(props) => <Excercise {...excerciseContent[6]} {...props} />}
+              {(props) => <Excercise {...excerciseContent[8]} {...props} />}
             </Route>
 
             <Route
