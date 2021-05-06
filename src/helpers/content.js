@@ -21,14 +21,28 @@ export const TheDayOfSurgeryContents = {
       image: require("../assets/images/day-of-admission/1.svg"),
       id: 0,
     },
+    {
+      index: 0,
+      subtitle: "The Day of Admission",
+      description:
+        "The Cardiac Surgery Ward contact details are:",
+      image: require("../assets/images/preparing_for_your_surgery/CICU_Contact_Details02.svg"),
+      id: 1,
+    },
 
     {
       index: 0,
       subtitle: "The Day of Admission",
       description:
-        "When you come in to hospital you will be shown around the ward and you will meet the doctor and the nursing staff.",
+        `Things to do - People to see and Places
+        to go. 
+        The average hospital stay after heart surgery
+        is six to ten days. Some people may have to
+        stay in hospital for longer. Remember
+        everybody is different and you will recover
+        at your own pace. When you come in to hospital you will be shown around the ward and you will meet the doctor and the nursing staff.`,
       image: require("../assets/images/day-of-admission/2.svg"),
-      id: 1,
+      id: 2,
     },
 
     {
@@ -37,14 +51,6 @@ export const TheDayOfSurgeryContents = {
       description:
         "Please tell the doctor the following informations about you",
       image: require("../assets/images/day-of-admission/3.svg"),
-      id: 2,
-    },
-    {
-      index: 0,
-      subtitle: "The Day of Admission",
-      description:
-        "Please tell the doctor the following informations about you",
-      image: require("../assets/images/day-of-admission/3-2.svg"),
       id: 3,
     },
     {
@@ -52,8 +58,16 @@ export const TheDayOfSurgeryContents = {
       subtitle: "The Day of Admission",
       description:
         "Please tell the doctor the following informations about you",
-      image: require("../assets/images/day-of-admission/3-3.svg"),
+      image: require("../assets/images/day-of-admission/3-2.svg"),
       id: 4,
+    },
+    {
+      index: 0,
+      subtitle: "The Day of Admission",
+      description:
+        "Please tell the doctor the following informations about you",
+      image: require("../assets/images/day-of-admission/3-3.svg"),
+      id: 5,
     },
     {
       index: 1,
@@ -61,7 +75,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "We will tell you whether you are first,second or third on the theatre list and ask you not to eat or drink from 12 midnight.This ensures that your stomach is empty during the operation. Even though you are fasting it is okay to take your tablets with a small sip of water.",
       image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
-      id: 5,
+      id: 6,
     },
 
     {
@@ -70,7 +84,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "It is normal to be anxious the night before your operation and you may have difficulty sleeping. If you like, we can give you a sleeping tablet to help you get a good night’s rest.",
       image: require("../assets/images/Night_before_Surgery/Group_780.svg"),
-      id: 6,
+      id: 7
     },
 
     {
@@ -79,7 +93,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "We will ask you to use a special shower get that cleans your skin and removes germs.",
       image: require("../assets/images/The_Day_of_Surgery/Group_778.svg"),
-      id: 7,
+      id: 8,
     },
     {
       index: 2,
@@ -98,7 +112,7 @@ export const TheDayOfSurgeryContents = {
         "Hearing aid",
       ],
       image: require("../assets/images/The_Day_of_Surgery/Group_776.svg"),
-      id: 8,
+      id: 9,
     },
 
     {
@@ -107,7 +121,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "While you are waiting to go to the operating theatre, we will give you some tablets to help you relax. Go to the bathroom before you take these tablets as they can make you feel sleepy",
       image: require("../assets/images/The_Day_of_Surgery/Group_775.svg"),
-      id: 9,
+      id: 10,
     },
     {
       index: 2,
@@ -115,7 +129,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "Your operation will take several hours and after it we will take you to the Cardiac Intensive Care Unit on the 5th Floor. You will have your own nurse who together with the doctors will watch your progress very closely",
       image: require("../assets/images/The_Day_of_Surgery/Group_777.svg"),
-      id: 10,
+      id: 11,
     },
     {
       index: 3,
@@ -123,7 +137,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "Please nominate one family member to phone the Cardiac Intensive Care Unit (CICU) to enquire about you ",
       image: require("../assets/images/day-of-admission/4.svg"),
-      id: 11,
+      id: 12,
     },
 
     {
@@ -131,7 +145,7 @@ export const TheDayOfSurgeryContents = {
       subtitle: "Cardiac Intensive Care",
       description: "The Cardiac Intensive Care unit contact details",
       image: require("../assets/images/Cardiac_Intensive_Care_main/CICU_Contact_Details.svg"),
-      id: 12,
+      id: 13,
     },
 
     {
@@ -139,50 +153,46 @@ export const TheDayOfSurgeryContents = {
       subtitle: "Cardiac Intensive Care",
       description: "The Cardiac Intensive Care Visiting Times",
       image: require("../assets/images/Cardiac_Intensive_Care_main/CICU-Visiting_Times.svg"),
-      id: 13,
+      id: 14,
     },
     {
       index: 3,
       subtitle: "Cardiac Intensive Care",
-      description: "The Cardiac Intensive Care Visiting Times",
+      description: `The Cardiac Intensive Care Visiting Times.`,
       image: require("../assets/images/Cardiac_Intensive_Care_main/CICU-Visiting_Times_2.svg"),
-      id: 14,
-    },
-    {
-      index: 4,
-      subtitle: "Heart Monitor",
-      description:
-        "Shows your heart rate and rhythm to the staff looking after you.",
-      image: require("../assets/images/cardiac_intensive_care_tool/Heart_monitor.svg"),
       id: 15,
-      equipmentName: 'Heart Monitor'
     },
     {
-      index: 4,
-      subtitle: "Arterial Line",
-      description:
-        "We put this in your arm to measure blood pressure and take blood samples. We remove it before you go to Ward 4D from the Cardiac Intensive Care Unit.",
-      image: require("../assets/images/cardiac_intensive_care_tool/Arterial_Line.svg"),
+      index: 3,
+      subtitle: "Cardiac Intensive Care",
+      description: `After the first day or two you will no longer
+      need close observation in the CICU and we
+      will take you back to 4D ward on the 4th
+      floor.`,
+      image: require("../assets/images/preparing_for_your_surgery/general.svg"),
       id: 16,
-      equipmentName: 'Arterial Line'
     },
     {
       index: 4,
-      subtitle: "Temporary Pacemaker Wires",
+      subtitle: "Endotracheal (Breathing) Tube",
       description:
-        "These wires are attached to your heart during surgery. They are used to change your heart rhythm if needed. They are removed a few days after your operation.",
-      image: require("../assets/images/cardiac_intensive_care_tool/Temporary_Pacemaker_wires.svg"),
+        `The anaesthetic doctor will place this tube
+        in your throat when you are asleep. We will
+        attach you to a breathing machine
+        (ventilator), which will help you breathe
+        properly during the operation. As you wake
+        up you may become aware of this tube.
+        You cannot talk with it in place but you can
+        nod or shake your head in response to
+        questions. When you are fully awake you
+        will not need the breathing machine or
+        tube any more. The doctor or nurse will
+        remove it (usually within 24 hours following
+        your operation). You may have a sore
+        throat for a day or so.`,
+      image: require("../assets/images/preparing_for_your_surgery/tube1.svg"),
       id: 17,
-      equipmentName: 'Temporary Pacemaker Wires'
-    },
-    {
-      index: 4,
-      subtitle: "Urinary Catheter",
-      description:
-        "We put a tube, called a urinary catheter, in your bladder to collect your urine. It allows the doctors and nurses to see how well your kidneys are working. We will take it out when you are up and about.",
-      image: require("../assets/images/cardiac_intensive_care_tool/urine_bag.svg"),
-      id: 18,
-      equipmentName: 'Urinary Catheter'
+      equipmentName: 'Endotracheal (Breathing) Tube'
     },
     {
       index: 4,
@@ -190,7 +200,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "This tube is passed through your nose into your stomach when you are asleep. It will drain any fluid, which may be in your tummy and help prevent you feeling sick after your operation. We will remove it in the first 24 hours after surgery.",
       image: require("../assets/images/cardiac_intensive_care_tool/Group_794.svg"),
-      id: 19,
+      id: 18,
       equipmentName: 'Nasogastric Tube'
     },
     {
@@ -199,8 +209,48 @@ export const TheDayOfSurgeryContents = {
       description:
         "These tubes collect any fluid left in your chest after surgery. We usually remove them the day after your operation or when the chest drainage stops.",
       image: require("../assets/images/cardiac_intensive_care_tool/Chest_drain_tubes.svg"),
-      id: 20,
+      id: 19,
       equipmentName: 'Chest Drain Tubes'
+    },
+    {
+      index: 4,
+      subtitle: "Arterial Line",
+      description:
+        "We put this in your arm to measure blood pressure and take blood samples. We remove it before you go to Ward 4D from the Cardiac Intensive Care Unit.",
+      image: require("../assets/images/cardiac_intensive_care_tool/Arterial_Line.svg"),
+      id: 20,
+      equipmentName: 'Arterial Line'
+    },
+    {
+      index: 4,
+      subtitle: "Urinary Catheter",
+      description:
+        "We put a tube, called a urinary catheter, in your bladder to collect your urine. It allows the doctors and nurses to see how well your kidneys are working. We will take it out when you are up and about.",
+      image: require("../assets/images/cardiac_intensive_care_tool/urine_bag.svg"),
+      id: 21,
+      equipmentName: 'Urinary Catheter'
+    },
+    {
+      index: 4,
+      subtitle: "Intravenous Lines",
+      description:
+        `special lines (drips)
+        which allow the doctors and nurses to give
+        you medication and fluid. We take these out
+        gradually within a few days following your
+        operation.`,
+      image: require("../assets/images/preparing_for_your_surgery/tube2.svg"),
+      id: 22,
+      equipmentName: 'Intravenous Lines'
+    },
+    {
+      index: 4,
+      subtitle: "Heart Monitor",
+      description:
+        "Shows your heart rate and rhythm to the staff looking after you.",
+      image: require("../assets/images/cardiac_intensive_care_tool/Heart_monitor.svg"),
+      id: 23,
+      equipmentName: 'Heart Monitor'
     },
     {
       index: 4,
@@ -208,17 +258,25 @@ export const TheDayOfSurgeryContents = {
       description:
         "This will give you oxygen, which you will need for a few days after your operation.",
       image: require("../assets/images/cardiac_intensive_care_tool/An_Oxygen_Mask_or_Nasal_Prongs.svg"),
-      id: 21,
+      id: 24,
       equipmentName: 'An Oxygen Mask or Nasal Prongs'
     },
-
+    {
+      index: 4,
+      subtitle: "Temporary Pacemaker Wires",
+      description:
+        "These wires are attached to your heart during surgery. They are used to change your heart rhythm if needed. They are removed a few days after your operation.",
+      image: require("../assets/images/cardiac_intensive_care_tool/Temporary_Pacemaker_wires.svg"),
+      id: 25,
+      equipmentName: 'Temporary Pacemaker Wires'
+    },
     {
       index: 5,
       subtitle: "A wounded heart does heal",
       description:
         "In order to operate on your heart, the surgeon must make a cut into the front of your chest and divide your breast bone (sternum). If you are having coronary heart surgery, then an incision will also be made into your leg or arm to remove a blood vessel, which the surgeon will use to bypass the blockages in your coronary arteries.",
       image: require("../assets/images/update/strech2.png"),
-      id: 22,
+      id: 26,
     },
     {
       index: 5,
@@ -226,7 +284,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "After your operation, the surgeon will use special surgical wire to set the breastbone again. This wire is very strong and will stay in your body forever. You can’t feel these wires but they will show up on a chest x-ray. The cut in your skin is stitched, stapled or glued together and covered with a dressing. You will have a scar which will fade as it heals. . your breastbone usually takes six weeks or more to heal.",
       image: require("../assets/images/update/strech.png"),
-      id: 23,
+      id: 27,
     },
     {
       index: 5,
@@ -234,7 +292,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "During the first few days after surgery your chest, leg or arm wounds may be sore. Please tell your nurse if you are sore. We will give you painkillers at regular intervals, to ease the soreness and make moving around easier. Some people may experience a tingling feeling over their chest and arm when the arteries from these areas are used for the bypass. Your wound may feel itchy, lumpy or numb and you may notice swelling and bruising. These symptoms are a normal part of healing and will disappear in the weeks following surgery",
       image: require("../assets/images/update/heart medication-3.svg"),
-      id: 24,
+      id: 28,
     },
 
     {
@@ -242,14 +300,14 @@ export const TheDayOfSurgeryContents = {
       subtitle: "Possible complications during your recovery",
       description: "Nausea (feeling sick)",
       image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-01.svg"),
-      id: 25,
+      id: 29,
     },
     {
       index: 6,
       subtitle: "Possible complications during your recovery",
       description: "Constipation",
       image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-02.svg"),
-      id: 26,
+      id: 30,
     },
     {
       index: 6,
@@ -257,7 +315,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "Tiredness, forgetfulness and lack of concentration. This may persist for a couple of weeks after surgery, and usually improves with time and rest.",
       image: require("../assets/images/Possible_complications_during_your_recovery/Group_815.svg"),
-      id: 27,
+      id: 31,
     },
     {
       index: 6,
@@ -265,7 +323,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "Occasionally, people may experience vivid dreams or become confused and disorientated after surgery. Do not worry if this happens to you as it is a side effect of the surgery and will pass.",
       image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-03.svg"),
-      id: 28,
+      id: 32,
     },
     {
       index: 6,
@@ -273,7 +331,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "Atrial Fibrillation. This is an irregular heartbeat which may make you feel weak, sweaty or have palpitations.",
       image: require("../assets/images/update/heart-run.svg"),
-      id: 29,
+      id: 33,
     },
     {
       index: 6,
@@ -293,7 +351,7 @@ export const TheDayOfSurgeryContents = {
       chest until an x-ray shows all the fluid
       is gone.`,
       image: require("../assets/images/lungs.svg"),
-      id: 30,
+      id: 34,
     },
   ],
 };
@@ -734,7 +792,7 @@ export const excerciseContent = [
       straight. Try not to push on the chair with your arms.`,
       `Repeat 2 to 3 times. Gradually build up to 10 times.`,
     ],
-  },  
+  },
 
   // {
   //   nextPageLink: "/returning_home",
