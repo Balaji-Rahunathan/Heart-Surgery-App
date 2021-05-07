@@ -87,7 +87,7 @@ const PhysicalInactivity = (props) => {
                 color: "#00a1fb",
               }}
             >
-              Physical inactivity
+              Physical Inactivity
             </p>
           </div>
 

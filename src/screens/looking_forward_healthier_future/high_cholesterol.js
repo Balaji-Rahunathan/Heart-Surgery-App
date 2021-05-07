@@ -85,7 +85,7 @@ const HighCholesterol = (props) => {
                 padding: "0.8em 50px",
               }}
             >
-              High cholesterol
+              High Cholesterol
             </div>
           </div>
           <div
