@@ -1,6 +1,8 @@
 
 export const TheDayOfSurgeryTitles = {
   titles: [
+    "Routine Tests",
+    "One or two weeks before admission",
     "The Day of Admission",
     "Night before Surgery",
     "The Day of Surgery",
@@ -15,23 +17,138 @@ export const TheDayOfSurgeryContents = {
   data: [
     {
       index: 0,
-      subtitle: "The Day of Admission",
+      subtitle: "Routine Tests",
       description:
-        "Before leaving home on the morning of admission, it is essential that you ring 4D ward to ensure that a bed is available and your surgery is going ahead.",
-      image: require("../assets/images/day-of-admission/1.svg"),
+        `Before you go for surgery you will have some
+        routine hospital tests, which will help the
+        doctors and nurses plan your hospital care.`,
+      image: require("../assets/images/routine_test/alltest.svg"),
       id: 0,
     },
     {
       index: 0,
+      subtitle: "Routine Tests",
+      description:
+        `This test tells the doctor what your
+        heart rate and rhythm is. It will also show up
+        heart muscle injury or damage.`,
+      image: require("../assets/images/routine_test/ecg.svg"),
+      equipmentName: 'ECG',
+      id: 1,
+    },
+    {
+      index: 0,
+      subtitle: "Routine Tests",
+      description:
+        `These measure
+        your blood count and show the doctors how
+        well your lungs, heart and kidneys are
+        working.`,
+      image: require("../assets/images/routine_test/blood-urine.svg"),
+      equipmentName: 'Blood and Urine tests',
+      id: 2,
+    },
+    {
+      index: 0,
+      subtitle: "Routine Tests",
+      description:
+        `This will show the surgeon if
+        your heart and lungs are working properly.`,
+      image: require("../assets/images/routine_test/xray.svg"),
+      equipmentName: 'Chest X-Ray',
+      id: 3,
+    },
+    {
+      index: 0,
+      subtitle: "Routine Tests",
+      description:
+        `MRSA is a common
+        bacteria (bug) which lives harmlessly on the
+        skin or in the nose of about one in three people. 
+        It sometimes causes infections.
+        This is more likely to happen to those who
+        are unwell. It is therefore important to
+        identify those who carry it by screening.
+        This involves using a cotton bud to swab
+        the inside of your nose, groin and under-
+        arms. If you test positive you will need to
+        be re screened after treatment with special
+        skin washes and creams.`,
+      image: require("../assets/images/routine_test/mrsa.svg"),
+      equipmentName: 'MRSA screening',
+      id: 4,
+    },
+    {
+      index: 0,
+      subtitle: "Routine Tests",
+      description:
+        `The gut of every
+        normal, healthy human contains harmless
+        bacteria. Some of these bacteria may be
+        resistant to certain antibiotics, and may
+        cause infections in people who are unwell.
+        Screening involves taking a rectal swab.
+        An information leaflet is available at the
+        time of screening.`,
+      image: require("../assets/images/routine_test/vrecpe.svg"),
+      equipmentName: 'VRE / CPE screening',
+      id: 5,
+    },
+    //content 2
+    {
+      index: 1,
+      subtitle: "One or two weeks before admission",
+      description:
+        `Medications that help prevent blood from
+        clotting are called anti-platelets and
+        anti-coagulants (see page 38). These
+        medications may need to be stopped up
+        to seven days before your surgery.`,
+      image: require("../assets/images/routine_test/para (1).svg"),
+      equipmentName: 'When to stop your medication',
+      id: 6,
+    },
+    {
+      index: 1,
+      subtitle: "One or two weeks before admission",
+      description:
+        `It is very important that you discuss your
+        medication with your surgeon and follow
+        the instructions on when and what
+        medication to stop.`,
+      image: require("../assets/images/routine_test/para (2).svg"),
+      id: 7,
+    },
+    {
+      index: 1,
+      subtitle: "One or two weeks before admission",
+      description:
+        `If you are unsure of which medication you
+        need to stop then please contact your
+        Cardiac Surgeon on (021) 492 0822.`,
+      image: require("../assets/images/routine_test/para (3).svg"),
+      id: 8,
+    },
+    //Before
+    {
+      index: 2,
+      subtitle: "The Day of Admission",
+      description:
+        "Before leaving home on the morning of admission, it is essential that you ring 4D ward to ensure that a bed is available and your surgery is going ahead.",
+      image: require("../assets/images/day-of-admission/1.svg"),
+      id: 9,
+    },
+    {
+      index: 2,
       subtitle: "The Day of Admission",
       description:
         "The Cardiac Surgery Ward contact details are:",
       image: require("../assets/images/preparing_for_your_surgery/CICU_Contact_Details02.svg"),
-      id: 1,
+      id: 10,
     },
 
     {
-      index: 0,
+      index: 2,
       subtitle: "The Day of Admission",
       description:
         `Things to do - People to see and Places
@@ -42,61 +159,61 @@ export const TheDayOfSurgeryContents = {
         everybody is different and you will recover
         at your own pace. When you come in to hospital you will be shown around the ward and you will meet the doctor and the nursing staff.`,
       image: require("../assets/images/day-of-admission/2.svg"),
-      id: 2,
+      id: 11,
     },
 
     {
-      index: 0,
+      index: 2,
       subtitle: "The Day of Admission",
       description:
         "Please tell the doctor the following informations about you",
       image: require("../assets/images/day-of-admission/3.svg"),
-      id: 3,
+      id: 12
     },
     {
-      index: 0,
+      index: 2,
       subtitle: "The Day of Admission",
       description:
         "Please tell the doctor the following informations about you",
       image: require("../assets/images/day-of-admission/3-2.svg"),
-      id: 4,
+      id: 13,
     },
     {
-      index: 0,
+      index: 2,
       subtitle: "The Day of Admission",
       description:
         "Please tell the doctor the following informations about you",
       image: require("../assets/images/day-of-admission/3-3.svg"),
-      id: 5,
+      id: 14,
     },
     {
-      index: 1,
+      index: 3,
       subtitle: "Night before Surgery",
       description:
         "We will tell you whether you are first,second or third on the theatre list and ask you not to eat or drink from 12 midnight.This ensures that your stomach is empty during the operation. Even though you are fasting it is okay to take your tablets with a small sip of water.",
       image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
-      id: 6,
+      id: 15,
     },
 
     {
-      index: 1,
+      index: 3,
       subtitle: "Night before Surgery",
       description:
         "It is normal to be anxious the night before your operation and you may have difficulty sleeping. If you like, we can give you a sleeping tablet to help you get a good night’s rest.",
       image: require("../assets/images/Night_before_Surgery/Group_780.svg"),
-      id: 7
+      id: 16
     },
 
     {
-      index: 2,
+      index: 4,
       subtitle: "The Day of Surgery",
       description:
         "We will ask you to use a special shower get that cleans your skin and removes germs.",
       image: require("../assets/images/The_Day_of_Surgery/Group_778.svg"),
-      id: 8,
+      id: 17,
     },
     {
-      index: 2,
+      index: 4,
       subtitle: "The Day of Surgery",
       description: `On the morning of your surgery your nurse will give you a hospital gown to wear. We will ask you to remove the following:`,
       arrDesc: [
@@ -112,68 +229,68 @@ export const TheDayOfSurgeryContents = {
         "Hearing aid",
       ],
       image: require("../assets/images/The_Day_of_Surgery/Group_776.svg"),
-      id: 9,
+      id: 18,
     },
 
     {
-      index: 2,
+      index: 4,
       subtitle: "The Day of Surgery",
       description:
         "While you are waiting to go to the operating theatre, we will give you some tablets to help you relax. Go to the bathroom before you take these tablets as they can make you feel sleepy",
       image: require("../assets/images/The_Day_of_Surgery/Group_775.svg"),
-      id: 10,
+      id: 19,
     },
     {
-      index: 2,
+      index: 4,
       subtitle: "The Day of Surgery",
       description:
         "Your operation will take several hours and after it we will take you to the Cardiac Intensive Care Unit on the 5th Floor. You will have your own nurse who together with the doctors will watch your progress very closely",
       image: require("../assets/images/The_Day_of_Surgery/Group_777.svg"),
-      id: 11,
+      id: 20,
     },
     {
-      index: 3,
+      index: 5,
       subtitle: "Cardiac Intensive Care",
       description:
         "Please nominate one family member to phone the Cardiac Intensive Care Unit (CICU) to enquire about you ",
       image: require("../assets/images/day-of-admission/4.svg"),
-      id: 12,
+      id: 21,
     },
 
     {
-      index: 3,
+      index: 5,
       subtitle: "Cardiac Intensive Care",
       description: "The Cardiac Intensive Care unit contact details",
       image: require("../assets/images/Cardiac_Intensive_Care_main/CICU_Contact_Details.svg"),
-      id: 13,
+      id: 22,
     },
 
     {
-      index: 3,
+      index: 5,
       subtitle: "Cardiac Intensive Care",
       description: "The Cardiac Intensive Care Visiting Times",
       image: require("../assets/images/Cardiac_Intensive_Care_main/CICU-Visiting_Times.svg"),
-      id: 14,
+      id: 23,
     },
     {
-      index: 3,
+      index: 5,
       subtitle: "Cardiac Intensive Care",
       description: `The Cardiac Intensive Care Visiting Times.`,
       image: require("../assets/images/Cardiac_Intensive_Care_main/CICU-Visiting_Times_2.svg"),
-      id: 15,
+      id: 24,
     },
     {
-      index: 3,
+      index: 5,
       subtitle: "Cardiac Intensive Care",
       description: `After the first day or two you will no longer
       need close observation in the CICU and we
       will take you back to 4D ward on the 4th
       floor.`,
       image: require("../assets/images/preparing_for_your_surgery/general.svg"),
-      id: 16,
+      id: 25,
     },
     {
-      index: 4,
+      index: 6,
       subtitle: "Endotracheal (Breathing) Tube",
       description:
         `The anaesthetic doctor will place this tube
@@ -191,47 +308,47 @@ export const TheDayOfSurgeryContents = {
         your operation). You may have a sore
         throat for a day or so.`,
       image: require("../assets/images/preparing_for_your_surgery/tube1.svg"),
-      id: 17,
+      id: 26,
       equipmentName: 'Endotracheal (Breathing) Tube'
     },
     {
-      index: 4,
+      index: 6,
       subtitle: "Nasogastric Tube",
       description:
         "This tube is passed through your nose into your stomach when you are asleep. It will drain any fluid, which may be in your tummy and help prevent you feeling sick after your operation. We will remove it in the first 24 hours after surgery.",
       image: require("../assets/images/cardiac_intensive_care_tool/Group_794.svg"),
-      id: 18,
+      id: 27,
       equipmentName: 'Nasogastric Tube'
     },
     {
-      index: 4,
+      index: 6,
       subtitle: "Chest Drain Tubes",
       description:
         "These tubes collect any fluid left in your chest after surgery. We usually remove them the day after your operation or when the chest drainage stops.",
       image: require("../assets/images/cardiac_intensive_care_tool/Chest_drain_tubes.svg"),
-      id: 19,
+      id: 28,
       equipmentName: 'Chest Drain Tubes'
     },
     {
-      index: 4,
+      index: 6,
       subtitle: "Arterial Line",
       description:
         "We put this in your arm to measure blood pressure and take blood samples. We remove it before you go to Ward 4D from the Cardiac Intensive Care Unit.",
       image: require("../assets/images/cardiac_intensive_care_tool/Arterial_Line.svg"),
-      id: 20,
+      id: 29,
       equipmentName: 'Arterial Line'
     },
     {
-      index: 4,
+      index: 6,
       subtitle: "Urinary Catheter",
       description:
         "We put a tube, called a urinary catheter, in your bladder to collect your urine. It allows the doctors and nurses to see how well your kidneys are working. We will take it out when you are up and about.",
       image: require("../assets/images/cardiac_intensive_care_tool/urine_bag.svg"),
-      id: 21,
+      id: 30,
       equipmentName: 'Urinary Catheter'
     },
     {
-      index: 4,
+      index: 6,
       subtitle: "Intravenous Lines",
       description:
         `special lines (drips)
@@ -240,101 +357,101 @@ export const TheDayOfSurgeryContents = {
         gradually within a few days following your
         operation.`,
       image: require("../assets/images/preparing_for_your_surgery/tube2.svg"),
-      id: 22,
+      id: 31,
       equipmentName: 'Intravenous Lines'
     },
     {
-      index: 4,
+      index: 6,
       subtitle: "Heart Monitor",
       description:
         "Shows your heart rate and rhythm to the staff looking after you.",
       image: require("../assets/images/cardiac_intensive_care_tool/Heart_monitor.svg"),
-      id: 23,
+      id: 32,
       equipmentName: 'Heart Monitor'
     },
     {
-      index: 4,
+      index: 6,
       subtitle: "An Oxygen Mask or Nasal Prongs",
       description:
         "This will give you oxygen, which you will need for a few days after your operation.",
       image: require("../assets/images/cardiac_intensive_care_tool/An_Oxygen_Mask_or_Nasal_Prongs.svg"),
-      id: 24,
+      id: 33,
       equipmentName: 'An Oxygen Mask or Nasal Prongs'
     },
     {
-      index: 4,
+      index: 6,
       subtitle: "Temporary Pacemaker Wires",
       description:
         "These wires are attached to your heart during surgery. They are used to change your heart rhythm if needed. They are removed a few days after your operation.",
       image: require("../assets/images/cardiac_intensive_care_tool/Temporary_Pacemaker_wires.svg"),
-      id: 25,
+      id: 34,
       equipmentName: 'Temporary Pacemaker Wires'
     },
     {
-      index: 5,
+      index: 7,
       subtitle: "A wounded heart does heal",
       description:
         "In order to operate on your heart, the surgeon must make a cut into the front of your chest and divide your breast bone (sternum). If you are having coronary heart surgery, then an incision will also be made into your leg or arm to remove a blood vessel, which the surgeon will use to bypass the blockages in your coronary arteries.",
       image: require("../assets/images/update/strech2.png"),
-      id: 26,
+      id: 35,
     },
     {
-      index: 5,
+      index: 7,
       subtitle: "A wounded heart does heal",
       description:
         "After your operation, the surgeon will use special surgical wire to set the breastbone again. This wire is very strong and will stay in your body forever. You can’t feel these wires but they will show up on a chest x-ray. The cut in your skin is stitched, stapled or glued together and covered with a dressing. You will have a scar which will fade as it heals. . your breastbone usually takes six weeks or more to heal.",
       image: require("../assets/images/update/strech.png"),
-      id: 27,
+      id: 36,
     },
     {
-      index: 5,
+      index: 7,
       subtitle: "A wounded heart does heal",
       description:
         "During the first few days after surgery your chest, leg or arm wounds may be sore. Please tell your nurse if you are sore. We will give you painkillers at regular intervals, to ease the soreness and make moving around easier. Some people may experience a tingling feeling over their chest and arm when the arteries from these areas are used for the bypass. Your wound may feel itchy, lumpy or numb and you may notice swelling and bruising. These symptoms are a normal part of healing and will disappear in the weeks following surgery",
       image: require("../assets/images/update/heart medication-3.svg"),
-      id: 28,
+      id: 37,
     },
 
     {
-      index: 6,
+      index: 8,
       subtitle: "Possible complications during your recovery",
       description: "Nausea (feeling sick)",
       image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-01.svg"),
-      id: 29,
+      id: 38,
     },
     {
-      index: 6,
+      index: 8,
       subtitle: "Possible complications during your recovery",
       description: "Constipation",
       image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-02.svg"),
-      id: 30,
+      id: 39,
     },
     {
-      index: 6,
+      index: 8,
       subtitle: "Possible complications during your recovery",
       description:
         "Tiredness, forgetfulness and lack of concentration. This may persist for a couple of weeks after surgery, and usually improves with time and rest.",
       image: require("../assets/images/Possible_complications_during_your_recovery/Group_815.svg"),
-      id: 31,
+      id: 40,
     },
     {
-      index: 6,
+      index: 8,
       subtitle: "Possible complications during your recovery",
       description:
         "Occasionally, people may experience vivid dreams or become confused and disorientated after surgery. Do not worry if this happens to you as it is a side effect of the surgery and will pass.",
       image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-03.svg"),
-      id: 32,
+      id: 41,
     },
     {
-      index: 6,
+      index: 8,
       subtitle: "Possible complications during your recovery",
       description:
         "Atrial Fibrillation. This is an irregular heartbeat which may make you feel weak, sweaty or have palpitations.",
       image: require("../assets/images/update/heart-run.svg"),
-      id: 33,
+      id: 42,
     },
     {
-      index: 6,
+      index: 8,
       subtitle: "Possible complications during your recovery",
       description: `Pleural effusion - this is a collection of
       fluid in the lining of your lungs (pleura).
@@ -351,7 +468,7 @@ export const TheDayOfSurgeryContents = {
       chest until an x-ray shows all the fluid
       is gone.`,
       image: require("../assets/images/lungs.svg"),
-      id: 34,
+      id: 43,
     },
   ],
 };
