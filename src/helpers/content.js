@@ -32,7 +32,7 @@ export const TheDayOfSurgeryContents = {
         `This test tells the doctor what your
         heart rate and rhythm is. It will also show up
         heart muscle injury or damage.`,
-      image: require("../assets/images/routine_test/ecg.svg"),
+      image: require("../assets/images/update/ecg.svg"),
       equipmentName: 'ECG',
       id: 1,
     },
