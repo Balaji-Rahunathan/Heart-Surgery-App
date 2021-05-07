@@ -76,6 +76,10 @@ const GettingBacktoNormal = (props) => {
                   Getting back to normal
                 </div>
               </div>
+
+              <div style={{fontWeight:'bold', padding:'20px 0'}}>Concentration and memory problems</div>
+
+
               <div className="resuming_home_head_image_container">
                 <img
                   src={HeadImage}
@@ -84,6 +88,8 @@ const GettingBacktoNormal = (props) => {
                 />
               </div>
               <div className="resuming_home_head_content_container">
+
+
                 <div className="resuming_home_head_content">
                   After your heart surgery you may find that your concentration
                   is poor. This usually returns to normal during your recovery
