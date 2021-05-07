@@ -34,6 +34,7 @@ import RangeofMovementExercises from "./screens/range_of_movement_exercises/rang
 import GettingBacktoNormal from "./screens/getting_back_to_normal/getting_back_to_normal.screen";
 import HomeWalkingProgramme from "./screens/home_walking/home_walking_programme.screen";
 import HighBloodPressure from "./screens/looking_forward_healthier_future/high_blood_pressure";
+import PreparingForSurgeryMain from "./screens/preparing_for_your_surgery/preparing_for_your_surgery_main";
 
 let App = (props) => {
   function getWindowDimensions() {
@@ -63,7 +64,7 @@ let App = (props) => {
 
   if (
     toInteger(useWindowDimensions().width) /
-      toInteger(useWindowDimensions().height) >
+    toInteger(useWindowDimensions().height) >
     1
   ) {
     return (
@@ -106,7 +107,7 @@ let App = (props) => {
             </Route>
             <Route exact path="/arm_raising">
               {(props) => <Excercise {...excerciseContent[2]} {...props} />}
-            </Route>            
+            </Route>
             <Route exact path="/trunk_twists">
               {(props) => <Excercise {...excerciseContent[3]} {...props} />}
             </Route>
@@ -136,6 +137,11 @@ let App = (props) => {
               exact
               path="/preparing_for_surgery_home"
               component={HomeSurgery}
+            />
+            <Route
+              exact
+              path="/preparing_for_surgery_main"
+              component={PreparingForSurgeryMain}
             />
             <Route
               exact
@@ -203,7 +209,7 @@ let App = (props) => {
               path="/looking_forward_healthier_future"
               component={ManagingYourRiskFactors}
             />
-             <Route
+            <Route
               exact
               path="/looking_forward_healthier_future/high_blood_pressure"
               component={HighBloodPressure}
