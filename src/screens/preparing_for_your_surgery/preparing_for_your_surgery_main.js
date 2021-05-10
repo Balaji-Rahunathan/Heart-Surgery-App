@@ -7,7 +7,7 @@ import MenuButton from "../../common_component/menu_button/menu_button.component
 import Sidebar from "../../components/sidebar/sidebar.component";
 import "../for_you_and_your_partner/for_you_and_your_partner.screen.scss";
 import NextButton from "../../common_component/next_button/next_button.component";
-import Relax from "../../assets/images/update/prepare.svg";
+import Relax from "../../assets/images/Resuming Home/Group 5.png";
 import Breath from "../../assets/images/update/breath.svg";
 import Sence from "../../assets/images/update/sence.svg";
 import Imagin from "../../assets/images/update/imagin.svg";
@@ -94,7 +94,7 @@ const PreparingForSurgeryMain = (props) => {
               </div>
 
               <div className="fyandyp_image_container">
-                <img src={Relax} className="fyandyp_image"></img>
+                <img src={Relax} className="fyandyp_image" style={{width:'80%'}}></img>
               </div>
 
               <div className="fyandyp_image_content_container">
