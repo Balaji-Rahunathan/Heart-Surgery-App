@@ -208,7 +208,7 @@ export const TheDayOfSurgeryContents = {
       index: 4,
       subtitle: "The Day of Surgery",
       description:
-        "We will ask you to use a special shower get that cleans your skin and removes germs.",
+        "We will ask you to use a special shower gel that Cleanse your skin and removes germs.",
       image: require("../assets/images/The_Day_of_Surgery/Group_778.svg"),
       id: 17,
     },
@@ -244,7 +244,7 @@ export const TheDayOfSurgeryContents = {
       index: 4,
       subtitle: "The Day of Surgery",
       description:
-        "Your operation will take several hours and after it we will take you to the Cardiac Intensive Care Unit on the 5th Floor. You will have your own nurse who together with the doctors will watch your progress very closely",
+        "Your operation will take several hours and after that we will take you to the Cardiac Intensive Care Unit on the 5th Floor. You will have your own nurse who together with the doctors will watch your progress very closely",
       image: require("../assets/images/The_Day_of_Surgery/Group_777.svg"),
       id: 20,
     },
@@ -351,7 +351,7 @@ export const TheDayOfSurgeryContents = {
       index: 6,
       subtitle: "Intravenous Lines",
       description:
-        `special lines (drips)
+        `Special lines (drips)
         which allow the doctors and nurses to give
         you medication and fluid. We take these out
         gradually within a few days following your
@@ -457,8 +457,7 @@ export const TheDayOfSurgeryContents = {
       fluid in the lining of your lungs (pleura).
       It is very common after heart surgery.
       Your doctor will be able to see it on
-      a chest x-ray. It can stop without treat-
-      ment. However, in a small number of
+      a chest x-ray. It can stop without treatment. However, in a small number of
       people the collection of fluid is large and
       you may feel short of breath and need to
       have the fluid removed. Your surgeon
@@ -482,7 +481,7 @@ export const ReturningHomeContent = {
       header: "Getting back to normal",
       description: null,
       content:
-        "After your heart surgery you may find that your concentration is poor. This usually returns to normal during your recovery at home.Some people also find their memory is affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP. Some people also find their memory s affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP",
+        "After your heart surgery you may find that your concentration is poor. This usually returns to normal during your recovery at home.Some people also find their memory is affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP. Some people also find their memory is affected but this is usually temporary and gradually resolves within six months of your surgery. If this problem persists please speak to your GP",
       image: require("../assets/images/Night_before_Surgery/Group_779.svg"),
       button: true,
     },
@@ -527,7 +526,7 @@ export const calenderContents = [
     content: [
       `Morning or afternoon rest.`,
       `Visit a friend nearby.`,
-      `short car trips as a passenger.`,
+      `Short car trips as a passenger.`,
       `Light housework only e.g. prepare a cup
         of tea, wash and dry dishes.`,
       `Begin
@@ -559,7 +558,7 @@ export const calenderContents = [
         floor if they move easily.`,
       `Light gardening – seated to begin.`,
       `Outing to cinema or restaurant.`,
-      `start most household activities except for
+      `Start most household activities except for
         heavy lifting.`,
       `Continue walking programme.`,
     ],
@@ -593,7 +592,7 @@ export const calenderContents = [
     content: [
       `Fishing`,
       `Golfing`,
-      `swimming`,
+      `Swimming`,
       `Cycling`,
       `Continue walking programme.`,
     ],
@@ -641,12 +640,10 @@ export const returnHomeContent = [
     title: "Driving",
     image: require("../assets/images/returning_home/Group 6.png"),
     content: [
-      `Most people are permitted to drive after
-      six weeks. When you return to driving,
-      start in your local area, avoid peak hours,
-      have another person with you and
-      gradually increase the time you spend
-      driving.`,
+      `Work can be physically and mentally
+      demanding on your body. It can take from
+      six weeks to six months to return to work,
+      depending on the type of work that you do.`,
     ],
   },
 
@@ -655,29 +652,27 @@ export const returnHomeContent = [
     image: require("../assets/images/returning_home/Group 6.png"),
     content: [
       ``,
-      `Avoid long trips at first and take frequent
-      rest breaks.`,
-      `If you drive for a living (heavy goods
-        vehicle / passenger service vehicle), you
-        will usually not be allowed to resume for
-        a much longer period of time. Your doctor
-        may want you to undergo an exercise
-        stress test before you are permitted to
-        drive.`,
-      `You must tell your insurance company
-        that you have had heart surgery.`
+      `It is important to talk to your doctor about
+      the type of work you do and how soon
+      you can go back after heart surgery. You
+      must consider the demands of your job.`,
+      `If you have a heavy manual job, there
+      are schemes available to re-train you for
+      more suitable work.`,
+      `Talk to the Cardiac Rehabilitation Team
+      at the hospital if you have any concerns
+      about returning to work or the type of
+      work that you do.`
     ],
   },
   {
     title: "Work",
     image: require("../assets/images/returning_home/Group 8.png"),
     content: [
-      `Most people are permitted to drive after
-        six weeks. When you return to driving,
-        start in your local area, avoid peak hours,
-        have another person with you and
-        gradually increase the time you spend
-        driving.`,
+      `Work can be physically and mentally
+      demanding on your body. It can take from
+      six weeks to six months to return to work,
+      depending on the type of work that you do.`,
     ],
   },
   {
@@ -685,17 +680,17 @@ export const returnHomeContent = [
     image: require("../assets/images/returning_home/Group 8.png"),
     content: [
       ``,
-      `Avoid long trips at first and take
-        frequent rest breaks.`,
-      `If you drive for a living (heavy goods
-        vehicle / passenger service vehicle), you
-        will usually not be allowed to resume for a
-        much longer period of time. Your doctor
-        may want you to undergo an exercise
-        stress test before you are permitted to
-        drive.`,
-      `Y ou must tell your insurance company
-        that you have had heart surgery.`,
+      `It is important to talk to your doctor about
+      the type of work you do and how soon
+      you can go back after heart surgery. You
+      must consider the demands of your job.`,
+      `If you have a heavy manual job, there
+      are schemes available to re-train you for
+      more suitable work.`,
+      `Talk to the Cardiac Rehabilitation Team
+      at the hospital if you have any concerns
+      about returning to work or the type of
+      work that you do.`,
     ],
   },
   {
@@ -716,7 +711,7 @@ export const returnHomeContent = [
     content2: `Don’t have a bath for the first three months (Refer After Surgery).`,
   },
   {
-    title: "Erectile dysfunction (impotence)",
+    title: "Erectile dysfunction (Impotence)",
     image: require("../assets/images/returning_home/Group 12.png"),
     content: [
       `
@@ -733,6 +728,7 @@ export const returnHomeContent = [
         is a common problem and that your GP
         can treat the majority of cases of ED
         simply with medication.`,
+        'It is important to note that while the medications used for eD are safe, they should not be taken if you are prescribed medications called nitrates, or GTN spray (even occasionally) for your heart condition.',
     ],
   },
   {
@@ -778,8 +774,8 @@ export const returnHomeContent = [
             too cold.`,
       `If you still can’t sleep, get up and try
             listening to relaxing music, read a book or
-            watch TV.Return to bed when you feel
-            tired again.If sleep continues to be a
+            watch TV. Return to bed when you feel
+            tired again. If sleep continues to be a
             problem, talk to your doctor`,
     ],
   },
@@ -996,13 +992,13 @@ export const homeWalking = [
   },
   {
     stage: "Stage 10",
-    description: `Try to walk faster for the next 10 minutes middle bit)`,
+    description: `Try to walk faster for the next 10 minutes (Middle bit)`,
     src: require("../assets/images/home walking/30.png"),
     feel: "Somewhat Hard",
   },
   {
     stage: "Stage 10",
-    description: `stroll for 10 minutes more (cool down) `,
+    description: `Stroll for 10 minutes more (Cool down) `,
     src: require("../assets/images/home walking/30.png"),
     feel: "Light",
   },
@@ -1014,7 +1010,7 @@ export const homeWalking = [
   },
   {
     stage: "Stage 11",
-    description: `Faster walk for 10 minutes (middle bit)`,
+    description: `Faster walk for 10 minutes (Middle bit)`,
     src: require("../assets/images/home walking/34.png"),
     feel: "Somewhat Hard",
   },
@@ -1032,7 +1028,7 @@ export const homeWalking = [
   },
   {
     stage: "Stage 12",
-    description: `Faster walk for 10 minutes (middle bit)`,
+    description: `Faster walk for 10 minutes (Middle bit)`,
     src: require("../assets/images/home walking/40.png"),
     feel: "Somewhat Hard",
   },
@@ -1099,7 +1095,7 @@ export const TheDayOfSurgery = {
         {
           subtitle: "The Day of Surgery",
           description:
-            "We will ask you to use a special shower get that cleans your skin and removes germs.",
+            "We will ask you to use a special shower gel that Cleanse your skin and removes germs.",
           image: require("../assets/images/The_Day_of_Surgery/Group_778.svg"),
         },
         {
@@ -1136,7 +1132,7 @@ export const TheDayOfSurgery = {
         {
           subtitle: "The Day of Surgery",
           description:
-            "Your operation will take several hours and after it we will take you to the Cardiac Intensive Care Unit on the 5th Floor. You will have your own nurse who together with the doctors will watch your progress very closely",
+            "Your operation will take several hours and after that we will take you to the Cardiac Intensive Care Unit on the 5th Floor. You will have your own nurse who together with the doctors will watch your progress very closely",
           image: require("../assets/images/The_Day_of_Surgery/Group_777.svg"),
         },
       ],

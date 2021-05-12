@@ -101,10 +101,10 @@ const BeingOverweight = (props) => {
               To find out if you are overweight ask yourself two questions.
             </p>
             <p className="pts_content_text lfh2">
-              where is most of the fat on my body stored?
+              Where is most of the fat on my body stored?
             </p>
             <p className="pts_content_text lfh2">
-              what is my body weight in relation to my height?
+              What is my body weight in relation to my height?
             </p>
             <p className="pts_content_text">
               If you carry most of your extra weight around the middle of your
@@ -136,7 +136,7 @@ const BeingOverweight = (props) => {
               <div className="pts_content_container">
                 <p className="pts_content_text" style={{ paddingTop: "5em" }}>
                   Your body weight in relation to your height is called your
-                  Body mass index or Bmi. 
+                  Body Mass Index or BMI. 
                 </p>
                 <p className="pts_content_text" style={{ paddingTop: "1em" }}>
                 Look at the height and weight chart
@@ -249,10 +249,13 @@ const BeingOverweight = (props) => {
                     </tr>
                   </tbody>
                 </table>
+
+<div>in general if you have a Bmi of more than 25 you should lose weight.</div>
+
               </div>
               <div className="pts_content_container">
                 <p className="pts_content_text">
-                  In general if you have a Bmi of more than 25 you should lose
+                  if you have a B of more than 25 you should lose
                   weight.
                 </p>
               </div>
@@ -310,7 +313,7 @@ const BeingOverweight = (props) => {
                 </table>
               </div>
               <div className="pts_content_text" style={{textAlign:'left', padding:'0.5em'}}>
-                Note: south Asian adults are at high risk if their waist
+                Note: South Asian adults are at high risk if their waist
                 measurement is greater than 90cms (35 inches) for men or 80cms
                 (31 inches) for women.
               </div>

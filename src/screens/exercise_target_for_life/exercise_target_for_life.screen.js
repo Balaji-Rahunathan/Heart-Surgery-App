@@ -156,7 +156,7 @@ const ExerciseTargetForLife = (props) => {
                 </p>
                 <p>
                   <FiberManualRecordIcon className="points_icon_dont" /> Walk on
-                  hills for the first few wee
+                  hills for the first few weeks
                 </p>
               </div>
 

@@ -52,7 +52,7 @@ const Accordian = (props) => {
                 Very Light <ExpandMoreIcon className="accordian_icon" />
               </div>
               <div class="panel scale-1">
-                Very Light is how you feel while walking around the house in no
+                VERY LIGHT is how you feel while walking around the house in no
                 particular hurry.
               </div>
             </div>
@@ -65,7 +65,7 @@ const Accordian = (props) => {
                 Light <ExpandMoreIcon className="accordian_icon" />
               </div>
               <div class="panel scale-2-3">
-                Light is how you feel when you are strolling leisurely
+                LIGHT is how you feel when you are strolling leisurely
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ const Accordian = (props) => {
                 <ExpandMoreIcon className="accordian_icon" />
               </div>
               <div class="panel scale-4-6">
-                Somewhat hard should make you feel slightly warm. You have no
+                SOMEWHAT HARD should make you feel slightly warm. You have no
                 angina or palpitations though you feel your heart is beating
                 faster or harder than when you are sitting. You are comfortable
                 and can keep going for another 10-15 minutes. This is the
@@ -96,7 +96,7 @@ const Accordian = (props) => {
                 <ExpandMoreIcon className="accordian_icon" />
               </div>
               <div class="panel scale-7-8">
-                Hard (Heavy) means you might feel too hot. You find it hard to
+                HARD (HEAVY) means you might feel too hot. You find it hard to
                 talk and can’t keep going for much longer. exercising this hard
                 is of no benefit to you, and if taken to extreme can cause harm.
               </div>

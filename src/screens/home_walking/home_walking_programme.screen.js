@@ -76,7 +76,7 @@ const HomeWalkingProgramme = (props) => {
                   The following walking table will guide you on how soon to
                   start walking, how many minutes to start with, and how you
                   should feel as you walk.{" "}
-                  <b>walk on the flat for the first three weeks.</b>
+                  <b>Walk on the flat for the first three weeks.</b>
                 </p>
               </div>
               <div className="hwp_title_container">

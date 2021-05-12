@@ -104,13 +104,15 @@ const Alcohol = (props) => {
 
           <div className="pths_content_container">
             <p className="pths_content_text">
-              There is some evidence that drinking a small amount of alcohol
-              helps protect your heart. Drinking too much alcohol however, has
-              the opposite effect because it contributes to strokes, high blood
-              pressure, and liver problems. It can also damage your heart
-              muscle, causing heart rhythm problems and heart failure. Alcohol
-              is also very high in calories and can increase blood triglyc-
-              erides, (a type of bad fat) and your weight.
+            There is some evidence that drinking a
+small amount of alcohol helps protect your
+heart. Drinking too much alcohol however,
+has the opposite effect because it contributes
+to strokes, high blood pressure, and liver
+problems. It can also damage your heart
+muscle, causing heart rhythm problems
+and heart failure. Alcohol is also very high
+in calories and can increase blood triglycerides, (a type of bad fat) and your weight.
             </p>
           </div>
 
@@ -217,7 +219,7 @@ const Alcohol = (props) => {
                   style={{ paddingRight: "2.5em" }}
                 >
                   It is normally safe to take a small amount of alcohol while
-                  taking your heart drugs. if you are taking warfarin however,
+                  taking your heart drugs. If you are taking Warfarin however,
                   talk to your doctor for advice on drinking alcohol.
                 </p>
               </div>

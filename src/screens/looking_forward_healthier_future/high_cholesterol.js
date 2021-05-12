@@ -170,7 +170,7 @@ const HighCholesterol = (props) => {
                 </p>
                 <p className="pos_content_text blue-clrr">
                   The goal is to have a low total cholesterol level, a low level
-                  of LDL and a high level of hDL.
+                  of LDL and a high level of HDL.
                 </p>
               </div>
             </div>
@@ -259,6 +259,17 @@ const HighCholesterol = (props) => {
                   exercise daily and take your cholesterol tablets.
                 </p>
               </div>
+
+              <div
+                  className="pths_head_container"
+                  style={{ padding: "2em 2em 0 2em" }}
+                >
+                  <img
+                    src={Fat}
+                    alt="healthy_eating"
+                    className="pths_image"
+                  ></img>
+                </div>
               <div
                 className="pts_content_container"
                 style={{ margin: "0.5em 1em 0.5em 1em" }}
@@ -300,7 +311,7 @@ const HighCholesterol = (props) => {
               </div>
             </div>
 
-            <div className="slider_container">
+            {/* <div className="slider_container">
               <div className="pts_title_container">
                 <p className="pts_title_text" style={{ paddingTop: "4em" }}>
                   How to check your cholesterol and triglyceride levels?
@@ -326,9 +337,9 @@ const HighCholesterol = (props) => {
                   leaving hospital to find out what YOUR cholesterol goal is.
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            <div className="slider_container" style={{ paddingTop: "1em" }}>
+            {/* <div className="slider_container" style={{ paddingTop: "1em" }}>
               <div className="blue-clr">
                 <div className="pts_title_container">
                   <p className="pts_title_text">
@@ -380,9 +391,9 @@ const HighCholesterol = (props) => {
                   </tbody>
                 </table>
               </div>
-            </div>
+            </div> */}
 
-            <div className="slider_container" style={{ position: "relative" }}>
+            {/* <div className="slider_container" style={{ position: "relative" }}>
               <div
                 className="pts_title_container"
                 style={{ margin: "1em 1em 0em 1em" }}
@@ -445,7 +456,7 @@ const HighCholesterol = (props) => {
                   }}
                 />
               )}
-            </div>
+            </div> */}
 
             {/* <div className="slider_container">
           <div

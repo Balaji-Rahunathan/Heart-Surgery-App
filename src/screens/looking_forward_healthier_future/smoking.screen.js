@@ -94,7 +94,7 @@ const Smoking = (props) => {
           </div>
           <div className="pos_message_container">
             <p className="poss_message_text">
-              Quitting smoking completely is vital. it’s never too late, but the
+              Quitting smoking completely is vital. It’s never too late, but the
               sooner the better.
             </p>
           </div>
@@ -275,7 +275,7 @@ const Smoking = (props) => {
               <div className="pos_content_container">
                 <p className="pos_content_text">
                   Breathing becomes easier as the bronchial tubes relax. Energy
-                  levels increase. 2em 1em 0
+                  levels increase.
                 </p>
               </div>
             </div>
@@ -316,8 +316,9 @@ const Smoking = (props) => {
               </div>
               <div className="pos_content_container">
                 <p className="pos_content_text">
-                  The benefits continue over the years and after 10 years the
-                  risk of having a heart attack reduces to that of a non-
+                The benefits continue over the years
+and after 10 years the risk of having a
+heart attack reduces to that of a nonsmoker.
                 </p>
               </div>
             </div>
@@ -392,7 +393,7 @@ const Smoking = (props) => {
                   www.quit.ie
                 </p>
                 <p className="pos_content_text">
-                  <FiberManualRecordIcon className="pos_points_icon" /> smoking
+                  <FiberManualRecordIcon className="pos_points_icon" /> Smoking
                   Resource Officer Cork University hospital (087) 121 9633
                 </p>
               </div>

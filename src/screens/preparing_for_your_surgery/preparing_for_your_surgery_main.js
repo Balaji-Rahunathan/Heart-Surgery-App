@@ -132,7 +132,7 @@ const PreparingForSurgeryMain = (props) => {
                   <div className="slider_container" style={flexStyle}>
                     <div className="fyandyp_image_content_container">
                       <p className="fyandyp_image_content_text">
-                        IF buying pyjamas or nightdresses for your hospital
+                        If buying pyjamas or nightdresses for your hospital
                         stay, make sure they are big enough. Remember your
                         movements will be restricted due to your surgical cuts.
                         Bring a pair of slippers with non-skid soles that fits
@@ -150,7 +150,7 @@ const PreparingForSurgeryMain = (props) => {
                         className="fyandyp_image_content_text"
                         style={{ padding: "20px", backgroundColor:'#B6DEFF', borderRadius:'10px', marginTop:'20px'}}
                       >
-                        t is recommended that you nominate one member of your
+                        It is recommended that you nominate one member of your
                         family as spokesperson. That person may then phone the
                         hospital to enquire about you during your stay. Other
                         family members, friends and neighbours should then

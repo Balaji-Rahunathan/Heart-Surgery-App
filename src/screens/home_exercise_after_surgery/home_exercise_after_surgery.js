@@ -74,7 +74,7 @@ const HomExerciseAfterSurgery = (props) => {
                   <p className="heas_content_text">
                     Remember that surgery alone is not enough to solve the
                     problem of heart disease. You must continue a lifelong habit
-                    of daily exer- cise to help minimise the risk of developing
+                    of daily exercise to help minimise the risk of developing
                     further problems in the future.
                   </p>
                   <p className="heas_content_text">
@@ -112,12 +112,12 @@ const HomExerciseAfterSurgery = (props) => {
                     1. Can I feel my angina symptoms (e.g. chest pain or
                     tightness or shortness of breath) or palpitations?
                   </p>
-                  <p className="heas_content_text">2. how breathless am I?</p>
+                  <p className="heas_content_text">2. How breathless am I?</p>
 
-                  <p className="heas_content_text">3. how warm do I feel?</p>
+                  <p className="heas_content_text">3. How warm do I feel?</p>
 
                   <p className="heas_content_text">
-                    4. how tired do my muscles feel?
+                    4. How tired do my muscles feel?
                   </p>
                 </div>
               </div>

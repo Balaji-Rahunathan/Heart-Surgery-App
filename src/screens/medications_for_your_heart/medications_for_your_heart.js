@@ -192,7 +192,7 @@ const MedicationsForYourHeart = (props) => {
                   <p className="mfyh_content_text">
                     All medications should be stored in a safe place out of the
                     reach of children. They should be stored in a cool, dry
-                    place and protected from light. In general all medications
+                    place and protected from light. all medications
                     should be kept in their original container unless you are
                     using a specific dosing reminder system.
                   </p>

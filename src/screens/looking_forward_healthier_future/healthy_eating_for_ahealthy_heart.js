@@ -145,14 +145,21 @@ const HealthyEatingForHealthyHeart = (props) => {
                 </div>
 
                 <p className="pths_content_text">
-                  Fish is a great substitute for red meat, and is our main
-                  source of omega 3, which protects your heart. Adults should
-                  eat at least two 140g portions of fish per week. At least one
-                  of these portions should be oily fish e.g. salmon, mackerel,
-                  herring, trout, sardines, kippers and fresh tuna. Some omega 3
-                  is also found in walnuts, pecans, peanuts, almonds, and
-                  flaxseed (ground linseed). Omega 3 supplements are not
-                  recommended even if you don’t eat fish!
+                Fish is a great substitute for red meat, and
+is our main source of omega 3, which
+protects your heart. Adults should eat at
+least two 140g portions of fish per week.
+At least one of these portions should be oily
+fish e.g. salmon, mackerel, herring, trout,
+sardines, kippers and fresh tuna. Some
+omega 3 is also found in walnuts, pecans,
+peanuts, almonds, and flaxseed (ground
+linseed). Omega 3 supplements are not
+recommended even if you don’t eat fish!
+If you choose to take an omega 3
+supplement, check that it does not contain
+any other ingredients. Omega 3 supplements should not be taken with some
+medications e.g. warfarin.
                 </p>
               </div>
             </div>
@@ -269,11 +276,12 @@ const HealthyEatingForHealthyHeart = (props) => {
                 </div>
 
                 <p className="pths_content_text">
-                  Read the tables to watch out for hidden sugar particularly in
-                  foods marketed as “low fat”. Limit unnecessary sugar e.g. in
-                  tea, coffee, cereals, sugar coated cereals, biscuits, regular
-                  fizzy drinks and confec- tionaries. Sweeteners are a safe
-                  substitute but honey is as fattening as sugar!
+                Read the tables to watch out for hidden
+sugar particularly in foods marketed as
+“low fat”. Limit unnecessary sugar e.g. in
+tea, coffee, cereals, sugar coated cereals,
+biscuits, regular fizzy drinks and confectionaries. Sweeteners are a safe substitute
+but honey is as fattening as sugar!
                 </p>
               </div>
             </div>

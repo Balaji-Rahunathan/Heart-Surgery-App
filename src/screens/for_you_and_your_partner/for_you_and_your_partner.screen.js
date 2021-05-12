@@ -87,15 +87,49 @@ const ForYouAndYourPartner = (props) => {
               </div>
               <div className="fyandyp_image_content_container">
                 <p className="fyandyp_image_content_text">
-                  After your heart surgery you may find that your concentration
-                  is poor. This usually returns to normal during your recovery
-                  at home. Some people also find their memory is affected but
-                  this is usually temporary and gradually resolves within six
-                  months of your surgery. If this problem persists please speak
-                  to your GP. Some people also find their memory s affected but
-                  this is usually temporary and gradually resolves within six
-                  months of your surgery. If this problem persists please speak
-                  to your GP.
+                Stress relates to the pressures, demands
+and unexpected changes going on in your
+daily life and how you react to them. A
+certain amount of pressure in your life is
+healthy. Pressure can help you focus and
+help you meet a challenge. When the
+amount of pressure in your life is causing
+you distress you can become stressed.
+Stress is a negative feeling.
+                </p>
+              </div>
+              <NextButton
+                prev
+                onClick={() =>
+                  props.history.push("/returning_home/exercise_target_for_life")
+                }
+                style={{
+                  position: "absolute",
+                  top: "100px",
+                  bottom: "auto",
+                  left: "10px",
+                  right: "auto",
+                }}
+              />
+            </div>
+
+            <div className="slider_container" style={{paddingTop:'4em'}}>
+              
+              
+              
+              <div className="fyandyp_image_content_container">
+                <p className="fyandyp_image_content_text">
+                You will probably feel a bit “up and down”
+for the first few weeks after your surgery.
+You may feel restless, have difficulty
+sleeping, and talk a lot or very little. Don’t
+worry, this can often happen after any
+major surgery – this will improve. It will take
+some time to adjust to the changes in your
+life. Just don’t focus too much on them.
+Remember that most people return to a full
+and productive life. Deep breathing and
+exercise can ease anxiety.
                 </p>
               </div>
               <NextButton
@@ -128,14 +162,33 @@ const ForYouAndYourPartner = (props) => {
 
                   <div className="fyandyp_image_content_container">
                     <p className="fyandyp_image_content_text">
-                      Some people may have a poor appetite for a few days after
-                      surgery. If this persists for longer please ask your
-                      doctor or nurse to refer you to a dietitian. A healthy
-                      balanced diet is recommended as you recover. If you have
-                      been advised to lose weight after your surgery, you should
-                      wait until your wound has fully healed. This can take up
-                      to six weeks. Do not diet or lose weight during this
-                      period. See ‘Healthy Eating for a Healthy Heart’.
+                    While you are recovering from heart surgery
+it is important to remember that your
+condition not only affects you. It also affects
+your partner, family, friends and work
+colleagues. Allow time to talk to your family
+and friends about how you are feeling.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="slider_container" style={{paddingTop:'4em'}}>
+                
+                 <div className="fyandyp_image_content_container">
+                    <p className="fyandyp_image_content_text">
+                    For some people heart surgery is a new
+lease of life. It is a great opportunity to look
+after yourself and focus on a healthier
+future. However, as you recover you may
+experience feelings of loss, fear, anxiety
+and frustration. Remember that these
+feelings are your feelings. Each person
+comes to terms with these emotions and
+feelings in their own way. You may find that
+you are more aware of your emotions at
+this time; this is very common and is just temporary. You have been through a
+significant life changing surgery and your
+body and mind need time to accept this.
                     </p>
                   </div>
                 </div>

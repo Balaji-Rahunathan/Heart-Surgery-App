@@ -96,7 +96,7 @@ const GettingBacktoNormal = (props) => {
                   at home. Some people also find their memory is affected but
                   this is usually temporary and gradually resolves within six
                   months of your surgery. If this problem persists please speak
-                  to your GP. Some people also find their memory s affected but
+                  to your GP. Some people also find their memory is affected but
                   this is usually temporary and gradually resolves within six
                   months of your surgery. If this problem persists please speak
                   to your GP

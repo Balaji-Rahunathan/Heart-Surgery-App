@@ -540,7 +540,7 @@ const AfterSurgery = (props) => {
                     or skin. Try to lie on your side at least part of the time,
                     changing your position every few hours. Get in and out of
                     bed without using your arms and use a rolling technique. We
-                    will show you how do do this while you are in the hospital.
+                    will show you how to do this while you are in the hospital.
                   </p>
                 </div>
               </div>

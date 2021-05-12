@@ -95,7 +95,7 @@ const HighBloodPressure = (props) => {
 
             <div className="myrf_sub_title_container">
               <p className="myrf_sub_title_text">
-                How do i know if i have high blood pressure?
+                How do I know if I have high blood pressure?
               </p>
             </div>
             <div className="myrf_content_container">
