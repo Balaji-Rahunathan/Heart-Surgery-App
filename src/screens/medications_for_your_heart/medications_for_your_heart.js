@@ -237,8 +237,9 @@ const MedicationsForYourHeart = (props) => {
                     className="mfyh_content_text blue-clriii"
                     style={{ padding: "10px 10px" }}
                   >
-                    The following two pages give you specific information on
-                    many heart medications. Look for the generic name of your
+                    {/* The following two pages give you specific information on
+                    many heart medications.  */}
+                    Look for the generic name of your
                     medications on the box or label, then read about each one.
                     If you need help, please ask your nurse, pharmacist or a
                     member of the medical team. Look for the generic name of

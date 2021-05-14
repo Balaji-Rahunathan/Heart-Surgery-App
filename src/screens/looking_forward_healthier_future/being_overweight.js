@@ -107,9 +107,13 @@ const BeingOverweight = (props) => {
               What is my body weight in relation to my height?
             </p>
             <p className="pts_content_text">
-              If you carry most of your extra weight around the middle of your
-              body you are called apple shaped or centrally obese (see pictures
-              opposite).
+            If you carry most of your extra weight
+around the middle of your body you are
+called apple shaped or centrally obese (see
+pictures above). You have a higher risk
+of heart problems and diabetes than someone whose extra weight is mostly on their
+hips and thighs – pear shaped (see pictures
+above).
             </p>
           </div>
 
@@ -250,12 +254,12 @@ const BeingOverweight = (props) => {
                   </tbody>
                 </table>
 
-<div>in general if you have a Bmi of more than 25 you should lose weight.</div>
+<div>In general if you have a BMI of more than 25 you should lose weight.</div>
 
               </div>
               <div className="pts_content_container">
                 <p className="pts_content_text">
-                  if you have a B of more than 25 you should lose
+                  If you have a B of more than 25 you should lose
                   weight.
                 </p>
               </div>
@@ -269,15 +273,20 @@ const BeingOverweight = (props) => {
                 className="pts_content_container"
                 style={{ marginBottom: "0.5em" }}
               >
-                <p className="pts_content_text">
-                  Measure yourself around the waist (see diagram) My waist
+
+<p className="pts_content_text">Measure yourself around the waist
+(see diagram)</p>
+<p className="pts_content_text" style={{paddingTop:'10px'}}>My waist
                   measurement is{" "}
                   <span>
                     <input name="waist" className="waist_input" />
                   </span>{" "}
-                  cms Check your risk of further health problems using the table
-                  below.
-                </p>
+                  cms </p>
+                  <p className="pts_content_text" style={{paddingTop:'10px'}}>Check your risk of further health problems
+using the table below.</p>
+
+
+      
               </div>
               <div className="pts_image_container">
                 <img

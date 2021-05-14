@@ -103,7 +103,7 @@ const PreparingForSurgeryMain = (props) => {
                   bring any valuables into the hospital e.g. large amounts of
                   cash, jewellery, credit cards or a cheque book. A little money
                   is enough for your day-to-day needs. Be careful of your
-                  glasses, dentures and hear- ing aids. Send your outdoor
+                  glasses, dentures and hearing aids. Send your outdoor
                   clothes home.
                 </p>
               </div>

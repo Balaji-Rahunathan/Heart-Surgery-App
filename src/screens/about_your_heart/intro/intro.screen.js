@@ -135,7 +135,7 @@ export default class Intro extends React.Component {
                     During your Coronary Artery Bypass Surgery (CABG) the doctor
                     takes a vein from your leg and an artery from your chest
                     wall or arm. These are used to bypass the narrowed area in
-                    your coronary arteries (see picture opposite). This improves
+                    your coronary arteries. This improves
                     the oxygen supply to the heart muscle. Your body can still
                     work without the arteries and veins that are used by the
                     surgeon for your bypass.{" "}

@@ -107,7 +107,7 @@ const HighBloodPressure = (props) => {
 
             <div className="myrf_sub_title_container">
               <p className="myrf_sub_title_text">
-                what should my blood pressure reading be?
+                What should my blood pressure reading be?
               </p>
             </div>
             <div className="myrf_content_container">

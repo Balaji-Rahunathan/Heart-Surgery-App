@@ -83,7 +83,7 @@ const ResumingHome = (props) => {
             </div>
             <div className="resuming_home_content">
               <p className="resuming_home_content_text">
-                The programme opposite is a sample guide to help you find a
+              This programme is a sample guide to help you find a
                 balance, as you return to your normal activities at home
                 following heart surgery.
               </p>
