@@ -101,7 +101,7 @@ export const TheDayOfSurgeryContents = {
       description:
         `Medications that help prevent blood from
         clotting are called anti-platelets and
-        anti-coagulants (see page 38). These
+        anti-coagulants. These
         medications may need to be stopped up
         to seven days before your surgery.`,
       image: require("../assets/images/routine_test/para (1).svg"),
@@ -208,7 +208,7 @@ export const TheDayOfSurgeryContents = {
       index: 4,
       subtitle: "The Day of Surgery",
       description:
-        "We will ask you to use a special shower gel that Cleanse your skin and removes germs.",
+        "We will ask you to use a special shower gel that Cleans your skin and removes germs.",
       image: require("../assets/images/The_Day_of_Surgery/Group_778.svg"),
       id: 17,
     },
@@ -640,10 +640,12 @@ export const returnHomeContent = [
     title: "Driving",
     image: require("../assets/images/returning_home/Group 6.png"),
     content: [
-      `Work can be physically and mentally
-      demanding on your body. It can take from
-      six weeks to six months to return to work,
-      depending on the type of work that you do.`,
+      `Most people are permitted to drive after
+      six weeks. When you return to driving,
+      start in your local area, avoid peak hours,
+      have another person with you and
+      gradually increase the time you spend
+      driving.`,
     ],
   },
 
@@ -652,17 +654,17 @@ export const returnHomeContent = [
     image: require("../assets/images/returning_home/Group 6.png"),
     content: [
       ``,
-      `It is important to talk to your doctor about
-      the type of work you do and how soon
-      you can go back after heart surgery. You
-      must consider the demands of your job.`,
-      `If you have a heavy manual job, there
-      are schemes available to re-train you for
-      more suitable work.`,
-      `Talk to the Cardiac Rehabilitation Team
-      at the hospital if you have any concerns
-      about returning to work or the type of
-      work that you do.`
+      `Avoid long trips at first and take frequent
+      rest breaks.`,
+      `If you drive for a living (heavy goods
+        vehicle / passenger service vehicle), you
+        will usually not be allowed to resume for
+        a much longer period of time. Your doctor
+        may want you to undergo an exercise
+        stress test before you are permitted to
+        drive.`,
+      `You must tell your insurance company
+      that you have had heart surgery.`
     ],
   },
   {
@@ -728,7 +730,7 @@ export const returnHomeContent = [
         is a common problem and that your GP
         can treat the majority of cases of ED
         simply with medication.`,
-        'It is important to note that while the medications used for eD are safe, they should not be taken if you are prescribed medications called nitrates, or GTN spray (even occasionally) for your heart condition.',
+        'It is important to note that while the medications used for ED are safe, they should not be taken if you are prescribed medications called nitrates, or GTN spray (even occasionally) for your heart condition.',
     ],
   },
   {
@@ -1095,7 +1097,7 @@ export const TheDayOfSurgery = {
         {
           subtitle: "The Day of Surgery",
           description:
-            "We will ask you to use a special shower gel that Cleanse your skin and removes germs.",
+            "We will ask you to use a special shower gel that Cleans your skin and removes germs.",
           image: require("../assets/images/The_Day_of_Surgery/Group_778.svg"),
         },
         {

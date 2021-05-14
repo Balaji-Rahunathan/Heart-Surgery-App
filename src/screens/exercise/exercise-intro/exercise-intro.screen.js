@@ -39,7 +39,7 @@ export default class Exercise extends React.Component {
           />
           <div className="exercise_content">
             <div className="exercise_head">
-              <h1 className="title">Exercises After Cardiac Surgery</h1>
+              <h1 className="title">After Surgery</h1>
               <div className="head_text">
               </div>
             </div>

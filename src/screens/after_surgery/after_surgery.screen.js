@@ -136,7 +136,7 @@ const AfterSurgery = (props) => {
               </div>
 
               <div>
-                <div>Swipe Down</div>
+                <div>Swipe Up</div>
                 <img
                   src={SwipeArrow}
                   alt="SwipeArrow"

@@ -128,7 +128,7 @@ const LittleAboutYourHeart = (props) => {
                         The coronary arteries are called the{" "}
                         <b>left coronary artery</b>, the{" "}
                         <b>circumflex artery</b> and the{" "}
-                        <b>right coronary artery</b> (see picture below). Each
+                        <b>right coronary artery.</b> Each
                         of them divides into smaller branches so all areas of
                         the heart muscle get a good supply of oxygen.
                       </p>

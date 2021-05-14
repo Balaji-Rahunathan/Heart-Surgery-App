@@ -100,7 +100,7 @@ const HealthyEatingForHealthyHeart = (props) => {
             <p className="pths_content_text">
               A good diet is essential for your recovery from heart surgery.
               Healthy food can help your wounds heal, manage your weight, reduce
-              your blood pressure and control your cholesterol. Even if do not
+              your blood pressure and control your cholesterol. Even if you do not
               have high cholesterol and are not overweight, it is still
               important for you and your family to eat healthily. Healthy eating
               not only improves cholesterol or blood pressure but is also
