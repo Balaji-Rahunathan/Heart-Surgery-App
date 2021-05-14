@@ -114,24 +114,7 @@ export default class Intro extends React.Component {
               {/* <img src={Button} alt="para_btn" className="next_button" onClick={() => this.nextBtn()} /> */}
             </div>
 
-            <div className="intro_screen_button_container">
-              <div className="prev_button_container">
-                <img
-                  src={Button}
-                  alt="para_btn"
-                  className="prev_button"
-                  onClick={() => this.prevBtn()}
-                />
-              </div>
-              <div className="next_button_container">
-                <img
-                  src={Button}
-                  alt="para_btn"
-                  className="next_button"
-                  onClick={() => this.nextBtn()}
-                />
-              </div>
-            </div>
+
 
             {/* <div>
                             <NextButton onClick={this.nextBtn} style={{top:"0"}} />
@@ -159,6 +142,25 @@ export default class Intro extends React.Component {
                   </span>
                 </div>
               ) : null}
+            </div>
+
+            <div className="intro_screen_button_container">
+              <div className="prev_button_container">
+                <img
+                  src={Button}
+                  alt="para_btn"
+                  className="prev_button"
+                  onClick={() => this.prevBtn()}
+                />
+              </div>
+              <div className="next_button_container">
+                <img
+                  src={Button}
+                  alt="para_btn"
+                  className="next_button"
+                  onClick={() => this.nextBtn()}
+                />
+              </div>
             </div>
           </div>
           {/* <div>
