@@ -107,13 +107,11 @@ const BeingOverweight = (props) => {
               What is my body weight in relation to my height?
             </p>
             <p className="pts_content_text">
-            If you carry most of your extra weight
-around the middle of your body you are
-called apple shaped or centrally obese (see
-pictures above). You have a higher risk
-of heart problems and diabetes than someone whose extra weight is mostly on their
-hips and thighs – pear shaped (see pictures
-above).
+              If you carry most of your extra weight around the middle of your
+              body you are called apple shaped or centrally obese (see pictures
+              above). You have a higher risk of heart problems and diabetes than
+              someone whose extra weight is mostly on their hips and thighs –
+              pear shaped (see pictures above).
             </p>
           </div>
 
@@ -140,17 +138,24 @@ above).
               <div className="pts_content_container">
                 <p className="pts_content_text" style={{ paddingTop: "5em" }}>
                   Your body weight in relation to your height is called your
-                  Body Mass Index or BMI. 
+                  Body Mass Index or BMI.
                 </p>
                 <p className="pts_content_text" style={{ paddingTop: "1em" }}>
-                Look at the height and weight chart
-                  below to work out if you are a healthy weight for your height
-                  (your BMI).
+                  Look at the height and weight chart below to work out if you
+                  are a healthy weight for your height (your BMI).
                 </p>
               </div>
 
-              <div className="pts_image_container" style={{ paddingTop: "2em" }}>
-                <img src={Chart} alt="body_shape" className="pts_image" style={{width:'90%'}}></img>
+              <div
+                className="pts_image_container"
+                style={{ paddingTop: "2em" }}
+              >
+                <img
+                  src={Chart}
+                  alt="body_shape"
+                  className="pts_image"
+                  style={{ width: "90%" }}
+                ></img>
               </div>
             </div>
 
@@ -254,13 +259,14 @@ above).
                   </tbody>
                 </table>
 
-<div>In general if you have a BMI of more than 25 you should lose weight.</div>
-
+                <div>
+                  In general if you have a BMI of more than 25 you should lose
+                  weight.
+                </div>
               </div>
               <div className="pts_content_container">
                 <p className="pts_content_text">
-                  If you have a B of more than 25 you should lose
-                  weight.
+                  If you have a B of more than 25 you should lose weight.
                 </p>
               </div>
             </div>
@@ -273,20 +279,20 @@ above).
                 className="pts_content_container"
                 style={{ marginBottom: "0.5em" }}
               >
-
-<p className="pts_content_text">Measure yourself around the waist
-(see diagram)</p>
-<p className="pts_content_text" style={{paddingTop:'10px'}}>My waist
-                  measurement is{" "}
+                <p className="pts_content_text">
+                  Measure yourself around the waist (see diagram)
+                </p>
+                <p className="pts_content_text" style={{ paddingTop: "10px" }}>
+                  My waist measurement is{" "}
                   <span>
                     <input name="waist" className="waist_input" />
                   </span>{" "}
-                  cms </p>
-                  <p className="pts_content_text" style={{paddingTop:'10px'}}>Check your risk of further health problems
-using the table below.</p>
-
-
-      
+                  cms{" "}
+                </p>
+                <p className="pts_content_text" style={{ paddingTop: "10px" }}>
+                  Check your risk of further health problems using the table
+                  below.
+                </p>
               </div>
               <div className="pts_image_container">
                 <img
@@ -321,7 +327,10 @@ using the table below.</p>
                   </tbody>
                 </table>
               </div>
-              <div className="pts_content_text" style={{textAlign:'left', padding:'0.5em'}}>
+              <div
+                className="pts_content_text"
+                style={{ textAlign: "left", padding: "0.5em" }}
+              >
                 Note: South Asian adults are at high risk if their waist
                 measurement is greater than 90cms (35 inches) for men or 80cms
                 (31 inches) for women.
@@ -371,8 +380,8 @@ using the table below.</p>
               <div className="pts_content_container">
                 <p className="pts_content_text" style={{ paddingTop: "5em" }}>
                   <FiberManualRecordIcon style={{ fontSize: "10px" }} /> Follow
-                  the walking programme. It is healthier to lose
-                  weight by diet and exercise rather than by diet alone.
+                  the walking programme. It is healthier to lose weight by diet
+                  and exercise rather than by diet alone.
                 </p>
                 <p className="pts_content_text">
                   <FiberManualRecordIcon style={{ fontSize: "10px" }} /> If you

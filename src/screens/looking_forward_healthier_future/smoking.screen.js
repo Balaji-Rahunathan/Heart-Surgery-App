@@ -316,9 +316,9 @@ const Smoking = (props) => {
               </div>
               <div className="pos_content_container">
                 <p className="pos_content_text">
-                The benefits continue over the years
-and after 10 years the risk of having a
-heart attack reduces to that of a nonsmoker.
+                  The benefits continue over the years
+                  and after 10 years the risk of having a
+                  heart attack reduces to that of a nonsmoker.
                 </p>
               </div>
             </div>
@@ -364,7 +364,7 @@ heart attack reduces to that of a nonsmoker.
               </div>
             </div>
 
-            <div className="slider_container" style={{position: 'relative'}}>
+            <div className="slider_container" style={{ position: 'relative' }}>
               <div
                 className="pos_sub_title_container"
                 style={{ paddingTop: "4em", marginBottom: "0" }}
@@ -388,9 +388,11 @@ heart attack reduces to that of a nonsmoker.
                   800 201 203, free text QUIT to 50100, or see www.quit.ie
                 </p>
                 <p className="pos_content_text">
-                  <FiberManualRecordIcon className="pos_points_icon" /> For
-                  Local smoking Cessation services Call (021) 492 1641, or see
-                  www.quit.ie
+                  <FiberManualRecordIcon className="pos_points_icon" />
+                  For Local smoking Cessation services Call (021) 492 1641, or see
+                  <a href="http://www.quit.ie" target="_blank" className="linkk" style={{ paddingLeft: '0.5em' }}>
+                    www.quit.ie
+                  </a>
                 </p>
                 <p className="pos_content_text">
                   <FiberManualRecordIcon className="pos_points_icon" /> Smoking

@@ -150,10 +150,9 @@ export const TheDayOfSurgeryContents = {
     {
       index: 2,
       subtitle: "The Day of Admission",
-      description:
-        `Things to do - People to see and Places
-        to go. 
-        The average hospital stay after heart surgery
+      descriptionHead: `Things to do - People to see and Places
+      to go. `,
+      description: `The average hospital stay after heart surgery
         is six to ten days. Some people may have to
         stay in hospital for longer. Remember
         everybody is different and you will recover
@@ -714,6 +713,8 @@ export const returnHomeContent = [
         after a meal.`,
     ],
     title2: "Washing and Bathing",
+    navLink: "/heart-surgery/after_surgery#WashingAndDressing",
+    navLinkText: "(Refer After Surgery)",
     content2: `Don’t have a bath for the first three months (Refer After Surgery).`,
   },
   {
@@ -734,7 +735,7 @@ export const returnHomeContent = [
         is a common problem and that your GP
         can treat the majority of cases of ED
         simply with medication.`,
-        'It is important to note that while the medications used for ED are safe, they should not be taken if you are prescribed medications called nitrates, or GTN spray (even occasionally) for your heart condition.',
+      'It is important to note that while the medications used for ED are safe, they should not be taken if you are prescribed medications called nitrates, or GTN spray (even occasionally) for your heart condition.',
     ],
   },
   {

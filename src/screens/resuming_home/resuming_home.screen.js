@@ -8,6 +8,7 @@ import Rest from "../../assets/images/update/rest.svg";
 import Container from "../../common_component/container/container.component";
 import Sidebar from "../../components/sidebar/sidebar.component";
 import MenuButton from "../../common_component/menu_button/menu_button.component";
+import SwipeArrow from "../../assets/images/swipe-arrow-blue.svg";
 
 const ResumingHome = (props) => {
   const [showNextButton, setshowNextButton] = useState(false);
@@ -88,6 +89,15 @@ const ResumingHome = (props) => {
                 following heart surgery.
               </p>
             </div>
+
+            <div style={{marginTop: '1em'}}>
+                <div>Swipe Up</div>
+                <img
+                  src={SwipeArrow}
+                  alt="SwipeArrow"
+                  style={{ transform: "rotate(90deg)", paddingLeft: "1em" }}
+                />
+              </div>
 
             <NextButton
               prev

@@ -13,6 +13,7 @@ import Sence from "../../assets/images/update/sence.svg";
 import Imagin from "../../assets/images/update/imagin.svg";
 import Lap from "../../assets/images/update/lap.svg";
 import Fist from "../../assets/images/update/fist.svg";
+import SwipeArrow from "../../assets/images/swipe-arrow-blue.svg";
 
 const PreparingForSurgeryMain = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -78,7 +79,7 @@ const PreparingForSurgeryMain = (props) => {
               onClick={handleMenuButtonClick}
             />
 
-            <div className="slider_container" style={{ position: "relative" , paddingTop:'1em'}}>
+            <div className="slider_container" style={{ position: "relative", paddingTop: '1em' }}>
               <div className="fyandyp_title_container">
                 <p
                   className="fyandyp_title_text rt_title_text"
@@ -94,10 +95,10 @@ const PreparingForSurgeryMain = (props) => {
               </div>
 
               <div className="fyandyp_image_container">
-                <img src={Relax} className="fyandyp_image" style={{width:'80%'}}></img>
+                <img src={Relax} className="fyandyp_image" style={{ width: '80%' }}></img>
               </div>
 
-              <div className="fyandyp_image_content_container">
+              <div className="fyandyp_image_content_container" style={{ marginBottom: '0.5em' }}>
                 <p className="fyandyp_image_content_text">
                   Please bring ear plugs to help you rest and sleep. Do NOT
                   bring any valuables into the hospital e.g. large amounts of
@@ -106,6 +107,15 @@ const PreparingForSurgeryMain = (props) => {
                   glasses, dentures and hearing aids. Send your outdoor
                   clothes home.
                 </p>
+              </div>
+
+              <div>
+                <div>Swipe Up</div>
+                <img
+                  src={SwipeArrow}
+                  alt="SwipeArrow"
+                  style={{ transform: "rotate(90deg)", paddingLeft: "1em" }}
+                />
               </div>
 
               <NextButton
@@ -148,7 +158,7 @@ const PreparingForSurgeryMain = (props) => {
 
                       <p
                         className="fyandyp_image_content_text"
-                        style={{ padding: "20px", backgroundColor:'#B6DEFF', borderRadius:'10px', marginTop:'20px'}}
+                        style={{ padding: "20px", backgroundColor: '#B6DEFF', borderRadius: '10px', marginTop: '20px' }}
                       >
                         It is recommended that you nominate one member of your
                         family as spokesperson. That person may then phone the

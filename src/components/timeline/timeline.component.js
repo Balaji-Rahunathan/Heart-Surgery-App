@@ -178,6 +178,10 @@ const Timeline = (props) => {
                                           {data.subtitle}
                                         </div>
                                         <div className="head_desciption">
+                                          {data.descriptionHead && (
+                                            <p><b>{data.descriptionHead}</b></p>
+                                          )}
+
                                           {data.description}
                                           {data.arrDesc &&
                                             data.arrDesc.map((arrItem) => (
