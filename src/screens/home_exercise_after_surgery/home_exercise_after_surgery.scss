@@ -5,9 +5,8 @@
             .heas_body_container{
                 margin-bottom: 2em;
                 .heas_head_container{
-                    margin: 2em;
-                    margin-top: 1em;
                     .heas_head_text{
+                        padding: 0.8em 50px;
                         font-size: 24px;
                         font-weight: 600;
                         color: $background_light_blue;
@@ -45,3 +44,5 @@
 .heas_text_padding{
     padding-top: 1em;
 }
+
+.blue-clri{background-color: #B6DEFF;padding: 12px;border-radius: 12px;margin: 20px 0 0 0;padding-bottom: 22px;}

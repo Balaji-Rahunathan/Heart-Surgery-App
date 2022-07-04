@@ -10,7 +10,7 @@ import Sidebar from '../../components/sidebar/sidebar.component'
 const HomeSurgery = (props) => {
 
     const next = () => {
-        props.history.push('/preparing_for_surgery');
+        props.history.push('/preparing_for_surgery_main');
     }
 
     const [toggle, settoggle] = useState(false)
@@ -38,8 +38,8 @@ const HomeSurgery = (props) => {
                             </div>
                             <div className="content">
                                 <div className="body_head">Preparing for your surgery</div>
-                                <div className="body_text">The corono arteries of the heart are left corona artery, right corona artery and circumflex aertery.</div>
-                                <div className="exercise_footer" onClick={() => next()} >
+                                {/* <div className="body_text">The corono arteries of the heart are left corona artery, right corona artery and circumflex aertery.</div> */}
+                                <div className="exercise_footer exercise_footerr" onClick={() => next()} >
                                     <img src={Button} alt="button" className="next_btn"></img>
                                 </div>
                             </div>

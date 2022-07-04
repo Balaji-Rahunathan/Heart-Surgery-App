@@ -13,7 +13,7 @@ const YourHeartSurgeryGuide = (props) => {
                     <p className="yhsg_content_text">The Corono arteries of the heart are left corona artery, right corona artery and circumflex aertery.</p>
                 </div>
                 <div className="yhsg_menu_container">
-                    <div className="yhsg_menu" onClick={() => props.history.push('/about_your_heart')}>
+                    <div className="yhsg_menu" onClick={() => props.history.push('/little_about_your_heart')}>
                         <p className="yhsg_menu_text">About your heart</p>
                     </div>
                     <div className="yhsg_menu" onClick={() => props.history.push('/preparing_for_surgery_home')}>
@@ -27,13 +27,21 @@ const YourHeartSurgeryGuide = (props) => {
                         <p className="yhsg_menu_text">Returning home</p>
                     </div>
 
-                    <div className="yhsg_menu" onClick={() => props.history.push('/your_heart_surgery_guide')}>
+                    <div className="yhsg_menu" onClick={() => props.history.push('/looking_forward_healthier_future')}>
                         <p className="yhsg_menu_text">Looking forward healthier future</p>
-                    </div>                    
-
-                    <div className="yhsg_menu" onClick={() => props.history.push('/your_heart_surgery_guide')}>
-                        <p className="yhsg_menu_text">Risk factor profile</p>
                     </div>
+
+                    <div className="yhsg_menu" onClick={() => props.history.push('/medications_for_your_heart')}>
+                        <p className="yhsg_menu_text">Medications For Your Heart</p>
+                    </div>
+
+                    <div className="yhsg_menu" onClick={() => props.history.push('/useful_addressess')}>
+                        <p className="yhsg_menu_text">Useful Addresses</p>
+                    </div>
+
+                    {/* <div className="yhsg_menu" onClick={() => props.history.push('/your_heart_surgery_guide')}>
+                        <p className="yhsg_menu_text">Risk factor profile</p>
+                    </div> */}
 
                 </div>
             </Container>

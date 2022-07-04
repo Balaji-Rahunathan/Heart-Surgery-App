@@ -23,10 +23,10 @@
                     position: relative;
                     height: 80%;
                     width: 100%;
-                    left: -19px;
+                    left: -5px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
+                    // justify-content: space-around;
 
                     .line {
                         position: absolute;
@@ -173,6 +173,12 @@
                             align-self: center;
                             width: 80%;
                             padding: 15px 0 15px 5px;
+                            .head_description_items{
+                                .head_description_item{
+                                    font-size: 8px;
+
+                                }
+                            }
                         }
                     }
 
@@ -352,10 +358,10 @@
                                 }
                             }
                             .previous_icon {
-                                display: none;
+                                // display: none;
                             }
                             .next_icon {
-                                display: none;
+                                // display: none;
                             }
                         .topic_content {
             
@@ -378,6 +384,8 @@
                             .img_container {
                                 width: 100%;
                                 padding: 10px 0 0 0;
+                                display: flex;
+                                justify-content: center;
                                 img {
                                     height: 55vw;
                                 }
@@ -392,4 +400,7 @@
 
 .previous_icon {
     transform: rotateZ(180deg);
+}
+.equipment_name{
+    padding-top: 0.5em;
 }

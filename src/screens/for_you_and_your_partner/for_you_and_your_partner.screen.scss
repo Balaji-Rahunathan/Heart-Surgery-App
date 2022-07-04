@@ -8,9 +8,9 @@
           margin-bottom: 0em;
         .fyandyp_head_text {
             color: $background_light_blue;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 600;
-            padding-top: 0.7em;
+            padding: 0.8em 50px;
         }
       }
       .fyandyp_title_container {
@@ -21,10 +21,14 @@
             font-size: 16px;
             font-weight: 500;
         }
+        .rt_title_text{
+          font-size: 24px !important;
+          padding-left: 0em !important;
+        }
       }
       .fyandyp_image_container {
         .fyandyp_image {
-          width: 70%;
+          width: 60%;
         }
       }
       .fyandyp_image_content_container {
