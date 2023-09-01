@@ -30,9 +30,9 @@ const Sidebar = ({ toggle, onClick, history }) => {
             iconColor="#00A1FB"
             type="close"
             onClick={() => onClick(false)}
-            style={{ position: 'absolute', zIndex: '10' }}
+            style={{ position: "absolute", zIndex: "10" }}
           />
-          <Menu style={{ textAlign: "left", marginTop: '4em' }}>
+          <Menu style={{ textAlign: "left", marginTop: "4em" }}>
             <MenuItem
               onClick={() => history.push("/little_about_your_heart")}
               className="menu_item"
@@ -57,8 +57,9 @@ const Sidebar = ({ toggle, onClick, history }) => {
             {/* Returning Home */}
             <SubMenu
               title="Returning Home"
-              className={`submenu_item ${path.includes("returning_home") && "active"
-                }`}
+              className={`submenu_item ${
+                path.includes("returning_home") && "active"
+              }`}
               defaultOpen={path.includes("returning_home")}
             >
               <MenuItem
@@ -74,7 +75,9 @@ const Sidebar = ({ toggle, onClick, history }) => {
                 Resuming home activities after surgery
               </MenuItem>
               <MenuItem
-                onClick={() => history.push("/returning_home/getting_back_to_normal")}
+                onClick={() =>
+                  history.push("/returning_home/getting_back_to_normal")
+                }
                 className="menu_item"
               >
                 Getting back to normal
@@ -124,8 +127,9 @@ const Sidebar = ({ toggle, onClick, history }) => {
             {/* Looking forward to a healthier future */}
             <SubMenu
               title="Looking forward to a healthier future"
-              className={`submenu_item ${path.includes("looking_forward_healthier_future") && "active"
-                }`}
+              className={`submenu_item ${
+                path.includes("looking_forward_healthier_future") && "active"
+              }`}
               defaultOpen={path.includes("looking_forward_healthier_future")}
             >
               <MenuItem
@@ -139,7 +143,9 @@ const Sidebar = ({ toggle, onClick, history }) => {
 
               <MenuItem
                 onClick={() =>
-                  history.push("/looking_forward_healthier_future/high_blood_pressure")
+                  history.push(
+                    "/looking_forward_healthier_future/high_blood_pressure"
+                  )
                 }
                 className="menu_item"
               >
@@ -221,6 +227,12 @@ const Sidebar = ({ toggle, onClick, history }) => {
             {/* <MenuItem onClick={() => history.push("/")} className="menu_item">
               Risk factor profile
             </MenuItem> */}
+            <MenuItem
+              onClick={() => history.push("/medications")}
+              className="menu_item"
+            >
+              Mediactions
+            </MenuItem>
 
             <MenuItem
               onClick={() => history.push("/useful_addressess")}

@@ -1,4 +1,3 @@
-
 export const TheDayOfSurgeryTitles = {
   titles: [
     "Routine Tests",
@@ -18,8 +17,7 @@ export const TheDayOfSurgeryContents = {
     {
       index: 0,
       subtitle: "Routine Tests",
-      description:
-        `Before you go for surgery you will have some
+      description: `Before you go for surgery you will have some
         routine hospital tests, which will help the
         doctors and nurses plan your hospital care.`,
       image: require("../assets/images/routine_test/alltest.svg"),
@@ -28,41 +26,37 @@ export const TheDayOfSurgeryContents = {
     {
       index: 0,
       subtitle: "Routine Tests",
-      description:
-        `This test tells the doctor what your
+      description: `This test tells the doctor what your
         heart rate and rhythm is. It will also show up
         heart muscle injury or damage.`,
       image: require("../assets/images/update/ecg.svg"),
-      equipmentName: 'ECG',
+      equipmentName: "ECG",
       id: 1,
     },
     {
       index: 0,
       subtitle: "Routine Tests",
-      description:
-        `These measure
+      description: `These measure
         your blood count and show the doctors how
         well your lungs, heart and kidneys are
         working.`,
       image: require("../assets/images/routine_test/blood-urine.svg"),
-      equipmentName: 'Blood and Urine tests',
+      equipmentName: "Blood and Urine tests",
       id: 2,
     },
     {
       index: 0,
       subtitle: "Routine Tests",
-      description:
-        `This will show the surgeon if
+      description: `This will show the surgeon if
         your heart and lungs are working properly.`,
       image: require("../assets/images/routine_test/xray.svg"),
-      equipmentName: 'Chest X-Ray',
+      equipmentName: "Chest X-Ray",
       id: 3,
     },
     {
       index: 0,
       subtitle: "Routine Tests",
-      description:
-        `MRSA is a common
+      description: `MRSA is a common
         bacteria (bug) which lives harmlessly on the
         skin or in the nose of about one in three people. 
         It sometimes causes infections.
@@ -75,14 +69,13 @@ export const TheDayOfSurgeryContents = {
         be re screened after treatment with special
         skin washes and creams.`,
       image: require("../assets/images/routine_test/mrsa.svg"),
-      equipmentName: 'MRSA screening',
+      equipmentName: "MRSA screening",
       id: 4,
     },
     {
       index: 0,
       subtitle: "Routine Tests",
-      description:
-        `The gut of every
+      description: `The gut of every
         normal, healthy human contains harmless
         bacteria. Some of these bacteria may be
         resistant to certain antibiotics, and may
@@ -91,28 +84,26 @@ export const TheDayOfSurgeryContents = {
         An information leaflet is available at the
         time of screening.`,
       image: require("../assets/images/routine_test/vrecpe.svg"),
-      equipmentName: 'VRE / CPE screening',
+      equipmentName: "VRE / CPE screening",
       id: 5,
     },
     //content 2
     {
       index: 1,
       subtitle: "One or two weeks before admission",
-      description:
-        `Medications that help prevent blood from
+      description: `Medications that help prevent blood from
         clotting are called anti-platelets and
         anti-coagulants. These
         medications may need to be stopped up
         to seven days before your surgery.`,
       image: require("../assets/images/routine_test/para (1).svg"),
-      equipmentName: 'When to stop your medication',
+      equipmentName: "When to stop your medication",
       id: 6,
     },
     {
       index: 1,
       subtitle: "One or two weeks before admission",
-      description:
-        `It is very important that you discuss your
+      description: `It is very important that you discuss your
         medication with your surgeon and follow
         the instructions on when and what
         medication to stop.`,
@@ -122,8 +113,7 @@ export const TheDayOfSurgeryContents = {
     {
       index: 1,
       subtitle: "One or two weeks before admission",
-      description:
-        `If you are unsure of which medication you
+      description: `If you are unsure of which medication you
         need to stop then please contact your
         Cardiac Surgeon on (021) 492 0822.`,
       image: require("../assets/images/routine_test/para (3).svg"),
@@ -141,8 +131,7 @@ export const TheDayOfSurgeryContents = {
     {
       index: 2,
       subtitle: "The Day of Admission",
-      description:
-        "The Cardiac Surgery Ward contact details are:",
+      description: "The Cardiac Surgery Ward contact details are:",
       image: require("../assets/images/preparing_for_your_surgery/CICU_Contact_Details02.svg"),
       id: 10,
     },
@@ -167,7 +156,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "Please tell the doctor the following informations about you",
       image: require("../assets/images/day-of-admission/3.svg"),
-      id: 12
+      id: 12,
     },
     {
       index: 2,
@@ -200,7 +189,7 @@ export const TheDayOfSurgeryContents = {
       description:
         "It is normal to be anxious the night before your operation and you may have difficulty sleeping. If you like, we can give you a sleeping tablet to help you get a good night’s rest.",
       image: require("../assets/images/Night_before_Surgery/Group_780.svg"),
-      id: 16
+      id: 16,
     },
 
     {
@@ -291,8 +280,7 @@ export const TheDayOfSurgeryContents = {
     {
       index: 6,
       subtitle: "Endotracheal (Breathing) Tube",
-      description:
-        `The anaesthetic doctor will place this tube
+      description: `The anaesthetic doctor will place this tube
         in your throat when you are asleep. We will
         attach you to a breathing machine
         (ventilator), which will help you breathe
@@ -308,7 +296,7 @@ export const TheDayOfSurgeryContents = {
         throat for a day or so.`,
       image: require("../assets/images/preparing_for_your_surgery/tube1.svg"),
       id: 26,
-      equipmentName: 'Endotracheal (Breathing) Tube'
+      equipmentName: "Endotracheal (Breathing) Tube",
     },
     {
       index: 6,
@@ -317,7 +305,7 @@ export const TheDayOfSurgeryContents = {
         "This tube is passed through your nose into your stomach when you are asleep. It will drain any fluid, which may be in your tummy and help prevent you feeling sick after your operation. We will remove it in the first 24 hours after surgery.",
       image: require("../assets/images/cardiac_intensive_care_tool/Group_794.svg"),
       id: 27,
-      equipmentName: 'Nasogastric Tube'
+      equipmentName: "Nasogastric Tube",
     },
     {
       index: 6,
@@ -326,7 +314,7 @@ export const TheDayOfSurgeryContents = {
         "These tubes collect any fluid left in your chest after surgery. We usually remove them the day after your operation or when the chest drainage stops.",
       image: require("../assets/images/cardiac_intensive_care_tool/Chest_drain_tubes.svg"),
       id: 28,
-      equipmentName: 'Chest Drain Tubes'
+      equipmentName: "Chest Drain Tubes",
     },
     {
       index: 6,
@@ -335,7 +323,7 @@ export const TheDayOfSurgeryContents = {
         "We put this in your arm to measure blood pressure and take blood samples. We remove it before you go to Ward 4D from the Cardiac Intensive Care Unit.",
       image: require("../assets/images/cardiac_intensive_care_tool/Arterial_Line.svg"),
       id: 29,
-      equipmentName: 'Arterial Line'
+      equipmentName: "Arterial Line",
     },
     {
       index: 6,
@@ -344,20 +332,19 @@ export const TheDayOfSurgeryContents = {
         "We put a tube, called a urinary catheter, in your bladder to collect your urine. It allows the doctors and nurses to see how well your kidneys are working. We will take it out when you are up and about.",
       image: require("../assets/images/cardiac_intensive_care_tool/urine_bag.svg"),
       id: 30,
-      equipmentName: 'Urinary Catheter'
+      equipmentName: "Urinary Catheter",
     },
     {
       index: 6,
       subtitle: "Intravenous Lines",
-      description:
-        `Special lines (drips)
+      description: `Special lines (drips)
         which allow the doctors and nurses to give
         you medication and fluid. We take these out
         gradually within a few days following your
         operation.`,
       image: require("../assets/images/preparing_for_your_surgery/tube2.svg"),
       id: 31,
-      equipmentName: 'Intravenous Lines'
+      equipmentName: "Intravenous Lines",
     },
     {
       index: 6,
@@ -366,7 +353,7 @@ export const TheDayOfSurgeryContents = {
         "Shows your heart rate and rhythm to the staff looking after you.",
       image: require("../assets/images/cardiac_intensive_care_tool/Heart_monitor.svg"),
       id: 32,
-      equipmentName: 'Heart Monitor'
+      equipmentName: "Heart Monitor",
     },
     {
       index: 6,
@@ -375,7 +362,7 @@ export const TheDayOfSurgeryContents = {
         "This will give you oxygen, which you will need for a few days after your operation.",
       image: require("../assets/images/cardiac_intensive_care_tool/An_Oxygen_Mask_or_Nasal_Prongs.svg"),
       id: 33,
-      equipmentName: 'An Oxygen Mask or Nasal Prongs'
+      equipmentName: "An Oxygen Mask or Nasal Prongs",
     },
     {
       index: 6,
@@ -384,7 +371,7 @@ export const TheDayOfSurgeryContents = {
         "These wires are attached to your heart during surgery. They are used to change your heart rhythm if needed. They are removed a few days after your operation.",
       image: require("../assets/images/cardiac_intensive_care_tool/Temporary_Pacemaker_wires.svg"),
       id: 34,
-      equipmentName: 'Temporary Pacemaker Wires'
+      equipmentName: "Temporary Pacemaker Wires",
     },
     {
       index: 7,
@@ -667,7 +654,7 @@ export const returnHomeContent = [
         stress test before you are permitted to
         drive.`,
       `You must tell your insurance company
-      that you have had heart surgery.`
+      that you have had heart surgery.`,
     ],
   },
   {
@@ -735,7 +722,7 @@ export const returnHomeContent = [
         is a common problem and that your GP
         can treat the majority of cases of ED
         simply with medication.`,
-      'It is important to note that while the medications used for ED are safe, they should not be taken if you are prescribed medications called nitrates, or GTN spray (even occasionally) for your heart condition.',
+      "It is important to note that while the medications used for ED are safe, they should not be taken if you are prescribed medications called nitrates, or GTN spray (even occasionally) for your heart condition.",
     ],
   },
   {
@@ -1053,8 +1040,6 @@ export const homeWalking = [
   },
 ];
 
-
-
 export const TheDayOfSurgery = {
   data: [
     {
@@ -1174,7 +1159,7 @@ export const TheDayOfSurgery = {
           description:
             "Shows your heart rate and rhythm to the staff looking after you.",
           image: require("../assets/images/cardiac_intensive_care_tool/Heart_monitor.svg"),
-          equipmentName: 'Heart Monitor'
+          equipmentName: "Heart Monitor",
         },
         {
           subtitle: "Arterial Line",
@@ -1245,6 +1230,350 @@ export const TheDayOfSurgery = {
           description:
             "Atrial Fibrillation. This is an irregular heartbeat which may make you feel weak, sweaty or have palpitations.",
           image: require("../assets/images/Possible_complications_during_your_recovery/all_vect-04.svg"),
+        },
+      ],
+    },
+  ],
+};
+
+
+// Mediactions Content
+export const Medications = {
+  data: [
+    {
+      id: 0,
+      group: "Antiplatelet Drugs",
+      content: [
+        {
+          genericName:
+            "Aspirin, Clopidogrel, Dipyridamole, Prasugrel, Ticagretor",
+          medicationUse: ["Used to prevent bllood clots."],
+          comments: [
+            "Aspirin with food to prevent stomach events.",
+            "Report any abnormal bruising or bleeding to your GP.",
+            "Combination products are available.",
+          ],
+        },
+      ],
+    },
+    {
+      id: 1,
+      group: "New Oral Anticoagulants",
+      content: [
+        {
+          genericName: "Apixaban, Dabigatran, Rivaroaxaban",
+          medicationUse: [
+            "Used to thin the blood and prevent blood clots whichmay cause a stroke.",
+          ],
+          comments: [
+            "Tell all health care professions (doctors, dentists, pharmacists, paramedics etc.) that you are on this drug, and know why youare taking it.",
+            "Report any abnormal bruising or bleeding to your GP.",
+            "Follow- up blood tests may be needed with your GP.",
+            "Rivaroxaban must be taken with food. Dabigitran and Apixaban can be taken with or without food.",
+          ],
+        },
+      ],
+    },
+    {
+      id: 2,
+      group: "Anticoagulants",
+      content: [
+        {
+          genericName: "Warfarin",
+          medicationUse: [
+            "Used to thin the blood and prevent blood clots whichmay cause a stroke.",
+          ],
+          comments: [
+            "Tell all health care professions that you are on this drug, and know why youare taking it.",
+            "It is essential that you know why you are taking warfarin and how thin your blood should be ( your target INR).",
+            "Be very familiar with your warfarin booklet and keep it with you at all times.",
+            "Always keep your  clinic appointments.",
+            "Avoid cranberry juice , grapefruite/ grapefruit juice.",
+          ],
+        },
+      ],
+    },
+    {
+      id: 3,
+      group: "Beta- Blockers",
+      content: [
+        {
+          genericName:
+            "Atenolol, Bisoprolol, Carvedilol, Labetalol, Metoprolol, Nebicolol, Propranolol, Sotalol",
+          medicationUse: [
+            "Reduces the workload of the heart by slowing the heart beat.",
+            "Some beta-blockers are used to strengthen the contraction of the heart beat.",
+          ],
+          comments: [
+            "Common side effects include cold hands and feet. In a small number of cases difficulty in sleeping and importance may occur. Talk to your GP about any troublesome side effects, as it may be possible to change your medication.",
+            "Combination products containing a beta-blocker and a diuretic or a calcium- channel blocker are avilable for the treatment of high blood pressure ",
+          ],
+        },
+      ],
+    },
+    {
+      id: 4,
+      group: "Channel Blockers",
+      content: [
+        {
+          genericName: "Ivabradine",
+          medicationUse: ["Reduces heart rate and helps prevent angina"],
+          comments: [
+            "May cause headache, dizziness, blurred or disturbed visions, nausea or upset stomach",
+            "Take during meals and avoid grapefruit/grapefruit juice",
+          ],
+        },
+      ],
+    },
+    {
+      id: 5,
+      group: "Statins",
+      content: [
+        {
+          genericName:
+            "Atorvastatin, Fluvastatin, Pravastatin, Rosuvastatin, Simvastatin",
+          medicationUse: [
+            "They lower the body's production of cholestrol.",
+            "More importantly, they help make plaque in the coronary arteries stronger, and less likely to crack and cause heart attacks.",
+          ],
+          comments: [
+            "Usuallly taken at bedtime as most cholestrol is produced during sleep. Atrovastatin and Rosuvastatin may be taken during daytime.",
+            "May cause diarrhoea, constipation, stomach pain and headache but these are usually mild and don't last long.",
+            "Report any unexpected muscle pain or weakness to your GP.",
+            "Do not take grapefruit/grapefruit juice while taking these tablets",
+          ],
+        },
+      ],
+    },
+    {
+      id: 6,
+      group: "ACE Inhibitors",
+      content: [
+        {
+          genericName:
+            "Captopril, Cilazapril, Enalapril, Lisinopril, Perindopril, Quinapril, Ramipril",
+          medicationUse: [
+            "Lowers blood pressure and helps the pumping action of the heart.",
+            "These medications decrease the amount of damage done after the attack",
+          ],
+          comments: [
+            "They may cause dizziness, headache and loss of appetite, dry cough or rash",
+            "Combination products containing an ACE inhibitor and a diuretic or a calcium - channel blocker are available for the ttreatment of high blood pressure",
+          ],
+        },
+      ],
+    },
+    {
+      id: 7,
+      group: "Angiotensin -II antagonists",
+      content: [
+        {
+          genericName:
+            "Candesartan, Eprosartan, Irbesartan, Losartan, Olmesartan, Telmisartan, Valsartan",
+          medicationUse: ["Similar to ACE Inhibitors"],
+          comments: [
+            "Similar to ACE Inhibitors but without the associated dry cough",
+            "Combination products containing an A - II antagonist and a diuretic or a calcium - channel blocker are available for treatment of high blood pressure",
+          ],
+        },
+      ],
+    },
+    {
+      id: 8,
+      group: "Nirates",
+      content: [
+        {
+          genericName:
+            "Glyceryl Trinitrate (tablet, spray and patch), Isosorbide Dinitrate, Isosorbide, Mononitrate",
+          medicationUse: [
+            "They widen the arteries and veins which increase the blood supply to the heart thus helping to prevent (or treat) angina.",
+          ],
+          comments: [
+            "Common side effects include headache, flushing and dizziness,  which generally wear off.",
+            "Patches should be applied to a non-hairy part of the chest. They are generally only worn during the day as they become less effective if worn continuously.",
+            "The spray is used for immediate relief of angina symptoms.",
+            "Do not take VIAGRA or LEVITRA while on nitrates as this combination will cause your blood pressure to drop too much",
+          ],
+        },
+      ],
+    },
+    {
+      id: 9,
+      group: "Potassium Channel Activators",
+      content: [
+        {
+          genericName: "Nicorandil",
+          medicationUse: [
+            "They also widen aarteries and veins and increase the blood supply to the heart, thus helping to prevent angina.",
+          ],
+          comments: ["They may cause headaches, dizziness and vomiting"],
+        },
+      ],
+    },
+    {
+      id: 10,
+      group: "Diuretics",
+      content: [
+        {
+          genericName:
+            "Amiloride, Bendroflumethiazide, Bumetanide, Furosemide, Indapamide, Metolazone",
+          medicationUse: [
+            "They remove excess fluid from the body, reducing ankle swelling and fluid in the lungs caused by heart failure. They also lower high blood pressure.",
+          ],
+          comments: [
+            "It is best to take these in the morning, as you may need to pass water more frequently.",
+            "If you feel faint or dizzy notify your GP.",
+            "Spironolactone may be especially effective in preventing worsening of heart failure",
+            "Eplerrenone may be especially useful in heart failure patients after a heart attack.",
+            "Combination products containing a diuretic and an ACE inhibitor A-II antagonist, beta-blocker or a calcium-channel blocker are available for the treatment of high blood pressure",
+          ],
+        },
+      ],
+    },
+    {
+      id: 11,
+      group:
+        "Aldosterone Antagonists or Mineral Corticoids Receptor Antagonists (MRAs)",
+      content: [
+        {
+          genericName: "Eplerenone, Spironolactone",
+          medicationUse: [
+            "Aldosterone antagonists block the actions of a naturally occuring hormone called aldosterone. This helps to improve heart failure and prevent worsening of symptoms.",
+          ],
+          comments: [
+            "Aldosterone antagonists can cause increased potassium levels so regular bloof tests are needed.",
+            'Do not use potassium supplements or salt substitutes such as "low-salt".',
+            "Contact your GP if you have severe vomitting or diarrhoea or if you are unable to eat or drink , as treatment may need to be stopped temporarily.",
+            "Spironolactone can cause breast pain or breat enlargement",
+          ],
+        },
+      ],
+    },
+    {
+      id: 12,
+      group: "Calcium -Channel Blockers",
+      content: [
+        {
+          genericName:
+            "Amlodipine, Diltiazem, Felodipine, Lercanidipine, Nicardipine, Verapamil",
+          medicationUse: [
+            "They relax arteries so that blood can flow through them more easily. Used to reduce blood pressure and prevent angina",
+          ],
+          comments: [
+            "Common side effects are headache, nausea, constipation, dizziness and flushing.",
+            "Do not take grapefruit/ graprefruit juice while taking these tablets.",
+            "Combination products containing a calcium-channel blocker and an ACE inhibitor, A-II antagonist, beta-blocker or a diuretic are available for the treatment of high blood pressure",
+          ],
+        },
+      ],
+    },
+    {
+      id: 13,
+      group: "Antianginals",
+      content: [
+        {
+          genericName: "Ranolazine",
+          medicationUse: ["Used to prevent chest pain."],
+          comments: [
+            "They may cause headache, dizziness, constipation nausea or general weakness.",
+            "Avoid grapefruit/ grapefruit juice while taking these tablets.",
+          ],
+        },
+      ],
+    },
+    {
+      id: 14,
+      group: "Alpha-Blockers",
+      content: [
+        {
+          genericName: "Doxazosin",
+          medicationUse: ["Used to lower blood pressure"],
+          comments: [
+            "They may cause you to feel faint especilly after the first dose. This usually goes away after a few days",
+          ],
+        },
+      ],
+    },
+    {
+      id: 15,
+      group: "Fish Oils",
+      content: [
+        {
+          genericName:
+            "Omega-3-acid ethyl esters, Omega-3-marine triglycerides",
+          medicationUse: [
+            "These fish oils can be useful in reducing triglycerides",
+          ],
+          comments: [
+            "They can cause nausea, belching, diarrhoea and constipation.",
+          ],
+        },
+      ],
+    },
+    {
+      id: 16,
+      group: "Cholesterol absorption inhibitor",
+      content: [
+        {
+          genericName: "Ezetimibe",
+          medicationUse: ["Reduces the absorption of cholesterol from the gut"],
+          comments: [
+            "It can cause upset stomach, headaches and fatigue.",
+            "Report and unexpected muscle pain or weakness to your GP.",
+            "A combination product with simvastatin is available",
+          ],
+        },
+      ],
+    },
+    {
+      id: 17,
+      group: "Fibrates",
+      content: [
+        {
+          genericName: "Fenofibrate, Gemfibrozil",
+          medicationUse: [
+            "These reduce a type of fat called triglycerides and can be used alone or with other medications.",
+          ],
+          comments: [
+            "They can cause nausea, gestric pain, impotence, headache dizziness and fatigue.",
+            "Report any unexpected muscle pain or weakness to your GP.",
+            "A combination product with simvastatin is available.",
+          ],
+        },
+      ],
+    },
+    {
+      id: 18,
+      group: "Cardiac Glycosides",
+      content: [
+        {
+          genericName: "Digoxin",
+          medicationUse: [
+            "Slows the rate of the heart and improves the pumping action of the heart",
+          ],
+          comments: [
+            "Digoxin levels should be checked periodically.",
+            "Report rashes, changes in vision, stomach upset or weakness to your GP.",
+            "Do not tak grapefruit/ graprefruit juice while taking these tablets.",
+          ],
+        },
+      ],
+    },
+    {
+      id: 19,
+      group: "Anti-arrhythmics",
+      content: [
+        {
+          genericName:
+            "Amiodarone, Dronedarone, Flecainide, Propafenone, Sotalol",
+          medicationUse: ["Used to control an irregular or rapid heartbeat."],
+          comments: [
+            "All may cause dizziness, light- headness, headaches, nausea or upset initially.",
+            "Contact your GP if you develop problems with your vision, a cough, shortness of breath or other breathing difficulties, swelling, tingling or numbness of your hands or feet, unusual tiredness, nightmares, hair loss orchanges in skin colour while using Amiodarone.",
+            "Always use sun block while on  Amiodarone or Dronedarone (at least SPF 15).",
+            "Do no take grapefruit/ grapefruit juice while taking these tablets.",
+            "Dronedarone and Propafenone should be taken with food.",
+          ],
         },
       ],
     },

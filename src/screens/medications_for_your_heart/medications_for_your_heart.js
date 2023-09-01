@@ -16,7 +16,7 @@ const MedicationsForYourHeart = (props) => {
   const [load, setLoad] = useState(false);
 
   const next = () => {
-    props.history.push("/useful_addressess");
+    props.history.push("/medications");
   };
 
   const handleMenuButtonClick = (data) => {
@@ -71,7 +71,7 @@ const MedicationsForYourHeart = (props) => {
             type="open"
             onClick={handleMenuButtonClick}
           />
-          <div className="slider_container" style={{position: 'relative'}}>
+          <div className="slider_container" style={{ position: "relative" }}>
             <div className="mfyh_title_head ">
               <p className="mfyh_title_text">Medications for your heart</p>
             </div>
@@ -96,18 +96,20 @@ const MedicationsForYourHeart = (props) => {
             </div>
 
             <NextButton
-            prev
-            onClick={() =>
-              props.history.push("/looking_forward_healthier_future/physical_inactivity")
-            }
-            style={{
-              position: "absolute",
-              top: "auto",
-              bottom: "20px",
-              left: "20px",
-              right: "auto",
-            }}
-          />
+              prev
+              onClick={() =>
+                props.history.push(
+                  "/looking_forward_healthier_future/physical_inactivity"
+                )
+              }
+              style={{
+                position: "absolute",
+                top: "auto",
+                bottom: "20px",
+                left: "20px",
+                right: "auto",
+              }}
+            />
           </div>
 
           {load && (
@@ -192,9 +194,9 @@ const MedicationsForYourHeart = (props) => {
                   <p className="mfyh_content_text">
                     All medications should be stored in a safe place out of the
                     reach of children. They should be stored in a cool, dry
-                    place and protected from light. all medications
-                    should be kept in their original container unless you are
-                    using a specific dosing reminder system.
+                    place and protected from light. all medications should be
+                    kept in their original container unless you are using a
+                    specific dosing reminder system.
                   </p>
                   <p
                     className="mfyh_content_text"
@@ -208,7 +210,10 @@ const MedicationsForYourHeart = (props) => {
                 </div>
               </div>
 
-              <div className="slider_container" style={{ paddingTop: "60px", position:'relative' }}>
+              <div
+                className="slider_container"
+                style={{ paddingTop: "60px", position: "relative" }}
+              >
                 <div className="mfyh_title ">
                   {/* <p className="mfyh_title_text">Resuming home activities after surgery</p> */}
                 </div>
@@ -239,13 +244,12 @@ const MedicationsForYourHeart = (props) => {
                   >
                     {/* The following two pages give you specific information on
                     many heart medications.  */}
-                    Look for the generic name of your
-                    medications on the box or label, then read about each one.
-                    If you need help, please ask your nurse, pharmacist or a
-                    member of the medical team. Look for the generic name of
-                    your medications on the box or label, then read about each
-                    one. If you need help, please ask your nurse, pharmacist or
-                    a member of the medical team
+                    Look for the generic name of your medications on the box or
+                    label, then read about each one. If you need help, please
+                    ask your nurse, pharmacist or a member of the medical team.
+                    Look for the generic name of your medications on the box or
+                    label, then read about each one. If you need help, please
+                    ask your nurse, pharmacist or a member of the medical team
                   </p>
                 </div>
                 <NextButton
