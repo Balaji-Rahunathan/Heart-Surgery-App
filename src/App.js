@@ -58,7 +58,7 @@ let App = props => {
   if ((toInteger(useWindowDimensions().width) / toInteger(useWindowDimensions().height)) > 1) {
     return (
       <div className="App">
-        <BrowserRouter basename="/heart-surgery/">
+        <BrowserRouter >
           <Error/>
         </BrowserRouter>
       </div>
@@ -66,7 +66,7 @@ let App = props => {
   } else {
     return (
       <div className="App">
-        <BrowserRouter basename="/heart-surgery/">
+        <BrowserRouter >
           <Switch>
             <Route exact path="/" component={YourHeartSurgeryGuide} />
             <Route path="/about_your_heart" component={intro} />
