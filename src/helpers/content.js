@@ -1237,7 +1237,7 @@ export const TheDayOfSurgery = {
 };
 
 
-// Mediactions Content
+// Medications Content
 export const Medications = {
   data: [
     {

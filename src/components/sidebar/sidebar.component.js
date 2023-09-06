@@ -231,7 +231,7 @@ const Sidebar = ({ toggle, onClick, history }) => {
               onClick={() => history.push("/medications")}
               className="menu_item"
             >
-              Mediactions
+              Medications
             </MenuItem>
 
             <MenuItem
