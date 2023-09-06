@@ -1,0 +1,49 @@
+.bmi_container {
+  display: flex;
+  flex-direction: column;  
+  .bmi_weight_container {
+    display: flex;
+    .bmi_weight_label {
+      flex: 0.4;
+      text-align: left;
+    }
+    .bmi_weight_input {
+      flex: 0.6;
+      text-align: left;
+    }
+  }
+  .bmi_height_container {
+    display: flex;
+    .bmi_height_label {
+      flex: 0.4;
+      text-align: left;
+    }
+    .bmi_height_input {
+      flex: 0.6;
+      text-align: left;
+    }
+  }
+  .bmi_result_container {
+    display: flex;
+    .bmi_result_label {
+      flex: 0.4;
+      text-align: left;
+    }
+    .bmi_result {
+      text-align: left;
+      flex: 0.6;
+    }
+  }
+}
+.bmi_container > div{
+    margin: 0.5em;
+}
+.bmi_input {
+    width: 80%;
+    height: 30px;
+    border: none;
+    background: rgb(238, 238, 238);
+    padding: 1em;
+    border-radius: 5px;
+}
+

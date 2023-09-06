@@ -1,6 +1,6 @@
 .about_your_heart_container {
-  height: 85vh;
-  overflow: hide;
+  height: 100vh;
+  overflow: scroll;
   -webkit-overflow-scrolling: touch;
   a {
     text-decoration: none;
@@ -29,7 +29,7 @@
   .para_text {
     width: 60%;
     margin: auto;
-    padding: 50px 0 50px 0;
+    padding: 100px 0 50px 0;
   }
   .head-title {
     color: #00a1fb;
@@ -47,7 +47,7 @@
   .image-container {
     width: 730px;
     height: 730px;
-    margin: 5rem auto 0.5rem auto;
+    margin: 1rem auto 0.5rem auto;
     position: relative;
   }
   .heart {
@@ -314,21 +314,54 @@
     -webkit-transition: -webkit-transform 0.3s linear;
   }
   .btn-para-a {
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     font-weight: 600;
     color: #00a1fb;
     font-size: 16px;
     cursor: pointer;
   }
+
+  .intro_screen_button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .next_button_container {
+      flex: 0.5;
+      .next_button {
+        width: 60px;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+      }
+    }
+
+    .prev_button_container {
+      flex: 0.5;
+      .prev_button {
+        width: 60px;
+        height: auto;
+
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
   .about_your_heart_container {
+    height:100vh;
+    overflow: scroll;
     .image-container {
       width: 90vw;
       height: 90vw;
-      margin: 35px auto 30px auto;
+      margin: 10px auto 30px auto;
       position: relative;
     }
     .card_face {
@@ -377,24 +410,24 @@
     .para_text {
       width: 90%;
       margin: auto;
-      padding: 30px 0 10px 0;
+      padding: 10px 0 10px 0;
     }
 
-    .next_button {
-      width: 60px;
-      height: auto;
-      position: absolute;
-      left: 42%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    // .next_button {
+    //   width: 60px;
+    //   height: auto;
+    //   position: absolute;
+    //   left: 42%;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
 
-      transform: rotate(180deg);
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-    }
+    //   transform: rotate(180deg);
+    //   -webkit-transform: rotate(90deg);
+    //   -moz-transform: rotate(90deg);
+    //   -ms-transform: rotate(90deg);
+    //   -o-transform: rotate(90deg);
+    // }
     .blockage-container {
       position: absolute;
       top: 70%;
@@ -425,6 +458,42 @@
       // margin-top: 20px;
       font-size: 24px;
       padding-top: 0.8em;
+    }
+  }
+
+  .intro_screen_button_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .prev_button_container {
+      flex: 0.5;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 1em;
+      .prev_button {
+        width: 60px;
+        height: auto;
+
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+      }
+    }
+    .next_button_container {
+      flex: 0.5;
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 1em;
+      .next_button {
+        width: 60px;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+      }
     }
   }
 }

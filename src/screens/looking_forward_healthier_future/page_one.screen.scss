@@ -4,7 +4,7 @@
   .pos_title_container {
     .pos_title_text {
       text-align: center;
-      padding:1em;
+      padding: 1em;
       padding-right: 3em;
       font-size: 24px;
       font-weight: 600;
@@ -12,7 +12,7 @@
   }
   .pos_image_container {
     width: 100%;
-    .pos_image_smoking{
+    .pos_image_smoking {
       width: 70%;
       height: auto;
     }
@@ -69,39 +69,53 @@
     }
   }
 
-  .pos_time_period_container{
+  .pos_time_period_container {
     margin: 1em 2em 0 2em;
-    .pos_time_period_text{      
+    .pos_time_period_text {
       font-size: 16px;
       font-weight: 600;
       text-align: left;
     }
   }
 
-  .pos_content_container{
+  .pos_content_container {
     margin: 0 2em 0 2em;
-    .pos_content_text{
+    .pos_content_text {
       font-size: 14px;
       text-align: left;
     }
   }
 
-  .pos_bold_text_container{
-    margin:0em 2em 0em 2em;
-    .pos_bold_text{
+  .pos_bold_text_container {
+    margin: 0em 2em 0em 2em;
+    .pos_bold_text {
       padding-top: 1em;
       font-size: 16px;
       font-weight: 600;
     }
   }
 
-  .pos_points_icon{
+  .pos_points_icon {
     font-size: 10px;
+  }
+
+  .pts_table_body_tr >td{
+    padding: 0.5em !important;
   }
 }
 
 // ............
 
-.blue-clrr{background-color: #B6DEFF;padding: 12px;border-radius: 12px;margin-top: 20px;}
-.blue-clro{background-color: #B6DEFF;padding: 12px;border-radius: 12px;margin: 20px 0 0 0;padding-bottom: 22px;}
-
+.blue-clrr {
+  background-color: #b6deff;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.blue-clro {
+  background-color: #b6deff;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 20px 0 0 0;
+  padding-bottom: 22px;
+}

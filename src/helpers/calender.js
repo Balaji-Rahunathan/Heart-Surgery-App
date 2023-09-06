@@ -17,11 +17,11 @@ export const calenderData = [
         image:require('../assets/images/Resuming Home/Group 7.png'),
         content:[`Morning or afternoon rest.`,
         `Visit a friend nearby.`,
-        `short car trips as a passenger.`,
+        `Short car trips as a passenger.`,
         `Light housework only e.g. prepare a cup
         of tea, wash and dry dishes.`,
         `Begin
-        walking programme (page 22).`]
+        walking programme`]
     },
     {
         title:"Week 3",
@@ -44,7 +44,7 @@ export const calenderData = [
         floor if they move easily.`,
         `Light gardening – seated to begin.`,
         `Outing to cinema or restaurant.`,
-        `start most household activities except for
+        `Start most household activities except for
         heavy lifting.`,
         `Continue walking programme.`]
     },

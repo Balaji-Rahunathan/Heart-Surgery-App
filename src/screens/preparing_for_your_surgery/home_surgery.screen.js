@@ -10,7 +10,7 @@ import Sidebar from '../../components/sidebar/sidebar.component'
 const HomeSurgery = (props) => {
 
     const next = () => {
-        props.history.push('/preparing_for_surgery');
+        props.history.push('/preparing_for_surgery_main');
     }
 
     const [toggle, settoggle] = useState(false)

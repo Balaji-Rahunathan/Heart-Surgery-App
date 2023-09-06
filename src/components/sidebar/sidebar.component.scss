@@ -11,6 +11,27 @@ $sidebar-bg-color: $background_dark_blue;
       color: $option_border;
       font-weight: 450;
     }
+    .submenu_item {
+      padding-top: 0.5em;
+      font-size: 14px;
+      color: $option_border;
+      font-weight: 450;
+      .pro-inner-list-item {
+        background: $background_dark_blue !important ;
+      }
+      .pro-inner-item:before{
+        display: none !important;
+      }
+      .pro-arrow{
+        border-color: white !important;
+      }
+      .pro-item-content{
+        color: white;
+      }
+    }
+    .submenu_item.active{
+      background: $background_light_blue !important;
+    }
   }
 }
 // $sidebar-bg-color: $background_light_blue;

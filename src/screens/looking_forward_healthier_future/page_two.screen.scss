@@ -20,7 +20,8 @@
   thead,
   th {
     border-collapse: collapse;
-    border: 1px solid black;
+    border: none;
+    border-bottom: 1px solid white;
   }
   margin: 1em;
   .pts_table {
@@ -28,18 +29,34 @@
       background-color: $background_light_blue;
       .pts_table_head_tr {
       }
+      .pts_th > th:first-child {
+        background-color: #e68164;
+      }
+      .pts_th > :nth-child(2) {
+        background-color: #cde3b9;
+      }
+      .pts_th > :nth-child(3) {
+        background-color: #f5c39c;
+      }
       .pts_table_head_tr > th {
-        color: white;
         text-align: left;
         padding-left: 1em;
       }
     }
     .pts_table_body {
-      .pts_table_body_tr {
+      .pts_tr > td:first-child {
+        background-color: #e68164;
+      }
+      .pts_tr > td:nth-child(2) {
+        background-color: #cde3b9;
+      }
+      .pts_tr > td:nth-child(3) {
+        background-color: #f5c39c;
       }
       .pts_table_body_tr > td {
         padding: 1em;
-        border-right: 1px solid black;
+        border: none;
+        border-bottom: 1px solid white;
       }
     }
   }
@@ -56,7 +73,7 @@
 
 .pts_image_container {
   .pts_image {
-    width: 80%;
+    width: 70%;
     height: auto;
   }
 }
@@ -67,13 +84,38 @@
 
 // ..............
 
-.lfh{font-weight: 800;}
+.lfh {
+  font-weight: 800;
+}
 
-.lfh2{font-weight: 600;margin-top: 6px;}
+.lfh2 {
+  font-weight: 600;
+  margin-top: 6px;
+}
 
-.blue-clr{background-color: #B6DEFF;padding: 12px;margin: 0 20px;border-radius: 12px;}
+.blue-clr {
+  background-color: #b6deff;
+  padding: 12px;
+  margin: 0 20px;
+  border-radius: 12px;
+}
 
-.blue-clrf{background-color: #B6DEFF;padding: 12px;border-radius: 12px;margin: 20px 0 0 0;padding-bottom: 22px;text-align: left;}
-
+.blue-clrf {
+  background-color: #b6deff;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 20px 0 0 0;
+  padding-bottom: 22px;
+  text-align: left;
+}
 .blue_box{background-color: #B6DEFF;padding: 12px;border-radius: 12px;margin: 20px 0 0 0;padding-bottom: 22px;}
 
+.waist_input{
+  width: 50px;
+  border: none;
+  border-bottom: 2px solid gray;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+}

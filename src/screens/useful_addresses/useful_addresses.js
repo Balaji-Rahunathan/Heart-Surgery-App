@@ -9,7 +9,6 @@ import HealthyHeart from "../../assets/images/update/healthyheart.svg";
 import Health from "../../assets/images/update/health.svg";
 import Medic from "../../assets/images/update/medication.svg";
 import Store from "../../assets/images/update/store.svg";
-import { Link } from "react-router-dom";
 
 const UsefulAddresses = (props) => {
   const [toggle, settoggle] = useState(false);
@@ -70,8 +69,8 @@ const UsefulAddresses = (props) => {
             onClick={handleMenuButtonClick}
           />
           <div className="">
-            <div className="mfyh_title_head ">
-              <p className="mfyh_title_text" style={{ paddingBottom: "30px" }}>
+            <div className="mfyh_title_head " style={{marginBottom: '0.5em'}}>
+              <p className="mfyh_title_text" style={{ padding: "0.8em 60px" }}>
                 Useful Addresses
               </p>
             </div>
@@ -103,27 +102,21 @@ const UsefulAddresses = (props) => {
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Ballincollig / Bishopstown-
-                <Link to="tel:0872380658" className="linkk">
-                  (087)-238-0658
-                </Link>
+                <a href="tel:0872380658" className="linkk">
+                  (087) 238 0658
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Douglas-
-                <Link
-                  to="tel:0874139461"
-                  className="linkk"
-                >
-                  (087)-413-9461
-                </Link>
+                <a href="tel:0874139461" className="linkk">
+                  (087) 413 9461
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Bandon-
-                <Link
-                  to="tel:0872684659"
-                  className="linkk"
-                >
-                  (087)-268-4659
-                </Link>
+                <a href="tel:0872684659" className="linkk">
+                  (087) 268 4659
+                </a>
               </p>
 
               {/* ....... */}
@@ -140,12 +133,9 @@ const UsefulAddresses = (props) => {
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Youghal-{" "}
-                <Link
-                  to="tel:0860506334"
-                  className="linkk"
-                >
-                  (086)-050-6334
-                </Link>
+                <a href="tel:0860506334" className="linkk">
+                  (086) 050 6334
+                </a>
               </p>
 
               {/* ........ */}
@@ -162,12 +152,9 @@ const UsefulAddresses = (props) => {
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Bantry-
-                <Link
-                  to="tel:0864048821"
-                  className="linkk"
-                >
-                  (086)-404-8821
-                </Link>
+                <a href="tel:0864048821" className="linkk">
+                  (086) 404 8821
+                </a>
               </p>
             </div>
 
@@ -182,19 +169,13 @@ const UsefulAddresses = (props) => {
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
                 124, The Capel Building Mary's Abbey, Dublin-
-                <Link
-                  to="tel:7018733836"
-                  className="linkk"
-                >
-                  (701)-873-3836
-                </Link>{" "}
+                <a href="tel  :7018733836" className="linkk">
+                  (701) 873 3836
+                </a>{" "}
                 Website:
-                <Link
-                  to="https://activeirl.ie/"
-                  className="linkk"
-                >
+                <a href="https://activeirl.ie/" target="_blank" className="linkk">
                   www.activeirl.ie
-                </Link>
+                </a>
               </p>
 
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
@@ -233,12 +214,9 @@ const UsefulAddresses = (props) => {
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
                 Community services Area st. Finbarr’s hospital Douglas Rd, Cork-
-                <Link
-                  to="tel:0214966555"
-                  className="linkk"
-                >
-                  (021)-496-6555
-                </Link>
+                <a href="tel:0214966555" className="linkk">
+                  (021) 496 6555
+                </a>
               </p>
 
               <p
@@ -254,12 +232,9 @@ const UsefulAddresses = (props) => {
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
                 North Lee Community Work Dept. ellis house Ballyvolane
                 Commercial Park Ballyvolane, Cork-
-                <Link
-                  to="tel:0214529023"
-                  className="linkk"
-                >
-                  (021)-452-9023
-                </Link>
+                <a href="tel:0214529023" className="linkk">
+                  (021) 452 9023
+                </a>
               </p>
 
               <p
@@ -274,21 +249,15 @@ const UsefulAddresses = (props) => {
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
                 south Lee-
-                <Link
-                  to="tel:0867872071"
-                  className="linkk"
-                >
-                  (086)-787-2071
-                </Link>
+                <a href="tel:0867872071" className="linkk">
+                  (086) 787 2071
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
                 West Cork-
-                <Link
-                  to="tel:0867871552"
-                  className="linkk"
-                >
-                  (086)-787-1552
-                </Link>
+                <a href="tel:0867871552" className="linkk">
+                  (086) 787 1552
+                </a>
               </p>
 
               <p
@@ -303,12 +272,9 @@ const UsefulAddresses = (props) => {
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
                 Coolnagarrane skibbereen, Co. Cork-
-                <Link
-                  to="tel:02840400"
-                  className="linkk"
-                >
+                <a href="tel:02840400" className="linkk">
                   (028)40400
-                </Link>
+                </a>
               </p>
 
               <p
@@ -324,12 +290,9 @@ const UsefulAddresses = (props) => {
 
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
                 Floor 2 Mallow Primary healthcare Centre Mallow, Co. Cork-
-                <Link
-                  to="tel:02230255"
-                  className="linkk"
-                >
-                  (022)-302-55
-                </Link>
+                <a href="tel:02230255" className="linkk">
+                  (022) 302 55
+                </a>
               </p>
 
               <p
@@ -345,12 +308,9 @@ const UsefulAddresses = (props) => {
 
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
                 Rathass, Tralee, Co. Kerry-
-                <Link
-                  to="tel:0667184500"
-                  className="linkk"
-                >
-                  (066)-718-4500
-                </Link>
+                <a href="tel:0667184500" className="linkk">
+                  (066) 718 4500
+                </a>
               </p>
 
               <p
@@ -366,12 +326,9 @@ const UsefulAddresses = (props) => {
 
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
                 Arbour house st. Finbarr’s hospital, Cork-
-                <Link
-                  to="tel:0214968933"
-                  className="linkk"
-                >
-                  (021)-496-8933
-                </Link>
+                <a href="tel:0214968933" className="linkk">
+                  (021) 496 8933
+                </a>
               </p>
 
               <p
@@ -388,19 +345,13 @@ const UsefulAddresses = (props) => {
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
                 The X-Pert Course Contact your local Community Dietitian or the
                 Community Nutrition and Dietetic service at-
-                <Link
-                  to="tel:0214921641"
-                  className="linkk"
-                >
-                  (021)-492-1641
-                </Link>
+                <a href="tel:0214921641" className="linkk">
+                  (021) 492 1641
+                </a>
                 {"   "}&{" "}
-                <Link
-                  to="tel:0646670763"
-                  className="linkk"
-                >
-                  (064)-667-0763
-                </Link>
+                <a href="tel:0646670763" className="linkk">
+                  (064) 667 0763
+                </a>
               </p>
             </div>
 
@@ -435,26 +386,17 @@ const UsefulAddresses = (props) => {
 
               <p className="mfyh_content_text" style={{ marginTop: "0px" }}>
                 42 Penrose Wharf, Penrose Quay, Cork-
-                <Link
-                  to="tel:0214505822"
-                  className="linkk"
-                >
-                  (021)-450-5822
-                </Link>{" "}
+                <a href="tel:0214505822" className="linkk">
+                  (021) 450 5822
+                </a>{" "}
                 Website:{" "}
-                <Link
-                  to="https://irishheart.ie/"
-                  className="linkk"
-                >
+                <a href="https://irishheart.ie/" target="_blank" className="linkk">
                   www.irishheart.ie
-                </Link>{" "}
+                </a>{" "}
                 heart and stroke helpline:
-                <Link
-                  to="tel:1890432787"
-                  className="linkk"
-                >
-                  1-890-432-787
-                </Link>
+                <a href="tel:1890432787" className="linkk">
+                  1 890 432 787
+                </a>
               </p>
 
               <p
@@ -469,12 +411,9 @@ const UsefulAddresses = (props) => {
               </p>
 
               <p className="mfyh_content_text" style={{ marginTop: "0px" }}>
-                <Link
-                  to="https://www.bhf.org.uk/"
-                  className="linkk"
-                >
+                <a href="https://www.bhf.org.uk/" target="_blank" className="linkk">
                   www.bhf.org.uk
-                </Link>
+                </a>
               </p>
 
               <p
@@ -489,12 +428,9 @@ const UsefulAddresses = (props) => {
               </p>
 
               <p className="mfyh_content_text" style={{ marginTop: "0px" }}>
-                <Link
-                  to="https://www.heart.org/"
-                  className="linkk"
-                >
+                <a href="https://www.heart.org/" target="_blank" className="linkk">
                   www.heart.org
-                </Link>
+                </a>
               </p>
 
               <p
@@ -510,12 +446,9 @@ const UsefulAddresses = (props) => {
 
               <p className="mfyh_content_text" style={{ marginTop: "0px" }}>
                 32 Grand Parade, Cork-
-                <Link
-                  to="tel:0214274229"
-                  className="linkk"
-                >
-                  (021)-427-4229
-                </Link>
+                <a href="tel:0214274229" className="linkk">
+                  (021) 427 4229
+                </a>
               </p>
 
               <p
@@ -530,13 +463,9 @@ const UsefulAddresses = (props) => {
               </p>
 
               <p className="mfyh_content_text" style={{ marginTop: "0px" }}>
-               
-                <Link
-                  to="https://ash.ie/"
-                  className="linkk"
-                >
-                   www.ash.ie
-                </Link>
+                <a href="https://ash.ie/" target="_blank" className="linkk">
+                  www.ash.ie
+                </a>
               </p>
 
               <p
@@ -553,12 +482,9 @@ const UsefulAddresses = (props) => {
               <p className="mfyh_content_text" style={{ marginTop: "0px" }}>
                 www.healthpromotion.ie Department of health and Children hawkins
                 house, Dublin-
-                <Link
-                  to="tel:2016354000"
-                  className="linkk"
-                >
-                  2-(01)-635-4000
-                </Link>
+                <a href="tel:2016354000" className="linkk">
+                  2 (01) 635 4000
+                </a>
               </p>
 
               <p
@@ -575,12 +501,9 @@ const UsefulAddresses = (props) => {
               <p className="mfyh_content_text" style={{ marginTop: "0px" }}>
                 helping to defeat depression www.aware.ie 72 Lower Leeson st,
                 Dublin-
-                <Link
-                  to="tel:2016617211"
-                  className="linkk"
-                >
-                  2-(01)-661-7211
-                </Link>
+                <a href="tel:2016617211" className="linkk">
+                  2 (01) 661 7211
+                </a>
               </p>
 
               <p
@@ -597,12 +520,9 @@ const UsefulAddresses = (props) => {
               <p className="mfyh_content_text" style={{ marginTop: "0px" }}>
                 www.alcoholicsanonymous.ie Basement Flat,12A Patricks hill,
                 Cork-
-                <Link
-                  to="tel:0214500481"
-                  className="linkk"
-                >
-                  (021)-450-0481
-                </Link>
+                <a href="tel:0214500481" className="linkk">
+                  (021) 450 0481
+                </a>
                 (8-10pm)
               </p>
 
@@ -619,12 +539,9 @@ const UsefulAddresses = (props) => {
               </p>
 
               <p className="mfyh_content_text" style={{ marginTop: "0px" }}>
-                <Link
-                  to="http://www.manmatters.ie"
-                  className="linkk"
-                >
+                <a href="http://www.manmatters.ie" target="_blank" className="linkk">
                   www.manmatters.ie
-                </Link>
+                </a>
               </p>
 
               <p
@@ -641,12 +558,13 @@ const UsefulAddresses = (props) => {
               <p className="mfyh_content_text" style={{ marginTop: "0px" }}>
                 Practical tips on healthy shopping and cooking. Available by
                 free internet download from:
-                <Link
-                  to="http://www.physicalactivityandnutrition wales.org.uk"
+                <a
+                  href="http://www.physicalactivityandnutritionwales.org.uk"
+                  target="_blank"
                   className="linkk"
                 >
                   www.physicalactivityandnutrition wales.org.uk
-                </Link>
+                </a>
               </p>
             </div>
 
@@ -677,19 +595,13 @@ const UsefulAddresses = (props) => {
               >
                 For current information on Slí na Sláinte or walking groups in
                 Cork and Kerry contact the Health Promotion Officer at:
-                <Link
-                  to="0214921667"
-                  className="linkk"
-                >
-                  (021)-492-1667
-                </Link>
+                <a href="tel:0214921667" className="linkk">
+                  (021) 492 1667
+                </a>
                 Also see-
-                <Link
-                  to="http://www.getirelandactive.ie"
-                  className="linkk"
-                >
+                <a href="http://www.getirelandactive.ie" target="_blank" className="linkk">
                   www.getirelandactive.ie
-                </Link>
+                </a>
               </p>
 
               <p
@@ -1008,48 +920,33 @@ const UsefulAddresses = (props) => {
 
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Unit 1 Corn Market Centre 13-15 Corn Market street, Cork-
-                <Link
-                  to="tel:0214948900"
-                  className="linkk"
-                >
-                  (021)-494-8900
-                </Link>
+                <a href="tel:0214948900" className="linkk">
+                  (021) 494 8900
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 103/104 Main st. Mallow, Co. Cork-
-                <Link
-                  to="tel:02221900"
-                  className="linkk"
-                >
-                  (022)-219-00
-                </Link>
+                <a href="tel:02221900" className="linkk">
+                  (022) 219 00
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Warner Centre, Barrack st, Bantry, Co.Cork-
-                <Link
-                  to="tel:02750464"
-                  className="linkk"
-                >
-                  (027)-50-464
-                </Link>
+                <a href="tel:02750464" className="linkk">
+                  (027) 50 464
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Park Court, Beach Rd, Killarney, Co. Kerry-
-                <Link
-                  to="tel:0646678500"
-                  className="linkk"
-                >
-                  (064)-667-8500
-                </Link>
+                <a href="tel:0646678500" className="linkk">
+                  (064) 667 8500
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Godfrey Place, Tralee, Co. Kerry-
-                <Link
-                  to="tel:0667149500"
-                  className="linkk"
-                >
-                  (066)-714-9500
-                </Link>
+                <a href="tel:0667149500" className="linkk">
+                  (066) 714 9500
+                </a>
               </p>
 
               <p
@@ -1065,49 +962,34 @@ const UsefulAddresses = (props) => {
 
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 (formerly National Training & Development Institute)-
-                <Link
-                  to="http://www.nln.ie"
-                  className="linkk"
-                >
+                <a href="http://www.nln.ie" target="_blank" className="linkk">
                   www.nln.ie
-                </Link>
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Unit 1, hollymount Ind. est. hollyhill, Cork-
-                <Link
-                  to="tel:0214300144"
-                  className="linkk"
-                >
-                  (021)-430-0144
-                </Link>
+                <a href="tel:0214300144" className="linkk">
+                  (021) 430 0144
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 seward house, Cork Business and Technology Park, Model Farm Rd.
                 Cork-
-                <Link
-                  to="tel:0214341028"
-                  className="linkk"
-                >
-                  (021)-434-1028
-                </Link>
+                <a href="tel:0214341028" className="linkk">
+                  (021) 434 1028
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Donemark, Bantry, Co. Cork-
-                <Link
-                  to="tel:02751027"
-                  className="linkk"
-                >
-                  (027)-510-27
-                </Link>
+                <a href="tel:02751027" className="linkk">
+                  (027) 510 27
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Clash Ind. estate, Tralee, Co. Kerry-
-                <Link
-                  to="tel:0667122533"
-                  className="linkk"
-                >
-                  (066)-712-2533
-                </Link>
+                <a href="tel:0667122533" className="linkk">
+                  (066) 712 2533
+                </a>
               </p>
             </div>
 
@@ -1140,59 +1022,41 @@ const UsefulAddresses = (props) => {
               </p>
 
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
-                <Link
-                  to="http://www.mabs.ie"
-                  className="linkk"
-                >
+                <a href="http://www.mabs.ie" target="_blank" className="linkk">
                   www.mabs.ie
-                </Link>
+                </a>
               </p>
 
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Unit 12, Penrose Wharf, Penrose Quay, Cork-
-                <Link
-                  to="tel:0761072090"
-                  className="linkk"
-                >
-                  (0761)-07-2090
-                </Link>
+                <a href="tel:0761072090" className="linkk">
+                  (0761) 07 2090
+                </a>
               </p>
 
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 25 O’Brien st., Mallow, Co. Cork-
-                <Link
-                  to="tel:0761072440"
-                  className="linkk"
-                >
-                  (0761)-07-2440
-                </Link>
+                <a href="tel:0761072440" className="linkk">
+                  (0761) 07 2440
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Unit 11 Underhill Commercial Park Dunmanway, Co. Cork-
-                <Link
-                  to="tel:0761072450"
-                  className="linkk"
-                >
-                  (0761)-072450
-                </Link>
+                <a href="tel:0761072450" className="linkk">
+                  (0761) 072450
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Rathgoggin south, Charleville, Co. Cork-
-                <Link
-                  to="tel:0761072420"
-                  className="linkk"
-                >
-                  (0761)-07-2420
-                </Link>
+                <a href="tel:0761072420" className="linkk">
+                  (0761) 07 2420
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
-                edward Court, edward st., Tralee, Co. Kerry-
-                <Link
-                  to="tel:0761072190"
-                  className="linkk"
-                >
-                  (0761)-07-2190
-                </Link>
+                Edward Court, Edward st., Tralee, Co. Kerry-
+                <a href="tel:0761072190" className="linkk">
+                  (0761) 07 2190
+                </a>
               </p>
             </div>
 
@@ -1206,56 +1070,41 @@ const UsefulAddresses = (props) => {
                 Citizens Information Centres-
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
-                <Link
-                  to="http://www.cidb.ie"
-                  className="linkk"
-                >
+                <a href="http://www.cidb.ie" target="_blank" className="linkk">
                   www.cidb.ie
-                </Link>
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "10px" }}>
                 80 south Mall, Cork-
-                <Link
-                  to="tel:0761076950"
-                  className="linkk"
-                >
-                  (0761)-07-6950
-                </Link>
+                <a href="tel:0761076950" className="linkk">
+                  (0761) 07 6950
+                </a>
               </p>
 
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 Unit 18.1, Market square, Mallow-
-                <Link
-                  to="tel:0761078000"
-                  className="linkk"
-                >
-                  (0761)-07-8000
-                </Link>
+                <a href="tel:0761078000" className="linkk">
+                  (0761) 07 8000
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 south square, Macroom-
-                <Link
-                  to="0761078430"
-                  className="linkk"
-                >
-                  (0761)-07-8430
-                </Link>
+                <a href="tel:0761078430" className="linkk">
+                  (0761) 07 8430
+                </a>
               </p>
               <p className="mfyh_content_text" style={{ marginTop: "8px" }}>
                 4 Bridge Lane, Tralee, Co. Kerry-
-                <Link
-                  to="tel:0761077860"
-                  className="linkk"
-                >
-                  (0761)-07-7860
-                </Link>
+                <a href="tel:0761077860" className="linkk">
+                  (0761) 07 7860
+                </a>
               </p>
             </div>
 
             {/* ................... */}
           </div>
 
-          {showNextButton && (
+          {/* {showNextButton && (
             <NextButton
               onClick={next}
               style={{
@@ -1266,7 +1115,7 @@ const UsefulAddresses = (props) => {
                 right: "20px",
               }}
             />
-          )}
+          )} */}
         </Container>
       </div>
     </div>

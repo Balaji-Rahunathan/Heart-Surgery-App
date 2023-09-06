@@ -1,0 +1,57 @@
+@import '../../index.scss';
+.home_walking_container {
+  .home_walking_scroll_bar {
+    margin: 2em;
+    .progress-container {     
+      width: 100%;
+      height: 8px;
+      border-radius: 3px;
+      background-color: lightpink;
+      .progress-bar {
+        border-radius: 3px;
+        height: 8px;
+        background: $option_checked;
+        width: 0%;
+      }
+    }
+    .stage_status_conatiner{
+      display: flex;
+      justify-content: space-between;
+      .stage_from{
+        text-align: left;
+        font-weight: 450;
+        padding: 0.5em 0;
+      }
+      .stage_to{
+        text-align: right;
+        font-weight: 450;
+        padding: 0.5em 0;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  overflow: auto;
+  flex: none;
+}
+
+.container.x {
+  width: 100%;
+  height: 100%;
+  flex-flow: row nowrap;
+}
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: x mandatory;
+}
+.container > div {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+}
+
+.x.container > div {
+  width: 100%;
+  height: 100%;
+}

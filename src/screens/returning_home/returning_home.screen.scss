@@ -1,6 +1,57 @@
 @import "../../index.scss";
 
 .returning_home_screen {
+  .resuming_home_conatiner {
+    .resuming_home_title {
+      .resuming_home_title_text {
+        padding: 2.5em;
+        padding-top: 1em;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .resuming_home_image_container {
+      .resuming_home_image {
+        width: 60%;
+      }
+    }
+    .resuming_home_content {
+      .resuming_home_content_text {
+        text-align: left;
+        padding: 0 2em;
+        font-size: 14px;
+      }
+    }
+    .resuming_home_content_container {
+      .resuming_home_content_title {
+        .resuming_home_content_title_text {
+          padding-bottom: 1em;
+          padding-top: 1em;
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+      .resuming_home_content {
+        .resuming_home_content_text {
+        }
+      }
+    }
+  }
+  .resuming_home_content_container {
+    .resuming_home_content_title {
+      .resuming_home_content_title_text {
+        padding-bottom: 1em;
+        padding-top: 1em;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .resuming_home_content {
+      .resuming_home_content_text {
+      }
+    }
+  }
+
   .swiper_container {
     overflow-y: scroll;
     position: relative;

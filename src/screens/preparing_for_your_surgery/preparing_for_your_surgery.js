@@ -7,6 +7,7 @@ import Timeline from '../../components/timeline/timeline.component';
 import { TheDayOfSurgeryTitles, TheDayOfSurgeryContents, TheDayOfSurgery } from '../../helpers/content';
 import MenuButton from '../../common_component/menu_button/menu_button.component'
 import Sidebar from '../../components/sidebar/sidebar.component'
+import './preparing_for_your_surgery.scss'
 
 const Preparing_for_your_surgery = (props) => {
     const [state, setState] = useSetState({})
@@ -25,8 +26,12 @@ const Preparing_for_your_surgery = (props) => {
                 background="#008DFB"
                 type="open"
                 onClick={handleMenuButtonClick}
-                style={{ position: 'absolute', right: '20px', top: '0',zIndex:'20' }}
+                style={{ position: 'absolute', left: '0px', top: '0',zIndex:'20' }}
             />
+            <div className="pfys_head">
+                Preparing for Your surgery
+            </div>
+
             <Timeline titles={TheDayOfSurgeryTitles} content={TheDayOfSurgeryContents} data={TheDayOfSurgery} {...props} />
         </Container>
     )

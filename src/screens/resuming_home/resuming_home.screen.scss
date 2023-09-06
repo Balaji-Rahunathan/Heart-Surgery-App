@@ -1,6 +1,29 @@
 @import "../../index.scss";
 .resuming_home_screen {
-  .resuming_home_conatiner {
+  .resuming_home_conatiner {  
+      .resuming_home_head_container{
+        .resuming_home_head_title_container{
+          margin: 1em;
+          .resuming_home_head_title{            
+            padding:0.5em 60px;
+            color: $background_light_blue;
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+      }
+      .resuming_home_head_image_container{
+        .resuming_home_head_image{
+          width: 75%;
+        }
+      }
+      .resuming_home_head_content_container{
+        .resuming_home_head_content{
+          text-align: left;
+          font-size: 14px;
+          padding: 0 2em;
+        }
+      }
     .resuming_home_title {
       .resuming_home_title_text {
         padding: 2.5em;
@@ -17,7 +40,7 @@
     .resuming_home_content {
       .resuming_home_content_text {
         text-align: left;
-        padding: 0 2em 0 2em;
+        padding: 0 2em;
         font-size: 14px;
       }
     }
