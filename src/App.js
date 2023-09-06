@@ -36,6 +36,9 @@ import HomeWalkingProgramme from "./screens/home_walking/home_walking_programme.
 import HighBloodPressure from "./screens/looking_forward_healthier_future/high_blood_pressure";
 import PreparingForSurgeryMain from "./screens/preparing_for_your_surgery/preparing_for_your_surgery_main";
 
+//Medications
+import Medication_main from "./screens/medications/medication_main";
+
 let App = (props) => {
   function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
@@ -64,7 +67,7 @@ let App = (props) => {
 
   if (
     toInteger(useWindowDimensions().width) /
-    toInteger(useWindowDimensions().height) >
+      toInteger(useWindowDimensions().height) >
     1
   ) {
     return (
@@ -249,6 +252,7 @@ let App = (props) => {
               path="/medications_for_your_heart"
               component={MedicationsForYourHeart}
             />
+            <Route exact path="/medications" component={Medication_main} />
             <Route
               exact
               path="/useful_addressess"
