@@ -16,7 +16,7 @@ const MedicationsForYourHeart = (props) => {
   const [load, setLoad] = useState(false);
 
   const next = () => {
-    props.history.push("/medications");
+    props.history.push("/myprescription");
   };
 
   const handleMenuButtonClick = (data) => {

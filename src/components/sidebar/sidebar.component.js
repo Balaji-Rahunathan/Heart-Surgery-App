@@ -228,7 +228,7 @@ const Sidebar = ({ toggle, onClick, history }) => {
               Risk factor profile
             </MenuItem> */}
             <MenuItem
-              onClick={() => history.push("/medications")}
+              onClick={() => history.push("/myprescription")}
               className="menu_item"
             >
               Mediactions
