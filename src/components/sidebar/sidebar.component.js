@@ -227,12 +227,12 @@ const Sidebar = ({ toggle, onClick, history }) => {
             {/* <MenuItem onClick={() => history.push("/")} className="menu_item">
               Risk factor profile
             </MenuItem> */}
-            <MenuItem
+            {/* <MenuItem
               onClick={() => history.push("/myprescription")}
               className="menu_item"
             >
               Mediactions
-            </MenuItem>
+            </MenuItem> */}
 
             <MenuItem
               onClick={() => history.push("/useful_addressess")}

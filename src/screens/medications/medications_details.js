@@ -5,10 +5,8 @@ import Tablets from "../../assets/images/MedicationsImg/Tablets.svg";
 import GenericName from "../../assets/images/MedicationsImg/GenericName.svg";
 import MedicationUses from "../../assets/images/MedicationsImg/MedicationUses.svg";
 import Comments from "../../assets/images/MedicationsImg/Comments.svg";
+import Cancel from "../../assets/images/MedicationsImg/X.svg";
 import "../medications/medications_details.scss";
-
-import ArrowLeft from "../../assets/images/MedicationsImg/ArrowLeft.svg";
-// import ArrowRight from "../../assets/images/MedicationsImg/ArrowRight.svg";
 
 const MedicationDetailsPage = () => {
   const { groupName } = useParams();
@@ -21,7 +19,7 @@ const MedicationDetailsPage = () => {
 
   const history = useHistory();
 
-  const handleGoBack = () => {
+  const handleCancel = () => {
     history.goBack();
   };
 
@@ -29,7 +27,12 @@ const MedicationDetailsPage = () => {
     <div className="medication_container">
       <div className="medication_inner_container">
         <div className="group_name_div">
-          <img src={Tablets} alt="Tablets" />
+          <div className="img_div">
+            <img src={Tablets} alt="Tablets" className="tablets_img" />
+            <button className="pre-btn" onClick={handleCancel}>
+              <img src={Cancel} alt="Cancel" className="cancel_img" />
+            </button>
+          </div>
           <div>
             <span>Group Name</span>
           </div>
@@ -49,11 +52,9 @@ const MedicationDetailsPage = () => {
 
             <h4>Medication Uses</h4>
           </div>
-          {matchedGroup.content[0].medicationUse.map(
-            (medication, index) => (
-              <h5 key={index}>{medication}</h5>
-            )
-          )}
+          {matchedGroup.content[0].medicationUse.map((medication, index) => (
+            <h5 key={index}>{medication}</h5>
+          ))}
         </div>
         <div className="generic_name_div div_border">
           <div className="flex">
@@ -67,19 +68,6 @@ const MedicationDetailsPage = () => {
               ))}
             </ul>
           </h5>
-        </div>
-        {/* <div className="button-container">
-          <button className="pre-btn" onClick={pre}>
-            <img src={ArrowLeft} />
-          </button>
-          <button className="next-btn" onClick={next}>
-            <img src={ArrowRight} />
-          </button>
-        </div> */}
-        <div className="button-container">
-          <button className="pre-btn" onClick={handleGoBack}>
-            <img src={ArrowLeft} />
-          </button>
         </div>
       </div>
     </div>
