@@ -37,7 +37,8 @@ import HighBloodPressure from "./screens/looking_forward_healthier_future/high_b
 import PreparingForSurgeryMain from "./screens/preparing_for_your_surgery/preparing_for_your_surgery_main";
 
 //Medications
-import Medication_main from "./screens/medications/medication_main";
+import GroupNamePage from "./screens/medications/medications_drug_names";
+import GroupNameDetailsPage from "./screens/medications/medications_details";
 
 let App = (props) => {
   function getWindowDimensions() {
@@ -252,7 +253,11 @@ let App = (props) => {
               path="/medications_for_your_heart"
               component={MedicationsForYourHeart}
             />
-            <Route exact path="/medications" component={Medication_main} />
+            <Route path="/myprescription" exact component={GroupNamePage} />
+            <Route
+              path="/group/:groupName"
+              component={GroupNameDetailsPage}
+            />
             <Route
               exact
               path="/useful_addressess"

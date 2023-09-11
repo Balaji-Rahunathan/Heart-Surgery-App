@@ -10,7 +10,22 @@
   background: #fff;
 
   .group_name_div {
-    img {
+    .img_div{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+    }
+    .pre-btn {
+      outline: none;
+      padding: 8px 16px;
+      margin: 10px 0;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+      background: #ffffff;
+      border: none;
+    }
+    .tablets_img {
       width: 90px;
       height: 71px;
     }
@@ -20,22 +35,7 @@
     list-style: none;
     padding: 5px 0;
   }
-  button {
-    outline: none;
-    padding: 8px 16px;
-    margin: 10px 0;
-    text-align: center;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .pre-btn {
-    border: 1px solid #dadada;
-    background: #ffffff;
-  }
-  .next-btn {
-    border: 1px solid #0097f6;
-    background: #0097f6;
-  }
+  
   h1 {
     font-size: 24px;
     font-weight: 500;
