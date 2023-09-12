@@ -73,11 +73,11 @@ const PreparingForSurgeryMain = (props) => {
         </div>
         <div className="fyandyp_wrapper">
           <Container className="swiper_container">
-            <MenuButton
+            {/* <MenuButton
               background="#008DFB"
               type="open"
               onClick={handleMenuButtonClick}
-            />
+            /> */}
 
             <div
               className="slider_container"

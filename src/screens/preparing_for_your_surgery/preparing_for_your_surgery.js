@@ -22,12 +22,12 @@ const Preparing_for_your_surgery = (props) => {
     return (
         <Container style={{ backgroundColor: "" }}>
             <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
-            <MenuButton
+            {/* <MenuButton
                 background="#008DFB"
                 type="open"
                 onClick={handleMenuButtonClick}
                 style={{ position: 'absolute', left: '0px', top: '0',zIndex:'20' }}
-            />
+            /> */}
             <div className="pfys_head">
                 Preparing for Your surgery
             </div>

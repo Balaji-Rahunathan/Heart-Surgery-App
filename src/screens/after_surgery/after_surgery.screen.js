@@ -67,11 +67,11 @@ const AfterSurgery = (props) => {
       <div className="resuming_home_conatiner">
         <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
         <Container className="swiper_container">
-          <MenuButton
+          {/* <MenuButton
             background="#008DFB"
             type="open"
             onClick={handleMenuButtonClick}
-          />
+          /> */}
 
           <div class="header">
             <div class="progress-container">

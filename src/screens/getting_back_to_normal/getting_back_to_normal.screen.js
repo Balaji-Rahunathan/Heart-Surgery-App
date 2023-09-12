@@ -63,11 +63,11 @@ const GettingBacktoNormal = (props) => {
               <div class="progress-bar" id="myBar"></div>
             </div>
           </div>
-          <MenuButton
+          {/* <MenuButton
             background="#008DFB"
             type="open"
             onClick={handleMenuButtonClick}
-          />
+          /> */}
 
           <div className="slider_container">
             <div className="resuming_home_head_container">
@@ -103,7 +103,7 @@ const GettingBacktoNormal = (props) => {
                 </div>
               </div>
             </div>
-            <NextButton
+            {/* <NextButton
               prev
               onClick={() => props.history.push("/returning_home/resuming_home")}
               style={{
@@ -113,7 +113,7 @@ const GettingBacktoNormal = (props) => {
                 left: "10px",
                 right: "auto",
               }}
-            />
+            /> */}
           </div>
           {load && (
             <>
@@ -125,7 +125,7 @@ const GettingBacktoNormal = (props) => {
                 );
               })}
 
-              {showNextButton && (
+              {/* {showNextButton && (
                 <NextButton
                   onClick={next}
                   style={{
@@ -136,7 +136,7 @@ const GettingBacktoNormal = (props) => {
                     right: "20px",
                   }}
                 />
-              )}
+              )} */}
             </>
           )}
         </Container>

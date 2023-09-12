@@ -66,11 +66,11 @@ const MedicationsForYourHeart = (props) => {
               <div class="progress-bar" id="myBar"></div>
             </div>
           </div>
-          <MenuButton
+          {/* <MenuButton
             background="#008DFB"
             type="open"
             onClick={handleMenuButtonClick}
-          />
+          /> */}
           <div className="slider_container" style={{ position: "relative" }}>
             <div className="mfyh_title_head ">
               <p className="mfyh_title_text">Medications for your heart</p>
@@ -95,7 +95,7 @@ const MedicationsForYourHeart = (props) => {
               </p>
             </div>
 
-            <NextButton
+            {/* <NextButton
               prev
               onClick={() =>
                 props.history.push(
@@ -109,7 +109,7 @@ const MedicationsForYourHeart = (props) => {
                 left: "20px",
                 right: "auto",
               }}
-            />
+            /> */}
           </div>
 
           {load && (
@@ -252,7 +252,7 @@ const MedicationsForYourHeart = (props) => {
                     ask your nurse, pharmacist or a member of the medical team
                   </p>
                 </div>
-                <NextButton
+                {/* <NextButton
                   onClick={next}
                   style={{
                     position: "absolute",
@@ -261,7 +261,7 @@ const MedicationsForYourHeart = (props) => {
                     left: "auto",
                     right: "20px",
                   }}
-                />
+                /> */}
               </div>
             </>
           )}

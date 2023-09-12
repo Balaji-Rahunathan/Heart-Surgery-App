@@ -64,11 +64,11 @@ const BeingOverweight = (props) => {
       <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
 
       <Container className="swiper_container">
-        <MenuButton
+        {/* <MenuButton
           background="#008DFB"
           type="open"
           onClick={handleMenuButtonClick}
-        />
+        /> */}
         <div class="header">
           <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
@@ -115,7 +115,7 @@ const BeingOverweight = (props) => {
             </p>
           </div>
 
-          <NextButton
+          {/* <NextButton
             prev
             onClick={() =>
               props.history.push(
@@ -129,7 +129,7 @@ const BeingOverweight = (props) => {
               left: "10px",
               right: "auto",
             }}
-          />
+          /> */}
         </div>
 
         {load && (
@@ -399,7 +399,7 @@ const BeingOverweight = (props) => {
                 </p>
               </div>
 
-              <NextButton
+              {/* <NextButton
                 onClick={next}
                 style={{
                   position: "absolute",
@@ -408,7 +408,7 @@ const BeingOverweight = (props) => {
                   left: "auto",
                   right: "20px",
                 }}
-              />
+              /> */}
             </div>
           </>
         )}

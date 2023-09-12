@@ -64,11 +64,11 @@ const HealthyEatingForHealthyHeart = (props) => {
       <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
 
       <Container className="swiper_container">
-        <MenuButton
+        {/* <MenuButton
           background="#008DFB"
           type="open"
           onClick={handleMenuButtonClick}
-        />
+        /> */}
         <div class="header">
           <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
@@ -108,7 +108,7 @@ const HealthyEatingForHealthyHeart = (props) => {
             </p>
           </div>
 
-          <NextButton
+          {/* <NextButton
             prev
             onClick={() =>
               props.history.push(
@@ -122,7 +122,7 @@ const HealthyEatingForHealthyHeart = (props) => {
               left: "10px",
               right: "auto",
             }}
-          />
+          /> */}
         </div>
 
         {load && (
@@ -348,7 +348,7 @@ but honey is as fattening as sugar!
                   packet soups and bacon.
                 </p>
               </div>
-              <NextButton
+              {/* <NextButton
                 onClick={next}
                 style={{
                   position: "absolute",
@@ -357,7 +357,7 @@ but honey is as fattening as sugar!
                   left: "auto",
                   right: "20px",
                 }}
-              />
+              /> */}
             </div>
           </>
         )}

@@ -60,11 +60,11 @@ const WoundedHeartDoesHeal = (props) => {
               <div class="progress-bar" id="myBar"></div>
             </div>
           </div>
-          <MenuButton
+          {/* <MenuButton
             background="#008DFB"
             type="open"
             onClick={handleMenuButtonClick}
-          />
+          /> */}
 
           <div className="slider_container" style={{ paddingTop: "2em" }}>
             <div className="resuming_home_head_container">

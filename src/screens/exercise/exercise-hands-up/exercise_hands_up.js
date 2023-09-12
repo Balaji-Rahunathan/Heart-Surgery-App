@@ -68,12 +68,12 @@ export default class ExerciseHandsUp extends React.Component {
             onClick={this.handleMenuButtonClick}
           />
           <div className="exercise_content">
-            <MenuButton
+            {/* <MenuButton
               background="#008dfb"
               type="open"
               onClick={this.handleMenuButtonClick}
               style={{ position: "absolute", left: "0", top: "0" }}
-            />
+            /> */}
             <div className="exercise_head">
               <h1>Arm Raising</h1>
               {/* <div className="head_text">The Corono arteries of the heart are t

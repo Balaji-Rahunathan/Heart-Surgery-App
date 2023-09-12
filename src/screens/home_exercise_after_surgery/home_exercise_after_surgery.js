@@ -56,11 +56,11 @@ const HomExerciseAfterSurgery = (props) => {
       <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
       <div className="heas_container">
         <Container className="swiper_container">
-          <MenuButton
+          {/* <MenuButton
             background="#008DFB"
             type="open"
             onClick={handleMenuButtonClick}
-          />
+          /> */}
           <div className="heas_wrapper">
             <div className="heas_body_container" id="body">
               <div>
@@ -83,7 +83,7 @@ const HomExerciseAfterSurgery = (props) => {
                     other sports until three months after surgery.
                   </p>
                 </div>
-                <NextButton
+                {/* <NextButton
                   prev
                   onClick={() => props.history.push("/returning_home")}
                   style={{
@@ -93,7 +93,7 @@ const HomExerciseAfterSurgery = (props) => {
                     left: "10px",
                     right: "auto",
                   }}
-                />
+                /> */}
               </div>
 
               <div className="heas_image_container">
@@ -135,7 +135,7 @@ const HomExerciseAfterSurgery = (props) => {
                 <Accordian />
               </div>
 
-              {showNextButton && (
+              {/* {showNextButton && (
                 <>
                   <div>
                     <NextButton
@@ -150,7 +150,7 @@ const HomExerciseAfterSurgery = (props) => {
                     />
                   </div>
                 </>
-              )}
+              )} */}
             </div>
           </div>
         </Container>

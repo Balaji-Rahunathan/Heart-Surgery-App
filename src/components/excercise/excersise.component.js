@@ -93,12 +93,12 @@ export default class Excercise extends React.Component {
             onClick={this.handleMenuButtonClick}
           />
           <div className="exercise_content">
-            <MenuButton
+            {/* <MenuButton
               background="#008dfb"
               type="open"
               onClick={this.handleMenuButtonClick}
               style={{ position: "absolute", left: "0", top: "0" }}
-            />
+            /> */}
             <div className="exercise_head">
               <div className="postion_container">{this.props.position}</div>
               <div className="exercise_name_container">
@@ -159,12 +159,12 @@ export default class Excercise extends React.Component {
                 onClick={() => this.prev()}
                 className="prev_btn"
               />
-              <img
+              {/* <img
                 src={Button}
                 alt="button"
                 onClick={() => this.next()}
                 className="next_btn"
-              />
+              /> */}
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ const ReturningHomeIndex = (props) => {
         <p className="returning_home_index_head_text">Returning Home</p>
       </div>
       <div className="returning_home_index_content"></div>
-      <NextButton
+      {/* <NextButton
         prev
         onClick={() => props.history.push("/heel_raises")}
         style={{
@@ -25,7 +25,7 @@ const ReturningHomeIndex = (props) => {
           left: "10px",
           right: "auto",
         }}
-      />
+      /> */}
     </div>
     // </Container>
   );

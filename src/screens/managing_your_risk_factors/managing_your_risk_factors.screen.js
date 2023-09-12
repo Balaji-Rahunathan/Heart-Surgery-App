@@ -63,11 +63,11 @@ const ManagingYourRiskFactors = (props) => {
               <div class="progress-bar" id="myBar"></div>
             </div>
           </div>
-          <MenuButton
+          {/* <MenuButton
             background="#008DFB"
             type="open"
             onClick={handleMenuButtonClick}
-          />
+          /> */}
           <div className="myrf_wrapper">
             <div className="myrf_head_container">
               <p className="myrf_head_text">Managing your Risk Factors</p>
@@ -150,7 +150,7 @@ const ManagingYourRiskFactors = (props) => {
             </div>            
           </div>
 
-          {showNextButton && (
+          {/* {showNextButton && (
             <NextButton
               onClick={next}
               style={{
@@ -161,9 +161,9 @@ const ManagingYourRiskFactors = (props) => {
                 right: "20px",
               }}
             />
-          )}
+          )} */}
 
-          <NextButton
+          {/* <NextButton
             prev
             onClick={() =>
               props.history.push("/returning_home/relaxation_techniques")
@@ -175,7 +175,7 @@ const ManagingYourRiskFactors = (props) => {
               left: "10px",
               right: "auto",
             }}
-          />
+          /> */}
         </Container>
       </div>
     </div>

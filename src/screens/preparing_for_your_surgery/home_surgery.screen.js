@@ -26,12 +26,12 @@ const HomeSurgery = (props) => {
                 <div className="body">
                     <div className="border_line">
                         <div className="body_content">
-                            <MenuButton
+                            {/* <MenuButton
                                 background="white"
                                 type="open"
                                 onClick={handleMenuButtonClick}
                                 style={{ position: 'absolute', left: '0', top: '0' }}
-                            />
+                            /> */}
                             <div className="line"></div>
                             <div className="circle">
                                 <div className="check_box"></div>

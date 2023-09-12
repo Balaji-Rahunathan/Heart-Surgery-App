@@ -58,11 +58,11 @@ const ResumingHome = (props) => {
       <div className="resuming_home_conatiner">
         <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
         <Container className="swiper_container">
-          <MenuButton
+          {/* <MenuButton
             background="#008DFB"
             type="open"
             onClick={handleMenuButtonClick}
-          />
+          /> */}
 
           <div class="header">
             <div class="progress-container">
@@ -99,7 +99,7 @@ const ResumingHome = (props) => {
                 />
               </div>
 
-            <NextButton
+            {/* <NextButton
               prev
               onClick={() => props.history.push("/returning_home")}
               style={{
@@ -109,7 +109,7 @@ const ResumingHome = (props) => {
                 left: "10px",
                 right: "auto",
               }}
-            />
+            /> */}
           </div>
 
           {load && (
@@ -207,7 +207,7 @@ const ResumingHome = (props) => {
                 </div>
               ))}
 
-              {showNextButton && (
+              {/* {showNextButton && (
                 <NextButton
                   onClick={next}
                   style={{
@@ -218,7 +218,7 @@ const ResumingHome = (props) => {
                     right: "20px",
                   }}
                 />
-              )}
+              )} */}
             </>
           )}
         </Container>

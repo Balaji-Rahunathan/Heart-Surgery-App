@@ -66,11 +66,11 @@ const RelaxationTechniques = (props) => {
         </div>
         <div className="fyandyp_wrapper">
           <Container className="swiper_container">
-            <MenuButton
+            {/* <MenuButton
               background="#008DFB"
               type="open"
               onClick={handleMenuButtonClick}
-            />
+            /> */}
 
             <div className="slider_container">
               <div className="fyandyp_title_container">
@@ -123,7 +123,7 @@ const RelaxationTechniques = (props) => {
                 </p>
               </div>
 
-              <NextButton
+              {/* <NextButton
                 prev
                 onClick={() =>
                   props.history.push("/returning_home/for_you_and_your_partner")
@@ -135,7 +135,7 @@ const RelaxationTechniques = (props) => {
                   left: "20px",
                   right: "auto",
                 }}
-              />
+              /> */}
             </div>
 
             {load && (
@@ -248,7 +248,7 @@ const RelaxationTechniques = (props) => {
                     </p>
                   </div>
 
-                  <NextButton
+                  {/* <NextButton
                     onClick={next}
                     style={{
                       position: "absolute",
@@ -257,7 +257,7 @@ const RelaxationTechniques = (props) => {
                       left: "auto",
                       right: "20px",
                     }}
-                  />
+                  /> */}
                 </div>
               </>
             )}

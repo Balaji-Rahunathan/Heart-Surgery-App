@@ -65,11 +65,11 @@ const PhysicalInactivity = (props) => {
       <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
 
       <Container className="swiper_container">
-        <MenuButton
+        {/* <MenuButton
           background="#008DFB"
           type="open"
           onClick={handleMenuButtonClick}
-        />
+        /> */}
         <div class="header">
           <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
@@ -108,7 +108,7 @@ const PhysicalInactivity = (props) => {
             </div>
           </div>
 
-          <NextButton
+          {/* <NextButton
             prev
             onClick={() =>
               props.history.push("/looking_forward_healthier_future/alcohol")
@@ -120,7 +120,7 @@ const PhysicalInactivity = (props) => {
               left: "20px",
               right: "auto",
             }}
-          />
+          /> */}
         </div>
 
         {load && (
@@ -207,7 +207,7 @@ const PhysicalInactivity = (props) => {
                   programme will help you get started.
                 </p>
               </div>
-              {showNextButton && (
+              {/* {showNextButton && (
                 <NextButton
                   onClick={next}
                   style={{
@@ -218,7 +218,7 @@ const PhysicalInactivity = (props) => {
                     right: "20px",
                   }}
                 />
-              )}
+              )} */}
             </div>
           </>
         )}

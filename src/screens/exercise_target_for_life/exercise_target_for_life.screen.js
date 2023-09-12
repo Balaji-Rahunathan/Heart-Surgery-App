@@ -52,11 +52,11 @@ const ExerciseTargetForLife = (props) => {
       <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
       <div className="etfl_container">
         <Container className="swiper_container">
-          <MenuButton
+          {/* <MenuButton
             background="#008DFB"
             type="open"
             onClick={handleMenuButtonClick}
-          />
+          /> */}
           <div className="etfl_wrapper">
             <div className="etfl_body_container">
               <div>
@@ -84,7 +84,7 @@ const ExerciseTargetForLife = (props) => {
                     15 minutes at a slower pace, at the end (cool-down).
                   </p>
                 </div>
-                <NextButton
+                {/* <NextButton
                   prev
                   onClick={() => props.history.push("/returning_home")}
                   style={{
@@ -94,7 +94,7 @@ const ExerciseTargetForLife = (props) => {
                     left: "10px",
                     right: "auto",
                   }}
-                />
+                /> */}
               </div>
               <div className="etfl_content_card">
                 <p className="eftl_content_text">
@@ -171,7 +171,7 @@ const ExerciseTargetForLife = (props) => {
                 </p>
               </div>
 
-              {showNextButton && (
+              {/* {showNextButton && (
                 <NextButton
                   onClick={next}
                   style={{
@@ -182,7 +182,7 @@ const ExerciseTargetForLife = (props) => {
                     right: "20px",
                   }}
                 />
-              )}
+              )} */}
             </div>
           </div>
         </Container>

@@ -339,7 +339,8 @@
     }
 
     .prev_button_container {
-      flex: 0.5;
+      flex: 0;
+      // flex: 0.5;
       .prev_button {
         width: 60px;
         height: auto;

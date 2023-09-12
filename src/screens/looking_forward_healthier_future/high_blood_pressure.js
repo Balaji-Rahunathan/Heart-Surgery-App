@@ -63,11 +63,11 @@ const HighBloodPressure = (props) => {
               <div class="progress-bar" id="myBar"></div>
             </div>
           </div>
-          <MenuButton
+          {/* <MenuButton
             background="#008DFB"
             type="open"
             onClick={handleMenuButtonClick}
-          />
+          /> */}
           <div className="myrf_wrapper">
             <div className="myrf_head_container">
               <p className="myrf_head_text">High Blood Pressure</p>
@@ -199,7 +199,7 @@ const HighBloodPressure = (props) => {
               </div>
             </div>
           </div>
-
+{/* 
           {showNextButton && (
             <NextButton
               onClick={next}
@@ -225,7 +225,7 @@ const HighBloodPressure = (props) => {
               left: "10px",
               right: "auto",
             }}
-          />
+          /> */}
         </Container>
       </div>
     </div>

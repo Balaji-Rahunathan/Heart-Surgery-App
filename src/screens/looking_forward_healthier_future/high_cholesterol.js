@@ -63,11 +63,11 @@ const HighCholesterol = (props) => {
       <Sidebar {...props} toggle={toggle} onClick={handleMenuButtonClick} />
 
       <Container className="swiper_container">
-        <MenuButton
+        {/* <MenuButton
           background="#008DFB"
           type="open"
           onClick={handleMenuButtonClick}
-        />
+        /> */}
         <div class="header">
           <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
@@ -117,7 +117,7 @@ const HighCholesterol = (props) => {
             </p>
           </div>
 
-          <NextButton
+          {/* <NextButton
             prev
             onClick={() =>
               props.history.push("/looking_forward_healthier_future/smoking")
@@ -129,7 +129,7 @@ const HighCholesterol = (props) => {
               left: "10px",
               right: "auto",
             }}
-          />
+          /> */}
         </div>
 
         {load && (
@@ -312,7 +312,7 @@ const HighCholesterol = (props) => {
               </div>
 
 
-              <NextButton
+              {/* <NextButton
                 onClick={next}
                 style={{
                   position: "absolute",
@@ -321,7 +321,7 @@ const HighCholesterol = (props) => {
                   left: "auto",
                   right: "20px",
                 }}
-              />
+              /> */}
             </div>            
           </>
         )}

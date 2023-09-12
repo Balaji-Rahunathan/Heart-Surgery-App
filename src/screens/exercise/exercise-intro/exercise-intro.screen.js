@@ -31,12 +31,12 @@ export default class Exercise extends React.Component {
             toggle={this.state.toggle}
             onClick={this.handleMenuButtonClick}
           />
-          <MenuButton
+          {/* <MenuButton
             background="white"
             type="open"
             onClick={this.handleMenuButtonClick}
             style={{ position: "absolute", left: "0", top: "0" }}
-          />
+          /> */}
           <div className="exercise_content">
             <div className="exercise_head">
               <h1 className="title">After Surgery</h1>
@@ -58,7 +58,7 @@ export default class Exercise extends React.Component {
               </div>
             </div>
 
-            <NextButton
+            {/* <NextButton
               prev
               onClick={()=>this.props.history.push("/preparing_for_surgery")}
               style={{
@@ -68,7 +68,7 @@ export default class Exercise extends React.Component {
                 left: "10px",
                 right: "auto",
               }}
-            />
+            /> */}
           </div>
         </div>
       </React.Fragment>

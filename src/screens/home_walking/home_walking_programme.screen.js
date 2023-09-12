@@ -59,11 +59,11 @@ const HomeWalkingProgramme = (props) => {
         </div>
         <div className="hwp_wrapper">
           <Container className="swiper_container">
-            <MenuButton
+            {/* <MenuButton
               background="#008DFB"
               type="open"
               onClick={handleMenuButtonClick}
-            />
+            /> */}
             <div className="slider_container">
               <div className="hwp_head_container">
                 <p className="hwp_head_text">Home Walking Programme</p>

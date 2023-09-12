@@ -68,12 +68,12 @@ export default class ExerciseNeck extends React.Component {
             onClick={this.handleMenuButtonClick}
           />
           <div className="exercise_content">
-            <MenuButton
+            {/* <MenuButton
               background="#008dfb"
               type="open"
               onClick={this.handleMenuButtonClick}
               style={{ position: "absolute", left: "0", top: "0" }}
-            />
+            /> */}
             <div className="exercise_head">
               <h1>Neck Mobilisation</h1>
               <div className="head_text">

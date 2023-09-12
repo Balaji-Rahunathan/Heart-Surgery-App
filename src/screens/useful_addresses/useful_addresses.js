@@ -63,11 +63,11 @@ const UsefulAddresses = (props) => {
               <div class="progress-bar" id="myBar"></div>
             </div>
           </div>
-          <MenuButton
+          {/* <MenuButton
             background="#008DFB"
             type="open"
             onClick={handleMenuButtonClick}
-          />
+          /> */}
           <div className="">
             <div className="mfyh_title_head " style={{marginBottom: '0.5em'}}>
               <p className="mfyh_title_text" style={{ padding: "0.8em 60px" }}>

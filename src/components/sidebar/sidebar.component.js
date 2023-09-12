@@ -25,13 +25,13 @@ const Sidebar = ({ toggle, onClick, history }) => {
           breakPoint="sm md"
           onToggle={() => onClick(false)}
         >
-          <MenuButton
+          {/* <MenuButton
             background="white"
             iconColor="#00A1FB"
             type="close"
             onClick={() => onClick(false)}
             style={{ position: "absolute", zIndex: "10" }}
-          />
+          /> */}
           <Menu style={{ textAlign: "left", marginTop: "4em" }}>
             <MenuItem
               onClick={() => history.push("/little_about_your_heart")}

@@ -282,7 +282,7 @@ const Timeline = (props) => {
           </div>
         ) : null}
       </div>
-      {index === 43 && (
+      {/* {index === 43 && (
         <NextButton
           onClick={next}
           style={{
@@ -294,7 +294,7 @@ const Timeline = (props) => {
             zIndex: "20",
           }}
         />
-      )}
+      )} */}
     </div>
   );
 };
