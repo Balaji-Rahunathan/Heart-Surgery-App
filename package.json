@@ -49,5 +49,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "."
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
 }

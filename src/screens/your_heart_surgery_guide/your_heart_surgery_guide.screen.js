@@ -38,12 +38,12 @@ const YourHeartSurgeryGuide = (props) => {
                     <div className="yhsg_menu" onClick={() => props.history.push('/useful_addressess')}>
                         <p className="yhsg_menu_text">Useful Addresses</p>
                     </div>
-                    <div className="yhsg_menu" onClick={() => props.history.push('/Medications')}>
+                    {/* <div className="yhsg_menu" onClick={() => props.history.push('/Medications')}>
                         <p className="yhsg_menu_text">Medications</p>
                     </div>
                     <div className="yhsg_menu" onClick={() => props.history.push('/myprescription')}>
                         <p className="yhsg_menu_text">My Prescription</p>
-                    </div>
+                    </div> */}
 
                     {/* <div className="yhsg_menu" onClick={() => props.history.push('/your_heart_surgery_guide')}>
                         <p className="yhsg_menu_text">Risk factor profile</p>
